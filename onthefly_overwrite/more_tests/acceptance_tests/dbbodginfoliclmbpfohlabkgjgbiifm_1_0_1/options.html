@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.wrapper {
+		background-color: #f2f2f2;
+		min-height: 100vh;
+	}
+	.header {
+		background-color: #333333;
+		padding: 20px 0;
+		box-shadow: 2px 2px 47px -16px rgba(0,0,0,0.75);
+	}
+	.header-wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.header img {
+		height: 64px;
+	}
+	.content {
+		/*width: 1000px;*/
+		width: 80%;
+		margin: 0 auto;
+		padding: 20px 0;
+		font-size: 1.6em;
+		font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	}
+	.content p {
+		padding: 5px 0;
+		font-size: 1.4em;
+	}
+	.content p a {
+		text-decoration: none;
+		color: #c0392b;
+		font-size: 0.8em;
+		text-align: right;
+	}
+	.content p a:hover {
+		text-decoration: underline;
+	}
+	.content ul {
+		padding: 20px;
+		background-color: #ffffff;
+		border-radius: 5px;
+		box-shadow: 2px 2px 48px -19px rgba(0,0,0,0.75);
+	}
+	.content ul li {
+		list-style: none;
+		padding: 15px;
+		font-size: 1.1em;
+		background-color: #efefef;
+	}	
+	.content ul li:nth-child(odd) {
+		background-color: #ffffff;
+	}
+	.content ul li.empty-list {
+		text-align: center;
+		font-style: italic;
+		color: #7f8c8d;
+		font-size: 0.8em;
+	}
+	.content ul li a.site-anchor {
+		text-decoration: none;
+		color: #2980b9;
+	}
+	.content ul li a.site-anchor:hover {
+		text-decoration: underline;
+	}
+	.remove {
+		font-size: 0.8em;
+		color: #c0392b;
+		float: right;
+		text-decoration: none;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		line-height: 25px;
+	}
+	.remove:hover {
+		background-color: #c0392b;
+		color: #ffffff;
+		border-radius: 25px;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header-wrapper">
+				<img src="img/logo-lg.png" height="64" />
+			</div>
+		</div>
+		<div class="content">
+			<p>Domains registered for chord tracking <em><a href="#" id="clear">clear all</a></em></p>
+			
+			<ul id="sites"></ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="options.js"></script>
+</body>
+</html>

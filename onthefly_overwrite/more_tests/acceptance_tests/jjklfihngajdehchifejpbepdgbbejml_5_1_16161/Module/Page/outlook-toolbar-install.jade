@@ -1,0 +1,56 @@
+// Outlook Toolbar
+.sub-page.sub-page-outlookToolbar
+	.row.intro
+		h1 {{OUTLOOK_INSTALLATION}}
+		p {{{OUTLOOK_EXPLAIN}}}
+	// Step 1
+	.row.sub-title
+		h1.col-md-12 {{{OUTLOOK_STEP_1_TITLE}}}
+
+	.row.step
+		.col-md-12 {{{OUTLOOK_STEP_1_DETAIL}}}
+		// <div class="col-md-6 hide">
+		// <img class="preview" src="images/ua/install_outlook_toolbar_retry.gif">
+		// </div>
+	// Step 2
+	.row.sub-title
+		h1.col-md-12 {{{OUTLOOK_STEP_2_TITLE}}}
+
+	.step
+		.row
+			.col-md-6 {{{OUTLOOK_STEP_2_DETAIL}}}
+			.col-md-6
+				img.preview(src='images/ua/install_outlook_toolbar_run.gif')
+		.row
+			a.btn.btn-primary.download-btn.download-outlook.col-md-6(href='{{downloadLink}}', target='_blank')
+				span.icon.icon-archive
+				| {{DOWNLOAD_TOOLBAR}}
+	// Step 3
+	.row.sub-title
+		h1.col-md-12 {{{OUTLOOK_STEP_3_TITLE}}}
+
+	.row.step
+		.col-md-6 {{{OUTLOOK_STEP_3_DETAIL}}}
+		.col-md-6
+			img.preview(src='images/ua/install_outlook_toolbar_download.gif')
+	// Step 4
+	.row.sub-title
+		h1.col-md-12 {{{OUTLOOK_STEP_4_TITLE}}}
+
+	.step
+		.row
+			.col-md-6 {{{OUTLOOK_STEP_4_DETAIL}}}
+			.col-md-6
+				img.preview(src='images/ua/install_outlook_toolbar_activate.gif')
+
+		.row
+			.btn.btn-primary.activate-btn.col-md-6(href='')
+				span.icon.icon-check
+				.btn-text.inline-block.text {{ACTIVATE_WITH}}
+	// Requirements
+	.row
+		h1.col-md-12 {{OUTLOOK_MINIMUM_SYSTEM_REQUIREMENTS}}
+
+	.row.step
+		.col-md-12 {{{OUTLOOK_REQUIRE_VERSION}}}
+		.col-md-12 {{{OUTLOOK_MORE_INFO}}}

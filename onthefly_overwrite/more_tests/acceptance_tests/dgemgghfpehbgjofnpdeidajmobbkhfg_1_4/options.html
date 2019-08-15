@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Smooth scrolling with 60fps (fix-fixed) - options</title>
+	<style>
+		body { font-family:verdana; }
+		p { max-width:680px; }
+		#status { display:none;color:maroon; background-color: #EEEEEE; margin:1em; padding:0.5em; font-weight:bold;font-size:120%; }
+		fieldset { color:#333333; border-color:silver; border-radius:0.5em; margin-bottom:0.5em; margin-top:2em; max-width:680px;position:relative; padding:1em;  }
+		fieldset label { position:absolute; top:-1em; left:1em; background:#666666; color:#EEEEEE;font-size:80%; padding:0.25em 1em; border-radius:0.5em; }
+		#save,#reset { font-size:120%; background:green; color:white; border-radius:0.25em; }
+		.textarea { width:300px;height:180px; }
+		input, textarea { padding:0.25em; border-radius:0.1em; }
+		fieldset p { margin-top:0.5em; margin-bottom:0.5em; float:right; width:50% ; color:#666666; font-size:90%;}
+	</style>
+</head>
+
+<body>
+
+	<h2>Smooth Scrolling - Options:</h2>
+	<p>Improve scrolling by optimizing css automatically, and partly turn off sluggish effects. </p>
+	
+	
+	<fieldset>
+		<label>Improve background-attachment:</label>
+		<input id="background" type="text" /> (1/0)
+		<p>Turn Background-Fix on and off (0/1). This can result in Backrounds scrolling with the page and not float fixed behind the page. </p>
+	</fieldset>
+	
+	<fieldset>
+		<label>Turn off animations</label>
+		<input id="animation" type="text" /> (1/0)
+		<p>Turn Animations on and off (0/1). 1 = disable animations, 0 = skip</p>
+	</fieldset>
+	
+	<fieldset>
+		<label>Turn off transitions</label>
+		<input id="transition" type="text" /> (1/0)
+		<p>Turn Transitions on and off (0/1). 1 = disable transition, 0 = skip</p>
+	</fieldset>
+	
+	<fieldset>
+		<label>Highlight fixed (corrected) elements</label>
+		<input id="highlight" type="text" /> (1/0)
+		<p>Highlight improved elements on and off (0/1), debugging only, normal usage should be 0</p>
+	</fieldset>
+	
+	<fieldset>
+		<label>Antializing fix - Scroll</label>
+		<input id="antializing_scroll" type="text" /> (1/0)
+		<p>Improve Sub-Pixel Antializing on and off (0/1), might be slower, removes scrollfix if not scrolling. </p>
+	</fieldset>
+	
+	<fieldset>
+		<label>Antializing fix - Scroll Delay</label>
+		<input id="antializing_delay" type="text" /> (1000)
+		<p>Delay after scrolling to apply sub-pixel rendering (1/1000s = ms). </p>
+	</fieldset>
+	<!--
+	<fieldset>
+		<label>Antializing fix - Color</label>
+		<input id="antializing_color" type="text" /> (1/0)
+		<p>Improve Sub-Pixel Antializing on and off (0/1), faster, might show wrong backgrounds, uses color-trick to improve rendering. </p>
+	</fieldset>
+	-->
+	
+	<input id="antializing_color" type="hidden" />
+	<input id="scrollcover" type="hidden" />
+	
+	<fieldset>
+		<label>show icon badge-number:</label>
+		<input id="show_badge" type="text" /> (1/0)
+		<p>Turn Badges on and off (0/1)</p>
+	</fieldset>
+
+		
+	<fieldset>
+		<label>Running:</label>
+		<input id="on_off" type="text" /> (1/0)
+		<p>Running: 1, Paused: 0.</p>
+	</fieldset>
+	
+	
+	<div id="status"></div>
+	<button id="save">Save</button>
+	<button id="reset">Load Defaults</button>
+	
+	<script src="options.js"></script>
+</body>
+
+
+</html>

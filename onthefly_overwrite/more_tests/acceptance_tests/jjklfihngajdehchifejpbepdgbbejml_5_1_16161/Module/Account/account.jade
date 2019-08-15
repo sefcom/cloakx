@@ -1,0 +1,203 @@
+mixin push_setting_item_template($label,$value)
+
+	if $value == null
+		- $value = $label
+
+	- $label = '{{' + $label + '}}'
+
+	.setting-item.row(value=$value)
+		.col-xs-12.col-md-6
+			div=$label
+		.col-xs-12.col-md-6
+			.switches
+				if $value == "MessageSent"
+					.onoffswitch.onoffswitch-default.disabled.email
+						input(type='checkbox', checked, disabled).onoffswitch-checkbox.toggle-button
+						label.onoffswitch-label
+							span.onoffswitch-inner
+							span.onoffswitch-switch
+				.onoffswitch.onoffswitch-default.push
+					input(type='checkbox').onoffswitch-checkbox.toggle-button
+					label.onoffswitch-label
+						span.onoffswitch-inner
+						span.onoffswitch-switch
+				.onoffswitch.onoffswitch-default.inapp
+					input(type='checkbox').onoffswitch-checkbox.toggle-button
+					label.onoffswitch-label
+						span.onoffswitch-inner
+						span.onoffswitch-switch
+
+mixin setting_group_template
+	.setting-list
+		.notification-preset-panel.clearfix
+			.setting-subtitle {{NOTIFICATION_PRESET}}
+			.notice-select-all-btn.checkbox
+				| {{SELECT_ALL}}
+		.recipient-notification-panel
+			.setting-subtitle
+				| {{RECIPIENT_NOTIFICATION}}
+			.setting-sublabel.clear
+				.platform-labels
+					.label.inapp-label {{EMAIL}}
+					.label.push-label {{MOBILE}}
+					.label.inapp-label {{DESKTOP}}
+			+push_setting_item_template('MessageSent')
+			+push_setting_item_template('MessageRecalled')
+			+push_setting_item_template('AttachmentEsignSent')
+		.sender-notification-panel
+			.setting-subtitle.sender-notification
+				| {{SENDER_NOTIFICATION}}
+			+push_setting_item_template('MyMessageSent')
+			+push_setting_item_template('MessageReceived')
+			+push_setting_item_template('MessageReplied')
+			+push_setting_item_template('MessageForwarded')
+			+push_setting_item_template('MessagePrinted')
+			+push_setting_item_template('AttachmentPreviewed')
+			+push_setting_item_template('AttachmentPrinted')
+			+push_setting_item_template('AttachmentDownloaded')
+			+push_setting_item_template('AttachmentEsigned')
+			//+push_setting_item_template('MessageReviewed')
+			//+push_setting_item_template('MessageDeleted')
+			//+push_setting_item_template('MessageArchived')
+
+			//.btn.has-dropdown.view-more-button {{VIEW_MORE}}
+			//.view-more-panel.hide
+
+mixin alias_management_template
+	.setting-subtitle
+		| {{ALIAS_MANAGEMENT}}
+	.setting-sublabel
+		| {{{ALIAS_MANAGEMENT_EXPLAIN}}}
+	.add-alias-container
+	.alias-list-container
+
+
+mixin account_preference_template
+	.row
+		.sub-module.sub-module-profile.col-md-6
+			h2.title {{USER_PROFILE}}
+			.content.panel.panel-boxed.panel-padded.form
+				.input-wrapper.row
+					.input-title.col-sm-3.label {{EMAIL_ADDRESS}}
+					.input-box.col-sm-9
+						input(autocapitalize='off', field='emailAddress', type='email', value='', disabled='')
+				.input-wrapper.row
+					.label.input-title.col-sm-3
+						| {{FIRST_NAME}}
+					.input-box.text.col-sm-9
+						input(autocapitalize='off', field='firstName', type='text', value='').name-field
+				.input-wrapper.row
+					.label.input-title.col-sm-3
+						| {{LAST_NAME}}
+					.input-box.text.col-sm-9
+						input(autocapitalize='off', field='lastName', type='text', value='').name-field
+				.input-wrapper.settings-localization.row
+					.label.input-title.col-sm-3
+						| {{LANGUAGE}}
+					.input-box.col-sm-9
+						select(field='language',class='icon-down-solid')
+							option(value='de') Deutsch
+							option(value='en') English
+							option(value='es') ‎Español
+							option(value='fr') Français
+							option(value='nl') Nederlands
+							option(value='ja') 日本語
+							option(value='zh') 简体中文
+						// <div class="icon-down select-arrow"></div>
+		.sub-module.sub-module-password.col-md-6.pull-right
+			h2.title {{CHANGE_PASSWORD}}
+			.content.password-change.panel.panel-boxed.panel-padded.form
+				.input-wrapper.row
+					.input-title.col-sm-3.label {{ENTER_CURRENT_PASSWORD}}
+					.input-box.col-sm-9
+						input(autocapitalize='off', type='password', value='', field='oldPassword')
+				.input-wrapper.row
+					.input-title.col-sm-3.label {{CHOOSE_NEW_PASSWORD}}
+					.input-box.text.col-sm-9
+						input(autocapitalize='off', type='password', value='', field='newPassword')
+				.input-wrapper.row
+					.input-title.col-sm-3.label {{CONFIRM_NEW_PASSWORD}}
+					.input-box.text.col-sm-9
+						input(autocapitalize='off', type='password', value='', field='checkNewPassword')
+
+	.row
+		.sub-module.sub-module-replies.smaller-row.col-md-6
+			h2.title {{OUT_OF_OFFICE}}
+			.content.out-of-office-change.panel.panel-boxed.panel-padded.form
+				.input-wrapper.checkbox-field.row
+					.input-box.col-xs-1
+						.checkbox(field='outOfOfficeEnabled')
+					.input-title.col-xs-11 {{ENABLE_OFFICE_REPLY}}
+				.input-wrapper.row
+					.input-title.col-12 {{OFFICE_REPLY_MESSAGE}}
+					textarea.input-textarea.col-12(field='outOfOfficeMessage')
+
+		.sub-module.sub-module-tools.smaller-row.col-md-6
+			h2.title {{TOOL_OPTIONS}}
+			.content.tool-options-change.panel.panel-boxed.panel-padded.form
+				.input-wrapper.checkbox-field.row
+					.input-box.col-xs-1
+						.checkbox(field='autoRetrieveMessage')
+					.input-title {{ALLOW_AUTO_RETRIEVAL}}
+
+				.input-wrapper.checkbox-field.row.hide(class='disabled')
+					.input-box.col-xs-1
+						.checkbox(field='hideDidYouKnowToolTips', class='disabled')
+					.input-title.col-xs-11 {{HIDE_DID_YOU_KNOW_TIPS}}
+
+	.row
+		.sub-module.sub-module-signature.col-md-6
+			h2.title {{SIGNATURE_MESSAGE}}
+			.content.panel.panel-boxed.panel-padded.form.auto-height
+				.input-wrapper.row
+					.input-title {{SIGNATURE_MESSAGE}}
+					#signatureHtml
+
+		.sub-module.col-md-6
+
+
+mixin secure_email_options_template
+	.setting-list
+		+push_setting_item_template('CHROME_GMAIL', 'gmail')
+		+push_setting_item_template('CHROME_OFFICE', 'office')
+
+mixin account_template
+	#account-settings.SEModule.SEM-Account.widget.widget-padded.widget-noborder
+		//h1.account-title {{ACCOUNT_SETTINGS}}
+		.account-tab-holder
+			.tabs-wrapper.will-drop-down
+				.selected-tab Selected tab ...
+				ul.tabs
+					li.active
+						a(href='#tab-preference') {{ACCOUNT_PREFERENCES}}
+					li
+						a(href='#tab-push-settings') {{ALERTS_SETTINGS_TITLE}}
+					li
+						a(href='#tab-alias-management') {{ALIAS_MANAGEMENT}}
+					//li
+					//   a(href='#tab-inapp-push-settings') {{INAPP_SETTINGS_TITLE}}
+					li
+						a.chrome-only(href='#tab-secure-email-options') {{SECURE_EMAIL_OPTIONS}}
+			.clear
+
+			.tab-holder.panel.panel-boxed.panel-padded
+				#tab-preference.tab-item.active
+					+account_preference_template()
+				#tab-push-settings.tab-item
+					.setting-container-padding.sub-module.sub-module-notifications
+						+setting_group_template()
+				#tab-alias-management.tab-item
+					.setting-container-padding.sub-module.sub-module-aliases
+						+alias_management_template()
+				//#tab-inapp-push-settings.tab-item
+				//   .setting-container-padding
+				//      +setting_group_template()
+				#tab-secure-email-options.tab-item
+					.setting-container-padding.sub-module.sub-module-email
+						+secure_email_options_template()
+			.btn-group
+				.error-saving.pull-left
+				.save-settings-btn.btn.btn-normal.pull-right {{SAVE_SETTINGS}}
+
+script#account-template(type='text/x-handlebars-template')
+	+account_template()

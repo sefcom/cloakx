@@ -1,0 +1,28 @@
+mixin uploadProgressTemplate()
+	.progress-ui
+		.progress-ui-summary.child
+			.row
+				.col-xs-9
+					.uploading-details
+						img(src='images/icons/ajax-loader.gif',align='absmiddle')
+						span {{FILE_UPLOADING}}
+				.col-xs-3
+					.btn.btn-link.align-right#maximizeButton
+						i.icon-angle-double-down
+						| {{SHOW_MORE}}
+		.progress-ui-inner.child
+			h3
+				| {{FILE_UPLOADING}}
+				span#totalSize
+
+			.row.attachments-panel
+			.row
+				.col-xs-9
+					//	Reserved
+				.col-xs-3
+					.btn.btn-link.align-right#minimizeButton
+						i.icon-angle-double-up
+						| {{SHOW_LESS}}
+
+script#upload-progress-template(type='text/x-handlebars-template')
+	+uploadProgressTemplate()

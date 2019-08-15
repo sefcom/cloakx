@@ -1,0 +1,200 @@
+<script id="compose-template" type="text/x-handlebars-template">
+    <div class="SEModule SEM-Compose">
+        <div class="msg-container">
+
+            <!--Desktop Toolbar-->
+            <div class="docked-container show-desktop show-laptop">
+                <div id="compose-menu" class="toolbar compose-actionbar show-desktop show-laptop">
+                    <div class="actionbtn actionbtn-full send-btn icon-log-out"><span class="always-show">{{SEND}}</span></div>
+                    <div class="actionbtn save-btn icon-save"><span>{{SAVE_DRAFT}}</span></div>
+                    <div class="actionbtn upload-btn overflow-btn icon-attachment">
+                        <span>{{ADD_FILE_ATTACHMENT}}</span>
+                        <div class="dropdown" style="display: none;">
+                            <div class="toolbar toolbar-vertical">
+                                <div class="actionbtn dropdown-button upload-attachment-btn icon-attachment">
+                                    <span class="always-show">{{COMPOSE_ATTACHMENTS_TITLE}}</span>
+                                </div>
+                                <div class="actionbtn dropdown-button upload-esignature-btn icon-ribbon-b">
+                                    <span class="always-show">{{COMPOSE_ESIGNATURE_TITLE}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-draft-container pull-right">
+                        <div class="actionbtn label save-draft-info"></div>
+                        <div class="actionbtn discard-btn icon-trash-bin"><span class="hide">{{DISCARD}}</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mobile Toolbar-->
+            <div class="scroll-docked-container hide-desktop hide-laptop" style="display: none;">
+                <div class="toolbar compose-actionbar">
+                    <div class="actionbtn send-btn icon-log-out"><span class="always-show">{{SEND}}</span>
+                    </div>
+                    <div class="actionbtn save-btn icon-save"><span>{{SAVE_DRAFT}}</span></div>
+                    <div class="actionbtn discard-btn icon-trash-bin pull-right">
+                        <span>{{DISCARD}}</span>
+                    </div>
+                    <div class="actionbtn deliveryslip-btn icon-tags pull-right show-phone" action="deliveryslip"
+                         title="{{VIEW_DELIVERY_SLIP}}">
+                        <span>{{VIEW_DELIVERY_SLIP}}</span>
+                    </div>
+                    <div class="actionbtn upload-btn overflow-btn icon-attachment pull-right">
+                        <span>{{ADD_FILE_ATTACHMENT}}</span>
+                        <div class="dropdown" style="display:none;right:0;">
+                            <div class="toolbar toolbar-vertical">
+                                <div class="actionbtn upload-attachment-btn icon-attachment">
+                                    <span class="always-show">{{COMPOSE_ATTACHMENTS_TITLE}}</span>
+                                </div>
+                                <div class="actionbtn upload-esignature-btn icon-ribbon-b">
+                                    <span class="always-show">{{COMPOSE_ESIGNATURE_TITLE}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="toolbar deliveryslip-toolbar">
+                    <div class="actionbtn deliveryslip-btn icon-tags" action="deliveryslip"
+                         title="{{VIEW_DELIVERY_SLIP}}">
+                        <span class="always-show">{{VIEW_DELIVERY_SLIP}}</span>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="scrollable">
+                <!--<div class="save-draft-info show-phone show-tablet"></div>-->
+                <div class="compose-header">{{NEW_SECURE_MESSAGE}}</div>
+                <table cellspacing="0" cellpadding="0">
+                    <!-- TODO: Remove this, since there is a toolbar already below the message toolbar
+                    <tr class="field-row setting">
+                        <td class="label optionToggle" colspan="2">
+                            <div style="float:left">{{MANAGE_SLIP_SETTINGS}}</div>
+                            <img src="images/icons/composeOption.png" height="25" style="float:right"/>
+                        </td>
+                    </tr>
+                    -->
+                    <tr class="field-row top">
+                        <!-- <td width="25" class="label">To:</td> -->
+                        <td class="input compose-to">
+                            <div class="inputHolder">
+                                <span class="inputTitle">{{TO}}:</span>
+
+                                <div class="bubbleholder"></div>
+                                <input type="email" id="composeTo" class="acInput inputText"/>
+                            </div>
+                        </td>
+                        <td class="toggle-td">
+                            <div class="toolbar toolbar-nofill toolbar-noborder toolbar-autowidth pull-right clear">
+                    <span class="actionbtn toggle-btn icon-plus-squared" attr="cc">
+                        <span class="always-show">{{CC}}</span>
+                    </span>
+                    <span class="actionbtn toggle-btn icon-plus-squared" attr="bcc">
+                        <span class="always-show">{{BCC}}</span>
+                    </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="autocomplete-tr">
+                        <td colspan="3" class="autocomplete-row">
+                            <div class="autocomplete-list">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="field-row">
+                        <!-- <td width="25" class="label">Cc:</td> -->
+                        <td class="input compose-cc" colspan="2">
+                            <div class="inputHolder">
+                                <span class="inputTitle">{{CC}}:</span>
+
+                                <div class="bubbleholder"></div>
+                                <input type="email" id="composeCc" class="acInput inputText"/>
+                            </div>
+                        </td>
+                        <!--<td width="20" class="toggle"><img src="images/icons/listtoggle.png" height="25"/></td>-->
+                    </tr>
+                    <tr class="field-row">
+                        <!-- <td width="25" class="label">Bcc:</td> -->
+                        <td class="input compose-bcc" colspan="2">
+                            <div class="inputHolder">
+                                <span class="inputTitle">{{BCC}}:</span>
+
+                                <div class="bubbleholder"></div>
+                                <input type="email" id="composeBcc" class="acInput inputText"/>
+                            </div>
+                        </td>
+                        <!--<td width="20" class="toggle"><img src="images/icons/listtoggle.png" height="25"/></td>-->
+                    </tr>
+
+                    <tr class="field-row">
+                        <td colspan="2" class="input single">
+                            <div class="inputHolder subject row">
+                                <!--<div class="col-xs-1">-->
+                                <!--<span class="inputTitle">{{SUBJECT}}:</span>-->
+                                <!--</div>-->
+                                <input type="text" class="inputText" id="composeSubject" placeholder="{{SUBJECT}}"/>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr class="toolbar-row compose-menu-wrap hide-desktop hide-laptop">
+                        <td colspan="2">
+                            <div class="show-tablet">
+                                <div class="toolbar compose-actionbar hide-desktop hide-laptop">
+                                    <div class="actionbtn send-btn icon-log-out"><span class="always-show">{{SEND}}</span>
+                                    </div>
+                                    <div class="actionbtn save-btn icon-save"><span>{{SAVE_DRAFT}}</span></div>
+                                    <div class="actionbtn discard-btn icon-trash-bin pull-right">
+                                        <span>{{DISCARD}}</span>
+                                    </div>
+                                    <div class="actionbtn deliveryslip-btn icon-tags pull-right show-phone" action="deliveryslip"
+                                         title="{{VIEW_DELIVERY_SLIP}}">
+                                    </div>
+                                    <div class="actionbtn upload-btn overflow-btn icon-attachment pull-right">
+                                        <span>{{ADD_FILE_ATTACHMENT}}</span>
+                                        <div class="dropdown" style="display:none;right:0;">
+                                            <div class="toolbar toolbar-vertical">
+                                                <div class="actionbtn upload-attachment-btn icon-attachment">
+                                                    <span class="always-show">{{COMPOSE_ATTACHMENTS_TITLE}}</span>
+                                                </div>
+                                                <div class="actionbtn upload-esignature-btn icon-ribbon-b">
+                                                    <span class="always-show">{{COMPOSE_ESIGNATURE_TITLE}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="toolbar-row">
+                        <td colspan="2" class="input single" id="editorContainer"></td>
+                    </tr>
+                    <tr class="msg-attachments-row">
+                        <td colspan="2">
+                            <div class="msg-attachments attachments-panel" id="SEM-ds-module-composebox-attachment">
+                            </div>
+							<div class="msg-esignatures attachments-panel" id="SEM-ds-module-composebox-esignature">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" class="previous-thread-table">
+                    <tr>
+                        <td class="input single">
+                            <div class="previous-thread">
+                                <div class="previous-thread-txt">{{ORIGINAL_MESSAGE}}</div>
+                                <div class="previous-thread-body"></div>
+                                <!-- <div class="previous-thread-overlay"></div> -->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <div class="no-msg" style="display: none;">{{NO_MESSAGE}}</div>
+    </div>
+</script>

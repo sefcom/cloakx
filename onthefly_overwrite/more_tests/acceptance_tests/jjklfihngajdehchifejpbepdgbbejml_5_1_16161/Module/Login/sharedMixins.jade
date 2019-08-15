@@ -1,0 +1,16 @@
+mixin loginpoint(title,detail,root_class,block_class,icon_class,content)
+	//BEGIN:login-point
+	.login-point(class=root_class)
+		.login-point-icon(class=icon_class)
+			!=content
+		.login-point-block(class=block_class)
+			.login-point-title
+				| !{title}
+			.login-point-detail!=detail
+	//END:login-point
+
+mixin loginpoints
+	+loginpoint('{{SECURE}}','{{SECURE_DETAIL}}','','','login-icon-email')
+	+loginpoint('{{TRACK}}','{{TRACK_DETAIL}}', '','','login-icon-tracking')
+	+loginpoint('{{UACCESS}}','{{UACCESS_DETAIL}}', '','','login-icon-apps')
+	+loginpoint('{{GOGREEN}}','{{GOGREEN_DETAIL}}', '','','login-icon-go-green')

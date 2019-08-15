@@ -1,0 +1,50 @@
+html[dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak@2x.svg') 2x), auto !important;
+}
+
+html[dji-sru-speak-active][dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-active][dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak-off.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak-off@2x.svg') 2x), auto !important;
+}
+
+html[dji-sru-speak-waiting][dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-waiting][dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-wait.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-wait@2x.svg') 2x), auto !important;
+}
+
+.dji-sru-active #dji-sru-toast {
+    position: fixed;
+    bottom: 0;
+    min-width: 376px;
+    width: 376px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    line-height: 24px;
+    padding: 14px 24px;
+    z-index: 2147483610;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 2px;
+    display: none;
+}
+
+.dji-sru-outline-active #dji-sru-toast {
+	left: calc(50% - 221px);
+}
+
+.dji-sru-toast-info {
+    background-color: #323232;
+    color: white;
+}
+
+.dji-sru-toast-error {
+    background-color: #701010;
+    color: white;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dr.Web Link Checker</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="css/options.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/popup.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+        <div class="header">
+            <img src="css/images/logo.png" alt="Антивирус Dr.Web">
+        </div>
+        <div class="innerpad" id="sitesdata">
+                <div class="lockheader" id="trackerheader"></div>
+                <div class="blockeditem" id="trackblock" style="display: none;" expanded="false">
+                    <div class="headeritem" id="trackheader">
+                        <div class="name" id="trackname"></div>
+                        <div class="name" id="trackblockstring"></div>
+                        <div class="counter" id="trackcount">0</div>
+                    </div>
+                    <div class="blockedlist" id="tracklist"></div>
+                </div>
+                <div class="blockeditem" id="analyticsblock" expanded="false">
+                    <div class="headeritem" id="analyticsheader">
+                        <div class="name" id="analyticsname"></div>
+                        <div class="name" id="analyticsblockstring"></div>
+                        <div class="counter" id="analyticscount">0</div>
+                    </div>
+                    <div class="blockedlist" id="analyticslist"></div>
+                </div>
+                <div class="blockeditem" id="socialblock" expanded="false">
+                    <div class="headeritem" id="socialheader">
+                        <div class="name" id="socialname"></div>
+                        <div class="name" id="socialblockstring"></div>
+                        <div class="counter" id="socialcount">0</div>
+                    </div>
+                    <div class="blockedlist" id="sociallist"></div>
+                </div>
+                <div class="lockheader" id="contentheader"></div>
+                <div class="flashitem" id="flashblock">
+                    <div class="name" id="flashname"></div>
+                    <div class="styled-select"><select name="flashsettings" id="flashsettings">
+                        <option id="flashDefaultAllow" value="defaultAllow"></option>
+                        <option id="flashDefaultDeny" value="defaultDeny"></option>
+                        <option id="flashAllowHere" value="allowHere"></option>
+                        <option id="flashDenyHere" value="denyHere"></option>
+                    </select></div>
+                </div>
+                <div class="adsitem" id="adsblock">
+                    <div class="name" id="adsname"></div>
+                    <div class="styled-select"><select name="adssettings" id="adssettings">
+                        <option id="adsDefaultAllow" value="defaultAllow"></option>
+                        <option id="adsDefaultDeny" value="defaultDeny"></option>
+                        <option id="adsAllowHere" value="allowHere"></option>
+                        <option id="adsDenyHere" value="denyHere"></option>
+                    </select></div>
+                </div> 
+                <div class="settings-icon" id="settingsButton" style="display: none;"></div>
+                <div class="switchitem">
+                     <div id="switchMode" class="switcher"></div>
+                </div>
+        </div>
+        <input type="checkbox" id="lc_menu_checkbox"/>
+        <label for="lc_menu_checkbox" class="lc_menu_hamburger"></label>
+        <div class="lc_menu_wrap">
+            <label class="lc_menu_wrap-left" for="lc_menu_checkbox"></label>
+            <div class="lc_menu_wrap-right">
+                <!--<div class="lc_menu_item lc_menu_item-ad" data-id="ads" data-lang="reportMissedAds"></div>-->
+                <div class="lc_menu_item lc_menu_item-settings" data-id="settings" data-lang="options">Настройки</div>
+                <!--<div class="lc_menu_item lc_menu_item-manual" data-id="manual">Справка</div>-->
+            </div>
+            <div class="lc_menu_wrap-copyright">&copy;<a href="http://www.drweb.com/" class="lc_menu_link" data-id="site"><span data-lang="copyright"></span>, 1992 ‒ 2015</a></div>
+        </div>
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/$m.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
+	</body>
+</html>

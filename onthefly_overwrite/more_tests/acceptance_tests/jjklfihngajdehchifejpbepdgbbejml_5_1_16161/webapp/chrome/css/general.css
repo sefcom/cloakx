@@ -1,0 +1,44 @@
+.ui-loader {
+	display: none;
+}
+
+* {
+	outline: none;
+	box-sizing: initial !important;
+}
+
+.btn {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.loader {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	opacity: 1;
+	border-radius: 0 0 0 0;
+}
+
+.splash-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.splash-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}

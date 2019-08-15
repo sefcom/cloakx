@@ -1,0 +1,88 @@
+include ../Login/mixins.jade
+
+mixin registerinput(title,box_class,showTitle,wrapper_class)
+	.input-wrapper(class=wrapper_class)
+		if showTitle
+			.input-title= title
+		.input-box(class=box_class)
+			block
+
+script#registration-template(type='text/x-handlebars-template')
+	.login-logo
+		table.penLogin-peninfo(cellspacing='0', cellpadding='0')
+			tbody
+				tr.icon-row
+					td(width='46')
+						.penLogo
+							img(width='46', height='46', src='')
+					td(style='vertical-align:middle')
+						.penName {{penName}}
+				tr.banner-row
+					td
+						img.penBanner(width='700', height='46', src='')
+	.login-register-step-holder
+		.login-register-step
+			.login-register-holder.active
+				.login-register-number 1
+				.login-register-name {{REGISTER}}
+			.login-register-holder
+				.login-register-number 2
+				.login-register-name {{SECURITY_VALIDATION}}
+			.login-register-holder
+				.login-register-number 3
+				.login-register-name {{LOGIN}}
+	//.login-register-title
+					//	| {{REGISTERATION}} -&nbsp;
+					//	span.penName
+	.login-holder-wrapper
+		.login-holder.clear
+			.login-form.register-form
+				.form-fields.wrapper
+					h1 Secure Registration
+					+registerinput('{{EMAIL_ADDRESS}}')
+						input#register_user(type='email', value='', autocapitalize='off', placeholder='{{EMAIL_ADDRESS}}')
+					//.input-wrapper.icon-caution
+					//	.input-hint='{{{EMAIL_HINT}}}'
+					+registerinput('{{FIRST_NAME}}','')
+						input#register_first_name(type='text', value='', autocapitalize='off', placeholder='{{FIRST_NAME}}')
+					+registerinput('{{LAST_NAME}}','')
+						input#register_last_name(type='text', value='', autocapitalize='off', placeholder='{{LAST_NAME}}')
+					+registerinput('{{PASSWORD}}')
+						input#register_password(type='password', value='', placeholder='{{PASSWORD}}')
+					//.input-wrapper.icon-caution
+					//	.input-hint='{{{PASSWORD_HINT}}}'
+					+registerinput('{{CONFIRM_PASSWORD}}')
+						input#register_password_confirm(type='password', value='', placeholder='{{CONFIRM_PASSWORD}}')
+					+registerinput('{{CRA}}')
+						input#register_cra(type='text', value='', autocapitalize='off', placeholder='')
+					+registerinput('{{LANGUAGE}}','text',true,'language-region')
+						select#register_language
+							option(value='de') Deutsch
+							option(value='en') English
+							option(value='es') ‎español
+							option(value='fr') français
+							option(value='nl') Nederlands
+							option(value='ja') 日本語
+							option(value='zh') 简体中文
+					+registerinput('','','','privacy-policy-region')
+						.checkbox#register_terms.terms_accept
+						label(for='terms_accept')
+							a#register_terms_link(rel='external', target='_blank') {{TERMS}}
+				.error-message
+				.btn-submit.btn.btn-normal.btn-block.register-submit.icon-user-add {{REGISTER}}
+				.btn-back-login.btn.btn-normal.btn-block.icon-reply {{BACK_TO_LOGIN}}
+				.clear
+				ul.login-extra
+					li.cra-link
+						a.sender-help(rel='external', target='_blank') {{SENDER_HELP}}
+					li.cra-link
+						a.recipient-help(rel='external', target='_blank') {{RECIPIENT_HELP}}
+			.login-detail.register-detail
+				.wrapper.help-me-please
+					+loginpoint('{{{REGISTER_DETAIL_SUBTITLE}}}','{{{REGISTER_DETAIL}}}','','','icon-info-circled high-light')
+					.login-point
+						.login-point-icon.icon-caution
+						.login-point-block
+							.login-point-detail {{REGISTER_DETAIL_AFTER}}
+							.login-point-detail {{REGISTER_DETAIL_AFTER_2}}
+							.login-point-detail {{REGISTER_DETAIL_AFTER_3}}

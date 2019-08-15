@@ -1,0 +1,180 @@
+.dji-sru-toolbar {
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    /*right: 410px;*/
+    width: 32px;
+    /*min-height: 415px;*/
+    height: 100vh;
+    background-color: #212121;
+    z-index: 999999999;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    -webkit-user-select: none;
+    cursor: default;
+    display: block;
+}
+
+.dji-sru-toolbar table{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    color: white;
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+.dji-sru-toolbar table td {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.dji-sru-toolbar-only{
+    top: 0px;
+    right:0px;
+}
+
+.dji-sru-clear-style {
+    all: initial;
+}
+
+div.dji-sru-outline-title-in-toolbar{
+
+    position:absolute;
+    bottom:58px;
+    max-width: 200px;
+    right:100%;
+    transform-origin: bottom right;
+    transform:rotate(90deg);
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 32px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+
+.dji-sru-toolbar-button-container {
+    width: 32px;
+    height: 32px;
+}
+
+.dji-sru-toolbar-button {
+    width: 32px;
+    height: 32px;
+    margin: 4px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dji-sru-toolbar-button:first-of-type {
+	margin: 12px 0 4px 0;
+}
+
+.dji-sru-toolbar-button.dji-sru-disabled {
+    cursor: default;
+}
+
+.dji-sru-toolbar-button:hover{
+    background-color: rgba(255, 255, 255, .12);
+}
+
+.dji-sru-toolbar-button:active {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.dji-sru-disabled {
+    opacity: 0.3;
+}
+
+.dji-sru-hidden {
+    display: none;
+}
+
+/* Toolbar buttons */
+#__dji_sru_speakButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/speak.svg');
+}
+
+#__dji_sru_speakButton.dji-sru-active {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/speak-active.svg');
+}
+
+#__dji_sru_speakButton:not(.dji-sru-disabled) {
+    cursor: pointer !important;
+}
+
+#__dji_sru_screenshotButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/screenshot.svg');
+}
+
+#__dji_sru_screenshotButton.dji-sru-active {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/screenshot-active.svg');
+}
+
+#__dji_sru_rewordifyButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/rewordify.svg');
+}
+
+#__dji_sru_rewordifyButton.dji-sru-active {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/rewordify-active.svg');
+}
+
+#__dji_sru_translateButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/translate.svg');
+}
+
+#__dji_sru_translateButton.dji-sru-active {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/translate-active.svg');
+}
+
+#__dji_sru_highlightButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/highlightMainToolbar.svg');
+}
+
+#__dji_sru_highlightButton.dji-sru-active {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/highlightOnMainToolbar.svg');
+}
+
+/*new*/
+#__dji_sru_showButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/toolbarExpand.svg');
+    position: absolute;
+    bottom: 12px;
+}
+
+html.dji-sru-outline-active #__dji_sru_showButton {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/toolbarCollapse.svg');
+}
+
+/* No print */
+
+@media print
+{
+    .dji-sru-no-printable, .dji-sru-no-printable *
+    {
+        display: none !important;
+    }
+}
+
+/* short browser height*/
+
+@media screen and (max-height: 450px) {
+	.dji-sru-outline-title-in-toolbar {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 225px) {
+	#__dji_sru_showButton {
+		position: absolute;
+		top: 175px;
+	}
+}

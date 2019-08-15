@@ -1,0 +1,506 @@
+/**************** DASHBOARD ***************************/
+$ua-icon-width = 32px
+$ua-icon-top = -49px
+
+#page-dashboard {
+	background-color white
+	width $dashboard_width
+	box-sizing border-box
+	overflow-x hidden
+	overflow-y auto
+
+	///* IE10+ CSS Fix for min-height:100% issue */
+	//@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	//	display flex !important
+	//	flex-direction row !important
+	//	//border 2px solid lime !important
+	//}
+
+	#dashboard {
+		display flex
+		flex-direction column
+		box-sizing border-box
+		height 100% !important
+		width 100%
+		//overflow auto
+
+		> div {
+			width 100%
+		}
+
+		.dashboard-wrapper{
+			flex 1 0 auto
+
+			//Container for Compose Button
+			#dashboard-header {
+				min-height 60px
+
+				.compose-btn {
+					display block
+					width 80% !important
+					margin 2em auto 0em
+					box-sizing border-box
+				}
+			}
+
+			//Container for Dashboard folder, or mobile user menu
+			#dashboard-container {
+				//flex auto
+
+				.profile-menu-mobile{
+					width 100%
+
+					//Mobile Menu
+					.penLogin-peninfo {
+						padding: 10px 0 10px 10px;
+
+						.penLogo {
+							background: #ddd;
+							padding: 3px;
+							box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+							border-radius: 5px;
+							margin-right: 10px;
+
+							img {
+								display: block;
+							}
+						}
+
+						.penName {
+							font-weight: bold;
+							font-size: 18px;
+						}
+						.penUser {
+							padding-top: 2px;
+							font-size: 12px;
+						}
+						.penPackage {
+							padding-top: 2px;
+							font-size: 12px;
+							color: #444;
+						}
+					}
+				}
+
+
+				//Compatibility mode link
+				.compatable-mode {
+					background lighten(lemonchiffon, 3) !important
+					border 1px solid darken(lemonchiffon, 45) !important
+					margin 12px 8px 8px 0 !important
+					padding 8px
+					list-style none !important
+					font-size 0.9rem
+
+					* {
+						color #000 !important
+					}
+
+					.icon-caution {
+						text-align center
+						margin-bottom 10px
+						&:before {
+							font-size 20px !important
+							color: red
+						}
+					}
+					.title {
+						font-weight: bold
+						display block
+						margin-bottom 3px
+						font-size 12px
+						text-align center !important
+					}
+					.text {
+						line-height 140%
+						margin-bottom 1em
+					}
+				}
+			}
+
+			//Container for PoweredBy Logo should be docked to the bottom
+		}
+
+		.powered-by-footer-dashboard {
+			height 100px !important
+			//min-height 100px !important
+			border-top 1px solid #ccc !important
+			flex none
+
+			.penPowerByHolder {
+				background: #fff;
+				padding: 5px 0;
+				display: block;
+				margin: 13px;
+
+				.powerByText {
+					font-size: 9px;
+					color: #666;
+					text-transform: uppercase;
+					text-align: left;
+				}
+
+				.penPowerBy {
+					background-color: #fff;
+					background-image: url(../images/powerbyHolder.png);
+					background-position: center center;
+					background-repeat: no-repeat;
+					margin: 5px 0px;
+					display: block;
+					width: 107px;
+					height: 34px;
+					text-align: center;
+
+					img {
+						margin-top: 9px;
+					}
+				}
+			}
+		}
+
+		//Customize Panels for Dashboard only. Should consider moving this to UIFramework
+		.panel {
+
+			.panel-header {
+
+				font-size: 14px;
+
+				@media screen and (max-width: $media_width_phone) {
+					padding-top 8px !important
+					padding-bottom 8px !important
+					font-size 16px !important
+					width: 100%;
+
+					&:after {
+						margin-right: 20px;
+						font-weight: bold !important;
+					}
+				}
+
+				@media screen and (min-width: $media_width_tablet+ 1) and (max-width: $media_width_laptop) {
+					//max-width: 190px;
+					/*height 200px !important*/
+					//border 1px solid red !important
+				}
+			}
+		}
+	}
+}
+
+
+#dashboard .list-header{
+
+	&.activesync-title {
+	  	height: inherit;
+		min-height: 32px;
+		/*margin-bottom: 10px;*/
+		margin-left: 0;
+		position: relative;
+		font-weight: bold
+
+		span {
+			margin-left:0;
+			/*background-color: pink;*/
+			/*line-height: 100%;*/
+			min-height: 32px;
+			display: inline-block;
+			vertical-align: bottom;
+			position: absolute;
+			bottom:0;
+		}
+	}
+}
+
+#dashboard ul{
+	font-size: 0.9rem;
+}
+
+#dashboard li{
+	position:relative;
+	padding: 1px 0px;
+
+	&.active a{
+		font-weight: bold;
+		color: white!important;
+	}
+
+	a{
+		display:block;
+		padding:3px 10px;
+		color $default_font_color
+
+		@media screen and (max-width: $media_width_tablet){
+			font-size 1.1em
+			padding 10px
+		}
+	}
+}
+
+
+#dashboard li.active a {
+    background: #555;
+    color: white;
+}
+
+#badge-unread{
+	color: #444;
+	padding: 5px;
+}
+
+#dashboard li.active #badge-unread{
+	color: white;
+}
+
+#dashboard .login-link {
+	cursor: pointer;
+}
+
+#dashboard .list-header .actionbtn {
+    width: 24px;
+    height: 32px;
+    float: right;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+#dashboard .list-header .actionbtn:before {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+#dashboard .universal-access {
+
+    .icon-office {
+      display none
+    }
+}
+
+#dashboard .folder-list {
+	margin-bottom: 10px;
+
+	@media screen and (max-width: $media_width_phone) {
+		margin-bottom: 10px !important;
+
+		li {
+			padding 2px 0
+			font-size 1.1em
+
+			a:hover {
+				background-color $panel_background_color !important
+			}
+		}
+	}
+}
+
+#dashboard .access-item {
+	display: inline-block;
+	margin: 2px 15px;
+	&:hover {
+		opacity: 0.85;
+	}
+}
+
+#dashboard .block.list-block {
+    padding-left: 10px;
+}
+
+#dashboard .block.list-block li a {
+    padding: 3px 0px;
+    /*height: 16px;*/
+    line-height: 16px;
+}
+
+#dashboard .block.list-block li{
+	margin-left: 15px;
+	margin-right: 15px;
+	list-style: square;
+	line-height: 20px;
+}
+
+#dashboard .block-section{
+    //background: white;
+}
+
+#dashboard .sub-block {
+	background: white;
+	border-top: 1px solid #eee;
+	padding: 10px;
+
+	&:first-child {
+		border-top: none;
+	}
+
+	a {
+		color: #444;
+		font-size: 14px;
+
+		&:before {
+			margin-right: 5px;
+			width 1.25em !important
+			display inline-block !important
+		}
+	}
+}
+
+#dashboard .universal-icon {
+	width: $ua-icon-width;
+	height: $ua-icon-width;
+	padding 0
+	margin 5px
+	display inline-block !important
+
+	&:before{
+		font-size 22px
+		//line-height 160%
+	}
+}
+
+if false {
+	#dashboard .icon-mac {
+		background-position: -($ua-icon-width* 8) $ua-icon-top;
+	}
+
+	#dashboard .icon-blackberry {
+		background-position: -($ua-icon-width* 1) $ua-icon-top;
+	}
+
+	#dashboard .icon-windows {
+		background-position: -($ua-icon-width* 2) $ua-icon-top;
+	}
+
+	#dashboard .icon-outlook {
+		background-position: -($ua-icon-width* 3) $ua-icon-top;
+	}
+
+	#dashboard .icon-google-play {
+		background-position: -($ua-icon-width* 4) $ua-icon-top;
+	}
+
+	#dashboard .icon-office {
+		background-position: -($ua-icon-width* 5) $ua-icon-top;
+	}
+
+	#dashboard .icon-chrome {
+		background-position: -($ua-icon-width* 6) $ua-icon-top;
+	}
+
+	#dashboard .icon-ios {
+		background-position: -($ua-icon-width* 7) $ua-icon-top;
+	}
+
+	#dashboard .icon-apple {
+		background-position: 0 0;
+	}
+}
+
+#dashboard .icon-blocks:before {
+    font-size 21px !important;
+    line-height 100%;
+}
+
+#dashboard .list-header .arrow-icon {
+    display: inline;
+}
+
+#dashboard .folder-selector {
+    position: absolute;
+    background: white;
+    border: 1px solid #eee;
+    color: #444;
+    width: 150px;
+    z-index: 1;
+    top: 30px;
+    left: 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+}
+
+#dashboard .folder-selector .selector-item{
+    padding: 10px 5px;
+    border-top: 1px solid #eee;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+#dashboard .folder-selector .selector-item:first-child{
+    border-top: 0px;
+}
+
+#dashboard .dashboard-list {
+    margin-bottom: 20px;
+}
+
+#dashboard .user-list {
+    margin-bottom: 20px;
+}
+
+#chrome-extension-inline-settings .title {
+    margin-left: 5px;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+#chrome-extension-inline-settings span{
+    margin-left: 5px;
+}
+
+// support info
+.btn-support
+	cursor pointer
+
+.support-info
+	text-align left
+
+	> div
+		user-select text
+
+	.label
+		width 120px
+		margin-right 10px
+		margin-bottom 7px
+		display inline-block
+		font-weight bold
+		text-align right
+		float left
+		user-select text
+
+.profile-menu-mobile{
+	background-color #444 !important
+	box-sizing border-box
+	margin-bottom 2em
+	padding-top 1em !important
+	box-sizing border-box
+
+	* {
+		color: #ddd !important
+	}
+
+	.sub-block {
+		background: transparent !important;
+		border-top: 1px solid #4f4f4f !important;
+		padding 0 !important
+
+		&:first-child {
+			border-top: none !important;
+			padding 15px !important
+		}
+
+		a {
+			padding: 15px !important
+			box-sizing: border-box
+			display block
+
+			&:before {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.activesync-title {
+	padding: 10px
+	font-weight: bold
+	cursor: pointer
+	margin-bottom: 15px
+	margin-left: 10px
+}
+

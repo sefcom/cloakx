@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"Skip Annunci YouTube Automaticamente"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"Immediatamente ignorare l'annuncio che suona prima di un video di YouTube. Automatico. Funziona su tutti i siti web."
+	}
+}

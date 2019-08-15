@@ -1,0 +1,33 @@
+{
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "all_frames": true,
+        "js": ["scripts/content-script.js"]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "19": "img/browser-icon-small.png",
+            "38": "img/browser-icon-big.png"
+        },
+        "default_title": "Web PKI options"
+    },
+    "description": "Extension to use digital certificates within webpages",
+    "default_locale": "en",
+    "icons": {
+        "128": "img/icon128.png",
+        "32": "img/icon32.png",
+        "48": "img/icon48.png",
+        "16": "img/icon16.png"
+    },
+    "manifest_version": 2,
+    "background": {
+        "persistent": false,
+        "scripts": ["scripts/event-page.js"]
+    },
+    "version": "2.9.2",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnBavkR258p13MrjMWNxXdyRgS+/G6XoyudG/YbrgrN/5uevgc3uFvIYqC7yYveP7HNRL0rao1qr3xNJAEaszNbHO5OxbPNGdOsORz2XQWe4VmjPq+EZ/0fpHc+JFI8z4Bhc4jMSgzwVQL/0TeA4F9QLWU0AhGyaN6UlZzh6rcGn7TXb/Xudo5bg5x3H++TFq9K625LIdknQNtq2a/e2slSs5OaegLc48oXggYjVn4Xur6fOf1NXkoUccHG6vU/penuDWQQtz3xkHgTuu51IpriVIRvYt6V4EWsDwqsFBMAaYjziUtsNOy6FScBM99NO83t7o5qLfqUYd+vODAgj/xQIDAQAB",
+    "permissions": ["nativeMessaging", "storage", "downloads"],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "name": "Web PKI"
+}

@@ -1,0 +1,107 @@
+.sd_header, .main-header, .app, .page-game__top__info {
+    background: #000 !important;
+    border-bottom: solid 1px #ccc !important;
+}
+
+.sd_footer {
+    background: #333333 !important;
+    border-top: solid 1px #ccc !important;
+}
+
+#wrapper, #topwrapper {
+    background: #000 !important;
+}
+
+.topwrapper_content_wrapper, .video__infos, .main-block, .browseby__content {
+    background-color: #1d1d1d !important;
+    border: none !important;
+}
+
+.pl_user_featured .col-4 {
+    background: #1d1d1d !important;
+}
+
+.user_header__details {
+    background: #000 !important;
+}
+
+#content {
+    background: #1d1d1d !important;
+}
+
+h1, h2, h3, h2 a, h3 a {
+    color: #ccc !important;
+}
+
+input, .dmc--light {
+    background: #ccc !important;
+}
+
+a.btn, button.btn, .btn {
+    background: #1a1a1a !important;
+}
+
+span.foreground {
+    color: #ccc !important;
+}
+
+.tipsy {
+    background: #ccc !important;
+}
+
+.tipsy-inner {
+    background: #000 !important;
+}
+
+.tipsy-profile-menu-inner {
+    background: #666 !important;
+}
+
+.navigation-panel {
+    background: #000 !important;
+}
+
+.navigation-panel a, span {
+    color: #ccc !important;
+}
+
+#navigation-panel {
+    background-color: #000 !important;
+}
+
+.pdg-btm-lg {
+    background-color: #000 !important;
+}
+
+.channel-body {
+    background: #000 !important;
+}
+
+#dropzone {
+    background: #000 !important;
+}
+
+textarea {
+    background: #000 !important;
+    color: #7F7F7F !important;
+}
+
+textarea:focus {
+    background: #000 !important;
+}
+
+textarea:hover {
+    background: #eee !important;
+}
+
+#video_description, .js-comment-text, .link-on-hvr {
+    color: #7F7F7F !important;
+}
+
+.username__label {
+    color: #7F7F7F !important;
+}
+
+.room-message__m span, .video-item__title, .ranking-list li a, .ranking-list__game span, .ranking-list__game p {
+    color: #fff !important;
+}

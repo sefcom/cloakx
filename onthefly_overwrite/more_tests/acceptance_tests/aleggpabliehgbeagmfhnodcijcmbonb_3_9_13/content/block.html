@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title data-lang="block_title">Page blocked</title>
+<style>
+html,body{height: 100%;}
+body{font: 14px/16px Arial; display: table; margin: 0; width: 100%; }
+.lbp_wrap{display: table-cell;vertical-align: middle;}
+.lbp_inner{width: 545px; padding: 70px 0 0 75px; margin: 0 auto; background: url(icons/shield_blocked.png) 0 70px no-repeat, url(icons/block_logo.png) 45px 0 no-repeat;}
+.lbp_liter1{font-size: 24px; line-height: 48px; color: #484949; margin: 0 0 22px 0; font-weight: normal;}
+.lbp_liter2{font-size: 14px; line-height: 21px; color: #9b9b9b; margin: 0 0 22px 0;}
+.lbp_dark{color: #484949;}
+.lbp_btn{display: inline-block;font-size: 13px; line-height: 20px; color: #4f6154; padding: 2px 18px; border-radius: 2px; border: 1px solid #8bca00; background: #93d829; cursor: pointer;}
+.lbp_btn:hover{background-color: #fff;}
+.lbp_btn-wrap{margin: 0 0 22px 0;}
+.lbp_liter3{font-size: 13px; line-height: 20px; color: #898989; word-break: break-all; width: 100%; }
+#chbox, #hide, #link, #chbox:checked ~ #show{display: none;}
+.lbp_link{display: inline-block; text-decoration: underline; margin: 0 0 14px 0; cursor: pointer; color: #7bbd00;}
+.lbp_link:hover{ text-decoration: none;}
+#chbox:checked ~ #hide{display: inline-block;}
+#chbox:checked ~ #link{display: block;}
+</style>
+</head>
+<body>
+	<div class="lbp_wrap">
+		<div class="lbp_inner">
+			<h1 class="lbp_liter1" data-lang="block_title">Page blocked by Dr.Web LinkChecker</h1>
+			<div class="lbp_liter2"><span data-lang="block_mes_part1">Dr.Web заблокировал переход по рекламной ссылке, чтобы обеспечить вашу приватность. Если вы всё-таки хотите пройти по ссылке, нажмите кнопку</span> <span class="lbp_dark"><span data-lang="block_open_incognito">Открыть инкогнито</span></span><span data-lang="block_mes_part2">, в этом случае ссылка будет открыта в браузере в режиме инкогнито. Чтобы не получать подобные предупреждения, измените уровень блокировки в настройках Dr.Web LinkChecker.</span></div>
+			<div class="lbp_btn-wrap">
+				<span class="lbp_btn" id="open-btn" data-lang="block_open_incognito2">Открыть инкогнито</span>
+			</div>
+			<input type="checkbox" id="chbox"/>
+			<label for="chbox" id="show" class="lbp_link" data-lang="block_additional">Дополнительно</label>
+			<label for="chbox" id="hide" class="lbp_link" data-lang="block_hide_additional">Скрыть детали</label>
+			<div id="link" class="lbp_liter3"></div>
+		</div>
+	</div>
+	<script src="/content/js/blockPage.js"></script>
+</body>
+</html>
+
+
+
+

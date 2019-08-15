@@ -1,0 +1,174 @@
+.onthefly_W7QqtfUboUY_css {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    border-radius: 4px;
+    transform: translatey(0);
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0.9
+    }
+.onthefly_W7QqtfUboUY_css.hidden {
+    display: none
+    }
+.onthefly_W7QqtfUboUY_css .onthefly_KviYTVmqvvB_css {
+    opacity: 0;
+    transition: all 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    }
+.onthefly_W7QqtfUboUY_css:before {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #FFF;
+    content: "";
+    top: 20px;
+    left: 20px;
+    color: #FFF;
+    border-radius: 50%;
+    -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+.onthefly_W7QqtfUboUY_css.active {
+    display: block;
+    visibility: visible;
+    box-shadow: 5px 10px 50px -5px rgba(0, 0, 0, 0.57);
+    transition: all 600ms;
+    transform: translatey(0);
+    transition: all 0.5s
+    }
+.onthefly_W7QqtfUboUY_css.active:before {
+    height: 2000px;
+    width: 2000px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    margin-left: -1000px;
+    margin-top: -1000px;
+    display: block;
+    -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+.onthefly_W7QqtfUboUY_css.active .onthefly_KviYTVmqvvB_css {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    }
+.onthefly_KviYTVmqvvB_css {
+    /*width: 200px;*/
+    background-color: #EEE;
+    border-radius: 5px;
+    border: 5px solid #222;
+    -webkit-box-shadow: 5px 10px 50px -5px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 5px 10px 50px -5px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 10px 50px -5px rgba(0, 0, 0, 0.57)
+    }
+.onthefly_XaoVTKPgOXU_css {
+    /* TODO */
+    }
+.onthefly_PEs9XPSRw6n_css {
+    background-color: #222
+    }
+.onthefly_PEs9XPSRw6n_css:after {
+    content: "";
+    display: table;
+    clear: both
+    }
+.onthefly_ER2LFQkN4rU_css {
+    height: 29px;
+    padding: 10px;
+    float: left
+    }
+.onthefly_RaJEkNed6xL_css {
+    float: right;
+    color: #FFF;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px
+    }
+.onthefly_tbb7aiAVdBJ_css {
+    padding: 5px 10px
+    }
+.onthefly_tbb7aiAVdBJ_css:after {
+    content: "";
+    display: table;
+    clear: both
+    }
+.onthefly_XQWL0TDEO79_css {
+    font-size: 1em;
+    font-weight: bold;
+    width: 30px;
+    float: left;
+    text-align: center
+    }
+.onthefly_OdS4oSq1FZ7_css {
+    font-weight: bold;
+    padding-top: 5px
+    }
+.circle {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 0.9em;
+    line-height: 18px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold
+    }
+.onthefly_8XD1WRnKwTh_css {
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    border: 0;
+    border-spacing: 0
+    }
+.onthefly_cUT48yU2WHA_css {
+    border-top: 2px solid black;
+    background-color: #EEE
+    }
+.onthefly_cUT48yU2WHA_css:first-child {
+    border-top: 6px solid #000
+    }
+.onthefly_cUT48yU2WHA_css:last-child {
+    border-bottom: 2px solid #000
+    }
+.onthefly_cUT48yU2WHA_css:after {
+    content: "";
+    display: table;
+    clear: both
+    }
+.onthefly_dFshjOn8a0o_css {
+    width: 30px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    position: relative
+    }
+.onthefly_dFshjOn8a0o_css:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    border-left: 1px solid #000
+    }
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 10px);
+    bottom: 0;
+    left: calc(50% - 10px);
+    color: #FFF;
+    font-size: 0.8em;
+    line-height: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold
+    }

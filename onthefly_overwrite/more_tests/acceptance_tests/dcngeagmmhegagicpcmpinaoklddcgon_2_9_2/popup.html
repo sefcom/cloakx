@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="css/pure.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/popup.css" rel="stylesheet" type="text/css">
+	<title>Web PKI options</title>
+</head>
+<body>
+	<div id="content">
+		
+		<div id="personal-certificates" class="section">
+			<h2 data-message="personalCertificates"></h2>
+			<div id="certs-container">
+				<div id="loading-certs-msg" data-message="loading">
+				</div>
+				<table id="certs-table" class="pure-table pure-table-horizontal">
+					<thead>
+						<tr>
+							<th data-message="subject"></th>
+							<th data-message="issuer"></th>
+							<th data-message="expiration"></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+			<p>
+				<a id="refresh-certs-button" class="pure-button" href="#"><i class="fa fa-refresh"></i> <span data-message="refresh"></span></a>
+				<a id="import-cert-button" class="pure-button" href="#"><i class="fa fa-reply fa-rotate-270"></i> <span data-message="importPkcs12"></span></a>
+				<a id="config-pkcs11" class="pure-button" href="#" style="display: none;"><i class="fa fa-cogs"></i> <span data-message="configurePkcs11"></span></a>
+			</p>
+		</div>
+
+		<div id="settings" class="section">
+			<h2 data-message="settings"></h2>
+			<ul class="settings">
+				<li><a id="trusted-sites-button" class="pure-button" href="#"><i class="fa fa-thumbs-o-up"></i> <span data-message="showTrustedSites"></span></a></li>
+			</ul>
+		</div>
+		
+		<div id="advanced-settings" class="section">
+			<h2>Advanced Settings</h2>
+			<ul class="settings">
+				<li><input id="traceCheckbox" type="checkbox" /> <span data-message="verboseLogging"></span></li>
+			</ul>
+		</div>
+		
+		<div class="footer">
+			<a id="toggle-advanced-link" href="#" data-message="showAdvancedSettings"></a>
+		</div>
+	</div>
+
+	<div id="pkcs11-panel" class="dialog">
+		<div class="dialog-content">
+			<h2 data-message="pkcs11Title"></h2>
+			<p data-message="pkcs11Subtitle"></p>
+			<ul id="standardModuleList" class="settings"></ul>
+			<h3 data-message="pkcs11CustomTitle"></h3>
+			<p data-message="pkcs11CustomSubtitle"></p>
+			<div id="pkcs11-wrapper">
+				<table id="customModuleTable" class="pure-table pure-table-striped custom-module-table">
+					<tbody></tbody>
+				</table>
+			</div>
+			<input type="text" id="custom-pkcs11-input" data-localized="placeholder: pkcs11ModuleNamePlaceholder" />
+			<a id="add-custom-pkcs11-button" class="pure-button button-small" href="#"><i class="fa fa-plus"></i> <span data-message="add"></span></a>
+		</div>
+		<div class="dialog-buttons">
+			<a id="pkcs11-panel-ok-button" class="pure-button pure-button-primary" href="#"><i class="fa fa-check"></i> <span data-message="ok"></span></a>
+			<a id="pkcs11-panel-cancel-button" class="pure-button" href="#"><i class="fa fa-times"></i> <span data-message="cancel"></span></a>
+		</div>
+	</div>
+
+	<div id="trusted-sites-dialog" class="dialog">
+		<div class="dialog-content">
+			<h2 data-message="trustedSites"></h2>
+			<p id="trusted-sites-msg" data-message="trustedSitesSubtitle"></p>
+			<p id="no-trusted-sites-msg" data-message="noTrustedSites"></p>
+			<div id="trusted-sites-table-wrapper">
+				<table id="trusted-sites-table" class="pure-table pure-table-striped">
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+		<div class="dialog-buttons">
+			<a id="trusted-sites-dialog-close-button" class="pure-button" href="#"><i class="fa fa-check"></i> <span data-message="close"></span></a>
+		</div>
+	</div>
+
+	<div id="wait-dialog" class="wait-dialog" data-message="pleaseWait">
+	</div>
+
+	<div id="not-installed-dialog" class="dialog">
+		<h2 data-message="notInstalledTitle"></h2>
+		<p data-message="notInstalledMessage"</p>
+		<div class="dialog-buttons">
+			<a id="install-button" class="pure-button pure-button-primary" href="#"><span data-message="install"></span></a>
+		</div>
+	</div>
+
+	<div id="not-installed-dialog-linux" class="dialog">
+		<h2 data-message="notInstalledTitle"></h2>
+		<p data-message="notInstalledMessage"</p>
+		<div class="dialog-buttons">
+			<a id="install-deb-button" class="pure-button pure-button-primary" href="#"><span data-message="installDeb"></span></a>
+			<a id="install-rpm-button" class="pure-button pure-button-primary" href="#"><span data-message="installRpm"></span></a>
+		</div>
+	</div>
+
+	<div id="downloading-dialog" class="dialog" data-message="downloadingMessage">
+	</div>
+
+	<div id="downloaded-dialog" class="dialog">
+		<h2 data-message="downloadedTitle"></h2>
+		<p>
+			<span data-message="downloadedMessagePart1"></span>
+			<b data-message="downloadedMessagePart2"></b>
+			<span data-message="downloadedMessagePart3"></span>
+		</p>
+		<p style="font-size: 0.9em">
+			<span data-message="redownloadMessagePart1"></span>
+			<a id="redownload-setup-button" href="#" data-message="clickHere"></a>
+			<span data-message="redownloadMessagePart2"></span>
+		</p>
+	</div>
+
+	<div id="downloaded-dialog-linux" class="dialog">
+		<h2 data-message="downloadedTitle"></h2>
+		<p>
+			<span data-message="downloadedMessagePart1"></span>
+			<b data-message="downloadedMessagePart2"></b>
+			<span data-message="downloadedMessagePart3"></span>
+		</p>
+		<p style="font-size: 0.9em">
+			<span data-message="redownloadMessageLinux"></span>
+			<ul style="font-size: 0.9em">
+				<li>
+					<span data-message="redownloadMessageLinuxDeb"></span>
+					<a id="redownload-setup-deb-button" href="#" data-message="clickHere"></a>
+				</li>
+				<li>
+					<span data-message="redownloadMessageLinuxRpm"></span>
+					<a id="redownload-setup-rpm-button" href="#" data-message="clickHere"></a>
+				</li>
+			</ul>
+		</p>
+	</div>
+
+	<div id="outdated-dialog" class="dialog">
+		<h2 data-message="outdatedTitle"></h2>
+		<p data-message="outdatedMessage"</p>
+		<div class="dialog-buttons">
+			<a id="update-button" class="pure-button pure-button-primary" href="#"><span data-message="update"></span></a>
+		</div>
+	</div>
+
+	<div id="outdated-dialog-linux" class="dialog">
+		<h2 data-message="outdatedTitle"></h2>
+		<p data-message="outdatedMessage"</p>
+		<div class="dialog-buttons">
+			<a id="update-deb-button" class="pure-button pure-button-primary" href="#"><span data-message="updateDeb"></span></a>
+			<a id="update-rpm-button" class="pure-button pure-button-primary" href="#"><span data-message="updateRpm"></span></a>
+		</div>
+	</div>
+
+	<div id="error-dialog" class="dialog">
+		<h2 data-message="errorOccurred"></h2>
+		<p></p>
+		<div class="dialog-buttons">
+			<a id="error-dialog-close-button" class="pure-button" href="#"><i class="fa fa-check"></i> <span data-message="close"></span></a>
+		</div>
+	</div>
+
+	<div id="confirmDialog" class="dialog">
+		<h2></h2>
+		<p></p>
+		<div class="dialog-buttons">
+			<a id="confirmDialogOkButton" class="pure-button" href="#"><i class="fa fa-check"></i> <span></span></a>
+			<a id="confirmDialogCancelButton" class="pure-button" href="#"><i class="fa fa-times"></i> <span></span></a>
+		</div>
+	</div>
+
+	<div id="welcomeDialog" class="dialog">
+		<h2 data-message="welcomeTitle"></h2>
+		<p data-message="welcomeMessage"></p>
+		<p>
+			<a id="import-cert-button-welcome" class="pure-button" href="#"><i class="fa fa-reply fa-rotate-270"></i> <span data-message="importPkcs12"></span></a>
+			<a id="config-pkcs11-welcome" class="pure-button" href="#"><i class="fa fa-cogs"></i> <span data-message="configurePkcs11"></span></a>
+		</p>
+		<div class="dialog-buttons">
+			<a id="closeWelcomeDialogButton" class="pure-button" href="#"><span data-message="close"></span></a>
+		</div>
+	</div>
+
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/jquery.simplemodal.js"></script>
+	<script src="scripts/lib.js"></script>
+	<script src="scripts/popup.js"></script>
+</body>
+</html>

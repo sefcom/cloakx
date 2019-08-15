@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-211.000000, -525.000000)">
+            <g id="AW_icon" transform="translate(211.000000, 525.000000)">
+                <path d="M6.89933163,7.2854826 L4.96290682,1.39426956 L3.01936195,7.2854826 L6.89933163,7.2854826 L6.89933163,7.2854826 Z M10,12 L8.43473667,12 L7.35179954,8.65554955 L2.57424378,8.65554955 L1.49107697,12 L0,12 L4.02076299,0 L5.97923701,0 L10,12 L10,12 Z" id="Fill-1" fill="#6B74A9"></path>
+                <polyline id="Fill-6" fill="#1A1918" points="24.0000268 0 20.8468055 12 19.0302978 12 16.4797201 2.03900694 13.9864049 12 12.2102584 12 9.00002685 0 10.6540806 0 13.2041538 9.97746081 15.7138657 0 17.3515227 0 19.8857037 10.0740217 22.4196323 0 24.0000268 0"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

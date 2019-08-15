@@ -1,0 +1,373 @@
+{
+   "actionHeader": {
+      "message": "Действие"
+   },
+   "additionalText": {
+      "message": "\u003Cp>В вашем браузере установлено расширение Dr.Web Link Checker. Оно проверяет все внешние ссылки, по которым вы переходите с сайта drwebLinkName.\u003C/p>\u003Cp>Такие ссылки иногда используют злоумышленники, чтобы заманить на страницы с вредоносным содержимым или  поддельные веб-сайты для кражи личной информации. Это может угрожать вашей безопасности и безопасности вашего компьютера.\u003C/p>\u003Cp>Если вы решите перейти по внешней ссылке, ни в коем случае не вводите там:\u003C/p>\u003Cp>• личную информацию;\u003Cbr/>• логины и пароли к ресурсам, которые используете.\u003C/p>\u003Cp>Остерегайтесь рекламных ссылок и ссылок в сообщениях от незнакомых людей.\u003C/p>\u003Cp>Вручную ввести адрес известного вам сайта в адресной строке браузера безопаснее, чем переходить по ссылке.\u003C/p>"
+   },
+   "ads": {
+      "message": "Реклама:"
+   },
+   "adsExceptionDesc": {
+      "message": "Вы можете задать правила блокировки рекламы для определенных сайтов."
+   },
+   "adsExceptionHeader": {
+      "message": "Исключения при блокировке рекламы"
+   },
+   "adsSetup": {
+      "message": "Реклама"
+   },
+   "adsSetupDescription": {
+      "message": "Dr.Web Link Checker позволяет блокировать рекламные баннеры на веб-страницах."
+   },
+   "allowAll": {
+      "message": "Разрешить все"
+   },
+   "allowAllDesc": {
+      "message": "Dr.Web Link Checker не будет проверять и блокировать содержимое веб-страниц."
+   },
+   "allowHere": {
+      "message": "Разрешить для данного сайта&nbsp;&nbsp;"
+   },
+   "allowOption": {
+      "message": "Разрешить&nbsp;&nbsp;"
+   },
+   "analyticsname": {
+      "message": "Веб-аналитика: "
+   },
+   "antivirusTitle": {
+      "message": "Антивирус Dr.Web"
+   },
+   "autoCheckWebsites": {
+      "message": "Cсылки в социальных сетях"
+   },
+   "autoCheckWebsitesDesc": {
+      "message": "Dr.Web Link Checker позволяет проверять ссылки через серверы компании «Доктор Веб» без установки антивируса на локальный компьютер."
+   },
+   "back": {
+      "message": "Назад"
+   },
+   "blocked": {
+      "message": "заблокировано&nbsp;"
+   },
+   "checkLinkTitle": {
+      "message": "Проверить антивирусом Dr.Web"
+   },
+   "checkTitle": {
+      "message": "Проверять внешние ссылки в социальных сетях:"
+   },
+   "close": {
+      "message": "Закрыть"
+   },
+   "contentheader": {
+      "message": "Содержимое веб-страницы"
+   },
+   "contextMenuItem": {
+      "message": "Проверить антивирусом Dr.Web"
+   },
+   "contextMenuSelectionSearch": {
+      "description": "Найти ссылку и проверить ее антивирусом Dr.Web",
+      "message": "Проверить антивирусом Dr.Web"
+   },
+   "copyright": {
+      "message": "«Доктор Веб»"
+   },
+   "currentVersion": {
+      "message": "Текущая версия: "
+   },
+   "defaultAllow": {
+      "message": "Разрешить по умолчанию &nbsp;"
+   },
+   "defaultAllow2": {
+      "message": "Разрешить по умолчанию &nbsp;"
+   },
+   "defaultDeny": {
+      "message": "Запретить по умолчанию &nbsp;"
+   },
+   "defaultDeny2": {
+      "message": "Запретить по умолчанию &nbsp;"
+   },
+   "denyHere": {
+      "message": "Запретить для данного сайта&nbsp;&nbsp;"
+   },
+   "denyOption": {
+      "message": "Запретить&nbsp;&nbsp;"
+   },
+   "description": {
+      "message": "Расширение для браузера, которое позволяет проверять ссылки через серверы компании «Доктор Веб» без установки антивируса на локальный компьютер."
+   },
+   "exception": {
+      "message": "Исключения "
+   },
+   "extDescription": {
+      "message": "Онлайн-антивирус Dr.Web для проверки ссылок. Работает из контекстного меню. Автоматически проверяет ссылки ВКонтакте, Facebook, Google+."
+   },
+   "extName": {
+      "message": "Онлайн-проверка ссылок антивирусом Dr.Web"
+   },
+   "facebookLabel": {
+      "message": "Facebook"
+   },
+   "facebookSite": {
+      "message": "Facebook"
+   },
+   "features": {
+      "message": "\u003Cul>\u003Cli>проверка ссылок на любом сайте с помощью контекстного меню,\u003C/li>\u003Cli>определение и проверка ссылок в выделенном блоке текста,\u003C/li>\u003Cli>автоматическая проверка внешних ссылок при обращении к ним в социальных сетях.\u003C/li>\u003C/ul>"
+   },
+   "finish": {
+      "message": "Готово"
+   },
+   "finishSetup": {
+      "message": "Настройка завершена"
+   },
+   "finishSetupDescription": {
+      "message": "Вы всегда можете изменить настройки Dr.Web Link Checker. Для этого щелкните по значку Dr.Web в адресной строке браузера и выберите пункт «Настройки»."
+   },
+   "flashExceptionDesc": {
+      "message": "Вы можете задать правила блокировки flash-плагинов для определенных сайтов."
+   },
+   "flashExceptionHeader": {
+      "message": "Исключения при блокировке flash-плагинов"
+   },
+   "flashPlugins": {
+      "message": "Flash-плагины:"
+   },
+   "googleLabel": {
+      "message": "Google+"
+   },
+   "googleSite": {
+      "message": "Google+"
+   },
+   "header": {
+      "message": "\u003Cp>\u003Cem>Вы покидаете сайт drwebLinkName\u003C/em> по&nbsp;внешней ссылке \u003Cb id=\"drwebConfirmationLink\">drwebLinkDesc\u003C/b>\u003C/p>"
+   },
+   "infectionText": {
+      "message": "\u003Cp>\u003Cem>Страница по ссылке заражена.\u003C/em>\u003C/p>\u003Cp>\u003Cb class=\"drwebLink\">drwebLinkName\u003C/b>\u003C/p>\u003Cp>Угроза: drwebLinkDesc.\u003C/p>\u003Cp>Переход по ссылке блокирован.\u003C/p>"
+   },
+   "internetTracker": {
+      "message": "Интернет-трекер"
+   },
+   "internetTrackerDesc": {
+      "message": "Интернет-трекер позволяет блокировать нежелательное содержимое веб-страниц."
+   },
+   "lastUpdate": {
+      "message": "Последнее обновление: "
+   },
+   "leaveDefault": {
+      "message": "Готово"
+   },
+   "leaveWebsite": {
+      "message": "Перейти"
+   },
+   "linksSetup": {
+      "message": "Проверка ссылок в социальных сетях"
+   },
+   "linksSetupDescription": {
+      "message": "Dr.Web Link Checker проверяет все ссылки, по которым вы переходите из социальных сетей Facebook, ВКонтакте и Google+, и при обнаружении угроз безопасности блокирует переход по ним."
+   },
+   "lng": {
+      "message": "ru"
+   },
+   "mainText": {
+      "message": "\u003Cp>Остерегайтесь рекламных ссылок и ссылок в сообщениях от незнакомых людей. Помните, что сторонние сайты могут вводить в заблуждение и угрожать безопасности вашего компьютера.\u003C/p>"
+   },
+   "manualBlocked": {
+      "message": "Режим ручной блокировки"
+   },
+   "manualBlockingCancel": {
+      "message": "Отмена"
+   },
+   "manualBlockingSave": {
+      "message": "Сохранить"
+   },
+   "manualBlockingText": {
+      "message": "Выберите элементы, которые не хотите видеть на этой странице"
+   },
+   "maximum": {
+      "message": "Максимальный уровень"
+   },
+   "maximumDesc": {
+      "message": "Дополнительно к рекламным модулям и элементам веб-аналитики Dr.Web Link Checker будет блокировать плагины социальных сетей, в частности Facebook, Twitter, ВКонтакте, Google+, LinkedIn. Обратите внимание, что при включении максимального уровня слежения веб-страницы могут отображаться некорректно и все социальные функции на них будут недоступны."
+   },
+   "medium": {
+      "message": "Средний уровень (рекомендуется)"
+   },
+   "mediumDesc": {
+      "message": "Дополнительно к рекламным модулям Dr.Web Link Checker будет блокировать такие элементы веб-аналитики, как Google Analytics, Яндекс.Метрика и другие. Подобные инструменты используются владельцами веб-ресурсов для отслеживания вашего поведения на странице."
+   },
+   "minimal": {
+      "message": "Минимальный уровень"
+   },
+   "minimalDesc": {
+      "message": "Dr.Web Link Checker будет блокировать попытки отслеживать ваши интересы, чтобы показывать основанную на них контекстную рекламу."
+   },
+   "next": {
+      "message": "Далее"
+   },
+   "noExtLinksInSelection": {
+      "message": "В выделенном тексте не нашлось внешних ссылок."
+   },
+   "noLinksInSelection": {
+      "message": "В выделенном тексте не нашлось ссылок."
+   },
+   "odnoklassnikiSite": {
+      "message": "«Одноклассники»"
+   },
+   "openSettings": {
+      "message": "Назад"
+   },
+   "optionsPageTitle": {
+      "message": "Настройки Dr.Web Link Checker"
+   },
+   "optionsSaved": {
+      "message": "Настройки сохранены."
+   },
+   "otherSoftware": {
+      "message": "Другие продукты «Доктор Веб»"
+   },
+   "pageContent": {
+      "message": "Содержимое веб-страниц"
+   },
+   "pageContentDesc": {
+      "message": "Dr.Web Link Checker  позволяет блокировать рекламу и flash-плагины на веб-страницах."
+   },
+   "privacyPolicy": {
+      "message": "О конфиденциальности"
+   },
+   "quickSetup": {
+      "message": "Расширение Dr.Web Link Checker успешно установлено"
+   },
+   "quickSetupDescription": {
+      "message": "Dr.Web Link Checker проверяет ссылки в социальных сетях, защищая вас от угроз, а также позволяет блокировать нежелательное содержимое веб-страниц и рекламу.\u003Cbr/>\u003Cbr/>Вы можете продолжить работу с параметрами по умолчанию или перейти к настройкам расширения."
+   },
+   "readyButton": {
+      "message": "ОК"
+   },
+   "refreshBox": {
+      "message": "Для вступления изменений в силу необходимо обновить страницу"
+   },
+   "refreshButton": {
+      "message": "Обновить сейчас"
+   },
+   "refreshCancelButton": {
+      "message": "Обновить позже"
+   },
+   "scanError": {
+      "message": "\u003Cp>\u003Cem>Не удалось проверить страницу\u003C/em>\u003C/p>\u003Cp>Вероятно, сервер, на котором расположена запрашиваемая страница, недоступен.\u003C/p>"
+   },
+   "scanResult": {
+      "message": "Результаты проверки"
+   },
+   "scanTimeout": {
+      "message": "\u003Cp>\u003Cem>Не удалось проверить страницу\u003C/em>\u003C/p> Вероятно, антивирусный сервер перегружен. Вы можете перейти по ссылке сейчас, рискуя безопасностью вашего компьютера, или попытаться перейти по ссылке чуть позже. Возможно, через некоторое время сервер сможет проверить эту страницу.\u003C/p>"
+   },
+   "scanning": {
+      "message": "Идет сканирование"
+   },
+   "setUp": {
+      "message": "Настроить Dr.Web Link Checker"
+   },
+   "siteUnreliabilityMessage": {
+      "message": "\u003Cp>\u003Cem>Dr.Web не рекомендует посещать этот сайт\u003C/em>\u003C/p>\u003Cp>\u003Cb class=\"drwebLink\">drwebLinkName\u003C/b>\u003C/p>"
+   },
+   "socialname": {
+      "message": "Плагины социальных сетей: "
+   },
+   "submitOptions": {
+      "message": "Сохранить"
+   },
+   "switchOff": {
+      "message": "Режим ручной блокировки"
+   },
+   "switchOn": {
+      "message": "Режим ручной блокировки"
+   },
+   "trackerSetup": {
+      "message": "Интернет-трекер"
+   },
+   "trackerSetupDescription": {
+      "message": "Dr.Web Link Checker может блокировать попытки отслеживать ваши интересы для отображения контекстной рекламы на их основе, а также элементы веб-аналитики, с помощью которых владельцы веб-ресурсов отслеживают ваше поведение на страницах."
+   },
+   "trackname": {
+      "message": "Слежение: "
+   },
+   "twitterSite": {
+      "message": "Twitter"
+   },
+   "updateDataBase": {
+      "message": "Обновить базу данных"
+   },
+   "updateDesc": {
+      "message": "Вы можете вручную запустить обновление базы данных со списком рекламных и других нерекомендуемых сайтов. Если обновление доступно для скачивания, оно будет загружено на ваш компьютер."
+   },
+   "updateHeader": {
+      "message": "Обновление базы данных"
+   },
+   "updating": {
+      "message": "Обновление…"
+   },
+   "urlHeader": {
+      "message": "URL"
+   },
+   "vkontakteLabel": {
+      "message": "ВКонтакте"
+   },
+   "vkontakteSite": {
+      "message": "ВКонтакте"
+   },
+   "whyWarning": {
+      "message": "Почему я вижу это предупреждение?"
+   },
+   "wiz_ads_step_off": {
+      "message": "Показывать рекламу на страницах"
+   },
+   "wiz_ads_step_on": {
+      "message": "Блокировать рекламу"
+   },
+   "wiz_social_step_off": {
+      "message": "Не проверять внешние ссылки в социальных сетях"
+   },
+   "wiz_social_step_on": {
+      "message": "Проверять ссылки с помощью Dr.Web Link Checker"
+   },
+   "wiz_tracker_step_off": {
+      "message": "Разрешить отслеживать ваши интересы"
+   },
+   "wiz_tracker_step_on": {
+      "message": "Сохранять анонимность"
+   },
+   "block_mes_part1": {
+		"message": "Dr.Web заблокировал переход по рекламной ссылке, чтобы обеспечить вашу конфиденциальность. Если вы всё-таки хотите пройти по ссылке, нажмите кнопку"
+   },
+   "block_mes_part2": {
+		"message": ", в этом случае ссылка будет открыта в браузере в режиме инкогнито. Чтобы не получать подобные предупреждения, измените уровень блокировки в настройках Dr.Web Link Checker."
+   },
+   "block_open_incognito": {
+      "message": "«Открыть инкогнито»"
+   },
+   "block_open_incognito2": {
+		"message": "Открыть инкогнито"
+   },
+   "block_additional": {
+		"message": "Дополнительно"
+   },
+   "block_hide_additional": {
+		"message": "Скрыть детали"
+   },
+    "block_title": {
+        "message": "Страница заблокирована Dr.Web Link Checker"   
+    },
+	"manualUnBlockingText": {
+		"message": "Выберите элементы, которые хотите разблокировать"
+	},
+    "reportMissedAds": {
+        "message": "Сообщить о незаблокированной рекламе на этом сайте"   
+    },
+     "options": {
+        "message": "Настройки"   
+    },
+    "messageSend": {
+        "message": "Спасибо! Ваше сообщение отправлено"   
+    }
+	
+}

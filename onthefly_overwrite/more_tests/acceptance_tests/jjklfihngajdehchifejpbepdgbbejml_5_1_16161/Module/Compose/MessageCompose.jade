@@ -1,0 +1,105 @@
+script#compose-template(type='text/x-handlebars-template')
+	.SEModule.SEM-Compose
+		.msg-container
+			<!--Desktop Toolbar-->
+			.docked-container.show-desktop.show-laptop
+				#compose-menu.toolbar.compose-actionbar.show-desktop.show-laptop
+					.actionbtn.actionbtn-full.send-btn.icon-log-out
+						span.always-show {{SEND}}
+					.actionbtn.save-btn.icon-save
+						span {{SAVE_DRAFT}}
+					.actionbtn.upload-btn.overflow-btn.icon-attachment
+						span {{ADD_FILE_ATTACHMENT}}
+						.dropdown(style="display: none;")
+							.toolbar.toolbar-vertical
+								.actionbtn.dropdown-button.upload-attachment-btn.icon-attachment
+									span.always-show {{COMPOSE_ATTACHMENTS_TITLE}}
+								.actionbtn.dropdown-button.upload-esignature-btn.icon-ribbon-b
+									span.always-show {{COMPOSE_ESIGNATURE_TITLE}}
+					.save-draft-container.pull-right
+						.actionbtn.label.save-draft-info
+						.actionbtn.discard-btn.icon-trash-bin
+							span.hide {{DISCARD}}
+
+			<!--Mobile Toolbar-->
+			.scroll-docked-container.hide-desktop.hide-laptop(style="display: none")
+				.toolbar.compose-actionbar
+					.actionbtn.send-btn.icon-log-out
+						span.always-show {{SEND}}
+					.actionbtn.save-btn.icon-save
+						span {{SAVE_DRAFT}}
+					.actionbtn.discard-btn.icon-trash-bin.pull-right
+						span {{DISCARD}}
+					.actionbtn.deliveryslip-btn.icon-tags.pull-right.show-phone(action="deliveryslip", title="{{VIEW_DELIVERY_SLIP}}")
+						span {{VIEW_DELIVERY_SLIP}}
+					.actionbtn.upload-btn.overflow-btn.icon-attachment.pull-right
+						span {{ADD_FILE_ATTACHMENT}}
+						.dropdown(style="display: none; right: 0;")
+							.toolbar.toolbar-vertical
+								.actionbtn.upload-attachment-btn.icon-attachment
+									span.always-show {{COMPOSE_ATTACHMENTS_TITLE}}
+								.actionbtn.upload-esignature-btn.icon-ribbon-b
+									span.always-show {{COMPOSE_ESIGNATURE_TITLE}}
+
+			.scrollable
+				<!-- recipient to -->
+				.compose-header {{NEW_SECURE_MESSAGE}}
+				.recipients-container
+					.compose-to-container.field-row.top
+						.input.compose-to
+							.inputHolder
+								span.inputTitle {{TO}}:
+								.bubbleholder
+								input#composeTo.acInput.inputText(type="email")
+						.toggle-td
+							.toolbar.toolbar-nofill.toolbar-noborder.toolbar-autowidth.pull-right.clear
+								.actionbtn.toggle-btn.icon-plus-squared(attr="cc")
+									span.always-show {{CC}}
+								.actionbtn.toggle-btn.icon-plus-squared(attr="bcc")
+									span.always-show {{BCC}}
+					.autocomplete-container
+						.autocomplete-list
+					.compose-cc-container.field-row.top(style="display: none")
+						.input.compose-cc
+							.inputHolder
+								span.inputTitle {{CC}}:
+								.bubbleholder
+								input#composeCc.acInput.inputText(type="email")
+					.compose-bcc-container.field-row.top(style="display: none")
+						.input.compose-bcc
+							.inputHolder
+								span.inputTitle {{BCC}}:
+								.bubbleholder
+								input#composeBcc.acInput.inputText(type="email")
+					.field-row
+						.input.single
+							.inputHolder.subject.row
+								input#composeSubject.inputText(type="text", placeholder="{{SUBJECT}}")
+				//.toolbar-row.compose-menu-wrap.hide-desktop.hide-laptop
+				.toolbar.compose-actionbar.hide-desktop.hide-laptop
+					.actionbtn.send-btn.icon-log-out
+						span.always-show {{SEND}}
+					.actionbtn.save-btn.icon-save
+						span {{SAVE_DRAFT}}
+					.actionbtn.discard-btn.icon-trash-bin.pull-right
+						span {{DISCARD}}
+					.actionbtn.deliveryslip-btn.icon-tags.pull-right.show-phone(action="deliveryslip", title="{{VIEW_DELIVERY_SLIP}}")
+					.actionbtn.upload-btn.overflow-btn.icon-attachment.pull-right
+						span {{ADD_FILE_ATTACHMENT}}
+						.dropdown(style="display:none; right:0;")
+							.toolbar.toolbar-vertical
+								.actionbtn.upload-attachment-btn.icon-attachment
+									span.always-show {{COMPOSE_ATTACHMENTS_TITLE}}
+								.actionbtn.upload-esignature-btn.icon-ribbon-b
+									span.always-show {{COMPOSE_ESIGNATURE_TITLE}}
+				#editorContainer
+				.msg-attachments-row
+					#SEM-ds-module-composebox-attachment.msg-attachments.attachments-panel(style="display: none;")
+					#SEM-ds-module-composebox-esignature.msg-esignatures.attachments-panel(style="display: none;")
+				.previous-thread-table
+					.input.single
+						.previous-thread
+							.previous-thread-txt {{ORIGINAL_MESSAGE}}
+							.previous-thread-body
+
+		.no-msg {{NO_MESSAGE}}

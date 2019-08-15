@@ -1,0 +1,24 @@
+.changed-body-style {
+    position: fixed
+    }
+iframe.iframe-kuku {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /*top: 0;*/
+    border: none;
+    z-index: 99999999999999999999;
+    background-color: rgba(122, 122, 122, 0.75);
+    transition: height 0.3s, background-color 0.3s
+    }
+iframe.iframe-kuku.reduce {
+    height: 66px;
+    bottom: 0;
+    background-color: white;
+    transition: height 0.3s, background-color 0.3s
+    }

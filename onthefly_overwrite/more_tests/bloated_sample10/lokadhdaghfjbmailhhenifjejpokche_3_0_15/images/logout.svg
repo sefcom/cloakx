@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-469.000000, -251.000000)">
+            <g id="Log-out-Copy" transform="translate(468.000000, 250.000000)">
+                <g id="1477418438_common-logout-signout-exit-glyph" transform="translate(1.333333, 1.333333)" fill="#4A4A4A">
+                    <g id="Group">
+                        <g id="miu">
+                            <g id="Artboard-1">
+                                <path d="M0,0 L0,17.3333333 L11.8181818,17.3333333 L11.8181818,12.6060606 L10.2424242,12.6060606 L10.2424242,15.7575758 L1.57575758,15.7575758 L1.57575758,1.57575758 L10.2424242,1.57575758 L10.2424242,4.72727273 L11.8181818,4.72727273 L11.8181818,0 L0,0 L0,0 Z M12.3193035,5.88109442 L13.4335327,4.766866 L17.3333333,8.66666667 L13.4335327,12.5664673 L12.3193035,11.4522389 L14.3161397,9.45540267 L5.51554467,9.45540267 L5.51554467,7.88087576 L14.3190848,7.88087576 L12.3193035,5.88109442 L12.3193035,5.88109442 Z" id="common-logout-signout-exit-glyph"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="bounds" x="0" y="0" width="18.8888889" height="18.8888889"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

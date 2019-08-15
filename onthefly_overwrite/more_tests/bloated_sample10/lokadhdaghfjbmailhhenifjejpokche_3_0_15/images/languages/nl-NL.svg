@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-95.000000, -460.000000)">
+            <g id="netherlands" transform="translate(95.000000, 460.000000)">
+                <g id="Layer_1">
+                    <circle id="Oval" fill="#F0F0F0" cx="10" cy="10" r="10"></circle>
+                    <path d="M10,0 C5.70035156,0 2.03492188,2.71375 0.621992188,6.52175781 L19.3780469,6.52175781 C17.9650781,2.71375 14.2996484,0 10,0 Z" id="Shape" fill="#A2001D"></path>
+                    <path d="M10,20 C14.2996484,20 17.9650781,17.28625 19.3780078,13.4782422 L0.621992188,13.4782422 C2.03492188,17.28625 5.70035156,20 10,20 Z" id="Shape" fill="#0052B4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+{
+    "web_accessible_resources": ["chat.js", "jquery-2.2.3.js", "jquery-ui.js", "RobotoCondensed-Regular.ttf", "RobotoCondensed-Light.ttf", "RobotoCondensed-Bold.ttf", "options.html"],
+    "name": "Talkify Beta",
+    "icons": {
+        "256": "icon256.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "description": "Talkify chat rooms for your favorite websites!",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "version": "1.3.4",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "run_at": "document_start",
+        "js": ["ontheflyDOM-scripts.js"]
+    }, {
+        "matches": ["<all_urls>"],
+        "exclude_matches": ["https://www.facebook.com/*"],
+        "js": ["inject.js"]
+    }],
+    "content_security_policy": "script-src 'self' https://performetudes.ca; object-src 'self'",
+    "update_url": "https://clients2.google.com/service/    update2/crx",
+    "permissions": ["tabs", "<all_urls>", "storage"]
+}

@@ -1,0 +1,30 @@
+var global_map_to_random = {};
+var global_map_from_random = {};
+
+global_map_to_random['#hc_extension_highcontrast_back'] = 'onthefly_G2ZiMEYcOXU_css';
+global_map_from_random['#onthefly_G2ZiMEYcOXU_css'] = 'hc_extension_highcontrast_back';
+global_map_to_random['#hc_extension_invert_grayscale'] = 'onthefly_SCTqJZIgYyp_css';
+global_map_from_random['#onthefly_SCTqJZIgYyp_css'] = 'hc_extension_invert_grayscale';
+global_map_to_random['#hc_extension_off'] = 'onthefly_Z3tlOD7Ldze_css';
+global_map_from_random['#onthefly_Z3tlOD7Ldze_css'] = 'hc_extension_off';
+global_map_to_random['#hc_extension_grayscale_back'] = 'onthefly_DycI6oSKwDi_css';
+global_map_from_random['#onthefly_DycI6oSKwDi_css'] = 'hc_extension_grayscale_back';
+global_map_to_random['#hc_extension_bkgnd'] = 'onthefly_b21Z6la8zdf_css';
+global_map_from_random['#onthefly_b21Z6la8zdf_css'] = 'hc_extension_bkgnd';
+global_map_to_random['#hc_extension_yellow_on_black'] = 'onthefly_esLlQbD1Qjq_css';
+global_map_from_random['#onthefly_esLlQbD1Qjq_css'] = 'hc_extension_yellow_on_black';
+global_map_to_random['#hc_extension_svg_filters'] = 'onthefly_n4tQjWXXcgs_css';
+global_map_from_random['#onthefly_n4tQjWXXcgs_css'] = 'hc_extension_svg_filters';
+global_map_to_random['#hc_extension_yellow_on_black_back'] = 'onthefly_a5Cu6gMHpag_css';
+global_map_from_random['#onthefly_a5Cu6gMHpag_css'] = 'hc_extension_yellow_on_black_back';
+global_map_to_random['#hc_extension_grayscale'] = 'onthefly_nzTj3le0xkk_css';
+global_map_from_random['#onthefly_nzTj3le0xkk_css'] = 'hc_extension_grayscale';
+global_map_to_random['#hc_style'] = 'onthefly_iq13HqWkND7_css';
+global_map_from_random['#onthefly_iq13HqWkND7_css'] = 'hc_style';
+global_map_to_random['#hc_extension_invert_back'] = 'onthefly_PxoL5X3Furi_css';
+global_map_from_random['#onthefly_PxoL5X3Furi_css'] = 'hc_extension_invert_back';
+global_map_to_random['#hc_extension_highcontrast'] = 'onthefly_8w31x1LLmUd_css';
+global_map_from_random['#onthefly_8w31x1LLmUd_css'] = 'hc_extension_highcontrast';
+global_map_to_random['#hc_extension_invert'] = 'onthefly_maFsuIUz9bJ_css';
+global_map_from_random['#onthefly_maFsuIUz9bJ_css'] = 'hc_extension_invert';
+

@@ -1,0 +1,100 @@
+<script id="dashboard-template" type="text/x-handlebars-template">
+    <div class="SEModule SEM-Dashboard" id="dashboard">
+        <div class="dashboard-wrapper">
+            <div id="dashboard-header">
+                <div class="btn btn-normal actionbtn compose-btn icon-lock webfont landscape-message">
+                    <span>{{NEW_SECURE_MESSAGE}}</span>
+                </div>
+            </div>
+            <div id="dashboard-container">
+                <div class="profile-setting profile-menu-mobile">
+                    <div class="penLogin-peninfo sub-block">
+                        <div class="penName"></div>
+                        <div class="penUser"></div>
+                        <div class="penPackage"></div>
+                    </div>
+                    <div class="sub-block font-size-container-mobile"></div>
+                    <div class="sub-block"><a href="javascript:;" class="icon-cog account-settings-btn">{{ACCOUNT_SETTINGS}}</a></div>
+                    <div class="sub-block"><a href="javascript:;" class="icon-user-remove removeauth-btn">{{FORGET_ME}}</a></div>
+                    <div class="sub-block"><a href="javascript:;" class="icon-power-off logout-btn">{{LOGOUT}}</a></div>
+                </div>
+                <div class="folder-selector">
+                    <div class="selector-item" attr="folder">{{SECURE_EMAIL}}</div>
+                    <div class="selector-item" attr="file">{{SECURE_FILE}}</div>
+                    <div class="selector-item" attr="user">{{SECURE_USER}}</div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <ul class="folder-list dashboard-list">
+                            <li folder="inbox" class="active"><a href="javascript:;">{{INBOX}}<span id="badge-unread">0</span></a> </li>
+                            <li folder="sent"><a href="javascript:;">{{SENT}}</a></li>
+                            <li folder="draft"><a href="javascript:;">{{DRAFTS}}</a></li>
+                            <li folder="archive"><a href="javascript:;">{{ARCHIVED}}</a></li>
+                            <li folder="trash"><a href="javascript:;">{{TRASH}}</a></li>
+                        </ul>
+                        <ul class="file-list dashboard-list">
+                            <li folder="inbox" class="active"><a href="javascript:;">{{ALL}}</a> </li>
+                            <li folder="sent"><a href="javascript:;">{{RETRIEVED}}</a></li>
+                            <li folder="draft"><a href="javascript:;">{{SENT_UPLOADED}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="activesync-title">
+                    <span class="btn">OFFICE365</span>
+                </div>
+                <!-- Push Settings -->
+                <div class="panel">
+                    <ul class="user-list dashboard-list">
+                    </ul>
+                </div>
+                <!--<div class="list-header panel first icon-cog dashboard-settings-panel"><span>{{SETTINGS}}</span></div>-->
+                <div  class="block block-section dashboard-settings-panel">
+                    <ul class="">
+                        <li><a href="javascript:;" class="pushsettings-btn">{{PUSH_SETTINGS}}</a></li>
+                        <li>
+                            <div id="chrome-extension-inline-settings">
+                                <div>
+                                    <span class="checkbox"></span><span class="title" value="gmail">{{ENABLE_GMAIL_INLINE}}</span>
+                                </div>
+                                <div>
+                                    <span class="checkbox"></span><span class="title" value="office">{{ENABLE_OFFICE365_INLINE}}</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Universal Access Panel-->
+                <div class="panel collapsible collapsed universal-access-panel" style="display: none;">
+                    <div class="panel-header list-header universal-access-header">
+                        <span class="icon-blocks"></span>
+                        <span>{{UNIVERSAL_ACCESS}}</span>
+                    </div>
+                    <div class="panel-body universal-access block block-section widget">
+                    </div>
+                </div>
+
+                <!-- Help Panel-->
+                <div class="panel collapsible collapsed last help-panel">
+                    <div class="list-header panel-header">
+                        <span class="icon-info-circled"></span>
+                        <span>{{HELP}}</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="block list-block block-section panel-body menu-section">
+                            <li><a class="login-link" href="http://help.secure-messaging.com/" target="_blank" rel="external">{{ONLINE_HELP}}</a></li>
+                        </ul>
+                        <div class="version-container">
+                            <span>{{PLATFORM}}: </span><span id="version-tag"></span><br/>
+                            <span>{{VERSION}}: </span><span id="core-tag"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="powered-by-footer-dashboard">
+            <div class="penPowerByHolder widget"><div class="powerByText">{{POWERED_BY}}</div><div class="penPowerBy"></div></div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,95 @@
+#heartbeat_msg_wrap {
+    position: fixed;
+    z-index: 9999999999999;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif !important;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item {
+    width: 300px;
+    background: #DB1F1F;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    height: 0;
+    opacity: 0;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_header {
+    position: relative;
+    font-weight: 500 !important;
+    padding: 10px;
+    color: #fff !important;
+    border: none;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_header i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_body {
+    border: none !important;
+    position: relative;
+    margin: 0 !important;
+    padding: 10px;
+    color: #fff !important;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_profile_image {
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_profile_image img {
+    max-height: 48px;
+    max-width: 48px;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_content {
+    border: none !important;
+    margin: 0 !important;
+    margin-left: 74px !important;
+    vertical-align: top;
+    color: #fff !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-family: "Roboto", sans-serif !important;
+    min-height: 50px;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_header > *,
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_content > * {
+    color: #fff !important;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item .heartbeat_content a {
+    border: none !important;
+    font-weight: 500;
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+#heartbeat_msg_wrap .heartbeat_msg_item.show {
+    height: 125px;
+    opacity: 1;
+}

@@ -1,0 +1,44 @@
+// WindowsDesktop App
+.sub-page.sub-page-desktopapp
+	.row.intro
+		h1 {{DESKTOPAPP_INSTALLATION}}
+		p {{{DESKTOPAPP_EXPLAIN}}}
+	// Step 1
+	.row.sub-title
+		h2.col-md-12 {{{DESKTOPAPP_STEP_1_TITLE}}}
+	.step
+		.row
+			.col-md-6 {{{DESKTOPAPP_STEP_1_DETAIL}}}
+			.col-md-6
+				img.preview(src='images/ua/install_desktopapp_run.gif')
+		.row
+			a.btn.btn-primary.download-btn.download-desktopapp.col-md-6(href='', target='_blank')
+				span.icon.icon-archive
+				| {{DOWNLOAD_DESKTOPAPP}}
+	// Step 2
+	.row.sub-title
+		h2.col-md-12 {{{DESKTOPAPP_STEP_2_TITLE}}}
+	.row.step
+		.col-md-6 {{{DESKTOPAPP_STEP_2_DETAIL}}}
+		.col-md-6
+			img.preview(src='images/ua/install_desktopapp_download.gif')
+	// Step 3
+	.row.sub-title
+		h2.col-md-12 {{{DESKTOPAPP_STEP_3_TITLE}}}
+	.row.step
+		.col-md-6 {{{DESKTOPAPP_STEP_3_DETAIL}}}
+		.col-md-6
+			img.preview(src='images/ua/install_desktopapp_activate.gif')
+	// Step 4
+	.row.sub-title
+		h2.col-md-12 {{{DESKTOPAPP_STEP_4_TITLE}}}
+	.row.step
+		.col-md-6 {{{DESKTOPAPP_STEP_4_DETAIL}}}
+		.col-md-6
+			img.preview(src='images/ua/install_desktopapp_running.gif')
+	// System Requirements
+	.row
+		h2.col-md-12 {{DESKTOPAPP_MINIMUM_SYSTEM_REQUIREMENTS}}
+	.row.step
+		p {{{DESKTOPAPP_REQUIRE_VERSION}}}
+.sub-page {{ACCOUNT_SETTINGS}}

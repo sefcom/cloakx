@@ -1,0 +1,324 @@
+.SE-Chrome-Plugin.SEM-Message{
+	/*
+position: absolute;
+left: 0px;
+right: 365px;
+width: auto;
+*/
+margin-right: 50px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-header .ce-attachment.icon-attachment{
+	float: right;
+	margin: 10px 0 10px 5px;
+}
+.SE-Chrome-Plugin.SEM-Message .msg-header .ce-attachment.icon-attachment:before{
+	vertical-align: middle;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-actionbar{
+	background: #f6f6f6;
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	margin-top: 5px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-actionbar .actionbtn {
+	height: 20px;
+	padding: 0px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-body{
+	padding:10px;
+	overflow: auto;
+}
+
+.SE-Chrome-Plugin.SEM-Message .view-delivery-btn{
+	padding:12px 20px 10px 20px;
+	border-bottom:1px dashed #AAA;
+	color: #666;
+	font-size:0.75rem;
+	background: rgba(0, 0, 0, 0.1);
+	margin-bottom:10px;
+	text-transform: uppercase;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-fyeo{
+	display:none;
+	position: relative;
+}
+
+.SE-Chrome-Plugin.SEM-Message .fyeo-icon {
+position: absolute;
+left: 20px;
+top: 10px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .fyeo-icon:before {
+font-size: 32px;
+color: #ffc926;
+}
+
+.SE-Chrome-Plugin.SEM-Message .fyeo-message {
+margin-left: 65px;
+margin-top: 25px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-fyeo h2{
+	font-size:0.75rem;
+	margin-bottom:5px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-fyeo h3{
+	font-size:0.75rem;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-fyeo .btn-fyeo-unlock.actionbtn{
+  cursor: pointer;
+  border: 1px solid #a9a9a9;
+  background-color: #f0f0f0;
+  margin: 10px 0px;
+  height: auto;
+  width: 100px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 7px 20px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .actionbtn.disabled {
+	opacity: .5;
+	cursor: default;
+}
+
+.SE-Chrome-Plugin.SEM-Message .fyeo-error{
+	color:#c00;
+	font-size:0.75rem;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-loading{
+	margin-left: 10px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-recalled{
+	display:none;
+	position: relative;
+}
+
+.SE-Chrome-Plugin.SEM-Message .recalled-icon {
+position: absolute;
+left: 20px;
+top: 10px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .recalled-icon:before {
+font-size: 32px;
+color: #d90000;
+}
+
+.SE-Chrome-Plugin.SEM-Message .recalled-message {
+margin-left: 65px;
+margin-top: 25px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-recalled .msg-recalled-title{
+	margin-bottom:10px;
+	font-size:0.875rem;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-recalled .msg-recalled-reasontitle{
+	margin-bottom:10px;
+	font-size:0.875rem;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-recalled  .msg-recalled-description, .SE-Chrome-Plugin.SEM-Message .msg-recalled  .msg-recalled-content{
+	font-size:0.75rem;
+	margin-bottom:15px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .to-overflow{
+	background:#d9d9d9;
+	text-align:center;
+	padding:4px 0;
+	margin-top:5px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .message-loading{
+	padding:20px 0;
+	text-align:center;
+	display:none;
+}
+
+.SE-Chrome-Plugin.SEM-Message .attachment-header {
+color: #444;
+padding: 10px 0 5px;
+border-top: 1px solid #E2EBF6;
+}
+
+/*
+.SE-Chrome-Plugin.SEM-Message .msg-attachments{
+	padding:10px 20px 20px;
+}
+
+
+.SE-Chrome-Plugin.SEM-Message .msg-attachments .ce-attachments{
+	padding:5px;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-attachments .filename{
+	color: #444;
+	font-size: 0.875rem;
+	line-height: 20px;
+	display: inline-block;
+	max-width: 65%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-left: 5px;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-attachments.recalled .filename{
+	color:#ff0000;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-attachments .filesize{
+	color:#666;
+	margin-left:10px;
+	line-height:20px;
+	font-size:0.6875rem;
+	vertical-align: top;
+}
+*/
+
+.SE-Chrome-Plugin.SEM-Message .msg-attachments img{
+	vertical-align: middle;
+}
+
+
+
+.SE-Chrome-Plugin.SEM-Message .msg-actionbar .overflow-btn {
+    float: left;
+}
+
+.SE-Chrome-Plugin.SEM-Message .msg-actionbar .deliveryslip-btn {
+    float: right;
+}
+
+.ce-attachment {
+  position: relative;
+  border: 1px solid #dfdfdf;
+  width: 280px;
+  background-color: #f0f0f0 !important;
+  display: inline-block;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.ce-attachment:before {
+  font-size: 28px;
+  background-color: #ccc;
+  color: #555;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 7px;
+  display: table-cell !important;
+  box-sizing: border-box;
+  float: left;
+}
+.ce-attachment .content {
+  height: 48px;
+  margin-left: 48px;
+  margin-right: 26px;
+  box-sizing: border-box;
+}
+
+.ce-attachment .content .box {
+  line-height: 24px;
+  height: 24px;
+  width: 195px;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ce-attachment .iconbox {
+  width: 37px;
+  height: 38px;
+  background-color: #ccc !important;
+  background-image: url("/images/file_type_icons.png") !important;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.ce-attachment .dropdown-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+
+.ce-attachment .dropdown-menu {
+    position: absolute;
+    top: 40%;
+    right: 32px;
+    display: none;
+    z-index: 1000;
+}
+
+.ce-attachment .dropdown-menu .menu {
+    border: 1px solid #cfcfcf;
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ce-attachment .dropdown-button:before {
+    line-height: 50px !important;
+}
+
+.ce-attachment .iconbox.file-icon-excel {
+  background-position: 0 0;
+}
+.ce-attachment .iconbox.file-icon-pdf {
+  background-position: -36px 0;
+}
+.ce-attachment .iconbox.file-icon-ppt {
+  background-position: -72px 0;
+}
+.ce-attachment .iconbox.file-icon-doc {
+  background-position: -108px 0;
+}
+.ce-attachment .iconbox.file-icon-txt,
+.ce-attachment .iconbox.file-icon-unknown {
+  background-position: -144px 0;
+}
+.ce-attachment .iconbox.file-icon-image {
+  background-position: -180px 0;
+}
+.ce-attachment .iconbox.file-icon-zip {
+  background-position: -216px 0;
+}
+.ce-attachment .iconbox.file-icon-rar {
+  background-position: -252px 0;
+}
+.ce-attachment .iconbox.file-icon-txt {
+  background-position: -288px 0;
+}
+
+.ce-attachment .iconbox.esignature{
+  background-position: -323px 0 !important;
+}

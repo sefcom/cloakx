@@ -1,0 +1,157 @@
+.apps {
+
+	box-sizing border-box
+	overflow visible
+	clear both
+
+	@media screen and (min-width: $media_width_laptop+ 1) {
+		padding 30px 120px !important
+	}
+	@media screen and (max-width: $media_width_tablet) {
+		padding 20px 30px !important
+	}
+
+	.intro {
+		margin-bottom 1px
+
+		pre {
+			font-size 1.125em
+			line-height 150%
+			margin 20px auto 40px auto !important
+		}
+	}
+
+	.top-level {
+		margin-bottom 60px !important
+		background pink
+
+		* {
+			color #aaa
+		}
+
+		.btn {
+			margin-bottom 10px
+			padding-top 10px
+			padding-bottom 30px
+			text-align center !important
+			//background pink
+
+			[class*=icon-app] {
+				text-align left
+				margin 0 auto
+			}
+
+			span {
+				display block
+				pointer-events none
+
+				&:first-child {
+					margin-bottom 0px
+				}
+			}
+
+			&:hover {
+				*, *:before {
+					color #444
+				}
+			}
+
+			&.active {
+				background #eee
+				border-radius 10px
+				box-shadow 0px 0px 3px 2px #aaa
+			}
+		}
+	}
+
+	.btn {
+		margin-top 10px
+		background none
+		border none
+		box-shadow none
+
+		&.active {
+			*, *:before {
+				color #444
+			}
+		}
+	}
+
+	h3 {
+		margin 0 0 5px
+		//font-weight normal
+	}
+
+	[class*=icon-app] {
+		text-align: center
+		width 100% !important
+
+		&:before {
+			color #bbb
+			font-weight 0
+			vertical-align bottom !important
+			text-align center
+			width 100%
+			margin-bottom 8px
+			//background pink
+		}
+	}
+
+	.row {
+		overflow inherit
+		clear both
+		margin-bottom 60px !important
+	}
+	.levels {
+		overflow hidden
+		*, *:before {
+			color #777 !important
+			line-height 120%
+		}
+
+		.btn {
+			text-align left
+			padding 0
+			font-weight bold
+			cursor default
+
+			a {
+				display block
+				width 50%
+				height 100%
+				padding 5px 0 !important
+				cursor pointer
+			}
+		}
+		[class*=icon-app]:before {
+			font-size: 58px !important
+		}
+	}
+}
+
+#apps-toolbar.toolbar .actionbtn span {
+	display inline-block !important
+}
+
+#page-page {
+	* {
+		-moz-user-select: text !important;
+		-webkit-user-select: text !important;
+		-ms-user-select: text !important;
+	}
+}
+
+.os-ios, .os-ipad {
+	.apps {
+		[app^="mobile"], #mobile {
+			display none !important
+		}
+	}
+	#dashboard {
+		.universal-access {
+			.icon-app-mobile, .icon-app-google-play, .icon-app-blackberry, .icon-app-windowsPhone8 {
+				display none !important
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.SEM-Page .sub-page {
+	padding: 20px;
+}
+
+.SEM-Page .sub-page .sub-title {
+	margin-top: 35px !important;
+}
+
+.SEM-Page .sub-page ul {
+	list-style: initial;
+}
+
+.SEM-Page .sub-page p{
+	margin-bottom: 1em;
+	font-size:1.15em;
+}
+
+.SEM-Page .sub-page p,.SEM-Page .sub-page li {
+	line-height: 140%;
+}
+
+.SEM-Page .sub-page .step li {
+	margin: 0 0 10px;
+}
+
+.SEM-Page .sub-page li {
+	list-style: disc;
+	position: relative;
+	left: 25px;
+	padding-right: 25px;
+}
+
+.SEM-Page .sub-page .step {
+	margin: 0px 10px 20px;
+	border: 1px solid #ddd;
+	background: #eee;
+	padding: 20px;
+}
+
+.SEM-Page .btn.col-md-6{
+	margin: 0 auto !important;
+	float: none !important;
+	display: block !important;
+}
+
+.SEM-Page .btn.btn-primary{
+	font-size: 1.25em;
+	padding: 7px;
+	margin-top: 2em !important;
+}
+
+.SEM-Page .btn.btn-primary .icon{
+	display:inline-block;
+	padding: 5px;
+	margin-right: 10px;
+}
+.SEM-Page .btn.btn-primary .icon:before {
+	font-size: 1.5em;
+}
+
+.SEM-Page h1 a{
+	color: inherit !important;
+}

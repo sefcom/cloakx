@@ -1,0 +1,135 @@
+.SEM-Status {
+	margin-right: 50px;
+}
+
+.SEM-Status > div {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.SEM-Status .account-icon {
+	padding: 0;
+}
+
+.SEM-Status .account-email {
+	font-weight: bold;
+}
+
+.sm-menu .account-icon {
+	display: inline-block;
+}
+
+.sm-menu .account-icon img{
+	width: 36px;
+	height: 36px;
+	vertical-align: middle;
+}
+
+.sm-menu .account-title {
+	margin-left: 10px;
+	font-weight: bold;
+	display: inline-block
+}
+
+.sm-menu .sm-btn {
+margin-left: 5px;
+float: left;
+padding: 1px 5px !important;
+font-size: 12px !important;
+/*border-radius: 5px;*/
+font-weight: normal !important;
+}
+
+.sm-menu .sm-menu-tools {
+margin: 0px 8px;
+padding: 8px 0px;
+display: inline-block;
+vertical-align: middle;
+}
+.sm-menu-header {
+color: #444;
+display: inline-block;
+margin: 10px;
+font-weight: bold;
+}
+.sm-menu {
+margin: 10px 5px;
+padding: 2px;
+border: 1px solid #DDDDDD;
+background-color: #EEEEEE;
+color: #444;
+display: inline-block;
+background-position: initial initial;
+background-repeat: initial initial;
+width: 90%;
+}
+
+.sm-menu .sm-btn.disabled{
+	opacity: .4;
+}
+.sm-menu .sm-btn a {
+	color: #444 !important;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 16px;
+
+	/*Begin:New Code*/
+	overflow: hidden;
+	display: inline-block;
+	width:24px;
+	height:26px;
+	position: relative;
+	/*End:New Code*/
+}
+
+.sm-menu .sm-btn a span{
+	display: none;
+}
+
+/*Begin:New Code*/
+.sm-menu .sm-btn a:before {
+	font-size: 24px;
+	display: inline-block;
+	margin-left: 20px;
+	width: 24px;
+	height:20px;
+	position: absolute;
+	left: -20px;
+	top:1px;
+	background: #eeeeee;
+}
+
+.sm-menu .sm-btn a.text-show {
+	display:inline-block;
+	overflow: visible;
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+ 	padding-left: 18px;
+  	font-size: 16px;
+
+}
+.sm-menu .sm-btn a.text-show:before {
+  	margin-left: 10px;
+}
+
+.sm-pre-note {
+	margin: 15px 5px 0;
+}
+
+
+.SEM-Status .account-btn {
+	float: right;
+	border: 1px solid #ddd;
+	background: #eee;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.SEM-AppLogin {
+	cursor: pointer;
+	border: 1px solid #ddd;
+	background: #eee;
+	padding: 5px;
+}

@@ -1,0 +1,71 @@
+.SEM-File .file-header {
+    padding: 5px;
+    background: #f6f6f6;
+    border: 1px solid #eee;
+    color: #444;
+}
+
+.SEM-File .file-header .header-item {
+    margin: 0 10px;
+}
+
+.SEM-File .file-header .right-float {
+    float: right;
+}
+
+.SEM-File .file-loading {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+
+.SEM-File .file-container .file-row {
+    clear: both;
+    color: #444;
+    padding: 10px 5px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.SEM-File .file-container .right-float {
+    float: right;
+}
+
+.SEM-File .file-container .file-item {
+    margin: 0 10px;
+}
+
+.SEM-File .status {
+    width: 50px;
+}
+
+.SEM-File .file-container .status {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.SEM-File .file-container .status.active {
+    color: #64cc4a;
+}
+
+.SEM-File .action {
+    width: 50px;
+}
+
+.SEM-File .file-container .action {
+    font-size: 20px;
+}
+
+.SEM-File .file-container .action .file-compose-btn, .SEM-File .file-container .action .file-download-btn {
+    margin-right: 5px;
+}
+
+.SEM-File .date {
+    width: 110px;
+}
+
+.SEM-File .file-download-btn, .SEM-File .file-compose-btn, .SEM-File .clickable-file {
+    cursor: pointer;
+}

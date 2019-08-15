@@ -1,0 +1,199 @@
+.bubble {
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	border-radius: 4px;
+	transform: translateY(0px);
+  	transition: all 0.5s;
+	visibility: hidden;
+	opacity: 0.9;
+}
+
+.bubble.hidden {
+	display: none;
+}
+
+.bubble .wrapper {
+	opacity: 0;
+	transition: all 100ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.bubble:before {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background: #FFFFFF;
+	content: "";
+	top: 20px;
+	left: 20px;
+	color: #FFFFFF;
+	border-radius: 50%;
+	-webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+		transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.bubble.active {
+	display: block;
+	visibility: visible;
+	box-shadow: 5px 10px 50px -5px rgba(0,0,0,0.57);
+	transition: all 600ms;
+	transform: translateY(0px);
+	transition: all 0.5s;
+}
+
+.bubble.active:before {
+	height: 2000px;
+	width: 2000px;
+	border-radius: 50%;
+	top: 20px;
+	left: 20px;
+	margin-left: -1000px;
+	margin-top: -1000px;
+	display: block;
+	-webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.bubble.active .wrapper {
+	position: relative;
+	z-index: 1;
+	opacity: 1;
+	transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.wrapper {
+	/*width: 200px;*/
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	border: 5px solid #222222;
+	-webkit-box-shadow: 5px 10px 50px -5px rgba(0,0,0,0.57);
+	   -moz-box-shadow: 5px 10px 50px -5px rgba(0,0,0,0.57);
+			box-shadow: 5px 10px 50px -5px rgba(0,0,0,0.57);
+}
+
+.fretboard-heading {
+	/* TODO */
+}
+
+.fretboard-title-row {
+	background-color: #222222;
+}
+
+.fretboard-title-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fretboard-logo {
+	height: 29px;
+	padding: 10px;
+	float: left;
+}
+
+.fretboard-title {
+	float: right;
+	color: #FFFFFF;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.fretboard-details {
+	padding: 5px 10px;
+}
+
+.fretboard-details:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.detail-cell {
+	font-size: 1em;
+	font-weight: bold;
+	width: 30px;
+	float: left;
+	text-align: center;
+}
+
+.string-status {
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.circle {
+	width: 18px;
+	height: 18px;
+	margin: 0 5px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	color: #000000;
+	font-size: 0.9em;
+	line-height: 18px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+}
+
+.fretboard {
+	margin: 0;
+	padding: 0 10px 10px 10px;
+	border: 0;
+	border-spacing: 0;
+}
+
+.row {
+	border-top: 2px solid black;
+	background-color: #EEEEEE;
+}
+
+.row:first-child {
+	border-top: 6px solid #000000;
+}
+
+.row:last-child {
+	border-bottom: 2px solid #000000;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col {
+	width: 30px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+}
+
+.col:after {
+	content:"";
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	bottom: 0;
+	left: 15px;
+	border-left: 1px solid #000000;
+}
+
+.dot {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #000000;
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 10px);
+	bottom: 0;
+	left: calc(50% - 10px);
+	color: #FFFFFF;
+	font-size: 0.8em;
+	line-height: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+}

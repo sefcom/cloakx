@@ -1,0 +1,171 @@
+html.dji-sru-screen-selection #dji-sru-screen-selection {
+    display: block !important;
+}
+
+html.dji-sru-screen-selection body {
+    overflow: hidden !important;
+}
+
+#dji-sru-screen-selection {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2147483610; /* Note: see also #__dji_sru_main_container in mainContainer.css. We MUST NOT use a greater z-index. */
+    background-color: rgba(0, 0, 0, .4);
+    overflow: hidden;
+    cursor: none;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select-busy {
+    cursor: wait !important;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select,
+#dji-sru-screen-selection.dji-sru-screen-select-busy,
+#dji-sru-screen-selection.dji-sru-screen-select-ready {
+    background-color: transparent;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select-ready,
+#dji-sru-screen-selection.dji-sru-screen-select-ready .dji-sru-overlay-child
+{
+    cursor: default !important;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select-busy #dji-sru-x-line,
+#dji-sru-screen-selection.dji-sru-screen-select-busy #dji-sru-y-line,
+#dji-sru-screen-selection.dji-sru-screen-select-busy #dji-sru-crosshair,
+#dji-sru-screen-selection.dji-sru-screen-select-ready #dji-sru-x-line,
+#dji-sru-screen-selection.dji-sru-screen-select-ready #dji-sru-y-line,
+#dji-sru-screen-selection.dji-sru-screen-select-ready #dji-sru-crosshair {
+    display: none !important;
+}
+
+#dji-sru-x-line, #dji-sru-y-line {
+    z-index: 9999999960;
+    position: absolute;
+    border: solid 1px rgb(24, 255, 255);
+    cursor: none;
+}
+
+#dji-sru-x-line {
+    top: 0px;
+    bottom: 0px;
+}
+
+#dji-sru-y-line {
+    left: 0px;
+    right: 0px;
+}
+
+#dji-sru-crosshair {
+    z-index: 9999999960;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(24, 255, 255, 0.5);
+    border: 1px solid rgba(24, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: none;
+}
+
+#dji-sru-screen-selection .dji-sru-overlay-child {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select .dji-sru-overlay-child,
+#dji-sru-screen-selection.dji-sru-screen-select-busy .dji-sru-overlay-child,
+#dji-sru-screen-selection.dji-sru-screen-select-ready .dji-sru-overlay-child {
+    display: block !important;
+}
+
+#dji-sru-overlay-top, #dji-sru-overlay-bottom {
+    width: 100%;
+}
+
+#dji-sru-overlay-selection {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: 3px solid rgb(79, 97, 117);
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    z-index: 9999999960;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select #dji-sru-overlay-selection,
+#dji-sru-screen-selection.dji-sru-screen-select-busy #dji-sru-overlay-selection,
+#dji-sru-screen-selection.dji-sru-screen-select-ready #dji-sru-overlay-selection {
+    display: block !important;
+}
+
+#dji-sru-overlay-selection div.dji-sru-close-btn {
+    display: none;
+    z-index: 9999999960;
+    position: absolute;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/close.svg');
+    top: -14px;
+    right: -14px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer !important;
+}
+
+#dji-sru-overlay-selection div.dji-sru-close-btn:hover {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/resources/images/close-hover.svg');
+}
+
+#dji-sru-overlay-selection #dji-sru-ocr-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    cursor: default;
+    display: none;
+    outline: none;
+}
+
+#dji-sru-overlay-selection #dji-sru-ocr-content:focus {
+    outline: none;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select-ready #dji-sru-overlay-selection #dji-sru-ocr-content {
+    display: block !important;
+}
+
+#dji-sru-screen-selection.dji-sru-screen-select-ready div.dji-sru-close-btn {
+    display: block !important;
+}
+
+/*************************************************************************************************/
+html.dji-sru-screen-selection div.dji-sru-ocr-para {
+    position: absolute;
+    background-color: transparent;
+    /*zoom: reset;*/
+}
+
+html.dji-sru-screen-selection div.dji-sru-ocr-para span.dji-sru-ocr-word {
+    position: absolute;
+    display: inline-block;
+    color: transparent;
+    background-color: transparent;
+    overflow: hidden;
+    /*zoom: reset;*/
+}
+
+#dji-sru-ocr-content *::selection {
+    background-color: rgba(34, 108, 200, 0.4) !important;
+    color: rgba(255, 255, 255, 0.01) !important;
+}
+
+#dji-sru-ocr-content.dji-sru-temp-selection *::selection {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: transparent !important;
+}

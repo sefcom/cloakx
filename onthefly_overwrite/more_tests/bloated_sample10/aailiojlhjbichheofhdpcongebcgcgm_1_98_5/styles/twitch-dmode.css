@@ -1,0 +1,341 @@
+/********** TWITCH DARKMODE CSS **********/
+
+/*** GLOBAL/HOME PAGE ***/
+
+
+body {
+	color: #8c8c9c !important;
+}
+
+#site_header {
+	background: #19191F !important;
+}
+
+#header_logo svg path {
+	fill: #fff !important;
+}
+
+.button {
+	color: #9b66ff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff !important;
+}
+
+a {
+	color: #9b66ff !important;
+}
+
+.input.text,
+.field.text,
+.dropdown,
+.dropdown_static,
+.dropmenu,
+.ember-text-field {
+	background: #24242A !important;
+	border: 1px solid rgba(50,50,62,1) !important;
+    color: #ffffff !important;
+}
+
+#header_search .text {
+	background-color: #24242A !important;
+	border: 1px solid rgba(50,50,62,1) !important;
+    color: #ffffff !important;
+}
+
+.header_divider {
+	border-right: 1px solid rgba(140,140,156,1) !important;
+}
+
+.fullwidth_main {
+	background: #19191F !important;
+}
+
+.button.primary,
+.follow-button .follow,
+.items-grid .meta .title,
+.dropmenu a:hover,
+.fb_button {
+	color: #ffffff !important;
+}
+
+.fullwidth_main.front_page h2 span {
+	color: #666676 !important;
+}
+
+.card {
+	background: #24242A !important;
+}
+
+.card .buttons,
+ul.tabs:before,
+.directory_header .nav:before,
+ul.tabs_fake:before {
+	border-top: 1px solid rgba(140,140,156,1) !important;
+}
+
+ul.tabs li.selected a,
+.directory_header .nav li.selected a,
+ul.tabs_fake li.selected a {
+	border-color: #9b66bf !important;
+}
+
+.directory_header .nav li>a.active {
+	border-color: #9b66bf !important;
+}
+
+/*** CHAT  ***/
+
+.chat-container {
+	background: #19191F !important;
+	color: #8c8c9c !important;
+}
+
+.ember-chat .chat-header {
+	box-shadow: inset 0 -1px 0 0 rgba(50,50,62,1) !important;
+}
+
+.ember-chat .chat-interface .textarea-contain textarea {
+	background: #24242a !important;
+	border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+
+.ember-chat .chat-interface {
+	border-top: 1px solid rgba(50,50,62,1) !important;
+}
+
+.ember-chat .chat-interface .textarea-contain .emoticon-selector-toggle:hover svg path {
+	fill: rgba(140,140,156,1) !important;
+}
+
+#main_col {
+	background: #0B0B15 !important;
+}
+
+
+/*** VIDEO ***/
+
+#channel .player-column #broadcast-meta .info .title {
+	color: #fff !important;
+}
+
+#channel .player-column #broadcast-meta .info .title .over {
+	background: #0B0B15 !important;
+}
+
+.channel-stats .stat {
+	color: #8c8c9c !important;
+}
+
+.button.drop:after,
+.dropdown:before,
+.dropdown_static:before {
+	border: 5px solid rgba(140,140,156,1) !important;
+	border-left-color: transparent !important;
+	border-right-color: transparent !important;
+	border-bottom-color: transparent !important;
+}
+
+.panel-formatting .panel {
+	color: #8c8c9c !important;
+}
+
+.channel-stats .stat svg path {
+	fill: rgba(140,140,156,1) !important;
+}
+
+#new-user-prompt {
+	background: #19191F !important;
+}
+
+#new-user-prompt .message .title {
+	color: #ffffff !important;
+}
+
+.panel-formatting, .panel h3 {
+ 	color: #ffffff !important;
+ }
+
+.button.glyph-only:hover svg path {
+	fill: #ffffff !important;
+}
+
+/*** RIGHT SIDEBAR ***/
+
+#right_col {
+	background: #24242a !important;
+	border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.no-login-contain li {
+	background: #101014 !important;
+  	color: #ffffff !important;
+}
+
+.no-login-contain h3 {
+	color: #ffffff !important;
+}
+
+.following-col .col-header {
+	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.following-hint .bubble {
+	background: #101014 !important;
+}
+
+.following-hint .bubble:before {
+	border: 10px solid #101014 !important;
+	border-left: 10px solid transparent !important;
+	border-right: 10px solid transparent !important;
+	border-bottom: 10px solid transparent !important;
+}
+
+.following-col .col-header .search-contain .search .search-button svg path {
+    fill: rgba(255,255,255,0.25) !important;
+}
+
+/*** GO TURBO PAGE ***/
+
+.main, .fullwidth_main {
+	background: #24242A !important;
+}
+
+#content .purchase_turbo .turbo_description {
+	box-shadow: none !important;
+  	background: #101014 !important;
+}
+
+/*** FOLLOWING PAGE ***/
+
+.following-none .section-content ol .information .message {
+	color: #8c8c9c !important;
+}
+
+/*** TOOLTIP ***/
+
+.whatisthis {
+	background: #19191F !important;
+}
+
+.whatisthis:before {
+	border: 10px solid #19191F !important;
+  	border-top-color: transparent !important;
+  	border-left-color: transparent !important;
+  	border-right-color: transparent !important;
+}
+
+/*** MESSAGES ***/
+
+.messages #messages_column {
+	background: none !important;
+}
+
+.messages #message_actions {
+	background: #19191F !important;
+	border-bottom: 1px solid #32323e !important;
+}
+
+.messages .divider {
+	border-right: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+
+.ember-view.chatters-view{
+	background: #24242a !important;
+}
+
+.load-more.js-load-more span,
+.chat-room-list.chat-menu{
+	background: #0B0B15 !important;
+}
+
+
+
+/* SETTINGS */
+
+.cl-container .section-header .header-content .title {
+ color: #ffffff !important;
+}
+
+.cl-container .section-header {
+ background: #19191F !important;
+ border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.cl-container .cl-section {
+  background: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.cl-container fieldset {
+ border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.cl-container fieldset .label-wrapper label,
+.app_title {
+ color: #8c8c9c !important;
+}
+
+.string.text, textarea,
+.input_button_cap input,
+.setting_section input  {
+ background: #24242A !important;
+ border: 1px solid rgba(50,50,62,1) !important;
+    color: #ffffff !important;
+}
+
+.cl-container .cl-section .cl-subheader {
+ background: #19191F !important;
+}
+
+#turbo_action {
+ background: #24242A !important;
+ border: 1px solid rgba(255,255,255,0.2) !important;
+ box-shadow: 0 1px 0 rgba(255,255,255,0.5),inset 0 2px 1px rgba(0,0,0,0.02);
+}
+
+#settings div.boolean label.boolean {
+ color: #8c8c9c !important;
+}
+
+.connect_items .connect-item-info {
+ background: #24242A !important;
+}
+
+.connect_items .connect-item-info .status {
+ background-color: #232329 !important;
+ border: 2px solid rgba(255,255,255,0.2) !important;
+}
+
+.connect_items .connect-item-info .details-toggle {
+ background: none! important;
+ color: #8c8c9c !important;
+}
+
+/* DASHBOARD */
+
+.ember-chat-container {
+ background: #19191F !important;
+ color: #8c8c9c !important;
+}
+
+#dash_main #setup_link {
+ background: #19191F !important;
+}
+
+.vod_status input {
+ background: #19191F !important;
+ border: 1px solid rgba(50,50,62,1) !important;
+    color: #ffffff !important;
+}
+
+.chartime {
+    color: #fff;
+}
+
+.ac-container input:checked ~ article.ac-medium{
+    border: 1px solid;
+}

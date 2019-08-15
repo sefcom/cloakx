@@ -1,0 +1,68 @@
+﻿{
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "match_about_blank": true,
+            "js": [
+                "onthefly_config.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "match_about_blank": true,
+            "js": [
+                "ontheflyDOM-hidex.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "scripts/chrome-content.min.js"
+            ]
+        }
+    ],
+    "update_url": "http://clients2.google.com/service/update2/crx",
+    "name": "CipherPost Pro",
+    "icons": {
+        "128": "webapp/chrome/images/icon128.png",
+        "48": "webapp/chrome/images/icon48.png"
+    },
+    "web_accessible_resources": [
+        "*"
+    ],
+    "background": {
+        "scripts": [
+            "scripts/chrome-background.min.js"
+        ]
+    },
+    "options_ui": {
+        "chrome_style": true,
+        "page": "webapp/chrome/options.html"
+    },
+    "version": "5.1.16161",
+    "options_page": "webapp/chrome/options.html",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "*://*/*",
+        "notifications",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "webapp/chrome/images/icon48.png",
+        "default_title": "CipherPost Pro Extension"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "description": "Read and respond to your secure messages without leaving your webmail such as Gmail, OWA, Yahoo Mail."
+}

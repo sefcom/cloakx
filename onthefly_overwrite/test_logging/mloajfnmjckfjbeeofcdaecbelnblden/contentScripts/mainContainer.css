@@ -1,0 +1,1865 @@
+/*****************************************************************************************************
+* HTML & BODY
+*****************************************************************************************************/
+html[dji-sru-active] {
+    width: calc(100% - 32px);
+    position: relative;
+}
+
+html[dji-sru-active] body * {
+	-webkit-user-select: initial !important;
+}
+
+html[dji-sru-active][dji-sru-outline-active] {
+    width: calc(100% - 442px);
+    position: relative;
+
+}
+
+/*html.dji-sru-active.dji-sru-outline-active *{*/
+
+    /*-webkit-user-select: none !important;*/
+
+/*}*/
+
+html[dji-sru-active] body {
+    /* width: calc(100% - 32px); */
+    min-height: 100vh;
+}
+
+html[dji-sru-active][dji-sru-outline-active] body {
+    /*width: calc(100% - 442px);*/
+    min-height: 100vh;
+}
+
+
+
+/*****************************************************************************************************
+* MAIN CONTAINER
+*****************************************************************************************************/
+#__dji_sru_main_container {
+    position:fixed !important;
+    top:0px !important;
+    right:0px !important;
+    bottom:0 !important;
+    width:32px !important;
+    background-color: whitesmoke !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none;
+    z-index: 2147483610; /* Co:Writer Chrome Extension is using z-index=2147483640 and we MUST NOT use a greater one. */
+    overflow: hidden !important;
+}
+
+#__dji_sru_main_container #__dji_sru_main_container_iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#__dji_sru_main_container_content {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    width:32px !important;
+    background-color: whitesmoke;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    overflow: hidden;
+    font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif !important;
+    font-weight: 400;
+    color: rgba(0,0,0,.87);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: initial; /* fix a Chrome bug for local files (PDFs loaded in S&R locally) related to Chrome Issue 469452 */
+}
+
+/*#__dji_sru_main_container_content * {*/
+    /*font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif !important;*/
+
+/*}*/
+
+/*#__dji_sru_main_container_content *:not(b) {*/
+    /*font-weight: 300;*/
+/*}*/
+
+html[dji-sru-outline-active] #__dji_sru_main_container, html[dji-sru-outline-active] #__dji_sru_main_container_content  {
+
+    width:442px !important;
+}
+
+ html[dji-sru-outline-active] #__dji_sru_main_container_content .dji-sru-pagination-container {
+
+     display:block;
+
+}
+
+html[dji-sru-active] #__dji_sru_main_container {
+    display: block;
+}
+
+/*overlays */
+#dji-sru-main-container-busy {
+    display: none;
+    position: fixed;
+    z-index: 2147483611;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+    cursor: default !important;
+}
+
+html.dji-sru-main-container-busy #dji-sru-main-container-busy {
+    display: block;
+}
+
+/*****************************************************************************************************
+* OUTLINE
+*****************************************************************************************************/
+html[dji-sru-outline-highlight-active] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-highlight.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-highlight@2x.svg') 2x) 5 10, auto !important;
+}
+
+
+/* new css for material design */
+
+/* material-icons font */
+
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url("chrome-extension://__MSG_@@extension_id__/resources/fonts/material-icons/material-icons.woff2") format('woff2');
+}
+
+.dji-material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+.dji-material-icons.dji-white {
+    color: #FFFFFF;
+}
+
+.dji-material-icons.dji-black {
+    color: rgba(0,0,0,.54);
+}
+
+i {
+	user-select: none;
+}
+
+/* allows for speaking of the icons when the speak button is active */
+.dji-sru-speak-from-cursor i {
+	user-select: auto;
+}
+
+/* main toolbar */
+
+.dji-sru-toolbar > * {
+    font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif !important;
+}
+
+/* outline */
+
+.dji-sru-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 410px;
+    overflow: hidden !important;
+}
+
+.dji-sru-page > * {
+    z-index: 200;
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-content {
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-content.dji-sru-no-outline {
+    background-repeat: no-repeat;
+    background-position: 30px 40px;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/no-outlines.svg");
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-content {
+    z-index: 100;
+    position: relative;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dji-sru-page .dji-sru-page-toolbar {
+    z-index: 101;
+    background-color: #2196F3;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 56px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-back-to-parent-folder-page {
+    display: none;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar[dji-back-button] .dji-sru-page-toolbar-line1 .dji-sru-back-to-parent-folder-page {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2,
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+.dji-sru-page .dji-sru-page-toolbar .dji-sru-toolbar-group.dji-flex.dji-end {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info,
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info {
+    position: absolute;
+    top: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: calc(100% - 88px);
+    max-width: calc(100% - 88px);
+    margin-left: 72px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-full-path,
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-full-path {
+    color: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-name,
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-name {
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-full-path,
+.dji-sru-page .dji-sru-folder-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info .dji-sru-folder-name span {
+    cursor: pointer;
+}
+
+.dji-sru-page .dji-sru-outline-sources-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 {
+    height: 56px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-folder-page-info,
+.dji-sru-page .dji-sru-outline-sources-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-folder-page-info {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 24px;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-folder-page-info {
+    cursor: pointer;
+}
+
+.dji-sru-folder-page-info:first-letter {
+	text-transform: capitalize;
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 4px;
+    border-radius: 50%;
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+    height: 32px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-text-button {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 4px;
+    padding: 0 10px;
+    height: 32px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    transition: background-color .3s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button:first-of-type,
+.dji-sru-page-toolbar .dji-sru-tb-text-button:first-of-type {
+	margin: 0 4px 0 12px;
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button:last-of-type,
+.dji-sru-page-toolbar .dji-sru-tb-text-button:last-of-type {
+	margin: 0 12px 0 4px;
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button:not(.dji-disable):hover,
+.dji-sru-page-toolbar .dji-sru-tb-text-button:not(.dji-disable):hover {
+    background-color: rgba(255, 255, 255, .12);
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button:not(.dji-disable):active,
+.dji-sru-page-toolbar .dji-sru-tb-text-button:not(.dji-disable):active {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button.dji-disable,
+.dji-sru-page-toolbar .dji-sru-tb-text-button.dji-disable {
+    cursor: default;
+}
+
+.dji-sru-tb-button.dji-sru-outline-new-folder.dji-disable i {
+	color: rgba(255, 255, 255, .5);
+}
+
+.dji-sru-page-toolbar .dji-sru-tb-button.dji-hidden {
+    display: none;
+}
+
+.dji-sru-page .dji-sru-page-content {
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    background-color: #FFFFFF;
+}
+
+.dji-sru-page .dji-sru-page-content.dji-sru-outline-sources.dji-empty {
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/no-sources-link-text.svg");
+}
+
+/* add button + */
+
+.dji-page-folder-new {
+    z-index: 1000;
+    position: absolute;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #18FFFF;
+    color: rgba(0, 0, 0, .87);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .12), 0 6px 12px rgba(0, 0, 0, .24);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.dji-page-folder-new:hover {
+    background-color: #5DFDFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .12), 0 8px 16px rgba(0, 0, 0, .24);
+}
+
+.dji-page-folder-new:active {
+    box-shadow: 0 0 12px rgba(0, 0, 0, .12), 0 12px 24px rgba(0, 0, 0, .24);
+    background-color: #70FCFE;
+}
+
+.dji-page-folder-new.dji-outline {
+    left: 16px;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+}
+
+.dji-page-folder-new.dji-outline-new-source {
+	position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.dji-sru-folder-item-outlines-group {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 0 16px 72px;
+    padding-top: 16px;
+    color: rgba(0, 0, 0, 0.54);
+    cursor: default;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dji-sru-folder-item-outlines-group.dji-top-border {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 7px;
+}
+
+.dji-sru-folder-item,
+.dji-sru-search-folder-item {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 72px;
+    min-height: 72px;
+    max-height: 72px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.dji-sru-search-folder-item:hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.dji-sru-folder-item:last-of-type {
+	margin-bottom: 16px;
+}
+
+.dji-sru-folder-item .dji-sru-folder-item-icon,
+.dji-sru-search-folder-item .dji-sru-folder-item-icon {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dji-sru-folder-item.dji-sru-folder-item-subfolder .dji-sru-folder-item-icon,
+.dji-sru-search-folder-item.dji-sru-folder-item-subfolder .dji-sru-folder-item-icon {
+    background-color: #BDBDBD;
+}
+
+.dji-sru-folder-item.dji-sru-folder-item-outline .dji-sru-folder-item-icon,
+.dji-sru-search-folder-item.dji-sru-folder-item-outline .dji-sru-folder-item-icon {
+    background-color: #BDBDBD;
+}
+
+.dji-sru-folder-item.dji-selected {
+    background-color: #ECEFF1;
+}
+
+.dji-sru-folder-item .dji-sru-folder-item-info,
+.dji-sru-search-folder-item .dji-sru-folder-item-info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 16px;
+}
+
+.dji-sru-folder-item .dji-sru-folder-item-info .dji-sru-folder-item-name,
+.dji-sru-search-folder-item .dji-sru-folder-item-info .dji-sru-folder-item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+}
+
+.dji-sru-folder-item .dji-sru-folder-item-info .dji-sru-folder-item-date,
+.dji-sru-search-folder-item .dji-sru-folder-item-info .dji-sru-folder-item-date {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* tab item */
+
+.dji-sru-tab-items {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.dji-sru-tab-items .dji-sru-tab-item,
+.dji-sru-tab-items .dji-sru-tab-item-more {
+    background-color: transparent;
+    border-bottom: solid 3px transparent;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    transition: border-bottom .3s;
+}
+
+.dji-sru-tab-items .dji-sru-tab-item-more {
+    position: relative;
+    padding-right: 10px;
+}
+
+.dji-sru-tab-items .dji-sru-tab-item-more:after {
+    font-family: 'Material Icons';
+    content: "arrow_drop_down";
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    font-size: 25px;
+}
+
+.dji-sru-tab-items .dji-sru-tab-item:hover,
+.dji-sru-tab-items .dji-sru-tab-item-more:hover {
+    border-bottom: solid 3px rgba(255, 255, 255, 0.3);
+}
+
+.dji-sru-tab-items .dji-sru-tab-item.dji-selected {
+    color: #FFFFFF;
+    border-bottom: solid 3px #18FFFF;
+}
+
+.dji-sru-tab-items .dji-sru-tab-item-more.dji-dropdown {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dji-sru-outline-page .dji-sru-page-toolbar-line1[dji-outline-title-bar] {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;;
+}
+
+.dji-sru-folder-page .dji-sru-search-outlines-overlay {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dji-sru-outline-page .dji-sru-search-in-topics-overlay {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+}
+
+.dji-sru-page .dji-sru-search-outline-template-overlay,
+.dji-sru-page .dji-sru-search-sources-overlay {
+    z-index: 30000;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+}
+
+.dji-sru-page .dji-sru-search-outline-template-overlay {
+    left: -32px;
+    margin-left: 32px;
+}
+
+.dji-sru-page .dji-sru-search-sources-overlay {
+    left: 32px;
+}
+
+.dji-sru-folder-page .dji-sru-search-outlines-overlay,
+.dji-sru-outline-page .dji-sru-search-outline-template-overlay,
+.dji-sru-page .dji-sru-search-sources-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dji-sru-folder-page[dji-sru-search-outlines] .dji-sru-search-outlines-overlay,
+.dji-sru-page[dji-sru-search-sources] .dji-sru-search-sources-overlay,
+.dji-sru-outline-page[dji-sru-search-outline-template] .dji-sru-search-outline-template-overlay,
+.dji-sru-outline-page[dji-sru-search-in-topics] .dji-sru-search-in-topics-overlay {
+    display: block;
+}
+
+.dji-sru-folder-page .dji-sru-search-outlines-overlay .dji-sru-page-toolbar,
+.dji-sru-page .dji-sru-search-sources-overlay .dji-sru-page-toolbar,
+.dji-sru-outline-page .dji-sru-search-outline-template-overlay .dji-sru-page-toolbar,
+.dji-sru-outline-page .dji-sru-search-in-topics-overlay .dji-sru-page-toolbar {
+    box-shadow: none;
+}
+
+.dji-sru-folder-page .dji-sru-search-outlines-overlay .dji-sru-page-toolbar,
+.dji-sru-outline-page .dji-sru-search-outline-template-overlay .dji-sru-page-toolbar,
+.dji-sru-page .dji-sru-search-sources-overlay .dji-sru-page-toolbar {
+    background-color: transparent;
+}
+
+.dji-sru-folder-page[dji-sru-search-outlines] .dji-sru-search-container,
+.dji-sru-page[dji-sru-search-sources] .dji-sru-search-container,
+.dji-sru-outline-page[dji-sru-search-outline-template] .dji-sru-search-container,
+.dji-sru-outline-page[dji-sru-search-in-topics] .dji-sru-search-container {
+    margin: 10px 5px;
+}
+
+.dji-sru-folder-page[dji-sru-search-outlines] .dji-sru-search-container .dji-sru-search-toolbar,
+.dji-sru-page[dji-sru-search-sources] .dji-sru-search-container .dji-sru-search-toolbar,
+.dji-sru-outline-page[dji-sru-search-outline-template] .dji-sru-search-container .dji-sru-search-toolbar,
+.dji-sru-outline-page[dji-sru-search-in-topics] .dji-sru-search-container .dji-sru-search-toolbar {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+.dji-sru-outline-page[dji-sru-search-in-topics] .dji-sru-search-container .dji-sru-search-toolbar .dji-search-result-info {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+    padding: 3px 5px;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-sru-search-input {
+    margin-left: 5px;
+    margin-right: 5px;
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-sru-search-input.dji-sru-right-border {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-sru-search-input input {
+    border: none;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-sru-search-input input:focus {
+    outline: none;
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-search-buttons {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-search-buttons .dji-sru-tb-button.dji-no-right-space {
+    margin-right: 0;
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-search-buttons .dji-sru-tb-button:hover {
+	background-color: rgba(33, 150, 243, 0.12);
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-search-buttons .dji-sru-tb-button:active {
+	background-color: rgba(33, 150, 243, 0.3);
+}
+
+.dji-sru-search-container .dji-sru-search-toolbar .dji-search-buttons .dji-sru-tb-button i {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.dji-sru-search-container .dji-sru-search-result {
+    display: none;
+    border-left: solid 1px rgba(0, 0, 0, 0.12);
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    max-height: calc(100% - 66px);
+    background-color: #FFFFFF;
+    overflow-y: auto;
+}
+
+.dji-sru-search-container[dji-sru-show-result] .dji-sru-search-result {
+    display: block;
+}
+
+.dji-sru-folder-page[dji-sru-search-outlines] .dji-sru-search-container[dji-sru-show-result] .dji-sru-search-toolbar,
+.dji-sru-page[dji-sru-search-sources] .dji-sru-search-container[dji-sru-show-result] .dji-sru-search-toolbar,
+.dji-sru-outline-page[dji-sru-search-outline-template] .dji-sru-search-container[dji-sru-show-result] .dji-sru-search-toolbar,
+.dji-sru-outline-page[dji-sru-search-in-topics] .dji-sru-search-container[dji-sru-show-result] .dji-sru-search-toolbar {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dji-sru-search-container .dji-sru-search-result .dji-sru-search-outline-template,
+.dji-sru-search-container .dji-sru-search-result .dji-sru-search-source {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dji-sru-search-container .dji-sru-search-result .dji-sru-search-outline-template:hover,
+.dji-sru-search-container .dji-sru-search-result .dji-sru-search-source:hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-tab-items {
+    height: 100%;
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-tab-items .dji-sru-tab-item {
+    -ms-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-tab-items .dji-sru-tab-item,
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-tab-items .dji-sru-tab-item-more {
+    -ms-flex: 4;
+    -webkit-flex: 4;
+    flex: 4;
+}
+
+.dji-sru-page .dji-sru-outline-page .dji-sru-page-content .dji-sru-outline-sources .dji-sru-tab-items.dji-outline-sources-style  {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+    height: 40px;
+}
+
+.dji-sru-tab-items .dji-sru-oss-tab-item {
+    -ms-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+    color: rgba(0, 0, 0, 0.26);
+    text-align: center;
+    cursor: pointer;
+}
+
+.dji-sru-tab-items .dji-sru-oss-tab-item.dji-selected {
+    color: #2196F3;
+}
+
+.dji-sru-page-content .dji-tab-item-view {
+    display: none;
+}
+
+.dji-sru-page-content .dji-tab-item-view.dji-visible {
+    display: block;
+}
+
+.dji-sru-page-content .dji-tab-item-view.dji-source-view {
+    padding: 10px;
+}
+
+/* outline */
+
+.dji-sru-outline-content.dji-sru-outline-details {
+    padding: 16px 16px 16px 10px;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+ul.dji-sru-outline-list li .dji-sru-outline-topic-item {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+ul.dji-sru-outline-list li.dji-sru-outline-topic {
+    position: relative;
+    margin-left: 30px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+ul.dji-sru-outline-list li.dji-sru-outline-topic .dji-sru-outline-topic-bullet {
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: background-color .2s, box-shadow .4s;
+}
+
+ul.dji-sru-outline-list li.dji-sru-outline-topic .dji-sru-outline-topic-bullet:hover {
+	background-color: rgba(33, 150, 245, .87);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.24);
+}
+
+ul.dji-sru-outline-list .dji-sru-outline-topic .dji-sru-outline-topic-content {
+    padding: 2px 0 3px 0;
+    text-align: left;
+    line-height: 20px;
+    min-height: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: text;
+    transition: color 0.3s;
+}
+
+ul.dji-sru-outline-list .dji-sru-outline-topic .dji-sru-outline-topic-content:focus {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.87);
+    /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);*/
+    outline: none;
+}
+
+ul.dji-sru-outline-list .dji-sru-outline-topic .dji-sru-intext-citation {
+    padding: 0 3px 3px 3px;
+}
+
+ul.dji-sru-outline-list .dji-sru-outline-topic.dji-sru-topic-over {
+    border-bottom: 3px solid #2196F3 !important;
+    padding-bottom: 6px !important;
+    margin-bottom: 8px !important;
+}
+
+.dji-sru-intext-citation a:link, .dji-sru-intext-citation a:visited {
+    color: #326891;
+    text-decoration: none;
+}
+
+.dji-sru-intext-citation a:hover {
+    text-decoration: underline;
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-topics-highlights,
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-sources-highlights {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-topics-highlights .dji-sru-outline-source-bullet,
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-sources-highlights .dji-sru-outline-source-bullet {
+    display: none;
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-topics-highlights {
+    margin: 16px 16px 16px 10px;
+    background-color: rgba(255, 255, 0, 0.25);
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-sources-highlights {
+    margin: 41px 0 0 0;
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-topics-highlights,
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content .dji-sru-search-in-sources-highlights {
+}
+
+.dji-sru-outline-page .dji-sru-page-content .dji-tab-item-view.dji-sru-outline-content.dji-sru-outline-sources.dji-empty {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/no-sources-tip.svg");
+    background-position: center 70px;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+ul.dji-sru-outline-source-list {
+    list-style-type: none;
+    margin: 16px 16px 16px 60px;
+}
+
+ul.dji-sru-outline-source-list li.dji-sru-outline-source {
+    position: relative;
+}
+
+ul.dji-sru-outline-source-list li.dji-sru-outline-source .dji-sru-outline-source-bullet {
+    position: absolute;
+    top: 7px;
+    left: -40px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: background-color .2s, box-shadow .4s;
+}
+
+ul.dji-sru-outline-source-list li.dji-sru-outline-source .dji-sru-outline-source-bullet:hover {
+	background-color: rgba(33, 150, 245, .87);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.24);
+}
+
+ul.dji-sru-outline-source-list li.dji-sru-outline-source .dji-sru-outline-source-content {
+    padding: 3px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    text-indent: -18px;
+    cursor: -webkit-grab;
+}
+
+ul.dji-sru-outline-source-list li.dji-sru-outline-source .dji-sru-outline-source-content:active {
+	cursor: -webkit-grabbing;
+}
+
+/* context menu */
+
+.dji-sru-context-menu {
+    position: absolute;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 5px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .12), 0 8px 16px rgba(0, 0, 0, .24);
+}
+
+.dji-sru-context-menu .dji-sru-popup-menu-item {
+    position: relative;
+}
+
+.dji-sru-context-menu .dji-sru-popup-menu-item .dji-sru-menu-popup {
+    z-index: 3000;
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 5px 0;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .12), 0 9px 18px rgba(0, 0, 0, .24);
+}
+
+.dji-sru-context-menu .dji-sru-menu-item {
+    height: 50px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dji-sru-context-menu .dji-sru-menu-item:not(.dji-disable):hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.dji-sru-context-menu .dji-sru-menu-item.dji-disable {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.dji-sru-context-menu .dji-sru-menu-separator-item {
+    border-top: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.dji-sru-context-menu .dji-sru-menu-item .dji-sru-menu-item-icon {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.dji-sru-context-menu .dji-sru-menu-item .dji-sru-menu-item-text {
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    margin-left: 10px;
+}
+
+.dji-sru-context-menu .dji-sru-menu-item .dji-sru-menu-item-text.dji-sru-no-icon {
+    padding: 5px 5px 5px 20px;
+}
+
+.dji-sru-context-menu .dji-sru-menu-item .dji-sru-menu-popup-arrow {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#dji-sru-folder-page-context-menu,
+#dji-sru-folder-page-item-context-menu,
+#dji-sru-outline-page-context-menu,
+#dji-sru-outline-new-source-more-context-menu {
+    z-index: 1000000010;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+#dji-sru-folder-page-context-menu.dji-visible,
+#dji-sru-folder-page-item-context-menu.dji-visible,
+#dji-sru-outline-page-context-menu.dji-visible,
+#dji-sru-outline-new-source-more-context-menu.dji-visible {
+    display: block;
+}
+
+#dji-sru-folder-page-context-menu .dji-sru-context-menu {
+    top: 10px;
+    right: 10px;
+    width: 200px;
+}
+
+#dji-sru-folder-page-item-context-menu .dji-sru-context-menu {
+    width: 200px;
+}
+
+#dji-sru-outline-page-context-menu .dji-sru-context-menu {
+    top: 10px;
+    right: 10px;
+    width: 250px;
+}
+
+#dji-sru-outline-new-source-more-context-menu .dji-sru-context-menu {
+    top: 96px;
+    right: 2px;
+    width: 250px;
+}
+
+/* modal dialog */
+
+.dji-sru-modal-dialog {
+    z-index: 20000;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 24px 24px 10px 24px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, .12), 0 24px 48px rgba(0, 0, 0, .24);
+}
+
+.dji-sru-modal-dialog.dji-fit-to-parent {
+    z-index: 20000;
+    position: relative;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    padding: 0;
+    box-shadow: none;
+}
+
+.dji-sru-modal-dialog .dji-sru-dialog-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.dji-sru-modal-dialog .dji-sru-dialog-message {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.dji-sru-modal-dialog input.dji-sru-input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 1px rgba(0, 0, 0, .12);
+    outline: none;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 16px;
+    padding: 3px 3px 7px 3px;
+}
+
+.dji-sru-modal-dialog input.dji-sru-input:focus {
+    border-bottom: solid 2px rgba(33, 150, 243, 1);
+    padding: 3px 3px 6px 3px;
+    outline: none;
+}
+
+.dji-sru-modal-dialog input[disabled].dji-sru-input {
+    background-color: transparent;
+    color: rgba(0, 0, 0, .38);
+}
+
+.dji-sru-modal-dialog .dji-sru-input-container input {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dji-sru-modal-dialog .dji-sru-popup-buttons {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.dji-sru-modal-dialog .dji-sru-popup-button {
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin: 8px 0 0 8px;
+    padding: 0 8px;
+    border-radius: 2px;
+    background-color: transparent;
+    color: rgba(33, 150, 243, 1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    line-height: 36px;
+    min-width: 64px;
+    transition: background-color .3s;
+}
+
+.dji-sru-modal-dialog .dji-sru-popup-button:not(.dji-disable):hover {
+    background-color: rgba(33, 150, 243, .12);
+}
+
+.dji-sru-modal-dialog .dji-sru-popup-button:not(.dji-disable):active {
+    background-color: rgba(33, 150, 243, .3);
+}
+
+.dji-sru-modal-dialog .dji-sru-popup-button.dji-disable {
+    color: #9E9E9E !important;
+    cursor: default;
+}
+
+#dji-folder-page-template-dlg-1,
+#dji-folder-page-delete-outline-dlg {
+    z-index: 1000000010;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 32px;
+    background-color: rgba(0, 0, 0 ,.5);
+}
+
+#dji-folder-page-template-dlg-1.dji-visible,
+#dji-folder-page-delete-outline-dlg.dji-visible {
+    display: block;
+}
+
+#dji-folder-page-template-dlg-1 .dji-sru-modal-dialog,
+#dji-folder-page-delete-outline-dlg .dji-sru-modal-dialog {
+    width: 300px;
+}
+
+#dji-sru-outline-move-to-dlg,
+#dji-sru-outline-source-dlg {
+    z-index: 1000000000;
+    display: none;
+    padding-left: 32px;
+}
+
+#dji-sru-outline-move-to-dlg.dji-visible,
+#dji-sru-outline-source-dlg.dji-visible {
+    display: block;
+}
+
+#dji-sru-outline-move-to-dlg .dji-sru-modal-dialog,
+#dji-sru-outline-source-dlg .dji-sru-modal-dialog {
+}
+
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-folder-page-info,
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line1 .dji-sru-folder-page-info {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 24px;
+    margin-right: 10px;
+    cursor: default;
+}
+
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 {
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-folder-page-info {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-right: 10px;
+    cursor: default;
+}
+
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-page-toolbar .dji-sru-page-toolbar-line2 .dji-sru-tab-items {
+    height: 100%;
+}
+
+#dji-sru-outline-source-dlg.dji-sru-page .dji-sru-page-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#dji-sru-outline-move-to-dlg .dji-sru-popup-buttons {
+    margin: 10px 0;
+}
+
+#dji-sru-outline-move-to-dlg .dji-sru-tb-button.dji-sru-dialog-close {
+    display: none;
+}
+
+#dji-sru-outline-move-to-dlg .dji-sru-tb-button.dji-sru-dialog-back {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 4px 0 12px;
+}
+
+#dji-sru-outline-move-to-dlg[dji-home-folder] .dji-sru-tb-button.dji-sru-dialog-close {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#dji-sru-outline-move-to-dlg[dji-home-folder] .dji-sru-tb-button.dji-sru-dialog-back {
+    display: none;
+}
+
+#dji-sru-outline-move-to-dlg.dji-sru-page .dji-sru-page-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* outline sources page */
+
+.dji-sru-outline-sources-page .dji-sru-page-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dji-sru-outline-sources-page .dji-sru-outline-source {
+    position: relative;
+    margin-top: 20px;
+}
+
+.dji-sru-outline-sources-page .dji-sru-outline-source .dji-sru-check-box {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.dji-sru-outline-sources-page .dji-sru-outline-source .dji-sru-check-box i {
+    color: #2196F3;
+}
+
+.dji-sru-outline-sources-page .dji-sru-outline-source .dji-sru-outline-source-content {
+    margin-left: 50px;
+    padding: 0 10px 0 28px;
+    text-indent: -22px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    outline: none;
+    color: rgba(0,0,0,.54);
+    cursor: -webkit-grab;
+}
+
+/* toolbar outline topics and sources */
+
+#dji-sru-topics-toolbar,
+#dji-sru-sources-toolbar {
+    z-index: 1000000000;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(-2px, 4.5px);
+}
+
+#dji-sru-topics-toolbar.dji-visible,
+#dji-sru-sources-toolbar.dji-visible {
+    display: block;
+}
+
+#dji-sru-topics-toolbar .dji-sru-pie-toolbar {
+    position: relative;
+    width: 62px;
+    height: 132px;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/bulletToolbar_2icons.svg");
+    background-size: 62px 132px;
+    background-repeat: no-repeat;
+}
+
+#dji-sru-sources-toolbar .dji-sru-pie-toolbar {
+    position: relative;
+    width: 48px;
+    height: 129.5px;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/bulletToolbar_source.svg");
+    background-size: 48px 129.5px;
+    background-repeat: no-repeat;
+}
+
+.dji-sru-pie-toolbar .dji-sru-pie-toolbar-button {
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+}
+
+.dji-sru-pie-toolbar .dji-sru-pie-toolbar-button:not(.dji-disable):hover {
+    background-color: rgba(255, 255, 255, .12);
+}
+
+.dji-sru-pie-toolbar .dji-sru-pie-toolbar-button:not(.dji-disable):active {
+    background-color: rgba(255, 255, 255, .30);
+}
+
+.dji-sru-pie-toolbar .dji-sru-pie-toolbar-button.dji-disable {
+    opacity: 0.50;
+    cursor: default;
+}
+
+#__dji_sru_linkButton {
+    top: 19px;
+    left: 31px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/linkSource.svg");
+}
+
+#__dji_sru_indentButton {
+    top: 39px;
+    left: 12px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/indent.svg");
+}
+
+#__dji_sru_outdentButton {
+    top: 65px;
+    left: 12px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/outdent.svg");
+}
+
+#__dji_sru_deleteTopicButton {
+    top: 86px;
+    left: 31px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/delete.svg");
+}
+
+#__dji_sru_editSourceButton {
+    top: 38px;
+    left: 12px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/sourceEdit.svg");
+}
+
+#__dji_sru_deleteSourceButton {
+    top: 64px;
+    left: 12px;
+    background-image: url("chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/resources/images/delete.svg");
+}
+
+/* source template */
+
+.dji-sru-page .dji-sru-form-line {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+    height: 56px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.dji-sru-page .dji-sru-form-line:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.dji-sru-page .dji-sru-form-line.dji-sru-1 > * {
+    -ms-flex: 1 1 0.000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 0.000000001px;
+    flex-basis: 0.000000001px;
+}
+
+.dji-sru-page .dji-sru-form-line.dji-sru-2 > * {
+    -ms-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+.dji-sru-page .dji-sru-form-line.dji-sru-3 > * {
+    -ms-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.dji-sru-combobox-contributors {
+    position: relative;
+    color: rgba(0, 0, 0, 0.87);
+    margin-right: 10px;
+    width: 85px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    min-width: 95px;
+    max-width: 95px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dji-sru-combobox-contributors:focus {
+    outline: none;
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.dji-sru-combobox-contributors .dji-sru-combobox-label {
+    margin-right: 25px;
+    padding: 0 5px;
+    text-align: left;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.dji-sru-combobox-contributors .dji-sru-combobox-label::after {
+    font-family: 'Material Icons';
+    content: "arrow_drop_down";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    font-size: 25px;
+}
+
+.dji-sru-combobox-contributors .dji-sru-contributors-selection {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 5px 0;
+    width: 105px;
+    min-width: 105px;
+    max-width: 105px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .12), 0 9px 18px rgba(0, 0, 0, 0.24);
+}
+
+.dji-sru-combobox-contributors .dji-sru-contributors-selection.dji-visible {
+    display: block;
+}
+
+.dji-sru-combobox-contributors .dji-sru-contributors-selection .dji-sru-contributor-option {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dji-sru-combobox-contributors .dji-sru-contributors-selection .dji-sru-contributor-option:hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.dji-sru-form-element-container {
+    position: relative;
+    height: 40px;
+    padding: 0;
+}
+
+.dji-sru-form-element-container:not(:last-child) {
+    margin-right: 10px;
+}
+
+.dji-sru-form-element-container .dji-sru-source-placeholder {
+    color: gray;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    font-weight: normal !important;
+}
+
+.dji-sru-form-element-container .dji-sru-source-placeholder-visible {
+    visibility: visible;
+}
+
+.dji-sru-edit-source-input {
+    margin: 0;
+    border: none;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.12);
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    height: 26px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: transparent;
+    outline: none;
+    font-weight: normal !important;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+.dji-sru-edit-source-input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.dji-sru-edit-source-input:focus  {
+    outline: none;
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.dji-sru-form-line .dji-sru-form-button {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 4px;
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.dji-sru-page-toolbar .dji-sru-form-button:first-of-type {
+    margin: 0 4px 0 12px;
+}
+
+.dji-sru-form-line .dji-sru-form-button:last-of-type {
+    margin: 0 12px 0 4px;
+}
+
+.dji-sru-form-line .dji-sru-form-button:not(.dji-disable):hover {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.dji-sru-form-line .dji-sru-form-button:not(.dji-disable):active {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.dji-sru-form-line .dji-sru-form-button.dji-disable {
+    cursor: default;
+}
+
+.dji-sru-source-add-author-button {
+    margin: 0 !important;
+    color: rgba(0, 0, 0, .54);
+}
+
+.dji-sru-form-line.dji-sru-page-source-author-line.dji-sru-hide-add-button .dji-sru-source-add-author-button {
+    display: none;
+}
+
+.dji-sru-last-accessed {
+    display: none;
+}
+
+#dji-sru-drag-ghost {
+    position: fixed;
+    height: 16px;
+    padding: 4px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500 !important;
+    min-width: 70px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    background-color: #d3d3da;
+    color: rgba(0,0,0,.54);
+    z-index: 0;
+}
+
+.dji-sru-highlight-item {
+    z-index: -1;
+    position: absolute;
+    background-color: #FFFF00; /* TODO: change highlight color */
+}
+
+.dji-sru-highlight-item.dji-sru-active {
+    background-color: #FFAA00; /* TODO: change active highlight color */
+}
+
+.dji-sru-intext-citation > span.dji-sru-collapse {
+    display: inline-block;
+    margin-left: 5x;
+    width: 12px;
+    height: 12px;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/images/lessCitations.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+.dji-sru-ellipses:hover, .dji-sru-collapse:hover {
+    cursor: pointer !important;
+}

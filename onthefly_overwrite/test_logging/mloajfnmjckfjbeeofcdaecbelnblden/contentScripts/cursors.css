@@ -1,0 +1,19 @@
+html[dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak@2x.svg') 2x), auto !important;
+}
+
+html[dji-sru-speak-active][dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-active][dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak-off.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-speak-off@2x.svg') 2x), auto !important;
+}
+
+html[dji-sru-speak-waiting][dji-sru-speak-from-cursor] body,
+html[dji-sru-speak-waiting][dji-sru-speak-from-cursor] body * {
+    cursor: -webkit-image-set(url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-wait.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-wait@2x.svg') 2x), auto !important;
+}
+
+html[dji-sru-outline-highlight-active] body,
+html[dji-sru-outline-highlight-active] body * {
+    cursor: -webkit-image-set (url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-highlight.svg') 1x, url('chrome-extension://__MSG_@@extension_id__/resources/images/cursor-highlight@2x.svg') 2x), auto !important;
+}

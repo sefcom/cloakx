@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.wrapper {
+		width: 300px;
+		font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+		background-color: #f2f2f2;
+		border-radius: 5px;
+		color: #34495e;
+	}
+	.content {
+		width: 260px;
+		padding: 20px 20px 0 20px;
+		border-bottom: 1px solid #dddddd;
+	}
+	.message {
+		font-size: 1.3em;
+		text-align: center;
+		line-height: 1.5em;
+		font-weight: 200;
+	}
+	.message p {
+		margin: 0;
+	}
+	.message b {
+		font-size: 1.4em;
+	}
+	.buttons {
+		padding: 20px 0;
+	}
+	.buttons:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.btn {
+		width: 120px;
+		height: 35px;
+		display: block;
+		float: left;
+		margin-right: 20px;
+		text-align: center;
+		line-height: 35px;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #ffffff;
+		border-radius: 2px;
+		border-bottom: 2px solid #2c3e50;
+	}
+	.btn#yes {background-color: #27ae60;}
+	.btn#no {background-color: #c0392b;}
+	.btn#yes:hover {background-color: #2ecc71;}
+	.btn#no:hover {background-color: #e74c3c;}
+	.btn:last-child {
+		margin-right: 0;
+	}
+	.btn:active {
+		border-bottom: 0px solid #2c3e50;
+		transform: translateY(2px);
+	}
+	.info {
+		border-top: 1px solid #ffffff;
+		border-bottom: 1px solid #dddddd;
+		padding: 10px;
+	}
+	.info p {
+		text-align: center;
+		font-size: 1.2em;
+		margin: 0;
+	}
+	.info a {
+		color: #2980b9;
+		text-decoration: none;
+		text-align: center;
+	}
+	.info a:hover {
+		text-decoration: underline;
+	}
+	.footer {
+		width: 260px;
+		padding: 10px 20px 20px 20px;
+		border-top: 1px solid #ffffff;
+	}
+	.footer img {
+		height: 30px;
+		margin-left: calc(50% - 34px); /* Logo size 32px*68px */
+	}
+	.footer p {
+		text-align: center;
+		margin: 0;
+		font-size: 1.2em;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="message">
+				<p>Do you want to add<br/><b id="url"></b><br/>to tracking websites?</p>
+			</div>
+			<div class="buttons">
+				<a class="btn" id="no" href="#" title="No">&#10006;</a>
+				<a class="btn" id="yes" href="#" title="Yes">&#10004;</a>
+			</div>
+		</div>
+		<div class="info">
+			<p>More settings available <a id="settings" href="#">here</a>.</p>
+		</div>
+		<div class="footer">
+			<img src="img/logo.png" height="32">
+			<p>Fretboard v1.0</p>	
+		</div>
+	</div>
+
+	<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

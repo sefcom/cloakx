@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "deliveryslip";
+  src:url("assets/fonts/deliveryslip.eot");
+  src:url("assets/fonts/deliveryslip.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/deliveryslip.woff") format("woff"),
+    url("assets/fonts/deliveryslip.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.SEM-Deliveryslip [data-icon]:before {
+  font-family: "deliveryslip" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.SEM-Deliveryslip [class^="icon-"]:before,
+.SEM-Deliveryslip [class*=" icon-"]:before,
+.tooltip-icon {
+  font-family: "deliveryslip" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tooltip-icon {
+	text-align: right;
+	color: #58bb7a;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+i.tooltip-icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 2px;
+	vertical-align: middle;
+	float: right;
+}
+
+.SEM-Deliveryslip .icon-forward:before {
+  content: "a";
+}
+.SEM-Deliveryslip .icon-reply:before {
+  content: "b";
+}
+.SEM-Deliveryslip .icon-reply-all:before {
+  content: "c";
+}
+.SEM-Deliveryslip .icon-print:before {
+  content: "d";
+}
+.SEM-Deliveryslip .icon-download:before {
+  content: "f";
+}
+.SEM-Deliveryslip .icon-envelope-closed:before {
+  content: "h";
+}
+.SEM-Deliveryslip .icon-envelope-open:before {
+  content: "i";
+}
+.SEM-Deliveryslip .icon-trash:before {
+  content: "l";
+}
+.SEM-Deliveryslip .icon-files:before {
+  content: "e";
+}
+.SEM-Deliveryslip .icon-minus:before {
+  content: "g";
+}
+.SEM-Deliveryslip .icon-check:before {
+  content: "j";
+}
+.SEM-Deliveryslip .icon-file:before {
+  content: "k";
+}
+.SEM-Deliveryslip .icon-alert:before {
+  content: "m";
+}
+.SEM-Deliveryslip .icon-vcollapse:before {
+  content: "n";
+}
+.SEM-Deliveryslip .icon-lock:before {
+  content: "o";
+}
+.SEM-Deliveryslip .icon-unlock:before {
+  content: "p";
+}
+.SEM-Deliveryslip .icon-refresh:before {
+  content: "q";
+}
+.SEM-Deliveryslip .icon-certified:before {
+  content: "r";
+}
+.SEM-Deliveryslip .icon-shield:before {
+  content: "s";
+}
+.SEM-Deliveryslip .icon-attach:before {
+  content: "t";
+}
+
+
+.tooltip-icon.icon-forward:before {
+  content: "a";
+}
+.tooltip-icon.icon-reply:before {
+  content: "b";
+}
+.tooltip-icon.icon-reply-all:before {
+  content: "c";
+}
+.tooltip-icon.icon-print:before {
+  content: "d";
+}
+.tooltip-icon.icon-download:before {
+  content: "f";
+}
+.tooltip-icon.icon-envelope-closed:before {
+  content: "h";
+}
+.tooltip-icon.icon-envelope-open:before {
+  content: "i";
+}
+.tooltip-icon.icon-trash:before {
+  content: "l";
+}
+.tooltip-icon.icon-files:before {
+  content: "e";
+}
+.tooltip-icon.icon-minus:before {
+  content: "g";
+}
+.tooltip-icon.icon-check:before {
+  content: "j";
+}
+.tooltip-icon.icon-file:before {
+  content: "k";
+}
+.tooltip-icon.icon-alert:before {
+  content: "m";
+}
+.tooltip-icon.icon-vcollapse:before {
+  content: "n";
+}
+.tooltip-icon.icon-lock:before {
+  content: "o";
+}
+.tooltip-icon.icon-unlock:before {
+  content: "p";
+}
+.tooltip-icon.icon-refresh:before {
+  content: "q";
+}
+.tooltip-icon.icon-certified:before {
+  content: "r";
+}
+.tooltip-icon.icon-shield:before {
+  content: "s";
+}
+.tooltip-icon.icon-attach:before {
+  content: "t";
+}

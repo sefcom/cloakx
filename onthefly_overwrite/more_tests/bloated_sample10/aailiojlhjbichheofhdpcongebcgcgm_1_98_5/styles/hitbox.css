@@ -1,0 +1,178 @@
+.freedom_hid {
+    display: none !important;
+}
+
+.hitbox #nav-user .user {
+    float: left !important;
+}
+
+
+#streamer_recent_matches {
+    border-bottom: 0;
+}
+
+
+#hitbox_game_toggle span {
+    cursor: pointer;
+}
+
+.hitbox_game_toggle_button {
+    display: none
+}
+
+.hitbox_game_toggle_button.on {
+    display: inline-block;
+}
+
+.hitbox_streamer_application {
+    padding: 15px;
+    background: #111212;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    height: 112px;
+}
+
+#hitbox_congrats_message {
+    display: none;
+}
+
+#hitbox_submit_button {
+    width: 100%;
+    text-align: center;
+}
+
+#hitbox_earnings_text {
+    opacity: 1;
+}
+
+#hb-game-menu {
+    height: 40px;
+}
+
+#hb-game-menu img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#hb-game-menu a {
+    display:block;
+}
+
+#hb-game-menu ul {
+    background: #fff;
+    padding: 0;
+    list-style-type: none;
+}
+
+#hb-game-menu ul li {
+    float: none;
+    width: 120px;
+    list-style-type: none;
+}
+
+#hb_game_tooltip_box ul li a {
+    color: #000;
+}
+
+#hb_game_tooltip_box ul li a:hover {
+    color: #99cc00;
+}
+
+#hb-game-menu ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+
+#hb_game_tooltip_box {
+    background: transparent;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    padding-top: 10px;
+}
+
+#hb_game_tooltip_box .tooltip-arrow {
+    top: 5px;
+}
+
+#hb-game-menu:hover #hb_game_tooltip_box {
+    display: block;
+}
+
+#hitbox_tabs {
+    margin-bottom: 15px;
+}
+
+#hitbox_tabs span {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #99cc00;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.active_panel {
+    display: block !important;
+}
+
+.active_tab {
+    background: #99cc00;
+    color: #fff !important;
+}
+
+.tab {
+    padding-right: 10px;
+    padding-left: 10px !important;
+}
+
+#stats-container {
+    background: #222426;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+
+.heartbeat_icon {
+    background: url(https://s3.amazonaws.com/heartbeat.asset/logo.png);
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+}
+
+#btn_notify_me {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1
+}
+
+#btn_notify_me .heartbeat_icon {
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#btn_notify_me .button_text,
+#btn_notify_me i {
+    vertical-align: middle;
+}
+
+#btn_notify_me_wrap {
+    position: relative;
+}
+
+#btn_notify_me:hover .hover,
+#btn_notify_me .stay {
+    display: inline-block;
+}
+
+#btn_notify_me .hover,
+#btn_notify_me:hover .stay {
+    display: none;
+}

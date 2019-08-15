@@ -1,0 +1,948 @@
+﻿{
+  "appName": {
+    "message": "AppWriter Cloud",
+    "description": "Name of the extension"
+  },
+  "ok": {
+    "message": "OK",
+    "description": ""
+  },
+  "cancel": {
+    "message": "Avbryt",
+    "description": ""
+  },
+  "create": {
+    "message": "Skapa",
+    "description": ""
+  },
+  "delete": {
+    "message": "Ta bort",
+    "description": ""
+  },
+  "close": {
+    "message": "Stäng",
+    "description": ""
+  },
+  "login": {
+    "message": "Logga in",
+    "description": ""
+  },
+  "logout": {
+    "message": "Logga ut",
+    "description": ""
+  },
+  "notLoggedIn": {
+    "message": "Inte inloggad",
+    "description": ""
+  },
+  "wordPredictionOff": {
+    "message": "Ordförslag av",
+    "description": ""
+  },
+  "email": {
+    "message": "E-post",
+    "description": ""
+  },
+  "username": {
+    "message": "Användare",
+    "description": ""
+  },
+  "password": {
+    "message": "Lösenord",
+    "description": ""
+  },
+  "error": {
+    "message": "Fel",
+    "description": ""
+  },
+  "unexpectedError": {
+    "message": "Ett oväntat fel uppstod ($error$).",
+    "description": "",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "licenseNoLicense": {
+    "message": "AppWriter Cloud kan inte användas utan giltig licens. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "licenseDisabled": {
+    "message": "Din licens har deaktiverats. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "licenseExpired": {
+    "message": "Din licens har gått ut. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "licenseNoLanguages": {
+    "message": "Det finns inga språk i samband med din licens. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "licenseMaxUsersReached": {
+    "message": "Det maximala antalet användare har nåtts för din licens. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "stayLoggedIn": {
+    "message": "Fortsätt vara inloggad",
+    "description": ""
+  },
+  "forgot": {
+    "message": "Glömt?",
+    "description": ""
+  },
+  "usernameOrPasswordIncorrect": {
+    "message": "Fel användarnamn eller lösenord.",
+    "description": ""
+  },
+  "notRegistered": {
+    "message": "Inget användarkonto?",
+    "description": ""
+  },
+  "registerNow": {
+    "message": "Registrera nu",
+    "description": ""
+  },
+  "orLogInWith": {
+    "message": "Eller logga in med:",
+    "description": ""
+  },
+  "about": {
+    "message": "Om AppWriter Cloud",
+    "description": ""
+  },
+  "aboutUrl": {
+    "message": "http://www.appwriter.dk",
+    "description": ""
+  },
+  "forgotUsernameOrPassword": {
+    "message": "Glömt användarnamn/lösenord",
+    "description": ""
+  },
+  "forgotUsernameOrPasswordText": {
+    "message": "Om du har glömt ditt användarnamn eller lösenord, vänligen skriv in din e-postadress för att få hjälp med att logga in skickat till dig:",
+    "description": ""
+  },
+  "emailRequired": {
+    "message": "Du måste ange en e-postadress.",
+    "description": ""
+  },
+  "emailInvalid": {
+    "message": "Den angivna e-postadressen är ogiltig.",
+    "description": ""
+  },
+  "emailUnknown": {
+    "message": "Den angivna e-postadressen finns ej.",
+    "description": ""
+  },
+  "emailSent": {
+    "message": "E-post sänt.",
+    "description": ""
+  },
+  "emailSentText": {
+    "message": "Ett mejl med vidare information har sänts till din e-postadress.",
+    "description": ""
+  },
+  "createUser": {
+    "message": "Skapa användare",
+    "description": ""
+  },
+  "createUserText": {
+    "message": "Ange e-postadress för att skapa ny användare:",
+    "description": ""
+  },
+  "createUserEmailRequired": {
+    "message": "Du måste ange en e-postadress.",
+    "description": ""
+  },
+  "createUserEmailInvalid": {
+    "message": "Den angivna e-postadressen är ogiltig.",
+    "description": ""
+  },
+  "createUserEmailExists": {
+    "message": "Din e-postadress finns redan. Tryck OK för att få hjälp om hur du loggar in, sänt till din e-post.",
+    "description": ""
+  },
+  "createUserLicenseMaxUsers": {
+    "message": "Det maximala antalet användare har nåtts för din licens. Vänligen kontakta AppWriters support eller din administratör för hjälp.",
+    "description": ""
+  },
+  "createUserUserCreated": {
+    "message": "Användare skapad",
+    "description": ""
+  },
+  "createUserUserCreatedText": {
+    "message": "Din användare har skapats. Ett mejl har skickats till din e-postadress som visar hur du kommer igång.",
+    "description": ""
+  },
+  "unicLoginHeader": {
+    "message": "UNI-C login",
+    "description": ""
+  },
+  "unicBack": {
+    "message": "Tillbaka",
+    "description": ""
+  },
+  "unicSoapError": {
+    "message": "Kunde inte ansluta till UNI-C. Var vänlig försök igen senare.",
+    "description": ""
+  },
+  "unicNoInstitution": {
+    "message": "Kunde inte bestämma ditt institutions-id. Var vänlig försök igen senare.",
+    "description": ""
+  },
+  "unicNoLicense": {
+    "message": "Din institution har inte licens för AppWriter Cloud.",
+    "description": ""
+  },
+  "googleLoginNotAllowed": {
+    "message": "Din licens tillåter dig inte att logga in via Google.",
+    "description": ""
+  },
+  "language": {
+    "message": "Språk",
+    "description": ""
+  },
+  "settings": {
+    "message": "Inställningar",
+    "description": ""
+  },
+  "reading": {
+    "message": "Uppläsning",
+    "description": ""
+  },
+  "readLettersName": {
+    "message": "Läs bokstavsnamn",
+    "description": ""
+  },
+  "readLettersSound": {
+    "message": "Läs bokstavsljud",
+    "description": ""
+  },
+  "readSentences": {
+    "message": "Läs upp meningar",
+    "description": ""
+  },
+  "readWords": {
+    "message": "Läs upp ord",
+    "description": ""
+  },
+  "screenReader": {
+    "message": "Skärmläsare",
+    "description": ""
+  },
+  "readSpeed": {
+    "message": "Läshastighet",
+    "description": ""
+  },
+  "selectVoice": {
+    "message": "Välj röst",
+    "description": ""
+  },
+  "dictionary": {
+    "message": "Ordlista",
+    "description": ""
+  },
+  "dictionaries": {
+    "message": "Ordlistor",
+    "description": ""
+  },
+  "dictionaryNameRequired": {
+    "message": "Du måste skriva in ett namn",
+    "description": ""
+  },
+  "dictionaryNameInvalid": {
+    "message": "Ordlistenamnet är ogiltigt",
+    "description": ""
+  },
+  "dictionaryEnable": {
+    "message": "Aktivera ordlista",
+    "description": ""
+  },
+  "dictionaryRename": {
+    "message": "Döp om ordlista",
+    "description": ""
+  },
+  "dictionaryName": {
+    "message": "Namn:",
+    "description": ""
+  },
+  "dictionaryKeyExists": {
+    "message": "En ordlista med nyckeln \"$dictionaryKey$\" finns redan.",
+    "description": "",
+    "placeholders": {
+      "dictionaryKey": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteDictionary": {
+    "message": "Radera ordlista",
+    "description": ""
+  },
+  "confirmDeleteDictionary": {
+    "message": "Är du säker på att du vill radera ordlistan \"$dictionary$\"?\n<br /><br />\nDenna handling kan INTE ångras.",
+    "description": "",
+    "placeholders": {
+      "dictionary": {
+        "content": "$1"
+      }
+    }
+  },
+  "dictionaryDeleted": {
+    "message": "Ordlistan har raderats.",
+    "description": ""
+  },
+  "dictionaryNewWord": {
+    "message": "Nytt ord",
+    "description": ""
+  },
+  "word": {
+    "message": "Ord:",
+    "description": ""
+  },
+  "dictionaryWordRequired": {
+    "message": "Du måste ange ett ord.",
+    "description": ""
+  },
+  "dictionaryWordContainsSpace": {
+    "message": "Ordet kan inte innehålla mellanrum",
+    "description": ""
+  },
+  "dictionaryWordContainsSeparator": {
+    "message": "Ordet får inte innehålla tecknet \"$separator$\".",
+    "description": "",
+    "placeholders": {
+      "separator": {
+        "content": "$1"
+      }
+    }
+  },
+  "dictionaryWordExists": {
+    "message": "Ordet finns redan i ordlistan \"$dictionary$\".",
+    "description": "",
+    "placeholders": {
+      "dictionary": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteDictionaryWord": {
+    "message": "Ta bort ord.",
+    "description": ""
+  },
+  "confirmDictionaryWordDelete": {
+    "message": "Är du säker på att du vill ta bort ordet \"$word$\"?",
+    "description": "",
+    "placeholders": {
+      "word": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorTypes": {
+    "message": "Stavningshjälp",
+    "description": ""
+  },
+  "errorTypeFrom": {
+    "message": "Fel:",
+    "description": ""
+  },
+  "errorTypeTo": {
+    "message": "Korrekt:",
+    "description": ""
+  },
+  "errorTypeFromRequired": {
+    "message": "Fältet \"Fel\" ska fyllas i.",
+    "description": ""
+  },
+  "errorTypeToRequired": {
+    "message": "Fältet \"Korrekt\" ska fyllas i.",
+    "description": ""
+  },
+  "errorTypeExists": {
+    "message": "Denna feltyp finns redan.",
+    "description": ""
+  },
+  "deleteErrorType": {
+    "message": "Ta bort feltyp",
+    "description": ""
+  },
+  "confirmErrorTypeDelete": {
+    "message": "Är du säker på att du vill ta bort feltypen \"$errorType$\"?",
+    "description": "",
+    "placeholders": {
+      "errorType": {
+        "content": "$1"
+      }
+    }
+  },
+  "wordPredictions": {
+    "message": "Ordförslag",
+    "description": ""
+  },
+  "wordPredictionsContextIndependent": {
+    "message": "Sammanhang oberoende"
+  },
+  "profileNotSwitched": {
+    "message": "Kunde inte byta profil, var god kontrollera din internetanslutning",
+    "description": "Alert message for no profile switch error"
+  },
+  "menuLoginToUse": {
+    "message": "Logga in för att använda AppWriter Cloud.",
+    "description": ""
+  },
+  "selectLanguage": {
+    "message": "Välj språk",
+    "description": "Language select default value for Google toolbar"
+  },
+  "insertPredictionShortcut": {
+    "message": "Tryck ALT+$number$ för att sätta in ordförslaget.   ",
+    "description": "",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "predictionLoggedOutAlert": {
+    "message": "Du har varit inaktiv för länge och har loggats ut.\n\nLogga in igen för att få ordförslag.",
+    "description": ""
+  },
+  "readAloudLoggedOutAlert": {
+    "message": "Du har varit inaktiv för länge och har loggats ut.\n\nLogga in igen för att läsa upp text.",
+    "description": ""
+  },
+  "dictionaryEmptySelectionAlert": {
+    "message": "Markera ett ord för att slå upp.",
+    "description": ""
+  },
+  "dictionarySelectSingleWordAlert": {
+    "message": "Markera endast ett ord att slå upp.",
+    "description": ""
+  },
+  "dictionaryLoggedOutAlert": {
+    "message": "Du har varit inaktiv för länge och har loggats ut.\n\nLogga in igen för att använda ordboken.",
+    "description": ""
+  },
+  "ar_EG": {
+    "message": "Arabiska",
+    "description": "Language item"
+  },
+  "cy_WA": {
+    "message": "Walesiska",
+    "description": "Language item"
+  },
+  "da_DK": {
+    "message": "Danska",
+    "description": "Language item"
+  },
+  "de_DE": {
+    "message": "Tyska",
+    "description": "Language item"
+  },
+  "en_AU": {
+    "message": "Engelska (australiensisk)",
+    "description": "Language item"
+  },
+  "en_GB": {
+    "message": "Engelska (brittisk)",
+    "description": "Language item"
+  },
+  "en_US": {
+    "message": "Engelska (amerikansk)",
+    "description": "Language item"
+  },
+  "en_WA": {
+    "message": "Engelska (walesisk)",
+    "description": "Language item"
+  },
+  "es_ES": {
+    "message": "Spanska",
+    "description": "Language item"
+  },
+  "es_US": {
+    "message": "Spanska (amerikansk)",
+    "description": "Language item"
+  },
+  "fr_CA": {
+    "message": "Franska (kanadensisk)",
+    "description": "Language item"
+  },
+  "fr_FR": {
+    "message": "Franska",
+    "description": "Language item"
+  },
+  "is_IS": {
+    "message": "Isländska",
+    "description": "Language item"
+  },
+  "it_IT": {
+    "message": "Italienska",
+    "description": "Language item"
+  },
+  "nl_NL": {
+    "message": "Holländska",
+    "description": "Language item"
+  },
+  "pl_PL": {
+    "message": "Polska",
+    "description": "Language item"
+  },
+  "ro_RO": {
+    "message": "Rumänska",
+    "description": "Language item"
+  },
+  "se_SE": {
+    "message": "Svenska",
+    "description": "Language item"
+  },
+  "sv_SE": {
+    "message": "Svenska",
+    "description": "Language item"
+  },
+  "tr_TR": {
+    "message": "Turkiska",
+    "description": "Language item"
+  },
+  "voice_ar_EG_Ali": {
+    "message": "Ali (arabiska)",
+    "description": "Language item"
+  },
+  "voice_cy_WA_Geraint": {
+    "message": "Geraint (walesisk)",
+    "description": "Language item"
+  },
+  "voice_cy_WA_Gwyneth": {
+    "message": "Gwyneth (walesisk)",
+    "description": "Language item"
+  },
+  "voice_da_DK_Mads": {
+    "message": "Mads",
+    "description": "Language item"
+  },
+  "voice_da_DK_Naja": {
+    "message": "Naja",
+    "description": "Language item"
+  },
+  "voice_de_DE_Marlene": {
+    "message": "Marlene",
+    "description": "Language item"
+  },
+  "voice_de_DE_Hans": {
+    "message": "Hans",
+    "description": "Language item"
+  },
+  "voice_en_AU_Nicole": {
+    "message": "Nicole",
+    "description": "Language item"
+  },
+  "voice_en_AU_Russell": {
+    "message": "Russell",
+    "description": "Language item"
+  },
+  "voice_en_GB_Amy": {
+    "message": "Amy",
+    "description": "Language item"
+  },
+  "voice_en_GB_Brian": {
+    "message": "Brian",
+    "description": "Language item"
+  },
+  "voice_en_GB_Emma": {
+    "message": "Emma",
+    "description": "Language item"
+  },
+  "voice_en_US_Eric": {
+    "message": "Eric",
+    "description": "Language item"
+  },
+  "voice_en_US_Jennifer": {
+    "message": "Jennifer",
+    "description": "Language item"
+  },
+  "voice_en_US_Joey": {
+    "message": "Joey",
+    "description": "Language item"
+  },
+  "voice_en_US_Kendra": {
+    "message": "Kendra",
+    "description": "Language item"
+  },
+  "voice_en_US_Kimberly": {
+    "message": "Kimberly",
+    "description": "Language item"
+  },
+  "voice_en_US_Chipmunk": {
+    "message": "Chipmunk",
+    "description": "Language item"
+  },
+  "voice_en_US_Salli": {
+    "message": "Salli",
+    "description": "Language item"
+  },
+  "voice_en_US_Ivy": {
+    "message": "Ivy",
+    "description": "Language item"
+  },
+  "voice_en_WA_Geraint": {
+    "message": "Geraint (Walesisk engelska)",
+    "description": "Language item"
+  },
+  "voice_en_WA_Gwyneth": {
+    "message": "Gwyneth (Walesisk engelska)",
+    "description": "Language item"
+  },
+  "voice_es_US_Penelope": {
+    "message": "Penelope (Amerikansk spanska)",
+    "description": "Language item"
+  },
+  "voice_es_US_Miguel": {
+    "message": "Miguel (Amerikansk spanska)",
+    "description": "Language item"
+  },
+  "voice_es_ES_Conchita": {
+    "message": "Conchita",
+    "description": "Language item"
+  },
+  "voice_es_ES_Enrique": {
+    "message": "Enrique",
+    "description": "Language item"
+  },
+  "voice_fr_CA_Chantal": {
+    "message": "Chantal",
+    "description": "Language item"
+  },
+  "voice_fr_FR_Mathieu": {
+    "message": "Mathieu",
+    "description": "Language item"
+  },
+  "voice_fr_FR_Celine": {
+    "message": "Celine",
+    "description": "Language item"
+  },
+  "voice_is_IS_Dora": {
+    "message": "Dóra ",
+    "description": "Language item"
+  },
+  "voice_is_IS_Karl": {
+    "message": "Karl",
+    "description": "Language item"
+  },
+  "voice_it_IT_Carla": {
+    "message": "Carla",
+    "description": "Language item"
+  },
+  "voice_it_IT_Giorgio": {
+    "message": "Giorgio",
+    "description": "Language item"
+  },
+  "voice_nl_NL_Lotte": {
+    "message": "Lotte",
+    "description": "Language item"
+  },
+  "voice_pl_PL_Agnieszka": {
+    "message": "Agnieszka",
+    "description": "Language item"
+  },
+  "voice_pl_PL_Ewa": {
+    "message": "Ewa",
+    "description": "Language item"
+  },
+  "voice_pl_PL_Jacek": {
+    "message": "Jacek",
+    "description": "Language item"
+  },
+  "voice_pl_PL_Jan": {
+    "message": "Jan",
+    "description": "Language item"
+  },
+  "voice_pl_PL_Maja": {
+    "message": "Maja",
+    "description": "Language item"
+  },
+  "voice_ro_RO_Carmen": {
+    "message": "Carmen",
+    "description": "Language item"
+  },
+  "voice_se_SE_Astrid": {
+    "message": "Astrid",
+    "description": "Language item"
+  },
+  "voice_se_SE_Nils": {
+    "message": "Nils",
+    "description": "Language item"
+  },
+  "popup_menu_play": {
+    "message": "Spela",
+    "description": "Popup menu play caption"
+  },
+  "popup_menu_stop": {
+    "message": "Stoppa",
+    "description": "Popup menu stop caption"
+  },
+  "popup_menu_prediction": {
+    "message": "Ordtolkning",
+    "description": "Popup menu prediction caption"
+  },
+  "popup_menu_dictionary": {
+    "message": "Orduppslag",
+    "description": "Popup menu dictionary caption"
+  },
+  "popup_menu_language": {
+    "message": "Språk",
+    "description": "Popup menu language caption"
+  },
+  "popup_menu_play_tooltip": {
+    "message": "Läs den markerade texten eller läs från markörens start position.",
+    "description": "Popup menu play tooltip"
+  },
+  "popup_menu_stop_tooltip": {
+    "message": "Sluta läsa och sätt tillbaka markören till sitt ursprungliga läge.",
+    "description": "Popup menu stop tooltip"
+  },
+  "popup_menu_prediction_tooltip": {
+    "message": "Använd ordtolkning när du skriver.",
+    "description": "Popup menu prediction tooltip"
+  },
+  "popup_menu_dictionary_tooltip": {
+    "message": "Slå upp ett ord i ordboken (endast tillgänglig på danska).",
+    "description": "Popup menu dictionary tooltip"
+  },
+  "popup_menu_language_tooltip": {
+    "message": "Välj önskat språk.",
+    "description": "Popup menu language tooltip"
+  },
+  "dialog_disconnected_title": {
+    "message": "AppWriter Cloud har blivit uppdaterat",
+    "description": "Title of the disconnected popup"
+  },
+  "dialog_disconnected_content": {
+    "message": "AppWriter Cloud har blivit uppdaterat. Ladda om sidan för att fortsätta använda AppWriter Cloud.",
+    "description": "Content of the disconnected popup"
+  },
+  "dialog_disconnected_buttons_reload": {
+    "message": "Ladda om",
+    "description": "Reload button of the disconnected popup"
+  },
+  "dialog_disconnected_buttons_cancel": {
+    "message": "Avbryt",
+    "description": "Cancel button of the disconnected popup"
+  },
+  "pdf_title": {
+    "message": "Bekräfta",
+    "description": "The title of the confirm dialog that appears when going to a PDF file."
+  },
+  "pdf_description": {
+    "message": "Vill du använda AppWriter Cloud för att läsa PDF-filen?",
+    "description": "The description of the confirm dialog that appears when going to a PDF file."
+  },
+  "pdf_btn_yes": {
+    "message": "Ja",
+    "description": "The yes button of the confirm dialog that appears when going to a PDF file."
+  },
+  "pdf_btn_no": {
+    "message": "Nej",
+    "description": "The no button of the confirm dialog that appears when going to a PDF file."
+  },
+  "pdf_tooltip": {
+    "message": "Öppna PDF-filen i AppWriter Cloud.",
+    "description": "The tooltip of the PDF button."
+  },
+  "myAccount": {
+    "message": "Mitt konto",
+    "description": "The user's direct link to my account in Lingapps Administration."
+  },
+  "open_in_app": {
+    "message": "Öppna i %name%",
+    "description": "The open in app label.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "userLoginPasswordExpired": {
+    "message": "Ditt lösenord har gått ut. Ett mail har skickats till dig med information om hur du skapar ett nytt.",
+    "description": "Error message for when user's password has expired."
+  },
+  
+  "menu_reading_speed": {
+    "message": "Läshastighet"
+  },
+  "menu_reading_strategy": {
+    "message": "Lässtrategi"
+  },
+  "menu_reading_stop_after_punctuation": {
+    "message": "Sluta efter mening"
+  },
+  "menu_voice": {
+    "message": "Röst"
+  },
+  "menu_word_prediction": {
+    "message": "Ordförutsägelse"
+  },
+  "menu_enable_word_prediction": {
+    "message": "Aktivera ordförutsägelse"
+  },
+  "menu_enable_user_glossary_list": {
+    "message": "Aktivera användarordlista"
+  },
+  "menu_read_aloud_when_typing": {
+    "message": "Läs högt när du skriver"
+  },
+  "menu_word_prediction_context": {
+    "message": "Ta hänsyn till kontexten"
+  },
+  
+  "record_audio_record_title": {
+    "message": "Spela in ljud"
+  },
+  "record_audio_record_description": {
+    "message": "Välj texten du vill spela in och klicka på start."
+  },
+  "record_audio_processing_title": {
+    "message": "Skapar ljudfil"
+  },
+  "record_audio_processing_description": {
+    "message": "Vänligen vänta..."
+  },
+  "record_audio_completed_title": {
+    "message": "Din ljudfil är färdig"
+  },
+  "start": {
+    "message": "Starta"
+  },
+  "download": {
+    "message": "Ladda ner"
+  },
+  "ocr_complete_title": {
+    "message": "Klippt text"
+  },
+  "ocr_status_capturing_image": {
+    "message": "Fångar bild..."
+  },
+  "ocr_status_uploading_image": {
+    "message": "Laddar upp bild..."
+  },
+  "ocr_status_processing_image": {
+    "message": "Behandlar bild..."
+  },
+  "read": {
+    "message": "Läs"
+  },
+  "stop": {
+    "message": "Sluta"
+  },
+  "download_filename": {
+    "message": "Ljudfil från AppWriter $date$ $time$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      },
+      "time": {
+        "content": "$2"
+      }
+    }
+  },
+  "LICENSE_NO_LICENSE_FOR_DOMAIN": {
+    "message": "Ingen licens för domän."
+  },
+  "USER_CANCEL": {
+    "message": "Användaren stängde autentiseringsfönstret."
+  },
+  
+  "popup_login_title": {
+    "message": "Wizkids inloggning"
+  },
+  "popup_login_username": {
+    "message": "Användarnamn eller email"
+  },
+  "popup_login_password": {
+    "message": "Lösenord"
+  },
+  "popup_login_remember": {
+    "message": "Kom ihåg mig"
+  },
+  "popup_login_forgot_password": {
+    "message": "Glömt lösenord?"
+  },
+  "popup_login_login": {
+    "message": "Logga in"
+  },
+  
+  "popup_login_error_empty_username": {
+    "message": "Tomt användarnamn"
+  },
+  "popup_login_error_incorrect_username": {
+    "message": "Fel användarnamn"
+  },
+  "popup_login_error_license_no": {
+    "message": "Ingen licens"
+  },
+  "popup_login_error_license_disabled": {
+    "message": "Licens Inaktiverad"
+  },
+  "popup_login_error_license_expired": {
+    "message": "Licensen har gått ut"
+  },
+  "popup_login_error_license_no_languages": {
+    "message": "Licensen har inga språk"
+  },
+  "popup_login_error_empty_password": {
+    "message": "Tomt lösenord"
+  },
+  "popup_login_error_incorrect_password": {
+    "message": "Fel lösenord"
+  },
+  "popup_login_error_expired_password": {
+    "message": "Lösenordet har gått ut"
+  },
+  
+  "popup_login_alternatives": {
+    "message": "Eller logga in med"
+  },
+  
+  "popup_menu_enable_word_prediction": {
+    "message": "Aktivera ordförutsägelse"
+  },
+  "popup_menu_pdf_viewer": {
+    "message": "PDF läsare"
+  },
+  "popup_menu_epub_viewer": {
+    "message": "EPUB läsare"
+  },
+  "popup_menu_record_audio": {
+    "message": "Skapa ljudfil från text"
+  },
+  "popup_menu_snipping_tool": {
+    "message": "Skärmklippverktyg"
+  },
+  "popup_menu_help_and_guidance": {
+    "message": "Help och vägledning"
+  },
+  "popup_menu_my_account": {
+    "message": "Ditt konto och statistik"
+  },
+  "popup_menu_logout": {
+    "message": "Logga ut"
+  },
+  "popup_menu_glossaries": {
+    "message": "Ordlistor"
+  },
+  "popup_menu_phonetic_spelling": {
+    "message": "Fonetisk stavning"
+  },
+  "popup_menu_phonetic_spelling_disabled": {
+    "message": "Inte tillgängligt för $language$",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "help_and_guidance_link": {
+    "message": "https://www.wizkids.se/support/manualer/appwriter-manualer/appwriter-cloud/"
+  }
+}

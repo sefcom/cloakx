@@ -1,0 +1,207 @@
+include ./sharedMixins.jade
+
+mixin existaliasholder
+	.exist-alias-holder.clear
+		.login-form.alias-form
+			.wrapper
+				.form-fields
+					h1 {{EXIST_ALIAS.TITLE}}
+					.alias-detail {{EXIST_ALIAS.DESCRIPTION}}
+					.alias-detail
+						span.alias-title {{EXIST_ALIAS.MASTER}}
+						span.alias-master
+					.alias-detail
+						span.alias-title {{EXIST_ALIAS.EMAIL}}
+						span.alias-email
+				.form-fields
+					.input-wrapper
+						label {{EXIST_ALIAS.PASSWORD}}
+						input(type='password',placeholder='{{EMAIL_ADDRESS}}')
+					.instruction-field {{EXIST_ALIAS.HINT}}
+				.row
+					button.btn.btn-normal.btn-block.btn-confirm-alias {{EXIST_ALIAS.CONFIRM}}
+					button.btn.btn-normal.btn-block.btn-cancel-alias {{EXIST_ALIAS.CANCEL}}
+
+		//Login Detail
+		.login-detail
+			.wrapper
+				.login-description
+					| {{NOTE_DETAIL}}
+				+loginpoints()
+
+mixin confirmaliasholder
+	.confirm-alias-holder.clear
+		.login-form.alias-form
+			.wrapper
+				.form-fields
+					h1 {{ADD_ALIAS.TITLE}}
+				.form-fields
+					.alias-detail
+						span.alias-title {{ADD_ALIAS.MASTER}}
+						span.alias-master
+					.alias-detail
+						span.alias-title {{ADD_ALIAS.EMAIL}}
+						span.alias-email
+					.instruction-field {{ADD_ALIAS.HINT}}
+				.row
+					button.btn.btn-normal.btn-block.btn-login-alias {{ADD_ALIAS.CONFIRM}}
+
+		//Login Detail
+		.login-detail
+			.wrapper
+				.login-description
+					| {{NOTE_DETAIL}}
+				+loginpoints()
+
+mixin forgetpasswordholder
+	.forgot-password-holder.clear
+		.login-form.forgot-password-form
+			.wrapper
+				.form-fields
+					h1 {{FORGOT_PASSWORD}}
+					.instruction-field {{PASSWORD_INSTRUCTION}}
+				.form-fields
+					.input-wrapper
+						input(type='email',placeholder='{{EMAIL_ADDRESS}}').forgot-password-field
+				.row
+					button.btn.btn-normal.btn-block.btn-submit-password {{SUBMIT}}
+					button.btn.btn-normal.btn-block.btn-cancel-password {{CANCEL}}
+
+		//Login Detail
+		.login-detail
+			.wrapper
+				.login-description
+					| {{NOTE_DETAIL}}
+				+loginpoints()
+
+mixin loginholder(email_id,password_id,isPenMode)
+	.login-holder-wrapper
+		+existaliasholder()
+		+confirmaliasholder()
+		+forgetpasswordholder()
+		.login-holder.clear
+			//BEGIN: Login Form
+			.login-form
+				.wrapper
+					.form-fields
+						h1 {{SECURE_EMAIL_LOGIN}}
+					.form-fields
+						.input-wrapper
+							input(id=email_id, type='email', value='', placeholder='{{EMAIL_ADDRESS}}', autocapitalize='off')
+						.input-wrapper
+							input(id=password_id,type='password', value='', placeholder='{{PASSWORD}}')
+							.forget-field
+								a.login-forgotpasswordsso.login-link {{FORGOT_PASSWORD}}
+					button.btn-submit.btn.btn-normal.btn-block.icon-lock {{SECURE_LOGIN}}
+					button.btn-check.btn.btn-normal.btn-block.icon-lock {{SECURE_CHECK}}
+					.login-options.ssoRm
+						.ssoRm.onoffswitch.onoffswitch-default
+							input(type='checkbox').onoffswitch-checkbox.toggle-button
+							label.onoffswitch-label
+								span.onoffswitch-inner
+								span.onoffswitch-switch
+						label(for='ssoRm') {{REMEMBER_ME}}
+					.login-options.ssoKl
+						.ssoKl.onoffswitch.onoffswitch-default
+							input(type='checkbox').onoffswitch-checkbox.toggle-button
+							label.onoffswitch-label
+								span.onoffswitch-inner
+								span.onoffswitch-switch
+						label(for='ssoKl') {{KEEP_LOGIN}}
+					.clear
+					ul.login-extra
+						if isPenMode == true
+							li.btn-register(attr='register')
+								a {{NEW_USER_REGISTER}}
+							li.btn-forgot-password(attr='forgotpassword')
+								a {{FORGOT_YOUR_PASSWORD}}
+							li(attr='lite')
+								a.login-link(rel='external', target='_blank') {{LITE_ACCESSIBLE}}
+							li.btn-removeauth(attr='remove')
+								a {{FORGET_ME}}
+							//li.btn-bookmark(attr='bookmark')
+							//	a {{BOOKMARK}}
+						li(attr='help')
+							a.login-link(rel='external', target='_blank', href='http://help.secure-messaging.com/sso/') {{HELP}}
+						if isPenMode == false
+							li.btn-sso-forgot-password(attr='forgotpassword')
+								a {{FORGOT_PASSWORD_LONG}}
+
+				//.help-container
+				//	i.icon-question
+				//	a.login-link(rel='external', target='_blank', href='http://help.secure-messaging.com') {{HELP}}
+
+			//END: Login Form
+
+			//Login Detail
+			.login-detail
+				.wrapper
+					.login-description
+						// <strong>{{NOTE}}</strong>:
+						| {{NOTE_DETAIL}}
+					+loginpoints()
+
+
+mixin semlogin
+	.SEModule.SEM-Login
+		.subtle-bg
+
+		//
+			BEGIN: SSO-LOGIN PAGE
+			This is the login page to show when user has not been
+			authorized to a portal, or when user has removed authentication.
+
+		#loginpage-sso.login-page
+			.login-logo
+				.logo-text.wrapper {{LOGO_TEXT}}
+			+loginholder('ssoLogin_user','ssoLogin_password',false)
+		//END: SSO-LOGIN PAGE
+
+		//BEGIN: PEN SELECTION PAGE
+		#loginpage-penselection.login-page
+			.login-logo.sso-logo
+				| {{SSO_TITLE}}
+			.login-holder-wrapper
+				.login-holder.clear
+					.login-form
+						.sso-note
+							strong {{SELECT_SSO}}
+						.sso-note
+							strong {{NOTE}}:
+							| {{SELECT_SSO_NOTE}}
+						ul.sso-list
+		//END: PEN SELECTION PAGE
+
+
+		//BEGIN: PEN LOGIN PAGE
+		#loginpage-penlogin.login-page
+			.login-logo
+				table.penLogin-peninfo(cellspacing='0', cellpadding='0')
+					tbody
+						tr.icon-row
+							td(width='46')
+								.penLogo
+									a(target="_blank")
+										img(width='46', height='46', src='')
+							td(style='vertical-align:middle')
+								.penName
+						tr.banner-row
+							td
+								a(target="_blank")
+									img.penBanner(width='700', height='46', src='')
+			//+forgetpasswordholder()
+			+loginholder('penLogin_user','penLogin_password',true)
+		//END: PEN LOGIN PAGE
+
+
+
+		//BEGIN: REGISTER
+		#loginpage-register.login-page
+		//END: REGISTER
+		//+loginpoint('{{GOGREEN}}','{{GOGREEN_DETAIL}}', 'think-green','think-green','think-green-icon','<img src="images/recycle.png">')
+		.penPowerByHolder
+			.powerByText {{POWERED_BY}}
+			.penPowerBy
+
+script#login-template(type="text/x-handlebars-template")
+	+semlogin()

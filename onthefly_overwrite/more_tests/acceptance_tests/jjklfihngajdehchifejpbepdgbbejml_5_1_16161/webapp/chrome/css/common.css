@@ -1,0 +1,12 @@
+.radio{
+	min-width:16px;
+	min-height:16px;
+	background-image:url('chrome-extension://__MSG_@@extension_id__/Module/Library/Shared/images/checkbox_off.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+}
+
+.radio.checked{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/Module/Library/Shared/images/checkbox_on.png');
+}

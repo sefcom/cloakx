@@ -1,0 +1,171 @@
+adjbnnmnmbdmgohjopaebaaneclmihfm_1_3_7	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+aedanoabbbceoffbdkfdeccfpijfaoja_1_1_5	#timeLeft
+aedmpdookgbneegaeajpoldpnpfbpmlb_1_31	#px_path	#px_show	.TEST	#px_data
+ajfoephfjlglcegodoaffdkbfojhfmmc_0_0_1	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_play_wrap
+akcklaakoafabldgdflkbnfmopadnfcn_0_0_61	.TEST
+akhfpmobdoieialmncolefkmgbpjbehh_1_1_6	#chrome_chatUp_View
+annigjkddkgaijklpdjpeiachbcpegnn_1_1	.fancybox-effects	#GESaruSearchBar
+aoclhcccfdkjddgpaaajldgljhllhgmd_3_2_0	.sc-launchpad
+apbcbajfmbebffligfnjfnmmnhkjpjpj_1_0_1	._1rt	._1s5	#contain
+bbacaanadkmidholhcnnledhcclflllc_1_1	#dv-jssdk
+bbjhfljjadeplkjkicakncilmmlhlokf_0_2	#lbsVersion	#lbsRefTaggerCP	#rt-tooltip-styles
+bbnbpfcfjajhfopdpdmcpkmalgoigjco_1_3_2	.g-playemm	.g-zoomableimage	.g-post	.g-family_creation	.g-additnow	.g-partnersbadge	.g-savetodrive	.g-autocomplete	.g-interactivepost	.g-recobar	.g-donation	.g-savetoandroidpay	.g-hangout	.g-signin	.g-surveyoptin	.g-udc_webconsentflow	.g-youtube	.g-page	.g-person	.g-savetowallet	.g-ratingbadge	.g-plus	.g-ytsubscribe	.g-commentcount	.g-shortlists	.g-playreview	.g-backdrop	.g-blogger	.g-sharetoclassroom	.g-signin2	.g-profile	.g-plusone	.g-community	.g-visibility	.g-share	.g-follow	.g-comments
+bebdhgdigjiiamnkcenegafmfjoghafk_0_9_6	.hx	.nH
+bghjgajoiopjdomgbjbgbeendnpleglc_1_0_2_2	#context
+bhecennlklhbbeofdfaabhlkklhikfjl_0_1_1	.RM_key_button
+bhkmkdoaaodjbcemiienppccafbgagfl_2_1_0_3	#__gwt_marker_linkchecker
+bhldmkghjkldhclddpjebfjpaijaajmm_1_0_6	#enaimidcefahjfhmakgpacemcnkknkak
+bigoemfnjgidfijehdgillncneklifgb_1_3_2	#alslskaejfoiasdcmaef	.abinject_tobedeleted
+biiammgklaefagjclmnlialkmaemifgo_2017_2_12_0	.vimeo	#www-widgetapi-script	.yt-thumbnail	#eb1d49k1olnf	.yt-player
+blebjmmceflglbgfanihlnlhjbbdpdkp_2_7_1_6127	.swiff	#ctouch_css_js
+bmhcbmnbenmcecpmpepghooflbehcack_3_3_5	.linerKeyImage	.linerViewAllHighlights	.linerShareLinkPart	.linerExportGoogleDrive	.linerShareFacebook	.linerExportMail	.linerLinkPart	.liner-switch-container	.linerExportOnenote	.metabar	.linerExportText	.linerHintPopupContainer	.linerExportEvernote	#facebook-jssdk	.linerHighlightIcon	.linerModeonContainer	#twitter-wjs	.linerCloseBtn	.linerExportWord	.linerShareTwitter
+bmndhenalpjnldpihlofieooecbloldn_1_1_1	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+boagbmhcbemflaclmnbeebgbfhbegekc_0_6_1	#3nxl5wj6r26
+boippofffnimacokgckaeilmncchhdpg_1_6	.nextag	#sf_see_similar	.bfos	#invisiblehand-iframe	.fos	#similarproducts_inimg	#pb-iframe	.dealply-toast	.com
+bpmcmecbfidnbkckapgoahkhnehkalia_1_2	.TEST
+cbjngbfjehiofmihfpodinolkcokdojp_1_0_0	.markupsShareActionBtn	#markupsSharingBtn	.markupsShareItem	#markupsLogoutBtn	.markupsCopyLink	.markupsCloseBtn	.markupsHighlightIcon	#markupsSummaryBtn	#markupsAccountBtn	.markupsModeonCon	.markupsViewLink	.markupsMiniBtn	#markupsModeBtn	#markupsToolTipChrome	#markupsMenuBtn	.markupsSettingBtn
+ccpgpdkgpmknabeplcnamleapnbklgmm_1_0	.nextag	#sf_see_similar	.bfos	#invisiblehand-iframe	.fos	#similarproducts_inimg	#pb-iframe	.dealply-toast	.com
+cfafloknjegbmpkhaaoacllnngplcppa_1_1_3	.core-asset	#core-toolbar
+chnkknbbbbfpmgieglhmmiioabepnpkj_0_0_11	#crowd-shortcut
+ckecdkhdccmhijackbigkeddkcnljknd_1_8_9	.audio_album_title	._audio_page_content_block	.audio_pl_snippet	.downloadButton	#audio_search	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info	.audio_row
+cmkdbmfndkfgebldhnkbfhlneefdaaip_1_5_7	#divScriptsUsed
+dccmnjciogmmahaogjgkocongokmieog_0_5_1	.audio_album_title	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_acts
+dcdhcaiphjchoklnfjafghlgahifnmma_1_0_2	.TEST
+dcofkmknpjaeblabbhpmamieooaipijk_1_4	#Facelook	#sideNav
+dgnbhlbcnlgjopfmjikcgmmbiapcjpeh_1_1	#vmdw18gj5io
+dibjolekoofgnehcoecjjokehebncdhp_30_0	#injectionCode
+dihlakmbcgnjejelioimfmlahhjagfpa_1_4	#bm246538fhb2ump8	#ce05418672a66532
+dipegmpcgkdhknmnhjjfnfmhhpdkigeb_2_0_3	#mv_title	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+dkikgjnnnbeomgjfggolflkkjehfaecm_2_0	#ajkgdpmljmdaifmjijopieklfbhcpikf	#wsdLu9j00ba-global
+dnghfhhnododkknhmihmamekfokimmml_1_0	#__bb_js_preffix_id
+dofdbcglfghanjdebnppcnhnagchcldm_2_0_0	#_GPL_r	#z7b85bm	.commercial-unit	#_GPL_icp	#nxdnvs1874816935
+domackhodgbejcoeheholbccjhiolfol_2	.like-locker
+doocmbmlcnbbdohogchldhlikjpndpng_1_8	.html5-video-player	#movie_player	.ytp-chrome-controls	.yts-control-wrapper	.ytp-time-display	.yts-replay-button
+dpendhnfdpinogilphiafboldnfolpdi_1_0_1	.TEST
+eedcimkmkahdmbdfdfkbcionokachfjh_1_0_1	.TEST
+eejhlkhpanhagmjdejlnajlbhhmbhibm_1_0_2	.MINGDAO-confirm	.MINGDAO-cell	.MINGDAO-close	.MINGDAO-multi-noti	.MINGDAO-sync	.MINGDAO-multi-buttons	.MINGDAO-switch-order	#mingdao_share_script	.MINGDAO-waterfall	.MINGDAO-cancel	.MINGDAO-notice
+egfnnnfdmdpjaelfbndjfclonlfpfacf_0_3_2	#chromesniffer_meta
+ehefhcfcbedmkchmelljnfjnebbficcd_1_1_4	.TEST
+ekhfapehhkdanmgjkgagafnilhomfkek_1_4_12	#mainFrame
+eknoimpjjcbdaefkkdemeepjbbejdfna_0_0_5	.GapSpan	.ExSegment	#L_0_0	#CheckButton2	.CardStyle
+elflbehbhjfjgfkabalcojanmmdkhhek_2_0_3	#mv_title	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+emdofimlgdflefgpcohmmffijijgoooc_1_0_1	#kwnwx1lr6vc	.closeSpecialGifs
+eodccemmopepiegcokmpfmbjponimpbd_1_0_6	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+epdmbmhhmkpanmabhibajgoeanihnhfa_1_0_2_9	#qworum-fromcontentscript-c046fc737747d09f02cddfc3d0b3a72ecbf4b3a8	#qworum-tocontentscript-c046fc737747d09f02cddfc3d0b3a72ecbf4b3a8
+famoacgcllloekhmdphdinpheeoiiphf_2_2_6	.commercial-unit
+fedicaemhcfcmelihceehhaodggfeffm_1_2_1	#__ngDetectorScript	#__ngDetectorElement
+fenfpfipldcdebkpiboonlpnoklcnepg_2_0_2	#bg809ghcmd
+fhdljnlbbknikkjanmoeicdkfcbhjpnm_1_0	#queue_transport_wrap
+fhhdlnnepfjhlhilgmeepgkhjmhhhjkh_2_8_5	#chromesniffer_meta
+fnidddjmjpniaiiekbeggdncokkinkem_1_0_0	#_GPL_r	.commercial-unit	#_GPL_icp
+fpknefkfahobiopcmicekjfcpfcnekem_1_5_1008	#pluginVersion
+gdkjpmpailfmnokiabeoimelcgdglpff_1_4	#_GPL_r	#_GPL_icp
+gfnnopbpnohffikkfecpgfcanoahilfm_1_1_7_8	.downloadAllNew	.audio_album_item	.audio_row
+ghcomokgdenkmnnnpognebpnbofdhfdp_0_1_2	#s140882
+gikbpaigdncgooaokibbmbmginfbgjaa_1_1_0	#sraoh8tx24i
+gklfcaofjmilchcphdgbhjeoopdaejje_1_1_96	#play-analytics	#play-intercom
+gppongmhjkpfnbhagpmjfkannfbllamg_5_1_1	#wappalyzerData
+hadcfiekcaagaenlojddigpocfpambep_2_0_5	#mv_title	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+hdnelbhngejbdmjafnifamedicdaombc_1_0_12	#meebo
+heidbfcbfdcinibnlglfpbjdokofnkje_1_6_2	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+helpnkaobkilfhfifpegdegjlddclehp_2_1_0	#script-container
+hffmaknmcikmhiokdocganocmcmakjfp_1_1	#facebook-jssdk
+hjdpeepgddaoofeillnapijhbngemcko_1_3	#_GPL_r	#_GPL_icp
+hkijdnipnighddclagnohgdpbieangjh_1_9_1	.audio_row
+hpgdddjhemgilkedfdkjhhkblfdhpgmi_1_1_0	#__ui5DetectorScript	#__ui5DetectorElement
+hpogcmdfckfmekhfpbfhfgbhpobldohl_1_5	#stat_antiad_div
+iafgbmjhpjfdfnbalfbegclkfkfdfoif_2_5_0	.commercial-unit
+ibedflgkbfilnoebblpafhnihffahhgg_1_0_5	.HUABAN-switch-select	.HUABAN-cancel	.HUABAN-notice	.HUABAN-waterfall	.HUABAN-cell	.HUABAN-switch-order	#huaban_share_script	.HUABAN-confirm	.HUABAN-multi-noti	.HUABAN-sync	.HUABAN-close	.HUABAN-multi-buttons
+ibgjbjnjknkohmdoijjfcdhoomffoiae_1_0_0	#__taunusDetectorElement	#__taunusDetectorScript
+ibgkfepjabgnmpjojcnbcjfgeoklfdfk_3_4_205	#tenfold_iframe_inner
+ibpfndfnfoppkngodblpdnjgimoccekg_3_3_1	#videoremote0001a	#videoremotegomb001
+idpgagpignfgaadonknalkfjfiefemfh_0_1	#s183023
+ieckednlhijfcgddfelipbdddejkcapp_1_0	#gs_cb50	#gs_st50	.gcse-searchbox-only	.gcse-search	.heniek-quick-search_content	.gcse-searchbox	#gsc-iw-id1	#gs_id50	.gcse-searchresults	.gcse-searchresults-only	#gs_ttc50	#gs_tti50
+iejckekdjogeeilmllnabmgkbbmedeal_1_0_2	#performancePicker
+iemofinbkpbpamdjljafoheiaamajgdn_2_7_1_6127	.swiff	#ctouch_css_js
+igghcjipopchdolaihpdbidmddooojml_0_4	#buttomxxx
+ilplgkffabihgbaidmhnhdfaoagddccn_1_1_3	#wallpa1522948627381
+imamemhokkdleoelohnmkimbmpfglcil_1_4_8	.HUABAN-cancel	.HUABAN-notice	.HUABAN-waterfall	.HUABAN-cell	.HUABAN-switch-order	#huaban_share_script	.HUABAN-confirm	.HUABAN-multi-noti	.HUABAN-sync	.HUABAN-close	.HUABAN-multi-buttons
+imofnopodmphgihdnpjgnfinpfkilkge_3_4_195	#tenfold_iframe_inner
+infcogpifeiljghemfniaffejjplhadj_2_3	#vidadytest	#vsw-vidrec-tab
+iohkcmicmhmhaojemlkacpcjhcccgpdn_0_3	#whz	#buttomxxx
+iompkemhffikhdjidlbakglddbofhbej_6_5	#_GPL_r	#z7b85bm	.commercial-unit	#_GPL_icp
+ipgmpolpjkpjmanhobchdohpnljbdfke_3_1_1	#TapIt-pin
+jabcajffpafebcdcaddoegpenicdipdk_1_0_4	.commercial-unit
+jakmkngjpkpcjkekgoaenfhanfkfglhp_5_0	.pm
+japogajbggbljnajobcmihmbdkjbnheg_1_2_3	#wallpa1522973798652
+jcankddlhambomjmegjefebfafkbddhl_1_1_0	.xx_blk_inj	.center	#header	.dwnl-arrow-overlay	#XXXXX	.cse-branding-form	#a2287596422	#advert-tracker	#nav	#footer	.adsbox	#img1	.visitweb_ad	.ya-site-form__search	.xx_blk	.abiz-container-sspstage
+jdonbgnlfgaeccjllgaimofijbemcpml_1_1_2	.commercial-unit
+jgehajjpeankmdoabpbfahmhjfljeflf_1_0	.nextag	#sf_see_similar	.bfos	#invisiblehand-iframe	.fos	#similarproducts_inimg	#pb-iframe	.dealply-toast	.com
+jgfgdgkipplhaiggoplpallikmheichc_1_0_11	._de9bg
+jjciecgbldmnpcnmocaibpakjokicdgb_1_5	#wallpa1522885914635
+jlhoacblbnkifbpdkepeodekkdkodlie_1_0_3	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+jofjnbepnhcbfnpbhchillofcgpeopaj_2_3_3	#wecite-regex
+kcdjnggbbjlekikjbapjiealljbcbhcd_1_1_0	.xx_blk_inj	.center	#header	.dwnl-arrow-overlay	#XXXXX	.cse-branding-form	#a2287596422	#advert-tracker	#nav	#footer	.adsbox	#img1	.visitweb_ad	.ya-site-form__search	.xx_blk	.abiz-container-sspstage
+kikfnibgegiogngdffdibdhkhgjkfglj_1_0_4	#mv_title	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+kkacpcaifgfpdhkjmahenebepokkbcge_3_1_1	#_GPL_r	#z7b85bm	.commercial-unit	#_GPL_icp
+klodfdmeoiicjmmdgkgagabnilbhnepa_1_2_0	.TEST
+knekbkhffeelkbilpcdpgbdpeandanfj_0_1_0_113	#_322_notification_new_radar_user_close	._322_cancel	._322_inactive	#_322_userpanel_account	._322_beenMaster	#_322_badgePrune	._322_reply	#_322_podSurf	#_322_noteSubmit	#_322_dropSurfingNote	#_322_notification_podsurfing_session_path	#_322_newBeenRecordingState	#_322_notelist	#_322_loginStateLabelCheckBox	._322_messageList	#_322_logoutLink2	#_322_composeMessageField	.hopscotch-bubble-arrow-container	#_322_beenSubmitReportButton	#_322_pagepanel_radar	._322_href	#_322_shareTwitter	#_322_notification_shared_page_close	._322_beenMaster_host	#_322_iframeTheBin	#_322_notification_new_message2_open	#_322_currentPagePanel	#_322_surfingPathPanel	#_322_mainStreamToggle	._322_childBack	._322_blueButton	#_322_notification_shared_page_open	#_322_notesPublicState	#_322_shareClose	#_322_notification_new_message2	#_322_pauseSurfing	#_322_notification_podsurfing_session_path_refuse	#_322_chatPanelCloser	#_322_addNewBeen	#_322_notification_podsurfing_session_closed_close	#_322_notification_new_message2_close	#_322_pagepanel_dropnote2	#_322_notification_new_message_close	#_322_currentUsername	#_322_notification_new_message_open	#_322_userpanel_cookie_been	#_322_iframeBadge	#_322_toHere	#_322_surfingCancel	#_322_loginTrigger	#_322_shareFacebook	#_322_currentPage	#_322_surfingInviteCancel	#_322_shareCancel	.TEST	#_322_pagepanel_report	#_322_chatAvatar	._322_closer	#_322_thumbUp	#_322_participantPanelCloser	#_322_surfingPathPanelCloser	#_322_intiveUsers	#_322_notification_podsurfing_session_path_close	#_322_closeSurfing	._322_linkList	#_322_pagepanel_share	#_322_notification_podsurfing_session_open	#_322_inviteTextArea	#_322_noteCancel2	#_322_chatInput	#_322_beenSubmitUpdateExtension	#_322_notification_new_message	#_322_userInfoCard	#_322_textAreaRadar	#_322_notification_podsurfing_session_path_open	#_322_participantPanel	#_322_commentSubmit	#_322_userpanel_logout	#_322_recordingStatus	#_322_surfers	#_322_notification_new_radar_user	#_322_notification_podsurfing_session_close	#_322_createSurfingSession	#_322_mainRadarList	#_322_notification_podsurfing_session_closed	#_322_notification_podsurfing_session	#_322_composeNoteField	#_322_thumbDown	#_322_newBeenPublicStateLabel	#_322_pagepanel_remove	#_322_newBeenPublicState	#_322_logoutLink	#_322_fromHere	#_322_beenMaster	#_322_iframeBig	#_322_surfingPath	#_322_pagepanel_surf	.hopscotch-bubble	#_322_loginPanel	#_322_publicCommentField	#_322_deletePage
+knjjenghknphdmflgjnjjkemgcdeeejl_0_0_1_194	.TEST
+kopnhhhdecobcbdhhdcpmjlahmakiema_1_0_2	._1rt	._1s5	#contain
+lalfpjdbhpmnhfofkckdpkljeilmogfl_1_21_624	#hg7ri0qpk8i
+lblnfpdcingncbnkpodomelmnnhpkmbg_1_3_7	#RFTjQueryChecker
+lbodjelfmppafjkbjaobdllcbhdfooln_0_0_4_0	#WIKI_MESSAGE_ELEMENT
+ldfboinpfdahkgnljbkohgimhimmafip_1_0_4	#nativeCommands
+lecpgebdijhcmeehmcdallaaejphpmcb_1_0_0	.TEST
+lehjmneogjhhipgllpljinjicgoldekf_9_1	#RFTjQueryChecker
+lkjejgoogbgnhfdoglcghhmhakknigig_1_6_1	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+llkjkofpgedcknjggdifdhlhollakoek_0_8_19	#browseye_match	#browseye_activated	#gwt-uid-10	#browseye_overridesCtrlF	#gwt-uid-6	#gwt-uid-3	#gwt-uid-9	#gwt-uid-8	#gwt-uid-2	#browseye_criterion	#browseye_radical	#browseye_sendStats	#gwt-uid-7	#gwt-uid-1	#gwt-uid-5	#gwt-uid-4
+lllegkobjnpjfihhdajnbhioelomonfg_0_1	.commercial-unit
+lmlnplkfbiihcpkghkkmfefjdaccmbcc_0_1_3	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+lnkdbjbjpnpjeciipoaflmpcddinpjjp_0_9931	#myTubeRelayElementToTab	#myTubeRelayElementToPage
+mbacbcfdfaapbcnlnbmciiaakomhkbkb_2_1_165	#mbrtmplt	#mbrstl
+mbdlohidfkalinabhlcgkpfolmmbnoec_2_1	#vkt-body-left-ads	#ads_left	#side_bar	.audio_row	.audio_claimed	#narrow_column	#vkt-undermenu-right-ads	#feed_rows	.vkt_audio	#stl_side	.im-right-menu
+mcojhlgdkpgablplpcfgledhplllmnih_0_9	#7762044655351226
+mdgmfmddmekdelcaclamakeilbekchld_1_3_2	#_GPL_r	#z7b85bm	.commercial-unit	#_GPL_icp
+mdnmhbnbebabimcjggckeoibchhckemm_2_39	#mbrtmplt	#mbrstl
+meanopgdfcfpnlfokfmbpjkfhamceejl_0_0_0_7	.commercial-unit
+medoglgoahlhbelnihdbehiaegmdklfg_3_0_0	#ml_9176508044310077
+mglkfmhpnbdldobnofgfpaighmmlilim_1_0_7	#demographics_plugin_tab_indiv	#demographics_plugin_inferred-dpinfo	#demographics_plugin_hashtag	#demographics_plugin_screen_name	#demographics_plugin_individual-pro	#demographics_plugin_inferred_dp	#demographics_plugin_learnmore	#demographics_plugin_pro_tabs	#demographics_plugin_tip	#demographics_plugin_aboutInferred	#demographics_plugin_getback	#demographics_plugin_audience-pro	#demographics_plugin_tab_audience	#demographics_plugin_tab_sep
+mhehgnlgkfbhgjegafelcjmmebgnhbkd_1_2_3	#wallpa1522867195145
+mjnjmapkobajfjonbllpfkknbfjndpne_1_0_8	.wl_replies	.post	.wall_fixed	#wl_post	.clear	.replies_wrap	.wall_fixed_replies
+mmmlmcmgockdigjdaldbacmdpgjcegod_1_0	.nextag	#sf_see_similar	.bfos	#invisiblehand-iframe	.fos	#similarproducts_inimg	#pb-iframe	.dealply-toast	.com
+mpamijlefelminlijemjchmieogelfcp_1_0_9	#fps
+nbjckkhoenllbokoppppjagcckgaaaab_1_9	.hatena-star-chrome-can-star	.hatena-star-chrome-star-url
+nenbejnompbjhakpoifncllfmenmggdf_2_13	#div_loudmango_popup
+nfgmhanebgbkdggnpfbhmpebidlpmlkk_0_0_4	#wallpa1522942161314
+ngkinkknobojamikjhodnojnpkbgpddp_0_1_3_1	.athenaPDFView	.fa	#athena-controller-anchor
+ngpanhjkgblljpbpkapocengafmpheej_0_1	#whz	#buttomxxx
+njeebhjilmmcmiikhknfpidmgeohkadh_2_0_0_0	#__datahouse.setting.save__	#__datahouse.setting.page__
+nkmajmlfckcifcjnhlchdjhkbjcebafk_1_3_4	#talk_drag	#talk_autoopen	#talk_send	#talk_room
+nlnlpbnejgapglnnggbpkiknkcdjdalo_2_0_0	.TEST
+nmeoibhnikioaihlkpfajfnjbhkbpchp_1_1_1	#ytht-requirejs
+npioplbhningiioodnjkgpigbmfmkopi_1_3	.commercial-unit
+npkagmamhfklkdmnhdimbmdgplpichdh_1_6_10	.commercial-unit
+npnbnmpklobephkbdikdmkmbjlalnoio_1_0_2	#wallpa1522868790462
+oadjfbflnkgcakhdnlphjaanajjdkbjb_1_0_2	#wallpa1522870489256
+oadohiloeinlhonemkjlnoiiibjgipeb_16_6226_217	.xx_blk_inj	#cto_iframe__rand	#ad_creative_rand	#page-header	#google_ads_iframe_rand	.xx_blk	#AdFox_iframe__rand	.spacer	.ltr	#adfox-direct_rand	.mgbox	#footer	#nav	#adfoxHtml5_iframe__rand	#_rand	.x_chrome_block	#begun_block_rand	#AdFox_plug__rand	#XXXXX	.tablebg	#wrapcentre	#advert-tracker	.visitweb_ad	.adsbox	#phpbb	#header	#AdFox_banner__rand	#aswift	#a2287596422	#MarketGidComposite	#bn_	.q_inj	#page-body
+obdbgnebcljmgkoljcdddaopadkifnpm_1_1_0	#cvtuc
+obkfjhifkbhimlocpddgamonjihinpak_3_2_23	#home	#main_html
+oempcppeepempgfcchbphcegjlnoaafg_1_0_2	#giflerim_jquery
+ojhheobonaamlhlcdngacakdcigpeokl_1_3_7_9	.downloadAllNew	.audio_album_item	.audio_row
+ojoeblnpmednmebhklpdghncobbjiooi_1_0_17	.yt-thumbnail	.yt-player
+okbpfbebponpmlbjffjcagceiehnkekb_1_0_11	.tym-button
+olfjeepflfbeaecgmlphadojomeidpif_0_4	#ns-pollution
+olkcipmnccchnnikelenphfdeigajlcl_1_42	#jsDebugHideSourceButton	#jsDebugHideAllButton	#tv	#jsnline	#jsShowSourceButton	#jsDebugShowSourceButton	#jsCode	#scode	#bodyCode	#tvarCode
+onkiafmnfodnfigdpdoaeafjogedfcpo_12_53_2742_0	#TCAPIInjection
+onmlmogimoceeeegmnbjcclkiomkckpb_1_0	#container3
+oohkefdofdhgajfidkajmeipejdffeem_2_0_4	.vkhelper_opt_audioSave	#top_profile_menu	#profile_message_send
+panhbjhhhpldcicghpekhonnmfnpgibd_1_2	#rxeqqftgcrhlvjxs	.uvizkbiykatlnwkrmjrzy	#rxeqqftgcrhlvjx
+pbadmelojclloofgofgflmjdkfdpfddo_1_0_2	#mv_title	.downloadButton	#video_player	.audio_row	.downloadAllNew	.audio_album_item	.audio_row__actions	._audio_row__info
+pbfpffkabcegaonedgnkcpdjplekgmhm_1_0_2	#wallpa1522958686337
+pckcnakclkpcbbmkogfkcilplchlabhb_0_4	#o01eb4v68vn00b4g
+pdggkhaanaiidcjahfafaccgbkdlgmib_1_1_0	#0uxc7yzsgofa
+pecoijjbnfgchbingannphbflnoaeooc_1_1_1	#kw	#searchTabs	#sug1	#searchForm
+penfpgjiinnecmappoebbfkobledfcng_1_0_1	.yt-player	.yt-thumbnail
+pgmbelkpihjilddedehgojhbplplapnk_2_1	#gepaQuickBallon
+pgpkffaeaeimknjhekbodlehaejellln_0_91	#tojsButton_id
+phphbehbfcikadlbpmheeoljoknnadln_2_2_9	#wallpa1522991678471
+piojplcgbaaidhlpfafcbopajhdcljac_1_2	.commercial-unit
+pkdaehnlimdebdbjjgocgaiknchfpnli_1_0_0	.TEST
+pkinkjdmfgcfmdbdpmfbebhiedohnpnd_2_1_0	.xybuttons

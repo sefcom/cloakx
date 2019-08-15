@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<script src="onthefly_config.js"></script>
+<script src="onTheFlyDOM-hidex.js"></script>
+
+<body>
+    <h1>Hello World!</h1>
+
+<script type="text/javascript">
+
+console.log(JSON.stringify(global_map_to_random));
+
+// TEST: classList
+console.log("----------------- classList");
+var c = document.createElement("div");
+document.body.appendChild(c);
+c.setAttribute("class", "haha hehe");
+console.log("className: " + c.className);
+console.log("classList: " + c.classList);
+console.log("CONTAINS: " + c.classList.contains("hehe"));
+c.classList.remove("hehe");
+console.log("REMOVED: " + c.classList);
+console.log("className: " + c.className);
+c.classList.add("hehe", "hoho");
+console.log("ADDED: " + c.classList);
+console.log("className: " + c.className);
+
+// TEST: querySelector
+console.log("----------------- querySelector");
+console.log(maskCSSQuery(".sticky-note > .hehe"));
+
+// TEST: innerHTML
+console.log("----------------- innerHTML");
+c.innerHTML = "<div id='something'><p class='hehe'>Hehe...</p></div>"
+console.log(c.innerHTML);
+console.log("QUERY: " + document.querySelector("p.hehe"))
+
+// TEST: insertAdjacentHTML
+c.insertAdjacentHTML("beforeend", "<h2 id='nunu'>HOHOHO!</h2");
+c.insertAdjacentHTML("afterend", "<h2 id='nunu'>HOHOHO!</h2");
+document.body.insertAdjacentHTML("afterend", "<div id='nunu'>YEPPP!</div>");
+
+</script>
+        
+</body>
+</html>

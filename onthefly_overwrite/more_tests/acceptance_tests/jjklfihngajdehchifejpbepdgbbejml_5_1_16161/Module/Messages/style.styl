@@ -1,0 +1,328 @@
+.SEM-Message
+	width 100%
+	.msg-header
+		padding 20px 10px 15px
+		font-size 1rem
+		//border 1px solid red
+		margin-top 0 !important
+
+		div
+			margin-bottom 5px
+		.subject
+			margin 0 0 15px 0
+		.from
+			font-size 1.125rem
+			margin 10px 0px
+		.expand
+			.name-only
+				display none
+			.full-content
+				display inline
+		.full-content
+			display none
+		.time
+			float right
+			margin 10px 0
+			font-size 0.875rem
+		.attachment
+			height 1px !important
+			max-height 1px !important
+			min-height inherit !important
+
+			&.icon-attachment
+				float right
+				margin 10px 0 10px 5px
+				&:before
+					vertical-align middle
+		.view-more-button
+			background-color #f0f0f0
+			padding-top 5px
+			padding-bottom 5px
+			font-size:0.9em
+	.msg-actionbar
+		.actionbtn
+			&:before
+				font-size 18px
+				vertical-align middle
+
+		.overflow-btn
+			float left
+			.dropdown
+				.actionbtn
+					span
+						padding-left 3px
+
+		&.toolbar
+			@media screen and (max-width: $media_width_tablet) {
+				invertColors()
+			}
+
+			&.mobile-platform {
+				invertColors()
+			}
+
+	.scrollable {
+		position absolute
+		top 0
+		bottom 0
+		left 0
+		right 0
+	}
+
+	.msg-body
+		a
+			color #3b73af !important
+			&:hover
+			&:focus
+			&:active
+				text-decoration underline
+
+		p
+			min-height: 1.357em
+
+		.MsoNormal
+			margin 0 !important
+
+	.attachment-header
+		display none
+
+	.scroll-docked-container {
+		position relative
+		display none
+		z-index 1000
+	}
+
+.msg-warning {
+	display none
+	background-color $warning_background_color
+	border 1px solid $warning_border_color
+	margin 8px
+	padding 8px
+
+	.info-icon {
+		height 20px
+		width 15px
+		cursor pointer
+		float right
+		color #cfcfcf
+		&:before {
+			font-size: 15px !important
+		}
+		padding-right 8
+	}
+
+	.warning-content {
+		display flex
+
+		[class*="icon-"]:before {
+			font-size: 22px
+		}
+
+		.text {
+			margin-left 20px
+			margin-right 5px
+
+			flex 1
+		}
+	}
+	&.attachment-warning {
+		margin 8px 0px
+	}
+}
+
+body.mobile-platform{
+	.msg-actionbar {
+		&.toolbar{
+			invertColors()
+		}
+	}
+}
+
+	.msg-body
+		padding 10px
+		line-height 140%
+
+	.view-delivery-btn
+		padding 12px 20px 10px 20px
+		border-bottom 1px dashed #AAA
+		color #666
+		font-size 0.75rem
+		background rgba(0, 0, 0, 0.1)
+		margin-bottom 10px
+		text-transform uppercase
+
+	.msg-fyeo {
+		margin-top 20px
+		margin-right 10px
+		display none
+		position relative
+		/*border 1px solid red*/
+		min-height 100px;
+		overflow:visible !important;
+
+		h2 {
+			font-size 0.75rem
+			margin-bottom 5px
+		}
+		h3 {
+			font-size 0.75rem
+			font-weight normal
+			margin-bottom 20px
+		}
+	}
+
+	.fyeo-icon {
+		margin-right: 0 !important;
+		width:50px !important;
+		/*background-color:pink;*/
+
+		&:before {
+			font-size 58px
+			color $ds_option_fyeo_color
+		}
+	}
+
+	.fyeo-message {
+		position:absolute;
+		top:0;
+		right:0 !important;
+		width: inherit !important;
+		min-height:100px;
+		/*background-color:lime;*/
+		left: 60px;
+
+		@media screen and (max-width: $media_width_phone) {
+			/*right 20px*/
+		}
+	}
+
+	.actionbtn
+		&.disabled
+			opacity .5
+			cursor default
+
+
+	.fyeo-error
+		color #c00
+		font-size 0.75rem
+
+	.msg-recalled
+		padding-top 20px
+		display none
+		position relative
+		.msg-recalled-title
+			margin-bottom 10px
+			font-size 0.875rem
+		.msg-recalled-reasontitle
+			margin-bottom 10px
+			font-size 0.875rem
+	.recalled-icon
+		position absolute
+		left 20px
+		top 25px
+		&:before
+			font-size 32px
+			color #d90000
+	.recalled-message
+		position absolute
+		top 25px
+		left 65px
+		right 0px
+	.to-overflow
+		background #d9d9d9
+		text-align center
+		padding 4px 0
+		margin-top 5px
+	.expand
+		height auto
+		white-space normal
+	.message-loading
+		padding 20px 0
+		text-align center
+		display none
+
+	.attachment-header
+		font-weight bold
+		color #444
+		padding 10px 0 5px
+		border-bottom 1px solid #ddd
+		margin-bottom 10px
+
+	.msg-attachments, .msg-esignatures
+		margin 10px 10px 30px 10px !important
+		padding-bottom 10px
+
+		@media screen and (max-width: $media_width_phone){
+			padding-left 1em
+		}
+
+		&.recalled
+			.filename
+				color #ff0000 !important
+
+
+		img
+			vertical-align middle
+	ol
+		margin-left 24px
+		li
+			list-style decimal
+	.MsoListParagraph
+		text-indent 0 !important
+	.no-msg
+		color #999
+		margin 16px
+
+.SEM-Message .msg-body.enable-user-select, .SEM-Message .msg-body.enable-user-select p, .SEM-Message .msg-body.enable-user-select span, .SEM-Message .msg-body.enable-user-select img, .SEM-Message .msg-body.enable-user-select ul, .SEM-Message .msg-body.enable-user-select li, .SEM-Message .msg-body.enable-user-select div
+	-webkit-user-select text
+	-khtml-user-select text
+	-moz-user-select text
+	-ms-user-select text
+	-o-user-select text
+	user-select text
+
+.SEM-Message .msg-recalled .msg-recalled-description, .SEM-Message .msg-recalled .msg-recalled-content
+	font-size 0.75rem
+	margin-bottom 15px
+
+.SEM-Message .to, .SEM-Message .cc, .SEM-Message .bcc
+	height 1rem
+	overflow hidden
+	display block
+	width 100%
+	text-overflow ellipsis
+	white-space nowrap
+
+.SEM-Message .to, .SEM-Message .cc, .SEM-Message .bcc
+	height auto
+	overflow visible
+	white-space normal
+
+#secmsg.newLayout .SEM-Message {
+	@media screen and (max-width: $media_width_phone) {
+
+		.msg-header{
+			.to, .time{
+				display none !important
+			}
+			.from{
+				font-size 1em
+			}
+			.subject{
+				margin-bottom 0.15em
+			}
+		}
+		.msg-actionbar {
+			//left 0 !important
+			//margin-left 0 !important
+
+			.overflow-btn {
+				float right !important
+
+				.dropdown {
+					right 10px
+				}
+			}
+		}
+	}
+}

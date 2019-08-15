@@ -1,0 +1,32 @@
+{
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "run_at": "document_start",
+        "css": ["content/css/style.css"],
+        "js": ["content/js/content-base.js", "content/js/content.js"]
+    }],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "description": "__MSG_extDescription__",
+    "default_locale": "en",
+    "icons": {
+        "32": "content/icons/32.png",
+        "20": "content/icons/20.png",
+        "48": "content/icons/48.png",
+        "16": "content/icons/16.png"
+    },
+    "web_accessible_resources": ["content/css/images/logo.png", "content/css/images/block_logo.png", "content/css/images/loadingImage.gif", "content/css/blockPage.css", "content/js/blockPage.js", "content/icons/back1.gif", "content/block.html"],
+    "manifest_version": 2,
+    "version": "3.9.13",
+    "options_page": "content/options.html",
+    "background": {
+        "scripts": ["content/js/db.js", "content/js/$m.js", "content/js/tracklist.js", "content/js/background.js"]
+    },
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com https://ssl.google-analytics.com; img-src *; object-src 'self'",
+    "browser_action": {
+        "default_title": "Dr.Web",
+        "default_icon": "content/icons/20.png",
+        "default_popup": "content/popup.html"
+    },
+    "permissions": ["contextMenus", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*", "http://*.drweb.com/*"],
+    "name": "__MSG_extName__"
+}

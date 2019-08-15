@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"Saltar Anuncios de YouTube Automáticamente"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"Saltar instantáneamente el anuncio que se reproduce antes de un vídeo de YouTube. Automático. Funciona en todos los sitios web."
+	}
+}

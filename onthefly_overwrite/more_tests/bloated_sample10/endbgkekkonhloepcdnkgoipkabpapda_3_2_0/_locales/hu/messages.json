@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"Skip YouTube Hirdetések Automatikus"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"Azonnal hagyja a hirdetést, hogy játszik, mielőtt egy YouTube videót. Automatikus. Működik az összes webhelyen."
+	}
+}

@@ -1,0 +1,203 @@
+{
+	"subject": {
+		"message": "Titular"
+	},
+	"issuer": {
+		"message": "Emissor"
+	},
+	"expiration": {
+		"message": "Validade"
+	},
+	"showAdvancedSettings": {
+		"message": "Exibir configurações avançadas..."
+	},
+	"hideAdvancedSettings": {
+		"message": "Ocultar configurações avançadas"
+	},
+	"importPkcs12": {
+		"message": "Importar PKCS #12"
+	},
+	"refresh": {
+		"message": "Recarregar"
+	},
+	"loading": {
+		"message": "Carregando..."
+	},
+	"configurePkcs11": {
+		"message": "Dispositivos criptográficos (PKCS #11) ..."
+	},
+	"pkcs11Title": {
+		"message": "Dispositivos criptográficos (PKCS #11)"
+	},
+	"pkcs11Subtitle": {
+		"message": "Se você possui certificados armazenados em um dispositivo criptográfico, marque uma das opções abaixo."
+	},
+	"pkcs11CustomTitle": {
+		"message": "Opções personalizadas"
+	},
+	"pkcs11CustomSubtitle": {
+		"message": "Se o seu dispositivo criptográfico não está listado acima, digite no campo abaixo o nome do arquivo SO fornecido pelo fabricante."
+	},
+	"pkcs11ModuleNamePlaceholder": {
+		"message": "Nome do arquivo SO (com extensão)"
+	},
+	"pkcs11TypeModuleName": {
+		"message": "Por favor preencha o nome do arquivo."
+	},
+	"pkcs11ModuleDescription_aetpkss1_dll": {
+		"message": "Smart cards gerenciados com o SafeSign"
+	},
+	"pkcs11ModuleDescription_libaetpkss_so_3": {
+		"message": "Smart cards gerenciados com o SafeSign"
+	},
+	"pkcs11ModuleDescription_libaetpkss_dylib": {
+		"message": "Smart cards gerenciados com o SafeSign"
+	},
+	"pkcs11ModuleDescription_eTPKCS11_dll": {
+		"message": "Tokens gerenciados com o SafeNet"
+	},
+	"pkcs11ModuleDescription_libeToken_so": {
+		"message": "Tokens gerenciados com o SafeNet"
+	},
+	"pkcs11ModuleDescription_libeToken_dylib": {
+		"message": "Tokens gerenciados com o SafeNet"
+	},
+	"add": {
+		"message": "Adicionar"
+	},
+	"ok": {
+		"message": "OK"
+	},
+	"cancel": {
+		"message": "Cancelar"
+	},
+	"close": { 
+		"message": "Fechar"
+	},
+	"pleaseWait": {
+		"message": "Por favor aguarde..."
+	},
+	"personalCertificates": {
+		"message": "Certificados Pessoais"
+	},
+	"advancedSettings": {
+		"message": "Configurações Avançadas"
+	},
+	"verboseLogging": {
+		"message": "Habilitar logs detalhados"
+	},
+	"userCancelled": {
+		"message": "Operacão cancelada pelo usuário"
+	},
+	"trustedSites": {
+		"message": "Sites Confiáveis"
+	},
+	"site": {
+		"message": "Site"
+	},
+	"permissions": {
+		"message": "Permissões"
+	},
+	"settings": {
+		"message": "Configurações"
+	},
+	"showTrustedSites": {
+		"message": "Sites confiáveis..."
+	},
+	"noTrustedSites": { 
+		"message": "Aqui você poderá visualizar e alterar os sites que você autorizou a realizar assinaturas digitais (por enquanto não há nenhum)."
+	},
+	"trustedSitesSubtitle": { 
+		"message":  "Os seguintes sites estão autorizados a realizar assinaturas digitais com os certificados abaixo"
+	},
+	"issuedBy": { 
+		"message": "emitido por"
+	},
+	"remove": { 
+		"message": "remover"
+	},
+	"notInstalledTitle": {
+		"message":  "O Web PKI não está completamente instalado"
+	},
+	"notInstalledMessage": {
+		"message":  "Para utilizar este componente, é necessário instalar o Web PKI no seu PC"
+	},
+	"outdatedTitle": {
+		"message": "O Web PKI está desatualizado"
+	},
+	"outdatedMessage": {
+		"message": "Para utilizar este componente, é necessário atualizar o Web PKI no seu PC"
+	},
+	"install": {
+		"message": "Instalar"
+	},
+	"installDeb": {
+		"message": "Instalar .deb"
+	},
+	"installRpm": {
+		"message": "Instalar .rpm"
+	},
+	"update": {
+		"message": "Atualizar"
+	},
+	"updateDeb": {
+		"message": "Atualizar .deb"
+	},
+	"updateRpm": {
+		"message": "Atualizar .rpm"
+	},
+	"errorOccurred": {
+		"message": "Ocorreu um erro!"
+	},
+	"downloadingMessage": {
+		"message": "Baixando o instalador..."
+	},
+	"downloadedTitle": {
+		"message": "Falta pouco"
+	},
+	"downloadedMessagePart1": {
+		"message": "Agora "
+	},
+	"downloadedMessagePart2": {
+		"message": "execute o arquivo baixado"
+	},
+	"downloadedMessagePart3": {
+		"message": " para atualizar o Web PKI em seu PC"
+	},
+	"redownloadMessagePart1": {
+		"message": "Se ocorreu algum problema, "
+	},
+	"redownloadMessagePart2": {
+		"message": " para baixar o instalador novamente"
+	},
+	"clickHere": {
+		"message": "clique aqui"
+	},
+	"redownloadMessageLinux": {
+		"message": "Se ocorrer algum problema, selecione um pacote para baixar novamente:"
+	},
+	"redownloadMessageLinuxDeb": {
+		"message": "Pacote .deb para distribuições baseadas em Debian (ex: Ubuntu, Mint): "
+	},
+	"redownloadMessageLinuxRpm": {
+		"message":  "Pacote .rpm para distribuições baseadas em RedHat e Slackware (ex: Fedora, openSUSE): "
+	},
+	"confirmRemoveCertificateTitle": {
+		"message": "Remover certificado?"
+	},
+	"confirmRemoveCertificateMessagePart1": {
+		"message": "Tem certeza de que deseja remover o certificado "
+	},
+	"confirmRemoveCertificateMessagePart2": {
+		"message": " ?"
+	},
+	"yesRemove": {
+		"message": "Sim, remover"
+	},
+	"welcomeTitle": {
+		"message": "Bem-vindo ao Web PKI"
+	},
+	"welcomeMessage": {
+		"message": "Para começar a usar o Web PKI, você precisa importar um certificado PKCS #12 (para certificados A1) ou habilitar o uso de um dispositivo criptográfico (para certificados A3)."
+	}
+}

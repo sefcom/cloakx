@@ -1,0 +1,5 @@
+#viewPortSize{background:#000;color:#FFF;padding:4px 8px;position:fixed;z-index:2147483647;font-family:"arial";text-align:right;}
+.top_left{top:0px;left:0px; border-radius:0 0 5px 0;}
+.top_right{top:0px;right:0px; border-radius:0 0 0 5px;}
+.bottom_right{bottom:0px;right:0px; border-radius:5px 0 0 0;}
+.bottom_left{bottom:0px;left:0px; border-radius:0 5px 0 0;}

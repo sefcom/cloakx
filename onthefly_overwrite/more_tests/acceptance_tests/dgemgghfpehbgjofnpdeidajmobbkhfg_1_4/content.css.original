@@ -1,0 +1,46 @@
+.chrome-fixfixed-on_off .fixfixed, 
+.chrome-fixfixed-on_off .fixfixed::before,
+.chrome-fixfixed-on_off .fixfixed::after {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.chrome-fixfixed-on_off.chrome-fixfixed-highlight .fixfixed {
+	border:3px dotted orange !important;
+}
+.chrome-fixfixed-on_off.chrome-fixfixed-background .fixfixedbackground, 
+.chrome-fixfixed-on_off.chrome-fixfixed-background .fixfixedbackground::before,
+.chrome-fixfixed-on_off.chrome-fixfixed-background .fixfixedbackground::after {
+	background-attachment: scroll !important;
+}
+/* fix w3c.org website */
+body.chrome-fixfixed-on_off.chrome-fixfixed-background {
+	background-attachment: inherit !important;
+}
+
+
+
+.chrome-fixfixed-on_off.chrome-fixfixed-animation * {
+	-webkit-animation-duration: 0 !important;
+}
+
+.chrome-fixfixed-on_off.chrome-fixfixed-transition * {
+	-webkit-transition-duration: 0 !important;
+}
+
+.chrome-fixfixed-on_off.chrome-fixfixed-scrollcover .fixfixedscrollcover {
+	top:0;
+	left:0;
+	right:0;
+	pointer-events:auto!important;
+	z-index:99999;
+	width:100%;
+	display:block;
+	position:fixed;
+	height:100%;
+	transform:translateZ(0);
+	/*
+	background:blue;
+	opacity:0.5;
+	*/
+}
+

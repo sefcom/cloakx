@@ -1,0 +1,224 @@
+<div>
+    <div class="SEModule SEM-Deliveryslip">
+        <div class="SEM-ds composeslip">
+            <div class="SEM-ds-title theme-deliveryslip-header">
+                <div class="SEM-ds-wrapper">
+                    <div class="app-title SEM-title"
+                    title="The patented Delivery Slip is a unique window into the secure message that lets you track activity, set security options and send large files (if enabled).">
+                        <div class="icon-tags"></div>
+                        {{DELIVERY_SLIP}}
+                    </div>
+                    <div class="app-collapse-icon">
+                        <span class="icon-vcollapse collapse-button icon-close" title="Collapse"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="SEM-ds-content theme-deliveryslip-content">
+                <div class="SEM-ds-module theme-deliveryslip-module collapsible ">
+                    <div class="SEM-dsm-title theme-deliveryslip-header">
+                        {{MESSAGE_DETAILS_TITLE}}
+                    </div>
+                    <div class="SEM-dsm-content theme-deliveryslip-content SEM-messagedetails">
+
+                        <div class="SEM-md-header">
+
+                            <!-- UNSECURE INFO -->
+                            <!-- <div class="SEM-md-unsecure">
+                            <div class="SEM-md-unsecureicon">
+                            <img src="icons/unlock.png" width="30"/>
+                            </div>
+                            <div class="SEM-md-unsecureinfo">
+                            Confidential information should never be sent via basic (unsecure) email. Switch below to Secure Email and select security & delivery options.
+                            </div>
+                            <div style="clear:both"></div>
+                            </div> -->
+
+                            <!-- PEN INFO -->
+                            <div class="SEM-md-pen">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="48">
+                                        <div class="SEM-md-penicon">
+                                            <img src="images/penicon.png" width="48"/>
+                                        </div></td>
+                                        <td>
+                                        <div class="SEM-md-peninfo">
+                                            <div class="SEM-md-pentitle">
+
+                                            </div>
+                                            <div class="SEM-md-user">
+
+                                            </div>
+                                            <div class="SEM-md-userlevel"></div>
+                                        </div></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="SEM-md-methodselect theme-deliveryslip-border">
+                                <div class="methodselection">
+                                    <!-- <div class="methodicon"></div> -->
+                                    <div class="methodname">
+                                        {{SECURE_EMAIL}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="SEM-md-subtitle collapsible">
+                            {{ENHANCED_SECURITY_OPTIONS}}
+                        </div>
+                        <div class="SEM-md-subcontent">
+                            <!-- <div class="tooltip-bubble">
+                            <div class="title">ReplyAllFreeze</div>
+                            Select to protect conversation with using password you will need to share verbally with all recipients in order to unlock the secure message.
+                            </div> -->
+                            <table width="100%" cellspacing="0" cellpadding="0" class="SEM-md-checkbox-tbl secure-option">
+                                <tbody>
+                                    <tr>
+                                        <td><div class="checkbox" id="compose-opt-allowReply"></div></td>
+                                        <td class="cs-label"><label class="value">{{{REPLY_FREEZE}}}</label></td>
+                                        <td class="info-col replyFreeze"><div class="info-icon icon-info-circled"></div></td>
+                                        <!-- <td width="15"><img src="icons/info2.png" height="15" class="tooltip"/></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td><div class="checkbox" id="compose-opt-allowForward"></div></td>
+                                        <td class="cs-label"><label class="value">{{{FORWARD_FREEZE}}}</label></td>
+                                        <td class="info-col forwardFreeze"><div class="info-icon icon-info-circled"></div></td>
+                                        <!-- <td><img src="icons/info2.png" height="15" class="tooltip"/></td> -->
+                                    </tr>
+                                    <!-- <tr>
+                                    <td><div class="checkbox"></div></td>
+                                    <td class="cs-label"><label class="value">ViewFreeze</label></td>
+                                    <td><img src="icons/info2.png" height="15" class="tooltip"/></td>
+                                    </tr>
+                                    <tr>
+                                    <td><div class="checkbox"></div></td>
+                                    <td class="cs-label"><label class="value">ScreenFreeze</label></td>
+                                    <td><img src="icons/info2.png" height="15" class="tooltip"/></td>
+                                    </tr> -->
+                                    <!-- <tr>
+                                    <td><div class="checkbox"></div></td>
+                                    <td class="cs-label"><label class="value">Enable Message Recall</label></td>
+                                    <td><img src="icons/info2.png" height="15" class="tooltip"/></td>
+                                    </tr> -->
+                                    <tr>
+                                        <td colspan="2" style="border-bottom:1px solid #ddd; padding:5px 10px"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="radio" id="compose-opt-confidential"></div></td>
+                                        <td class="cs-label"><label class="value">{{CONFIDENTIAL}}</label></td>
+                                        <td class="info-col confidential"><div class="info-icon icon-info-circled"></div></td>
+                                        <!-- <td><img src="icons/info2.png" height="15" class="tooltip"/></td> -->
+                                    </tr>
+                                    <tr>
+                                        <td><div class="radio" id="compose-opt-fyeo"></div></td>
+                                        <td class="cs-label"><label class="value">{{FYEO}}</label></td>
+                                        <td class="info-col fyeo"><div class="info-icon icon-info-circled"></div></td>
+                                        <!-- <td><img src="icons/info2.png" height="15" class="tooltip"/></td> -->
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="SEM-ds-module theme-deliveryslip-module collapsible collasped">
+                <div class="SEM-dsm-title theme-deliveryslip-header">
+                Message Attachments
+                </div>
+                <div class="SEM-dsm-content theme-deliveryslip-content SEM-messagedetails">
+
+                </div>
+                </div> -->
+
+                <div class="SEM-ds-module theme-deliveryslip-module collapsible" id="SEM-ds-module theme-deliveryslip-module-composeattachment">
+                    <div class="SEM-dsm-title theme-deliveryslip-header">
+                        {{MESSAGE_ATTACHMENTS_TITLE}}
+                    </div>
+                    <div class="SEM-dsm-content theme-deliveryslip-content SEM-messagedetails">
+                        <form id="SEM-upload-form" name="SEM-upload-form" method="post" enctype="multipart/form-data"
+                        target="upload_target">
+                            <input type='file' class="SEM-dsm-attachment">
+                            <input type='file' class="SEM-dsm-attachment">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="SEM-ds-module theme-deliveryslip-module collapsible">
+                    <div class="SEM-dsm-title theme-deliveryslip-header">
+                        {{MESSAGE_TRACKING_TITLE}}
+                    </div>
+                    <div class="SEM-dsm-content theme-deliveryslip-content SEM-messagedetails">
+                        <div class="SEM-md-subtitle SEM-md-color-subtitle">
+                            {{DELIVERY_INFORMATION}}
+                        </div>
+                        <div class="SEM-md-subcontent">
+                            <table width="100%" cellspacing="0" cellpadding="0" class="SEM-md-2cell-tbl">
+                                <tbody>
+                                    <tr>
+                                        <td>{{METHOD}}</td>
+                                        <td class="ds-info ds-method">
+                                        <div class="value">
+                                            {{SECURE_EMAIL}}
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{CREATION_DATE}}</td>
+                                        <td class="ds-info">
+                                        <div class="value">
+                                            Oct 04 2012 1:23pm
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{STATUS}}:</td>
+                                        <td class="ds-status status-compose">
+                                        <div class="value">
+                                            {{DRAFT}}
+                                        </div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="SEM-md-subtitle collapsible">
+                            {{TRACKING_OPTIONS}}
+                        </div>
+                        <div class="SEM-md-subcontent">
+                            <table width="100%" cellspacing="0" cellpadding="0" class="SEM-md-checkbox-tbl secure-option">
+                                <tbody>
+                                    <tr>
+                                        <td><div class="checkbox checked" id="compose-opt-allowTracking"></div></td>
+                                        <td class="cs-label">
+                                        <div class="value">
+                                            {{ENABLE_TRACKING}}
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="checkbox checked" id="compose-opt-shareTracking"></div></td>
+                                        <td class="cs-label">
+                                        <div class="value">
+                                            {{SHARE_TRACKING}}
+                                        </div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="penPowerBy"></div>
+            </div>
+            <div class="SEM-ds-loading">
+                <span>{{LOADING_MESSAGE}}</span>
+                <br>
+                <img src="images/icons/ajaxloader.gif">
+            </div>
+        </div>
+    </div>
+    <div class="SEModule SEM-DeliveryslipTab">
+        <div class="icon-tags"></div>
+        {{DELIVERY_SLIP}}
+    </div>
+</div>

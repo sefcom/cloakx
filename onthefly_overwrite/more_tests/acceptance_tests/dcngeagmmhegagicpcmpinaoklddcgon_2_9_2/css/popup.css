@@ -1,0 +1,156 @@
+﻿.pure-table-striped tr:nth-child(2n-1) td {
+    background-color: transparent;
+}
+.pure-table-striped > tbody > tr:nth-child(2n-1) > td {
+    background-color: #f2f2f2;
+}
+.pure-table td {
+    border-left: none;
+}
+.pure-table > tbody > tr > td {
+    border-left: 1px solid #cbcbcb;
+}
+.pure-table-horizontal > tbody > tr > td {
+    border-left: none;
+}
+
+
+body {
+	background-color: #F6F6F6;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+	color: #1155CC;
+}
+a:hover {
+	text-decoration: underline;
+}
+#content {
+	width: 600px;
+	padding: 10px;
+}
+#certs-container {
+	height: 200px;
+	overflow-y: scroll;
+	border: 1px solid #828790;
+	padding: 1px;
+	background-color: #fff;
+}
+#certs-container > * {
+	display: none;
+}
+
+#certs-table {
+    width: 100%;
+}
+#certs-table td.remove a {
+	color: black;
+	font-size: 1.2em;
+}
+
+#advanced-settings {
+	display: none;
+}
+#capiCerts {
+}
+#loading-certs-msg {
+	position: absolute;
+}
+.section {
+	margin-bottom: 2em;
+}
+.section h2 {
+	border-bottom: 1px solid #aaa;
+}
+.simplemodal-overlay {
+    background-color: #000;
+}
+.simplemodal-container {
+    background-color:#fff;
+    border:1px solid #444;
+    padding:12px;
+}
+.dialog {
+	width: 450px;
+	display: none;
+}
+.dialog-content {
+	min-height: 100px;
+}
+.dialog-buttons {
+	border-top: 1px solid #eee;
+	text-align: right;
+	padding-top: 7px;
+}
+.wait-dialog {
+	display: none;
+}
+ul.settings {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.settings li {
+    margin-bottom: 5px;
+}
+#custom-pkcs11-panel {
+	opacity: 0;
+}
+.button-small {
+	font-size: 85%;
+}
+#trusted-sites-table-wrapper {
+	max-height: 250px;
+	overflow-y: scroll;
+}
+#trusted-sites-table {
+	width: 100%;
+}
+.trusted-site-table {
+	width: 100%;
+}
+.trusted-site-table tr:hover {
+	background-color: #e5e5e5;
+}
+.trusted-site-table td.cert-text {
+	width: 90%;
+}
+.trusted-site-table td.cert-remove {
+	width: 10%;
+}
+.trusted-site-table td.cert-remove a {
+	color: black;
+	font-size: 1.2em;
+}
+
+#pkcs11-wrapper {
+	height: 80px;
+	overflow-y: scroll;
+    background-color: #eee;
+}
+.custom-module-table {
+    width: 100%;
+}
+.custom-module-table td.text {
+	width: 90%;
+}
+.custom-module-table td.remove {
+	width: 10%;
+}
+.custom-module-table td.remove a {
+	color: black;
+	font-size: 1.2em;
+}
+
+#custom-pkcs11-input {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-danger {
+    background: #c12e2a;
+    color: #fff;
+}

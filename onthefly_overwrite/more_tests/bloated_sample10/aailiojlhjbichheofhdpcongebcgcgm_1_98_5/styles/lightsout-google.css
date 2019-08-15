@@ -1,0 +1,46 @@
+* {
+    color: #999;
+}
+
+html,
+body {
+	background: #1B1B1B  !important;
+	border-bottom: 1px solid #292929 !important;
+	color: #999 !important;
+}
+
+.hcfe h1, .hcfe .h1 {
+	color: #999 !important;
+}
+
+.content-container .zippy-container,
+.content-container .zippy, .content-container .zippy:visited,
+.hcfe body, .hcfe {
+	background-color: transparent !important;
+}
+
+.content-container .goog-zippy-header,
+.content-container .zippy, .content-container .zippy:visited {
+	border-top: 1px solid #737373 !important;
+}
+
+button {
+    border-color: #303030!important;
+    background: #242323!important;
+    color: #aaa!important;
+}
+
+button:hover {
+    border-color: #444343 !important;
+    background: #1f1f1f !important;
+}
+
+button:hover,
+button:hover span {
+	color: #fff;
+}
+
+.content-container .tip, .content-container .pull-tip {
+	background-color: transparent !important;
+    border: 1px solid #292929  !important;
+}

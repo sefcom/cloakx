@@ -1,0 +1,55 @@
+mixin installButton(rel)
+	div.btn
+		a(rel="external", app=rel, target='_blank') Install now...
+
+mixin app(title,description,button,icon_class)
+	.row
+		.col-xs-3
+			div(class=icon_class)
+		.col-xs-9
+			h3=title
+			div=description
+			+installButton(button)
+
+script#apps-template(type='text/x-handlebars-template')
+	.apps.widget.widget-padded.widget-noborder
+		.row.intro
+			pre {{Intro}}
+		.row.top-level
+			.col-xs-4.btn(app="windows")
+				span.icon-app-windows
+				span Windows
+			.col-xs-4.btn(app="mac")
+				span.icon-app-imac
+				span Mac
+			.col-xs-4.btn(app="mobile")
+				span.icon-app-mobile
+				span Mobile
+		.row.levels
+			.level#windows
+				.row
+					.col-md-6.app-windows-outlook.app-item
+						+app('{{Windows.Outlook.Title}}','{{Windows.Outlook.Description}}','outlookToolbar','icon-app-outlook')
+					.col-md-6.app-windows-office365.app-item
+						+app('{{Windows.Office365.Title}}','{{Windows.Office365.Description}}','office365','icon-app-office365')
+				.row
+					.col-md-6.app-windows-chrome.app-item
+						+app('{{Windows.Chrome.Title}}','{{Windows.Chrome.Description}}','chromeExtension','icon-app-googlechrome')
+					.col-md-6
+			.level#mac
+				.row
+					.col-md-6.app-mac-app.app-item
+						+app('{{Mac.App.Title}}','{{Mac.App.Description}}','macApp','icon-app-store')
+					.col-md-6.app-mac-chrome.app-item
+						+app('{{Mac.Chrome.Title}}','{{Mac.Chrome.Description}}','chromeExtension','icon-app-googlechrome')
+			.level#mobile
+				.row
+					.col-md-6.app-mobile-android.app-item
+						+app('{{Mobile.Android.Title}}','{{Mobile.Android.Description}}','android','icon-app-google-play')
+					.col-md-6.app-mobile-ios.app-item
+						+app('{{Mobile.iOS.Title}}','{{Mobile.iOS.Description}}','iOS','icon-app-store')
+				.row
+					.col-md-6.app-mobile-blackberry.app-item
+						+app('{{Mobile.BlackBerry.Title}}','{{Mobile.BlackBerry.Description}}','blackBerry','icon-app-blackberry')
+					.col-md-6.app-mobile-windows8
+						+app('{{Mobile.Windows8.Title}}','{{Mobile.Windows8.Description}}','windowsPhone8','icon-app-windows')

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="dji-sru-active dji-sru-outline-active">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--
+    <script src="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/thirdParty/jquery/jquery-2.1.4.min.js"></script>
+    <script src="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/common/ui/effects.js"></script>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/common/ui/effects.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/mainContainer.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/toolbar.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/outlines.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/outlinesMoveDialog.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/screenSelection.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/selectionMapper.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/rewordify.css"/>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://mloajfnmjckfjbeeofcdaecbelnblden/contentScripts/speech.css"/>
+    -->
+</head>
+<body>
+
+
+<div id="templates" style="display: none;">
+
+
+    <div class="dji-sru-outline-dialog-element" dji-template-id="template-outline-dialog-element">
+        <div class="dji-sru-outline-dialog-element-header">
+            <div class="dji-sru-outline-dialog-element-header-content">
+                <div class="dji-sru-folder-img-dialog"></div>
+                <div class="dji-sru-dialog-input-container"><input class="dji-sru-outline-dialog-title" readonly placeholder="Folder Name" maxlength="32"/></div>
+                <div class="dji-sru-dialog-btn-container">
+                    <div class = "dji-sru-btnDialogNew"></div>
+                    <div class = "dji-sru-btnDialogMove"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="dji-sru-subfolders"></div>
+    </div>
+
+
+</div>
+
+<!-- DIALOG CONTAINER BEGIN -->
+
+<div id="dji-sru-move-folder-dialog" class = "dji-all-initial">
+
+    <div class="dji-sru-dialog-title-bar">
+        <div id="__dji_sru_btnDialogCancel">Done</div>
+        <div  class="dji-sru-dialog-title-center">Move to</div>
+    </div>
+    <div class = "dji-sru-dialog-container">
+
+        <div class="dji-sru-dialog-content" >
+            <div class="dji-sru-outline-dialog-element" id="dji-sru-0">
+                <div class="dji-sru-outline-dialog-element-header">
+                    <div class="dji-sru-outline-dialog-element-header-content dji-home-folder">
+
+                        <div class="dji-sru-dialog-input-container"><input class="dji-sru-outline-dialog-title " readonly value = "Home outlines"/></div>
+
+                    </div>
+                    <div class="dji-sru-dialog-btn-container">
+                        <div class = "dji-sru-btnDialogNew"></div>
+                        <div class = "dji-sru-btnDialogMove"></div>
+                    </div>
+                </div>
+                <div class="dji-sru-subfolders"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

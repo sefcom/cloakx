@@ -1,0 +1,45 @@
+/* Note: Styles have been standardised and placed into the /css/uiframework.styl class */
+/*
+Please review the uiframework.styl class to learn the types of layouts and widgets that can be used
+*/
+#account-settings .btn-group {
+  margin-bottom: 1em !important;
+}
+.SEM-Account .tab-holder {
+  margin-bottom: 0;
+  border-top: none;
+}
+.SEM-Account .account-tab-holder {
+  position: relative;
+}
+.SEM-Account .setting-subtitle {
+  font-size: 1.75em;
+}
+.SEM-Account .sender-notification {
+  margin-top: 2em;
+}
+.SEM-Account .error-saving {
+  margin-top: 1.5em;
+  color: #dd6c6c;
+  float: left;
+}
+.SEM-Account .error-saving.general-text {
+  color: #008024;
+}
+@media screen and (max-width: 690px) {
+  .SEM-Account #tab-preference > .row .form {
+    height: inherit;
+  }
+  .SEM-Account .tab-holder {
+    margin-bottom: 0;
+    border-top: 1px solid #ccc;
+  }
+  .SEM-Account .btn-group .btn {
+    margin: 0 1em 1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .SEM-Account #tab-preference > .row .form {
+    height: inherit;
+  }
+}

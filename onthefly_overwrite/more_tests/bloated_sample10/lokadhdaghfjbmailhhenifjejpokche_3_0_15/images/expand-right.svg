@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-253.000000, -366.000000)">
+            <g id="expand-more" transform="translate(256.500000, 372.500000) rotate(270.000000) translate(-256.500000, -372.500000) translate(244.000000, 360.000000)">
+                <polygon id="Shape" fill="#4A4A4A" points="17.2916667 8.9583079 12.5 13.7499746 7.70833333 8.9583079 6.25 10.4166412 12.5 16.6666412 18.75 10.4166412"></polygon>
+                <rect id="bounds" x="0" y="0" width="25" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

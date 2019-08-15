@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"Пропустить YouTube Объявления Автоматически"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"Мгновенно пропустить рекламу, которая играет перед видео YouTube. Автоматически. Работает на всех веб-сайтах."
+	}
+}

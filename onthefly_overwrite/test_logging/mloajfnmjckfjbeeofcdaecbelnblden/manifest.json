@@ -1,0 +1,196 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Snap&Read Universal",
+    "version": "3.5.1.1",
+    "manifest_version": 2,
+    "minimum_chrome_version": "28",
+    "description": "Text reader (TTS) that simplifies vocabulary, translates text, reads inaccessible text (OCR), and captures and cites sources.",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiRO0IGCVxw4QaDNovl6gsRAHOMvW2MzzvixIc5/NM5BnA+AQpdOjxQSg06mTMKvsZo5xmay4Kq0gpjl4LoNrr0DEHI5kDdr0MF/7qo+IdlB2gwpvMQcO/2rCfV8CrUAxe/f39PRtPDE165WorOQLsVCbUHqFvsj/6J8IGxI2LUFLX76P+IFnmADMthv2AWj6J7WQx1ImKXzIX+DYr4Igz9N5yE8SLFh0k5E3Sx+ov0N9T/Mpub/+TA9Qa55mkUTHZ0OHznLGXneb/CBRuYAvgKKwoZHt7YfCnP0wp3E69yLVkAwyd9a7sxgKb2NpbrOAXUH9pfWe9txpExuq9sNx1wIDAQAB",
+
+    "background": {
+        "page": "background/background.html"
+    },
+
+    "options_page": "options/options.html",
+
+    "icons": {
+        "16": "resources/graphics/sruIcon-16x16.png",
+        "48": "resources/graphics/sruIcon-48x48.png",
+        "128": "resources/graphics/sruIcon-128x128.png",
+        "256": "resources/graphics/sruIcon-256x256.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+	        "19": "resources/graphics/sruLoading_19.png",
+	        "38": "resources/graphics/sruLoading_38.png"
+	        },
+        "default_title": "Snap&Read Universal"
+    },
+
+    "content_scripts": [
+        {
+            "all_frames": false,
+
+            "matches": [
+                "<all_urls>",
+                "http://*/*",
+                "https://*/*",
+                "ftp://*/*",
+                "file://*/*"
+            ],
+
+            "js": [
+                "thirdParty/jquery/jquery-2.1.4.min.js",
+                "thirdParty/jspdf/jspdf.debug.js",
+                "thirdParty/mark/mark.min.js",
+                "thirdParty/pdfmake/pdfmake.min.js",
+                "thirdParty/pdfmake/vfs_fonts.js",
+                "common/extensions.js",
+                "common/ui/effects.js",
+                "common/logger.js",
+                "common/utilities.js",
+                "common/charSet.js",
+                "contentScripts/selectionMapper.js",
+                "contentScripts/shortcuts.js",
+                "contentScripts/toolbar.js",
+                "contentScripts/mainContainer.js",
+                "contentScripts/outlines.js",
+                "contentScripts/outlinesDataManager.js",
+                "contentScripts/searchInOutlineController.js",
+                "contentScripts/printController.js",
+                "contentScripts/downloadController.js",
+                "contentScripts/speech.js",
+                "contentScripts/screenSelection.js",
+                "contentScripts/rewordify.js",
+                "contentScripts/helpers/bookshareViewer.js",
+                "contentScripts/helpers/pdfViewer.js",
+                "contentScripts/helpers/amazonKindle.js",
+                "contentScripts/helpers/byrei-dyndiv_1.0rc1.js",
+                "contentScripts/translate.js",
+                "contentScripts/contentScriptManager.js",
+                "contentScripts/citations.js",
+                "thirdParty/chromium/contentscript.js",
+                "thirdParty/citeproc/xmldom.js",
+                "thirdParty/citeproc/citeproc.js"
+            ],
+            "css": [
+                "common/ui/effects.css",
+                "contentScripts/mainContainer.css",
+                "contentScripts/screenSelection.css",
+                "contentScripts/selectionMapper.css",
+                "contentScripts/rewordify.css",
+                "contentScripts/speech.css",
+                "contentScripts/helpers/byrei-dyndiv_0.5.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+
+    "permissions": [
+        "<all_urls>",
+        "http://*/",
+        "https://*/",
+        "management",
+        "tabs",
+        "activeTab",
+        "tts",
+        "ttsEngine",
+        "notifications",
+        "unlimitedStorage",
+        "webNavigation",
+        "contextMenus",
+        "management",
+        "webRequest",
+        "webRequestBlocking",
+        "storage"
+    ],
+
+    "web_accessible_resources": [
+        "getFrameId",
+        "thirdParty/chromium/content/web/viewer.html",
+        "http:/*",
+        "https:/*",
+        "ftp:/*",
+        "file:/*",
+        "chrome-extension:/*",
+        "filesystem:/*",
+        "drive:*",
+        "status",
+        "go.html",
+        "resources/images/cursor-speak.svg",
+        "resources/images/cursor-speak@2x.svg",
+        "resources/images/cursor-wait.svg",
+        "resources/images/cursor-wait@2x.svg",
+        "resources/images/cursor-speak-off.svg",
+        "resources/images/cursor-speak-off@2x.svg",
+        "resources/images/cursor-rewordify.svg",
+        "resources/images/cursor-rewordify@2x.svg",
+        "resources/images/cursor-highlight.svg",
+        "resources/images/cursor-highlight@2x.svg",
+        "resources/images/cursor-translate.svg",
+        "resources/images/cursor-translate@2x.svg",
+        "resources/images/speak.svg",
+        "resources/images/speak-active.svg",
+        "resources/images/screenshot.svg",
+        "resources/images/screenshot-active.svg",
+        "resources/images/rewordify.svg",
+        "resources/images/rewordify-active.svg",
+        "resources/images/translate.svg",
+        "resources/images/translate-active.svg",
+        "resources/images/close.svg",
+        "resources/images/close-hover.svg",
+        "resources/images/highlightOnMainToolbar.svg",
+        "resources/images/highlightMainToolbar.svg",
+        "resources/images/delete.svg",
+        "resources/images/toolbarCollapse.svg",
+        "resources/images/toolbarExpand.svg",
+        "resources/images/folder_dialog.gif",
+        "resources/images/indent.svg",
+        "resources/images/outdent.svg",
+        "resources/images/linkSource.svg",
+        "resources/images/sourceEdit.svg",
+        "resources/images/lessCitations.svg",
+        "resources/images/bulletToolbar_2icons.svg",
+        "resources/images/bulletToolbar_source.svg",
+        "resources/graphics/sruIcon-16X16.png",
+        "resources/images/translatedByGoogle.png",
+        "resources/images/dynDiv_resizeDiv_tl.svg",
+        "resources/images/dynDiv_resizeDiv_bl.svg",
+        "resources/images/dynDiv_resizeDiv_br.svg",
+        "resources/images/no-outlines.svg",
+        "resources/images/no-sources-tip.svg",
+        "resources/images/no-sources-link-text.svg",
+        "resources/fonts/*",
+        "contentScripts/cursors.css",
+        "contentScripts/rewordify.css",
+        "contentScripts/speech.css",
+        "common/ui/effects.css",
+        "contentScripts/mainContainer.css",
+        "contentScripts/searchInOutline.css",
+        "contentScripts/toolbar.css",
+        "contentScripts/outlines.css",
+        "contentScripts/outlinesMoveDialog.css",
+        "contentScripts/screenSelection.css",
+        "contentScripts/selectionMapper.css",
+        "contentScripts/rewordify.css",
+        "contentScripts/speech.css",
+        "contentScripts/helpers/byrei-dyndiv_0.5.css",
+        "contentScripts/mainContainer.html",
+        "contentScripts/outlinesMoveDialog.html",
+        "contentScripts/helpers/googleDocs.js",
+        "thirdParty/jquery/jquery-2.1.4.min.js",
+        "thirdParty/citeproc/chicago-fullnote-bibliography.csl",
+        "thirdParty/citeproc/apa.csl",
+        "thirdParty/citeproc/mla.csl",
+        "thirdParty/citeproc/chicago-nb.csl",
+        "thirdParty/citeproc/locales-en-US.xml",
+
+        "common/ui/*"
+    ],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-95.000000, -490.000000)">
+            <g id="polish" transform="translate(95.000000, 490.000000)">
+                <g id="Layer_1">
+                    <circle id="Oval" fill="#F0F0F0" cx="10" cy="10" r="10"></circle>
+                    <path d="M20,10 C20,15.5228125 15.5228125,20 10,20 C4.4771875,20 0,15.5228125 0,10" id="Shape" fill="#D80027"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

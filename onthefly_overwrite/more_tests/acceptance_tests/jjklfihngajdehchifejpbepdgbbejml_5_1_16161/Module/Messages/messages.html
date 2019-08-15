@@ -1,0 +1,139 @@
+<script id="message-template" type="text/x-handlebars-template">
+<div class="SEModule SEM-Message">
+
+    <div class="msg-container">
+
+        <div class="msg-actionbar toolbar scroll-docked-container">
+            <div class="actionbtn icon-reply" action="reply" title="{{REPLY}}">
+                <span>{{REPLY}}</span>
+            </div>
+            <div class="actionbtn icon-reply-all" action="replyall" title="{{REPLY_ALL}}">
+                <span>{{REPLY_ALL}}</span>
+            </div>
+            <div class="actionbtn icon-forward" action="forward" title="{{FORWARD}}">
+                <span>{{FORWARD}}</span>
+            </div>
+            <div class="actionbtn recall-btn icon-caution" title="{{RECALL}}">
+                <span>{{RECALL}}</span>
+            </div>
+            <div class="actionbtn deliveryslip-btn icon-tags show-phone" action="deliveryslip" title="{{VIEW_DELIVERY_SLIP}}">
+            </div>
+            <div class="actionbtn overflow-btn icon-dot-3">
+                <div class="dropdown">
+                    <ul class="toolbar toolbar-vertical">
+                        <li><div class="actionbtn icon-print" action="print" title="{{PRINT}}"><span>{{PRINT}}</span></div></li>
+                        <li><div class="actionbtn archive-btn icon-archive" title="{{ARCHIVE}}"><span>{{ARCHIVE}}</span></div></li>
+                        <li><div class="actionbtn icon-trash-bin delete-btn" title="{{DELETE}}"><span>{{DELETE}}</span></div></li>
+                        <li><div class="actionbtn favourite-btn icon-star-solid" title="{{FAVORITE}}"><span>{{FAVORITE}}</span></div></li>
+                        <li><div class="actionbtn archive-restore-btn icon-folder" title="{{RESTORE}}"><span>{{RESTORE}}</span></div></li>
+                        <li><div class="actionbtn delete-restore-btn icon-folder" title="{{RESTORE}}"><span>{{RESTORE}}</span></div></li>
+                        <li><div class="actionbtn delete-forever-btn icon-trash-bin" title="{{DELETE}}"><span>{{DELETE}}</span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollable">
+            <div class="msg-header">
+                <h1 class="subject"></h1>
+                <div class="attachment"></div>
+                <div class="time"></div>
+                <div class="from"></div>
+                <div class="to"></div>
+                <div class="cc" style="display:none"></div>
+                <div class="bcc" style="display:none"></div>
+                <div class="to-overflow">{{SHOW_MORE}}</div>
+                <div class="show-phone">
+                    <div class="btn btn-link btn-flat view-more-button">{{VIEW_MORE}}</div>
+                    <div class="view-more-panel hide">
+                        <div class="row">
+                            <div class="col-xs-12"><div class="to"></div></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12"><div class="cc"></div></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12"><div class="bcc"></div></div>
+                        </div>
+                        <div class="row nowrap">
+                            <div class="col-xs-1 date nowrap">Date:</div>
+                            <div class="col-xs-11 time"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg-actionbar message-toolbar-wrap toolbar">
+                <div class="actionbtn icon-reply" action="reply" id="rrr" title="{{REPLY}}">
+                    <span>{{REPLY}}</span>
+                </div>
+                <div class="actionbtn icon-reply-all" action="replyall" title="{{REPLY_ALL}}">
+                    <span>{{REPLY_ALL}}</span>
+                </div>
+                <div class="actionbtn icon-forward" action="forward" title="{{FORWARD}}">
+                    <span>{{FORWARD}}</span>
+                </div>
+                <div class="actionbtn recall-btn icon-caution" title="{{RECALL}}">
+                    <span>{{RECALL}}</span>
+                </div>
+                <div class="actionbtn deliveryslip-btn icon-tags show-phone" action="deliveryslip" title="{{VIEW_DELIVERY_SLIP}}">
+                </div>
+                <div class="actionbtn overflow-btn icon-dot-3">
+                    <div class="dropdown">
+                        <ul class="toolbar toolbar-vertical">
+                            <li><div class="actionbtn icon-print" action="print" title="{{PRINT}}"><span>{{PRINT}}</span></div></li>
+                            <li><div class="actionbtn archive-btn icon-archive" title="{{ARCHIVE}}"><span>{{ARCHIVE}}</span></div></li>
+                            <li><div class="actionbtn icon-trash-bin delete-btn" title="{{DELETE}}"><span>{{DELETE}}</span></div></li>
+                            <li><div class="actionbtn favourite-btn icon-star-solid" title="{{FAVORITE}}"><span>{{FAVORITE}}</span></div></li>
+                            <li><div class="actionbtn archive-restore-btn icon-folder" title="{{RESTORE}}"><span>{{RESTORE}}</span></div></li>
+                            <li><div class="actionbtn delete-restore-btn icon-folder" title="{{RESTORE}}"><span>{{RESTORE}}</span></div></li>
+                            <li><div class="actionbtn delete-forever-btn icon-trash-bin" title="{{DELETE}}"><span>{{DELETE}}</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear:both"></div>
+
+            <div class="message-inbox-warning msg-warning">
+                <div class="warning-content">
+                    <div class="icon-caution"></div>
+                    <span class="text"></span>
+                    <span class="info-icon icon-info-circled pull-right"></span>
+                </div>
+            </div>
+            <div class="msg-attachments">
+            </div>
+
+            <div class="clear"></div>
+            <div class="message-loading">
+                <span>{{DECRYPTING}}</span><br/>
+                <img src="images/icons/ajaxloader.gif"/>
+            </div>
+            <div class="msg-recalled">
+                <div class="recalled-icon icon-caution"></div>
+                <div class="recalled-message">
+                    <h4 class='msg-recalled-title'>{{MESSAGE_RECALLED}}</h4>
+                    <p class='msg-recalled-description'>{{MESSAGE_RECALLED_CONTENT}}</p>
+                    <h4 class='msg-recalled-reasontitle'>{{MESSAGE_RECALLED_REASON}}</h4>
+                    <p class='msg-recalled-content'></p>
+                </div>
+            </div>
+            <div class="msg-fyeo row">
+                <div class="fyeo-icon icon-lock col-xs-1"></div>
+                <div class="fyeo-message col-xs-11">
+                    <h2> {{MESSAGE_FYEO_CONTENT}}</h2>
+                    <h3>{{PLEASE_ENTER_YOUR}}<strong>{{SECURE_ACCOUNT_PASSWORD}}</strong>{{BELOW_TO_UNLOCK_MESSAGE}}</h3>
+                    <div class="row">
+                        <input type="password" id="fyeo-pass" class="col-sm-8">
+                        <div class="btn-fyeo-unlock btn btn-normal nowrap actionbtn col-sm-4">{{UNLOCK}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-body" id="msg-scroller"></div>
+        </div>
+    </div>
+
+    <div class="no-msg" style="display: none;">{{NO_MESSAGE}}</div>
+</div>
+</script>

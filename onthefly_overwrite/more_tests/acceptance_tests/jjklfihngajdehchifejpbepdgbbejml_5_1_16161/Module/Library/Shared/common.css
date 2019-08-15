@@ -1,0 +1,27 @@
+.radio{
+	min-width:16px;
+	min-height:16px;
+
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 1px solid #bbb;
+    background: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radio.checked:before {
+    content: ' ';
+    width: 7px;
+    height: 17px;
+    display: block;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 3px solid #444;
+    border-right: 3px solid #444;
+    top: -5px;
+    position: relative;
+    right: -5px;
+}

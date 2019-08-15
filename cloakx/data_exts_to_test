@@ -1,0 +1,60 @@
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from os.path import basename, splitext
+from termcolor import cprint
+import glob
+import json
+
+jdata = {}
+for fn in glob.iglob("*.json"):
+    with open(fn,"r") as jf:
+        appid = splitext(basename(fn))[0]
+        jdata[appid] = json.load(jf)
+
+war_tajs = open("war_tajs_appids.dat","w")
+is_tajs = open("is_tajs_appids.dat","w")
+for appid, appdata in jdata.items():
+    appdata = appdata[0]
+    haswar = False
+    hasis = False
+    msg = ""
+    if "droplets" in appdata:
+        drops = appdata["droplets"]
+        for drop in drops:
+            haswar = "wars" in drop or haswar
+            if "wars" in drop:
+                for w in drop["wars"]:
+                    if "error" in w and "stderr" in w:
+                        cprint("\tWAR ERROR {}".format(w["stderr"][:100]),"red")
+                        msg = "TAJS ERROR"
+                    elif "error" in w and w["error"] == "Timeout":
+                        cprint("\tWAR ERROR TIMOUT".format(json.dumps(w, indent=4)),"yellow")
+                        msg = "TAJS TIMEOUT"
+                    if "matches" in w and len(w["matches"]) > 0:
+                        print("\tWAR matches={}".format(len(w["matches"])))
+                        msg = "MATCHES"
+            if "inline_scripts" in drop:
+                for i_s in drop["inline_scripts"]:
+                    if "error" in i_s and "stderr" in i_s:
+                        cprint("\tI_S ERROR {}".format(i_s["stderr"][:100]),"red")
+                        msg = "TAJS ERROR"
+                    elif "error" in i_s and i_s["error"] == "Timeout":
+                        cprint("\tI_S ERROR TIMOUT ".format(json.dumps(w, indent=4)),"blue")
+                        msg = "TAJS TIMEOUT"
+                    if "matches" in i_s and len(i_s["matches"]) > 0:
+                        print("\tIS matches={}".format(len(i_s["matches"])))
+                        msg = "MATCHES"
+            hasis = "inline_scripts" in drop or hasis
+    if haswar and hasis:
+        cprint("both:{}".format(appid),"green")
+        war_tajs.write("{},BOTH,{}\n".format(appid, msg))
+    elif haswar:
+        war_tajs.write("{},WARS,{}\n".format(appid, msg))
+        print("wars only:{}".format(appid))
+    elif hasis:
+        is_tajs.write("{},INLINE_SCRIPTS,{}\n".format(appid, msg))
+        print("inline only:{}".format(appid))
+war_tajs.close()
+is_tajs.close()

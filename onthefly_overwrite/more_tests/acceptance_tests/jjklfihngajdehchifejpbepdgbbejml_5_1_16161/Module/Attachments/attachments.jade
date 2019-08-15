@@ -1,0 +1,148 @@
+- var isNewHybrid = true
+
+mixin requestEsign()
+	.request-esign
+		.checkbox
+		.text Request E-signature
+
+mixin listAttachmentsTemplate()
+	.attachment-header {{HEADER}}
+	.attachment-warning.msg-warning
+		.warning-content
+			.icon-caution
+			span.text {{WARNING}}
+			.info-icon.icon-info-circled
+	if isNewHybrid
+		ul.attachments-wrapper.display-only.clear
+			//{{#each attachments}}
+			li.tile.FileListItemView.attachment.ds-attachment(guid='{{guid}}', data-status='{{status}}', class='{{esignable}}')
+				.tile-details-holder.flex-container
+					.tracking-bar
+					.tile-icon-container.flex-container.flex-vertical.iconbox-container_XX
+						.checkbox-container.flex-container.flex-vertical
+							.checkbox.disabled.flex-start
+							//.icons.hide
+							//	.icon-lock.secure-icon
+						.tile-icon.flex-start.align-center.iconbox_XX(class='{{fileIcon}}')
+						.icon-ribbon-b
+					.content-container.flex.content
+						.line.name.filename(title="{{fileName}}") {{fileName}}
+						.line.subject.filesize {{fileSize}}
+						.line.attachment-line.esign-note
+					.circle.progress
+						strong
+					.dropdown-button.icon-down
+					ul.dropdown-menu(class="{{type}}")
+						li.menu.download.icon-archive {{../downloadText}}
+						li.menu.preview.icon-eye(class='{{preview}}') {{../previewText}}
+						li.menu.detail.icon-file-text {{../detailText}}
+						li.menu.view-activity {{../viewActivityText}}
+						li.menu.esign.icon-ribbon-b {{../eSignText}}
+							//a.download(href="{{downloadLink}}",target="_blank") {{../downloadText}}
+					.attachment-info-container
+						//{{#if attachmentInfo}}
+						.attachment-info
+							.row
+								.col-xs-5 {{../../Deliveryslip.STATUS}}:
+								.col-xs-7 {{attachmentInfo.status}}
+							.row
+								.col-xs-5 {{../../Deliveryslip.SIZE}}
+								.col-xs-7 {{../fileSize}}
+							.row
+								.col-xs-5 {{../../Deliveryslip.FORMAT}}
+								.col-xs-7 {{attachmentInfo.ext}}
+							.row
+								.col-xs-5 {{../../Deliveryslip.UPLOAD_BY}}
+								.col-xs-7 {{attachmentInfo.uploadedBy}}
+							.row
+								.col-xs-5 {{../../Deliveryslip.UPLOAD_ON}}
+								.col-xs-7 {{attachmentInfo.uploadDate}}
+						//{{/if}}
+						//+requestEsign()
+			//{{/each}}
+	else
+		ul.attachments-wrapper.display-only
+			//{{#each attachments}}
+			li.attachment.icon-file-text.ds-attachment(guid='{{guid}}', data-status='{{status}}', class='{{esignable}}')
+				.iconbox-container
+					.iconbox(class='{{fileIcon}}')
+				.checkbox
+				.circle.progress
+					strong
+				.content
+					.meta.dl_attach
+						.filename(title="{{fileName}}") {{fileName}}
+						.filesize {{fileSize}}
+						.esign-note
+				.dropdown-button.icon-down
+				ul.dropdown-menu(class="{{type}}")
+					li.menu.download {{../downloadText}}
+					li.menu.preview(class='{{preview}}') {{../previewText}}
+					li.menu.detail {{../detailText}}
+					li.menu.view-acticity {{../viewActivityText}}
+					li.menu.esign {{../eSignText}}
+						//a.download(href="{{downloadLink}}",target="_blank") {{../downloadText}}
+				.attachment-info-container
+					//{{#if attachmentInfo}}
+					.attachment-info
+						.row
+							.col-xs-5 {{../../Deliveryslip.STATUS}}:
+							.col-xs-7 {{attachmentInfo.status}}
+						.row
+							.col-xs-5 {{../../Deliveryslip.SIZE}}
+							.col-xs-7 {{../fileSize}}
+						.row
+							.col-xs-5 {{../../Deliveryslip.FORMAT}}
+							.col-xs-7 {{attachmentInfo.ext}}
+						.row
+							.col-xs-5 {{../../Deliveryslip.UPLOAD_BY}}
+							.col-xs-7 {{attachmentInfo.uploadedBy}}
+						.row
+							.col-xs-5 {{../../Deliveryslip.UPLOAD_ON}}
+							.col-xs-7 {{attachmentInfo.uploadDate}}
+					//{{/if}}
+					+requestEsign()
+			//{{/each}}
+	.icon-angle-double-down.show-all-attachments.hide {{SHOW_ALL_TEXT}}
+
+mixin addAttachmentTemplate()
+	if isNewHybrid
+		li.tile.FileListItemView.attachment.uploading(data-file-guid="{{dataFileGuid}}",data-status='{{status}}')
+			.tile-details-holder.flex-container
+				.tracking-bar
+				.tile-icon-container.flex-container.flex-vertical.iconbox-container_XX
+					.checkbox-container.flex-container.flex-vertical
+						.checkbox.disabled.flex-start
+						//.icons.hide
+						//	.icon-lock.secure-icon
+					.tile-icon.flex-start.align-center.iconbox_XX(class='{{fileIcon}}')
+					.icon-ribbon-b
+				.content-container.flex.content
+					//.upload-icon
+					//.meta.dl_attach
+					.line.name.filename(title="{{fileName}}") {{fileName}}
+					.line.subject.filesize {{fileSize}}
+				.circle.progress
+					strong
+				.remove-attachment.icon-cancel
+				.attachment-info-container
+	else
+		li.attachment.icon-upload.uploading(data-file-guid="{{dataFileGuid}}")
+			.circle.progress
+				strong
+			.content
+				//.upload-icon
+				.meta.dl_attach
+					.filename(title="{{fileName}}") {{fileName}}
+					.filesize {{fileSize}}
+			.remove-attachment.icon-cancel
+			.attachment-info-container
+				+requestEsign()
+script#attachment-template(type='text/x-handlebars-template')
+	+listAttachmentsTemplate()
+
+script#add-new-attachment-separator-template(type='text/x-handlebars-template')
+	li.info.new-attachments {{caption}}
+
+script#add-attachment-template(type='text/x-handlebars-template')
+	+addAttachmentTemplate()

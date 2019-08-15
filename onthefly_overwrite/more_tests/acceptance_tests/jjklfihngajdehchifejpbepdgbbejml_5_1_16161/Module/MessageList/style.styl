@@ -1,0 +1,221 @@
+.SEM-MessagingList{
+	color:#333;
+	overflow:hidden;
+}
+
+.SEM-MessagingList .messagelist-container{
+	width:100%;
+}
+
+.SEM-MessagingList .messagelist-container > p{
+	margin:20px;
+	color:#999;
+	text-align:center;
+}
+
+.SEM-MessageList .mail:first-child {
+	border-top: 1px solid #EEE;
+}
+
+.SEM-MessagingList .mail{
+	position: relative;
+	background: #fff;
+	cursor: pointer;
+	border-bottom: 1px solid #EEE;
+	border-right: 1px solid #EEE;
+	clear:both;
+	white-space:nowrap;
+}
+
+.SEM-MessagingList .mail-category {
+  padding: 5px 10px;
+  background-color: #e3e3e3;
+  border-color: #fff;
+  color: rgb(131, 131, 131);
+  font-weight: normal;
+}
+
+.SEM-MessagingList .mail:first-child{
+    border-top: 1px solid #EEE;
+}
+
+.SEM-MessagingList .mail.unread{
+	/*background:#ddd;*/
+	/*box-shadow: 5px 0px 0px #EEE inset;*/
+}
+
+.SEM-MessagingList .mail.recalled {
+	box-shadow: 5px 0px 0px #D90000 inset;
+	//color: #0095dd;
+}
+
+.SEM-MessagingList .mail.locked {
+	box-shadow: 5px 0px 0px $ds_option_fyeo_color inset;
+}
+
+.SEM-MessagingList .mail.outlook {
+	box-shadow: 5px 0px 0px #0078D7 inset;
+}
+
+.SEM-MessagingList .mail.unread .mail-info .mail-info-from, .SEM-MessagingList .mail.unread .mail-info .mail-info-subject{
+	font-weight: bold;
+}
+
+
+.SEM-MessagingList .mail.active{
+	background:#EEE;
+	color:#444;
+}
+
+
+.SEM-MessagingList .mail.hover{
+	background-color:rgba(0,0,0,0.2);
+}
+
+.SEM-MessagingList .mail {
+	box-sizing:border-box;
+	width:100%;
+
+	.mail-checkbox{
+		display:inline-block;
+		margin:0 7px;
+		padding 10px
+	}
+
+	.mail-info{
+		position:relative;
+		box-sizing:border-box;
+		display:inline-block;
+		width:90%;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		margin-top:1em;
+
+		.mail-info-from,.mail-info-subject {
+			width: 200px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+
+			@media screen and (max-width: $media_width_phone) {
+				width: 315px;
+			}
+
+			@media query_small_phone_portrait {
+				width: 280px;
+			}
+		}
+
+		.mail-info-from{
+			margin-bottom:5px;
+			font-size: 1em;
+		}
+		.mail-info-subject{
+			font-size:0.8em;
+		}
+	}
+
+	.mail-info-date{
+		font-size:0.75rem;
+		color:#444;
+		margin:0;
+		text-align:right;
+		padding-right:8px;
+		margin-bottom:5px;
+
+		&.icon-attachment:before {
+			margin-right: 5px;
+			line-height: 12px;
+		}
+	}
+}
+
+.SEM-MessagingList  .mail-progress {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    width: 70px;
+    height: 11px;
+    border: 1px solid #84af91;
+    background: white;
+
+	&.disabled {
+	    display: none;
+	}
+}
+
+.SEM-MessagingList  .mail-progress-bar {
+    background: #bfffcf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.SEM-MessagingList  .mail-progress-value {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    line-height: 11px;
+    font-size: 10px;
+    color: #444;
+}
+
+.SEM-MessagingList .mail-icons{
+	position:absolute;
+	right:75px; top:2px; bottom:0;
+	padding:8px;
+	/*width: 90px;*/
+}
+
+.SEM-MessagingList .mail-icons [class^="icon-"]{
+    display: inline-block;
+    padding-right: 5px;
+}
+.SEM-MessagingList .mail-icons [class^="icon-"]:last-child{
+    padding-right: 0px;
+}
+
+.SEM-MessagingList .mail-icons.right-float{
+    right: 0px;
+}
+
+.SEM-MessagingList .mail-icons img{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+.SEM-MessagingList .mail-icons .icon-caution:before{
+	color: #D90000
+}
+
+.SEM-MessagingList .mail-icons .icon-lock:before{
+	color: $ds_option_fyeo_color;
+	font-size: 1.3em;
+}
+
+.SEM-MessagingList .mail.active .mail-info-date{
+	color:#444;
+}
+
+.SEM-MessagingList .mail.unread .mail-info-from{
+	font-weight:bold;
+}
+
+.SEM-MessagingList .messagelist-loading{
+	text-align: center;
+	line-height:20px;
+	padding:10px 0;
+}
+
+.SEM-MessagingList .messagelist-error{
+   display: none;
+	text-align: center;
+	line-height:20px;
+	padding:10px 0;
+}
+
+.SEM-MessagingList .messagelist-error .icon-caution:before {
+   color: #ffa500 !important;
+}

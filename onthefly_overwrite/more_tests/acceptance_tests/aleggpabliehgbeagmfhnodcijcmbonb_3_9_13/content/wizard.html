@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Dr.Web Link Checker Options</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <script src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/wizard.js"></script>
+
+		<link rel="stylesheet" href="css/options.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+
+	<body style="overflow-x: hidden;">
+	<div id="head">
+			<div class="regularWidth" style="max-width: 740px; min-width: 740px;">
+				<img src="css/images/drweblogo.png" width="192" height="48" alt="Dr.Web Link Checker" />
+				<p id="description"></p>
+			</div>
+			
+			<hr class="clear" />
+		</div>
+	<div id="content">
+			<div class="regularWidth" style="max-width: 740px; min-width: 740px;">
+                <div id="stepIndicators" class="wiz-steps" style="margin-left: 630px; margin-top: 0.5em;">
+                     <div id="indicatorStep1" class="wiz-step" active></div>
+                     <div id="indicatorStep2" class="wiz-step"></div>
+                     <div id="indicatorStep3" class="wiz-step"></div>
+                     <div id="indicatorStep4" class="wiz-step"></div>
+                </div>
+                <div>
+                <div id="step1" class="stepItem">
+                    <div style="padding-right: 6em;"><h2 id="quickSetup" class="wizpage_header3">Quick setup</h2></div>
+                    <div id="quickSetupDescription" class="blackDesc wiz-tmargin">You have installed browser extension Dr.Web Link Checker.<br><br>Do you want to setup it for your needs or want to leave default settings?</div>
+                    <div class="wiz-start">
+
+                    </div>
+                    <div>
+                        <div id="leaveDefault" class="wiz-grayButton">Leave default settings</div>
+                        <div id="setUp" class="wiz-greenButton wiz-lmargin">Let's setup it</div>
+                    </div>
+                </div>
+                </div>
+                <div style="">
+                <div id="step2" class="stepItem" style="display: none;">
+                    <h2 id="linksSetup"  class="wizpage_header3">Check links in social networks</h2>
+                    <div id="linksSetupDescription" class="blackDesc wiz-tmargin">Do you want that Dr.Web Link Checker checks redirecting links in social networks?</div>
+                    <div class="wiz-item" id="social-frame-off">
+                        <div class="wiz-social-step" off></div>
+                        <hr class="clear"/>
+                        <span id="wiz-social-step-off">Do not check the links</span>
+                    </div>
+                    <div class="wiz-item wiz-lmargin"  id="social-frame-on" selected>
+                        <div class="wiz-social-step" on></div>
+                        <hr class="clear"/>
+                        <span id="wiz-social-step-on">Check links with Link Checker extension</span>
+                    </div>
+                </div>
+                <div id="step3" class="stepItem" style="display: none;">
+                    <h2 id="adsSetup" class="wizpage_header3">Ads on web pages</h2>
+                    <div id="adsSetupDescription" class="blackDesc wiz-tmargin">Do you want to block ads?</div>
+                    <div class="wiz-item" id="ads-frame-off">
+                        <div class="wiz-ads-step" off></div>
+                        <hr class="clear"/>
+                        <span id="wiz-ads-step-off">Do not block ads</span>
+                    </div>
+                    <div class="wiz-item wiz-lmargin" id="ads-frame-on" selected>
+                        <div class="wiz-ads-step" on></div>
+                        <hr class="clear"/>
+                        <span id="wiz-ads-step-on">Block ads with Link Checker extension</span>
+                    </div>
+                </div>
+                <div id="step4" class="stepItem" style="display: none;">
+                    <h2 id="trackerSetup" class="wizpage_header3">Trackers on web pages</h2>
+                    <div id="trackerSetupDescription" class="blackDesc wiz-tmargin">Do you want to block trackers?</div>
+                    <div class="wiz-item" id="tracker-frame-off">
+                        <div class="wiz-tracker-step" off></div>
+                        <hr class="clear"/>
+                        <span id="wiz-tracker-step-off">Do not block tracker</span>
+                    </div>
+                    <div class="wiz-item wiz-lmargin" id="tracker-frame-on" selected>
+                        <div class="wiz-tracker-step" on></div>
+                        <hr class="clear"/>
+                        <span id="wiz-tracker-step-on">Block tracker with Link Checker extension</span>
+                    </div>
+                </div>
+                </div>
+                <div>
+                <div id="step5" class="stepItem" style="display: none;">
+                    <h2 id="finishSetup" class="wizpage_header3">Setup finished</h2>
+                    <div id="finishSetupDescription" class="blackDesc wiz-tmargin">You can always change settings in options page.</div>
+                    <div class="wiz-finish">
+
+                    </div>
+                    <div>
+                        <div id="openSettings" class="wiz-grayButton">Back</div>
+                        <div id="finish" class="wiz-greenButton wiz-lmargin">Finish</div>
+                    </div>
+                </div>
+                </div>
+                <hr class="clear" />
+                <div class="wiz-tmargin" id="movingButtons" style="display: none;">
+                    <div id="back" class="wiz-grayButton">Back</div>
+                    <div id="next" class="wiz-greenButton wiz-lmargin">Next</div>
+                </div>
+                <hr class="clear" />
+
+			</div>
+		</div>
+	<div id="footer" style="bottom: 0px; width: 100%; position: absolute;">
+		<div class="regularWidth" style="padding-bottom: 40px;">
+			<ul id="links">
+				<li><a target="_blank" href="http://company.drweb.com/policy/" id="privacyPolicy"></a></li>
+				<li><a target="_blank" href="http://download.drweb.com/" id="otherSoftware"></a></li>
+				<li id="copyrightContainer">&copy; <a href="http://www.drweb.com/" id="copyright"></a>, 1992 &#x2012; 2015</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+mixin mailbox-actionbar-template
+	.hide-desktop.actionbtn.actionbtn-full.compose-btn.icon-plus.landscape-message(title='{{NEW_SECURE_MESSAGE}}')
+		span.always-show {{NEW_SECURE_MESSAGE}}
+	.pull-right
+		.actionbtn.select-all-btn.checkbox(title='{{SELECT_ALL}}')
+			span.hide {{SELECT_ALL}}
+		.actionbtn.refresh-btn.icon-refresh.landscape-message(title='{{REFRESH}}')
+			span.hide {{REFRESH}}
+		.actionbtn.search-btn.icon-search.landscape-message
+			span.hide {{SEARCH}}
+	.mailbox-actionbar.toolbar.toolbar-vertical
+		.btn-group
+			.btn.btn-normal.selected-count
+			.btn.btn-normal.clearcheckbox-btn.btn-primary x
+		.clear
+		.actionbtn.archive-btn.icon-archive(title='{{ARCHIVE_MESSAGE}}')
+		.actionbtn.restore-btn.icon-folder(title='{{RESTORE_MESSAGE}}')
+		.actionbtn.delete-btn.icon-trash-bin(title='{{DELETE_MESSAGE}}')
+
+#page-mailbox.page.theme-panel-background
+	script#mailbox-actionbar-template(type='text/x-handlebars-template')
+		+mailbox-actionbar-template()
+	#mailbox-titlebar.page-actionbar.ground.toolbar.toolbar-nofill
+	#search-actionbar.page-actionbar.toolbar.toolbar-nofill
+		.actionbtn.search-holder
+			input(type='text', placeholder='{{SEARCH_PLACEHOLDER}}')
+		.actionbtn.searchdirect-btn.icon-search.pull-right
+		.actionbtn.searchcancel-btn.icon-close.pull-right
+	#mailbox-container.page-container.scrollable.widget
+		.E2Module(template='MessageList/messagelist')

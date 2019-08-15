@@ -1,0 +1,228 @@
+<html>
+	<head>
+		<title>Dr.Web Link Checker Options</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/punycode.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/options.js"></script>
+		<link rel="stylesheet" href="css/options.css" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+	<!-- POPUP WRAPPER: -->
+	<div class="optpage_popup-wrap" style="display: none;" id="popupback">
+		<div class="optpage_popup-column">
+			<div class="optpage_popup-content" id="popupback_column">
+				<div class="closePopup" id="popupback_close"></div>
+				<!-- FLASH: -->
+				<div class="popup" style="display: none;" id="flashPopup">
+					<div>
+						<h2 id="flashExceptionHeader" class="optpage_header3"></h2>
+						<div id="flashExceptionDesc"></div>
+					</div>
+					<div>
+						<div class="optpage_urlblock-wrap">
+							<input class="optpage_urlblock-input" type="text" id="siteURL">
+							<select class="optpage_urlblock-select"  id="flashSelect" name="addingFlashSiteUrlSelector">
+								<option value="allow" id="flashAllow"></option>
+								<option value="deny" id="flashDeny"></option>
+							</select>
+							<div class="optpage_urlblock-btn" id="flashAddButton"></div>
+						</div>
+						<div class="optpage_ribtable-wrap" id="scrollContainer1">
+							<table class="optpage_ribtable">
+								<tbody id="flashExceptionTable">
+								</tbody>
+							</table>
+						</div>	
+					</div>
+					<div class="greenButton" id="readyButton"></div>
+				</div>	
+				<!-- ADS: -->
+				<div class="popup" style="display: none;" id="adsPopup">
+					<div>
+						<h2 id="adsExceptionHeader" class="optpage_header3"></h2>
+						<div id="adsExceptionDesc"></div>
+					</div>
+					<div>
+						<div class="optpage_urlblock-wrap">
+							<input class="optpage_urlblock-input" type="text" id="siteURL2">
+							<select class="optpage_urlblock-select"  id="adsSelect" name="addingAdsSiteUrlSelector">
+								<option value="allow" id="adsAllow"></option>
+								<option value="deny" id="adsDeny"></option>
+							</select>
+							<div class="optpage_urlblock-btn" id="adsAddButton"></div>
+						</div>
+						<div class="optpage_ribtable-wrap" id="scrollContainer2">
+							<table class="optpage_ribtable">
+								<tbody id="adsExceptionTable">
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="greenButton" id="readyButton2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- :POPUP WRAPPER -->
+	<div id="head">
+			<div class="regularWidth">
+				<img src="css/images/drweblogo.png" width="192" height="48" alt="Dr.Web Link Checker" />
+				<p id="description"></p>
+			</div>
+			
+			<hr class="clear" />
+		</div>
+	<div id="content">
+
+			<div class="regularWidth">
+
+				<h2 id="autoCheckWebsites"></h2>
+
+				<div id="autoCheckWebsitesDesc"></div>
+		
+				<form action="" method="post" accept-charset="utf-16" id="options-form">
+					<div class="socialitem">
+                        <div id="vkicon" class="vkicon"></div>
+                        <div class="checker">
+                            <input type="checkbox" name="vkontakte-check" value="true" id="vkontakte-check" /><label for="vkontakte-check" style="display: none;" id="vkontakte-check-label"></label>
+                        </div>
+                    </div>
+                    <div class="socialitem">
+                        <div id="facebookicon" class="facebookicon"></div>
+                        <div class="checker">
+                            <input type="checkbox" name="facebook-check" value="true" id="facebook-check" /><label for="facebook-check" style="display: none;" id="facebook-check-label"></label>
+                        </div>
+                    </div>
+                    <div class="socialitem">
+                        <div id="googleicon" class="googleicon"></div>
+                        <div class="checker">
+					        <input type="checkbox" name="google-check" value="true" id="google-check" /><label for="google-check" style="display: none;" id="google-check-label"></label>
+                        </div>
+                    </div>
+				</form>
+
+                <div style="float: left; margin-bottom: 4em; width: 610px;">
+
+
+
+                <div id="trackerssettings">
+                    <h2 id="pageContent" ></h2>
+                    <div id="pageContentDesc">
+                    </div>
+                    <div class="contentsettings">
+                        <b id="flashPlugins"></b>
+                        <div class='styled-select' style="padding-right: 6px;">
+                            <select name="defaultFlashValue" id="defaultFlashValue">
+                                <option value='allow' id="defaultAllow">
+                                </option>
+                                <option value='deny' id="defaultDeny">
+                                </option>
+                            </select>
+                        </div>
+                        <br/>
+                        <div id="flashexception" style="position:relative; float: left; margin-top: 5px;" class="button"><font id="flashExceptionString"></font> <span id="flashExcCount"></span></div>
+                        <br/><br/>
+                        <b id="ads"></b>
+                        <div class='styled-select' style="padding-right: 6px;">
+                            <select name="defaultAdsValue" id="defaultAdsValue">
+                                <option id="defaultAllow2" value='allow'>
+                                </option>
+                                <option id="defaultDeny2" value='deny'>
+                                </option>
+                            </select>
+                        </div>
+                        <br/>
+                        <div id="adsexception" style="position:relative; float: left; margin-top: 5px;" class="button"><font id="adsExceptionString"></font> <span id="adsExcCount"></span></div>
+                    </div>
+                    <br><br>
+                    <h2 id="internetTracker"></h2>
+
+                    <div id="internetTrackerDesc">
+                    </div>
+                    <table style="width:100%; border:1px solid #ff0000; border-collapse:collapse;">
+                        <tr>
+                            <td id="noprotection-section" class="table_item" valign="top">
+                                <div>
+                                <input type="radio" name="trackers-check" value="true" id="noprotection-check" />
+                                </div>
+                            </td>
+                            <td class="table_section">
+                                <b id="allowAll"></b>
+                                <br><p class="description" id="allowAllDesc"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="track-section" class="table_item" valign="top">
+                                <div>
+                                <input type="radio" name="trackers-check" value="true" id="track-check" />
+                                </div>
+                            </td>
+                            <td class="table_section">
+                                <b id="minimal"></b>
+                                <br><p id="minimalDesc" class="description"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  id="analytics-section" class="table_item" valign="top">
+                                <div>
+                                <input type="radio" name="trackers-check" value="true" id="analytics-check" />
+                                </div>
+                            </td>
+                            <td class="table_section">
+                                <b id="medium"></b>
+                                <br><p id="mediumDesc" class="description"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="social-section" class="table_item" valign="top">
+                                <div>
+                                <input type="radio" name="trackers-check" value="true" id="social-check" />
+                                </div>
+                            </td>
+                            <td class="table_section">
+                                <b id="maximum"></b>
+                                <br><p id="maximumDesc" class="description"></p>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    <h2 id="updateHeader"></h2>
+
+                    <div id="updateDesc">
+                    </div>
+                    <div>
+                        <table class="datatable">
+                            <tr>
+                                <td><div id="lastUpdate" style="font-size: 0.8em; color: #666;"></div></td>
+                                <td><div style="font-size: 0.8em; padding-left: .5em" id="lastUpdateTime"></div></td>
+                            </tr>
+                            <tr><td><div id="currentVersion" style="font-size: 0.8em; color: #666;"></div></td>
+                                <td><div style="font-size: 0.8em; padding-left: .5em" id="currentVersionNumber"></div></td>
+                            </tr>
+                        </table>
+
+
+                        <img src="css/images/uploader.gif" id="updatingImage" style="float: left; margin-top: 1.4em; margin-left: -1.5em; display: none">
+                        <div class="updateButton smallbutton" style="" id="updateDataBase"></div>
+                        <div class="updatingButton" style="display: none" id="updating"></div>
+                    </div>
+                </div>
+
+
+				<span id="status" style="display: none;"></span>
+
+				<hr class="clear" />
+			</div>
+		</div>
+	<div id="footer">
+		<div class="regularWidth" style="padding-bottom: 40px;">
+			<ul id="links">
+				<li><a target="_blank" href="http://company.drweb.com/policy/" id="privacyPolicy"></a></li>
+				<li><a target="_blank" href="http://download.drweb.com/" id="otherSoftware"></a></li>
+				<li id="copyrightContainer">&copy; <a href="http://www.drweb.com/" id="copyright"></a>, 1992 &#x2012; 2015</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>

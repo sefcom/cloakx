@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"自動的にYouTubeの広告をスキップ"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"瞬時にYouTubeの動画の前に再生広告をスキップします。自動。すべてのWebサイト上で動作します。"
+	}
+}

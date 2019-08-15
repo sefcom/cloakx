@@ -1,0 +1,11 @@
+{	
+	"APP_NAME":{
+		"message":"跳过YouTube的广告自动"
+	},
+	"APP_SHORT_NAME":{
+		"message":"YouTube AdBlocker"
+	},
+	"APP_DESCRIPTION":{
+		"message":"立刻跳过YouTube视频播放前广告。 自动。适用于所有网站。"
+	}
+}

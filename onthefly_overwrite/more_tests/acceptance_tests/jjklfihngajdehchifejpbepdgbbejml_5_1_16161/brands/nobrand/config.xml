@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- no brand -->
+
+<widget id="com.e2mobile.app" android-packageName="com.e2mobile.app" ios-CFBundleIdentifier="com.email2.securemail" versionCode="21" version="5.0.15273"  xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Secure Email</name>
+
+    <description>
+		Secure Messaging is a powerful secure cloud-based communications and information management solution that provides real-time message tracking and control, large file transfers, e-signature validation, and jurisdictional compliance services using existing email addresses and infrastructure. It requires no enterprise-level installation and allows administrators to globally manage compliance policies on any device.
+		Secure Messaging enables users to create and manage secure messages. It provides easy and secure access to your messages without the need to store confidential and sensitive data on your device.
+
+		- Read and compose secure messages;
+		- Track and control messages and attachments using Delivery Slip features like real-time tracking, reply freeze, forward freeze, message recall, and more.
+		- Request and provide secure e-signatures and securely exchange large files in the cloud.
+
+		NOTE: Secure Messaging is free for all licensed users; at this time we do not offer a consumer version of our product for personal use. In order to log in to the Secure Messaging app, you need to be a subscriber to at least one Secure Messaging portal. A Secure Messaging portal is used by organizations to ensure secure communications internally and externally with clients and partners. You must first receive an invitation to join a Secure Messaging portal in order to continue. Please contact your IT administrator if you need a subscription.
+	</description>
+
+	<author email="support@secure-messaging.com" href="http://help.secure-messaging.com/">
+        Secure Messaging Apps Inc.
+	</author>
+    <content src="index.html" />
+
+    <!-- security and permissions
+		<access origin="https://secure.email2.com/*" />
+		<access origin="http://*.secure-messaging.com/*" />
+		<access origin="https://email2.com" subdomains="true" />
+		<access origin="https://secure-messaging.com" subdomains="true" />
+		<access subdomains="true" origin="*" />
+		<access origin="https://securemail.opentext.com" />
+	<access subdomains="true" origin="opentext.com" / -->
+    <access origin="*" />
+
+    <preference name="stay-in-webview" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000"/>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="UIWebViewBounce" value="false"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+
+    <!-- Plugins -->
+    <gap:plugin name="cordova-plugin-compat" source="npm" version="1.0.0"/>
+    <gap:plugin name="cordova-plugin-device" source="npm" version="1.1.2"/>
+   	<gap:plugin name="cordova-plugin-file" source="npm" version="4.2.0"/>
+   	<gap:plugin name="cordova-plugin-file-transfer" source="npm" version="1.5.1"/>
+    <gap:plugin name="cordova-plugin-globalization" source="npm" version="1.0.3"/>
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.4.0"/>
+    <gap:plugin name="cordova-plugin-network-information" source="npm" version="1.2.1"/>
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.1.3"/>
+    <gap:plugin name="cordova-plugin-touch-id" source="npm" version="3.2.0"/>
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.2.2"/>
+    <plugin spec="https://github.com/Telerik-Verified-Plugins/PushNotification" source="git"/>
+    <plugin spec="https://github.com/katzer/cordova-plugin-printer.git" source="git" />
+
+    <!-- assets and branding -->
+    <icon src="brands/nobrand/ios/icons/icon.png" />
+
+    <gap:platform name="ios" />
+    <icon src="brands/nobrand/ios/icons/icon.png" gap:platform="ios" width="72" height="72" />
+
+    <icon src="brands/nobrand/ios/icons/icon_29x29.png" gap:platform="ios" width="29" height="29" />
+    <icon src="brands/nobrand/ios/icons/icon_29x29@2x.png" gap:platform="ios" width="58" height="58" />
+    <icon src="brands/nobrand/ios/icons/icon_40x40.png" gap:platform="ios" width="40" height="40" />
+    <icon src="brands/nobrand/ios/icons/icon_40x40@2x.png" gap:platform="ios" width="80" height="80" />
+    <icon src="brands/nobrand/ios/icons/icon_50x50.png" gap:platform="ios" width="50" height="50" />
+    <icon src="brands/nobrand/ios/icons/icon_50x50@2x.png" gap:platform="ios" width="100" height="100" />
+    <icon src="brands/nobrand/ios/icons/icon_57x57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="brands/nobrand/ios/icons/icon_57x57@2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="brands/nobrand/ios/icons/icon_60x60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="brands/nobrand/ios/icons/icon_60x60@2x.png" gap:platform="ios" width="120" height="120" />
+    <icon src="brands/nobrand/ios/icons/icon_72x72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="brands/nobrand/ios/icons/icon_72x72@2x.png" gap:platform="ios" width="144" height="144" />
+    <icon src="brands/nobrand/ios/icons/icon_76x76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="brands/nobrand/ios/icons/icon_76x76@2x.png" gap:platform="ios" width="152" height="152" />
+    <icon src="brands/nobrand/ios/icons/icon_512x512.png" gap:platform="ios" width="512" height="512" />
+    <icon src="brands/nobrand/ios/icons/icon_512x512@2x.png" gap:platform="ios" width="1024" height="1024" />
+
+    <gap:splash src="brands/nobrand/ios/splash/Default.png" gap:platform="ios" />
+    <gap:splash src="brands/nobrand/ios/splash/Default.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="brands/nobrand/ios/splash/Default@2x.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="brands/nobrand/ios/splash/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="brands/nobrand/ios/splash/Default-Landscape.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="brands/nobrand/ios/splash/Default-Portrait.png" gap:platform="ios" width="768" height="1004" />
+    <gap:splash src="brands/nobrand/ios/splash/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="brands/nobrand/ios/splash/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2008" />
+
+    <platform name="ios">
+        <splash src="brands/nobrand/ios/splash/Default.png" width="320" height="480"/>
+        <splash src="brands/nobrand/ios/splash/Default@2x.png" width="640" height="960"/>
+        <splash src="brands/nobrand/ios/splash/Default-Portrait.png" width="768" height="1024"/>
+        <splash src="brands/nobrand/ios/splash/Default-Portrait@2x.png" width="1536" height="2048"/>
+        <splash src="brands/nobrand/ios/splash/Default-Landscape.png" width="1024" height="768"/>
+        <splash src="brands/nobrand/ios/splash/Default-Landscape@2x.png" width="2048" height="1536"/>
+        <splash src="brands/nobrand/ios/splash/Default-568h@2x.png" width="640" height="1136"/>
+        <splash src="brands/nobrand/ios/splash/Default@2x.png" width="750" height="1334"/>
+        <splash src="brands/nobrand/ios/splash/Default@2x.png" width="1242" height="2208"/>
+        <splash src="brands/nobrand/ios/splash/Default@2x.png" width="2208" height="1242"/>
+	</platform>
+
+	<gap:config-file platform="ios" parent="NSAppTransportSecurity" mode="add">
+    	<dict>
+    		<key>NSAllowsArbitraryLoads</key> <true/>
+		</dict>
+	</gap:config-file>
+
+    <platform name="android">
+        <preference name="android-build-tool" value="gradle" />
+	</platform>
+
+    <gap:platform name="android" />
+    <icon src="brands/nobrand/android/icons/ldpi/ic_launcher.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="brands/nobrand/android/icons/mdpi/ic_launcher.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="brands/nobrand/android/icons/hdpi/ic_launcher.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="brands/nobrand/android/icons/xhdpi/ic_launcher.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="brands/nobrand/android/icons/xxhdpi/ic_launcher.png" gap:platform="android" gap:density="xxhdpi" />
+    <gap:splash src="brands/nobrand/android/splash/Default.png" gap:platform="android" />
+    <gap:splash src="brands/nobrand/android/splash/Default.png" gap:platform="android" width="320" height="480" />
+    <gap:splash src="brands/nobrand/android/splash/ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="brands/nobrand/android/splash/mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="brands/nobrand/android/splash/hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <preference name="splash-screen-duration" value="5000"/>
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+
+    <gap:platform name="blackberry10" />
+    <icon src="brands/nobrand/bb10/icons/icon_90x90.png" gap:platform="blackberry10" height="90" width="90" />
+    <icon src="brands/nobrand/bb10/icons/icon_96x96.png" gap:platform="blackberry10" height="96" width="96" />
+    <icon src="brands/nobrand/bb10/icons/icon_110x110.png" gap:platform="blackberry10" height="110" width="110" />
+    <icon src="brands/nobrand/bb10/icons/icon_144x144.png" gap:platform="blackberry10" height="144" width="144" />
+    <!-- gap:splash src="brands/nobrand/bb10/splash/Default.png" gap:platform="blackberry" width="320" height="480" / -->
+
+    <gap:platform name="winphone" />
+    <icon src="brands/nobrand/winphone/icons/icon.png" gap:platform="winphone"/>
+    <icon src="brands/nobrand/winphone/icons/tileicon.png" gap:platform="winphone" gap:role="background" />
+    <gap:splash src="brands/nobrand/winphone/splash/Default.jpg" gap:platform="winphone" />
+
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="cordova-version" value="6.1.0" />
+</widget>

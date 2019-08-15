@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-95.000000, -340.000000)">
+            <g id="france" transform="translate(95.000000, 340.000000)">
+                <g id="Layer_1">
+                    <circle id="Oval" fill="#F0F0F0" cx="10" cy="10" r="10"></circle>
+                    <path d="M20,10 C20,5.70035156 17.28625,2.03492188 13.4782422,0.621992188 L13.4782422,19.3780469 C17.28625,17.9650781 20,14.2996484 20,10 Z" id="Shape" fill="#D80027"></path>
+                    <path d="M0,10 C0,14.2996484 2.71378906,17.9650781 6.52175781,19.3780078 L6.52175781,0.621992188 C2.71378906,2.03492188 0,5.70035156 0,10 Z" id="Shape" fill="#0052B4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

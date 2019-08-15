@@ -1,0 +1,30 @@
+#__DJI_SRU_GOOGLEDOCS_MEASUREMENT_WINDOW {
+    z-index: 999999 !important;
+    display: block;
+    border: none;
+    background-color: #EEEEDD;
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+    min-height: 100px;
+    min-width: 100px;
+    float: none;
+    -webkit-user-select: none !important;
+}
+
+#__DJI_SRU_GOOGLEDOCS_MEASUREMENT_WINDOW_SPAN span {
+    display: inline-block;
+    background-color: #00EE00;
+    height: 5px;
+}
+
+#__DJI_SRU_GOOGLEDOCS_MEASUREMENT_WINDOW_CARET {
+    z-index: 44447;
+    border: none;
+    background-color: #EE0000;
+    position: absolute;
+    top: 0px;
+    min-height: 14px;
+    min-width: 1px;
+    -webkit-user-select: none !important;
+}

@@ -1,0 +1,896 @@
+@import "../../css/variables.styl"
+
+$two-column-width = 49.5%
+
+shadowAndCorner()
+	min-height 500px
+	padding 2em
+	box-sizing border-box !important
+	background-color white
+	border-radius 3px
+	box-shadow 0px 0px 2px 1px #aaa
+	@media screen and (max-width: $media_width_laptop){
+		box-shadow: none
+	}
+
+
+.SEM-Login
+	position:absolute;
+	width:100%;
+	min-height:100%;
+	color:#333 !important;
+	background: white;
+	height:100% !important;
+	overflow-x hidden !important
+	overflow-y auto !important
+	box-sizing border-box
+
+	[class*="login-icon"]
+		/*border 1px solid red*/
+		width 57px !important
+		height 57px !important
+		background-image url('../images/login_icons.png')
+
+	.login-icon-email
+		background-position 0 0
+
+	.login-icon-tracking
+		background-position 2+(57px*3) 0
+
+	.login-icon-apps
+		background-position 1+(57px*2) 0
+
+	.login-icon-go-green
+		background-position 57px 0
+
+	.login-page
+		width: 100% !important;
+		display:none;
+		margin: 0 auto;
+		/*background-color pink*/
+
+		.login-logo
+			text-align center !important
+			margin 0 !important
+			padding 30px 0 !important
+			font-weight:bold;
+			color: #444;
+			text-shadow: none;
+			*
+				background-color white !important
+				font-size:28px !important;
+
+		.login-logo .icon-row
+			background: #eee;
+
+		.login-holder-wrapper
+			background-color darken($panel_background_color,0)
+			border-top 3px solid darken($panel_border_color,7)
+			border-bottom 1px solid darken($panel_border_color,7)
+			padding-top 20px
+
+			@media screen and (max-width: $media_width_laptop){
+				background-color inherit
+				border-bottom none
+			}
+
+			.forgot-password-holder,
+			.exist-alias-holder,
+			.confirm-alias-holder,
+			.login-holder
+				height auto !important
+				min-height 450px !important
+				/*clear: both;*/
+				/*overflow hidden;*/
+				margin 0 auto;
+				padding 20px 0 40px;
+				/*background-color #ffff00*/
+
+				.input-wrapper
+					width 100% !important
+
+					input
+						width 100%
+
+			.exist-alias-holder,
+			.confirm-alias-holder
+				.alias-detail
+					padding-bottom: 10px;
+				.alias-title
+					color: #676767;
+
+			.login-holder
+				/* SSO SELECTION */
+				.sso-logo
+					border-bottom:1px solid #fff;
+					padding-bottom:20px;
+
+				.sso-note
+					margin-top:10px;
+					font-size:14px !important;
+					font-weight:normal;
+					text-transform:none;
+
+					&:last-child
+						margin-bottom 20px !important
+
+				.sso-list
+					margin: 10px 0;
+					padding: 0 !important;
+					list-style: none;
+
+					li
+						cursor: pointer
+						padding 7px
+						margin 10px 0 !important
+						border-bottom 1px solid darken($panel_background_color,5)
+
+						&:hover
+							opacity: 0.8;
+							background-color darken($panel_background_color,5)
+							margin-left 0
+
+					img
+						width:46px;
+						display block
+
+					.sso-penlogo
+						/*width:55px !important;*/
+						/*height:55px !important;*/
+						/*padding:7px;*/
+						padding-right 10px
+						background: none;
+						overflow hidden
+
+					.sso-info
+						font-size 12px
+						/*width 75%*/
+						padding-left 5px
+						padding-bottom 5px
+
+						.sso-email
+							margin-bottom:5px;
+							display none
+
+						.sso-penName
+							margin-bottom:5px;
+
+		.login-register-step-holder
+			border-top 1px solid #ccc
+
+			.login-register-step
+				clear both
+				margin 20px auto !important
+				float none
+				white-space nowrap
+
+		&#loginpage-sso
+			/*display:block;*/
+
+			> .panel
+				> .wrapper
+					margin 5px;
+
+			/*Begin:
+			We do not need the fields below in SSO Login Screen
+			*/
+			.login-logo
+				.logo-text
+					display none
+
+			.forget-field
+				display none
+
+			.login-options
+				display none
+			/*End*/
+
+	input[type="text"], input[type="password"], input[type="email"]
+		display:block;
+		color:#444 !important;
+		font-size:14px;
+		padding: 11px 12px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		border:1px solid $panel_border_color;
+		box-shadow:0px 0px 1px #f6f6f6;
+		margin-bottom: 2px;
+		margin-right: 0;
+		border-radius 3px;
+		padding-left: 15px !important;
+		&[disabled]
+			background-color: #f0f0f0 !important;
+			color: #b5b5b5 !important;
+
+	.penLogin-peninfo
+		bottom:0;
+		margin 0 auto;
+
+		tr
+			td:last-child
+				text-align left
+
+		.penLogo img
+			display:block;
+
+		.penName
+			padding-left: 10px;
+			font-weight:bold;
+
+	.login-form
+		position: relative;
+		float: right;
+		width: $two-column-width !important;
+		height: 100%;
+
+		&.register-form
+			.form-fields
+				height:auto !important
+				float none !important
+				clear both !important
+				overflow hidden !important
+				margin-bottom:30px !important;
+
+		.form-fields
+			position:relative;
+			margin-bottom:10px;
+
+			h1
+				font-size 20px;
+
+			.input-wrapper
+				position: relative;
+
+				&:before
+					position: absolute;
+					font-size: 20px;
+					height: 38px;
+					line-height: 38px;
+					width: 37px;
+					text-align: center;
+					background: $panel_background_color;
+					border-right: 1px solid $panel_border_color;
+					top: 1px;
+					left: 1px;
+
+		.btn
+			font-size:16px;
+			font-weight:bold;
+
+			&:before
+				font-size: 20px;
+				vertical-align: middle;
+				margin-right: 5px;
+
+			@media screen and (max-width: $media_width_laptop){
+				margin-bottom 20px
+			}
+
+		.error-message
+			margin-left auto !important
+			margin-right auto !important
+			color rgb(226, 96, 96)
+
+	.login-detail
+
+		@media screen and (max-width: $media_width_laptop){
+			display none
+		}
+
+		width:$two-column-width;
+		height:99.6% !important;
+		line-height 18px
+
+		*
+			color: lighten($default_font_color,7) !important
+
+		.wrapper
+			margin 10px 40px 0 0
+
+		#pen-login-registeration-message
+			h3
+				font-size 14px
+			p
+				font-size 12px
+		&.register-detail {
+			/*width: $two-column-width !important*/
+		}
+
+		.login-description
+			font-size: 12px;
+			margin-bottom: 30px;
+
+	.login-point
+		margin: 25px 0;
+
+		&.think-green
+			margin 0 auto 20px auto
+			width 45% !important
+			padding-top: 10px
+			display none
+
+		.login-point-icon
+			width: 14px;
+			height: 14px;
+			float: left;
+			/*display: none;*/
+
+			&.think-green-icon
+				/*width:50px*/
+				display: block
+				opacity 0.65
+
+			&:before
+				font-size: 24px;
+				vertical-align: middle;
+
+			&.checkbox.checked
+				background-size: 20px;
+				background-position: center 10px;
+				margin-left: 6px;
+				background: #6ac288;
+				border: 1px solid #999;
+				min-width:14px;
+				min-height:14px;
+
+				&:before
+					display: none;
+
+		.login-point-block
+			padding-left: 70px;
+			/*padding-left: 0px;*/
+
+			&.think-green
+				padding-left: 55px;
+
+				.login-point-title
+					font-size 11px
+					margin-bottom 2px
+
+		.login-point-title
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: bold;
+
+		.login-point-detail
+			font-size: 13px;
+
+
+	.login-logo
+		width:100%;
+		margin-top:30px;
+		font-weight:bold;
+		font-size:18px;
+		margin-bottom:20px;
+		position:relative;
+
+		&.sso-logo
+			padding-top:0px;
+			font-size:12px;
+			margin-top:0 !important;
+
+		.logo-text
+			text-shadow: 0 1px 0 #CFCFCF;
+			padding 0
+
+			&:before
+				content:'t'
+				font-family:'webapp-webfont'
+				font-size 32px
+				font-weight normal
+				vertical-align middle
+				margin-right 5px
+
+
+	.login-options
+		color:#444;
+		width:100%;
+		text-align:left;
+		font-size:16px;
+		clear: both;
+		margin 0 auto .5rem
+		display flex
+		align-items center
+
+		.onoffswitch {
+			setDS_SwitchBgColor($ds_option_freeze_color)
+		}
+
+		label{
+			padding 0
+		}
+
+	.forget-field
+		padding:8px;
+		font-size: 14px;
+		//background-color pink
+		position: absolute;
+		top:4px;
+		right:0px;
+
+		.login-forgotpasswordsso
+			color: #676767
+
+	.login-link
+		text-decoration: none;
+		color: #444;
+		cursor: pointer;
+
+	.login-addtionalbtn
+		width:100%;
+		margin:0 auto;
+		margin-top:20px;
+
+		a
+			color:#fff !important;
+			font-size:10px;
+			display:block;
+			width:50%;
+			float:left;
+			text-align:center;
+			background:#666;
+			padding: 0.4em 0;
+
+			-moz-border-radius: 0 3px 3px 0;
+			-webkit-border-radius: 0 3px 3px 0;
+			border-radius: 0 3px 3px 0;
+
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+			font-weight:normal;
+			text-decoration: none;
+			box-shadow: -1px 0px 0px white;
+
+			&:first-child
+				border-left:0;
+				-moz-border-radius: 3px 0 0 3px;
+				-webkit-border-radius: 3px 0 0 3px;
+				border-radius: 3px 0 0 3px;
+				margin-right:-1px;
+				box-shadow: none;
+
+		&.single
+			a
+				-moz-border-radius:3px !important;
+				-webkit-border-radius:3px !important;
+				border-radius:3px !important;
+				border:0;
+				width:100%;
+
+
+.SEM-Login .login-extra {
+
+	margin-top 0.5em
+
+	li {
+		list-style-type: square;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	&.no-bullets {
+		li {
+			list-style-type: none
+			margin-left: 0
+		}
+	}
+}
+
+.SEM-Login .login-register-step
+	margin: 30px 0;
+	/*text-align right;*/
+
+	.login-register-holder
+		display: inline-block;
+		float: none !important;
+		color: #B1B1B1;
+		margin-right: 20px;
+
+		&:nth-child(1)
+			margin-right: 2px;
+
+		&:last-child
+			margin-right 0 !important
+
+		&.active
+			color: #666;
+
+
+	.login-register-number
+		display: inline-block;
+		border-radius: 20px;
+		background: #ccc !important;
+		width: 28px;
+		height: 28px;
+		text-align: center;
+		line-height: 28px !important;
+		margin-right: 3px;
+
+
+	.active
+		.login-register-number
+			background: #53C9F0 !important;
+			color: white;
+
+	.login-register-name {
+		display: inline-block;
+	}
+
+
+.SEM-Login .register-submit:before {
+	color: #444 !important;
+}
+
+
+.SEM-Login
+	.register-form
+		.input-wrapper
+			clear: both;
+			white-space nowrap
+
+			&.privacy-policy-region
+				margin 1em 0 !important
+				//label
+					//line-height 2.7em
+					//display inline-block
+
+			&.language-region
+				.input-title
+					width auto !important
+					margin-right 1em
+
+			.input-title
+				float: left;
+				height: 35px;
+				line-height: 35px !important;
+				width: 22% !important;
+				padding-right: 5px;
+				text-align: left !important;
+				font-size: 13px;
+				vertical-align middle !important;
+
+			.input-box
+				/*float left*/
+				width 100% !important
+
+				&.text
+					width 65% !important
+					margin-bottom 10px
+
+				.terms_accept
+					float left
+					.checkbox
+						border 0
+						margin-bottom 0
+						padding-top 2px
+				label a
+					text-decoration underline
+
+
+.SEM-Login .high-light:before
+	color: #53c9f0;
+
+.SEM-Login .register-form input[type="email"],
+.SEM-Login .register-form input[type="password"],
+.SEM-Login .register-form input[type="text"]
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 8px;
+
+.SEM-Login .register-form select
+	border-radius: 0px;
+	font-size: 14px;
+	padding: 8px;
+	border: 1px solid #eee;
+	background: white;
+	width 10em
+
+.SEM-Login
+	.register-detail
+
+		.login-point-detail
+			margin-bottom: 10px;
+		.login-point-title
+			text-transform: none;
+			margin-bottom: 10px;
+
+.SEM-Login #loginpage-penselection
+	margin-top: 20px;
+	.login-form
+		width: 100% !important
+		background-color none !important
+
+	.sso-logo
+		width: auto;
+		padding: 20px 30px;
+
+	.login-logo
+		background-color none
+		font-size 28px
+
+.SEM-Login
+
+	.forgot-password-holder, .exist-alias-holder, .confirm-alias-holder
+		display none
+
+		.header-field
+			margin 0 0 5px
+			text-align center
+			border 1px none #b3b3b3 !important
+			background-color none !important//#f9f9f9
+			padding 10px 0
+			font-weight bold
+
+		.input-field
+			margin 10px 0
+			input
+				width 100%
+
+		.hint-field
+			border 1px solid rgb(179, 179, 179)
+			background-color rgb(235, 235, 235)
+			padding 5px
+			text-align center
+			margin 20px 0px
+
+
+		table
+			width 80%
+			margin 0 10%
+			td
+				padding 0px
+			&.input-title
+				width 100px
+			input
+				width 100%
+				height 16px
+				padding 0
+
+
+	.help-container
+		margin 1em 0.5em
+		font-size 18px !important
+		line-height 0 !important
+
+		*
+			color #326d9c !important
+			display inline-block !important
+			position inherit !important
+			height 1em !important
+			vertical-align middle
+
+		.icon-question
+			display inline-block !important
+
+
+			&:before
+				color #326d9c !important
+				margin-right 5px !important
+				width 1em !important
+				display inline-block !important
+		a
+			min-width 5em
+			line-height 100% !important
+
+	.penPowerByHolder
+		margin 20px
+		text-align center
+		border 0 !important
+		display none
+		text-transform uppercase
+		font-size 11px
+
+		.penPowerBy
+			margin 5px auto
+			width 107px
+			height 34px
+
+#loginpage-sso, #loginpage-register, #loginpage-penlogin, #loginpage-forgotpassword
+	.login-form
+		shadowAndCorner()
+
+@media query_laptop
+	.SEM-Login
+		.btn
+			margin 10px 0 important
+
+layoutLoginFormHorizontal() {
+	.login-register-holder {
+		margin-right: 2em !important;
+	}
+
+	.forgot-password-holder,
+	.exist-alias-holder,
+	.confirm-alias-holder,
+	.login-holder {
+		width 90% !important
+	}
+
+	.login-register-step-holder {
+		width 100% !important
+	}
+}
+
+layoutLoginFormVertical()
+	.penLogin-peninfo
+		margin 0 0 0 1em
+
+	.login-holder-wrapper
+		padding 0
+
+		.forgot-password-holder,
+		.exist-alias-holder,
+		.confirm-alias-holder,
+		.login-holder
+			margin-top 0
+			padding 0 !important
+
+	.forgot-password-holder,
+	.exist-alias-holder,
+	.confirm-alias-holder,
+	.login-holder
+		width 100% !important
+		margin 0
+
+	.login-register-step
+		width 92% !important
+
+	.login-point.think-green
+		width 95% !important
+
+	.error-message
+		margin-left auto !important
+		margin-right auto !important
+		//width 50%
+		color rgb(226, 96, 96)
+
+	.login-page
+		width: 100%;
+
+		.login-logo
+			margin-top: 0 !important;
+			padding: 10px;
+			margin-bottom: 0px;
+
+			*
+				font-size:20px !important;
+
+			.icon-row
+				background: white;
+
+
+	.login-detail,.login-form
+		width: 100% !important
+		/*height: auto;*/
+		float none !important;
+
+	.login-detail {
+		/*height: auto;*/
+		border: none;
+		margin 0 1em;
+	}
+
+	.forgot-password-form,
+	.alias-form,
+	.login-form
+		float none
+		border none
+		border-radius 0 !important
+		padding 15px !important
+		min-height auto !important
+
+	.login-logo {
+		padding 10px 0 !important
+		* {
+			font-size: 18px !important;
+		}
+	}
+
+	#loginpage-sso {
+		.login-logo {
+			display none
+		}
+	}
+
+hideLoginLogo(device=undefined){
+
+	#loginpage-sso {
+		.login-logo {
+
+			if match('phone_portrait', device) {
+				display none
+			}
+		}
+		.login-holder-wrapper {
+			.login-form{
+				padding-top 2em !important
+				padding-bottom 1em !important
+			}
+		}
+	}
+}
+
+.SEM-Login {
+
+	@media query_small_phone_landscape {
+		layoutLoginFormVertical()
+
+		.form-fields {
+			h1 {
+				font-size 1em !important
+			}
+		}
+	}
+
+	@media query_phone_portrait {
+		layoutLoginFormVertical()
+		hideLoginLogo(phone_portrait)
+
+		.form-fields {
+			h1 {
+				font-size 1em !important
+			}
+		}
+	}
+
+	@media screen and (min-width:480px ) and (max-width: $media_width_laptop) {
+		layoutLoginFormVertical()
+	}
+
+
+	@media query_tablet_portrait {
+
+		hideLoginLogo(tablet_portrait)
+
+		.login-register-step {
+			white-space nowrap
+
+			.login-register-holder {
+
+				.login-register-number {
+					width: 26px;
+					height: 26px;
+				}
+
+				.login-register-name {
+					font-size 12px
+				}
+			}
+		}
+	}
+
+	@media query_tablet_landscape {
+
+		#loginpage-sso {
+			.login-logo {
+				display block !important
+			}
+		}
+		.login-page {
+			overflow-x hidden !important
+		}
+
+		.forgot-password-form,
+		.login-form {
+			//min-height 220px !important
+			margin-bottom 2em
+		}
+
+		.form-fields {
+			h1 {
+				font-size 1em !important
+				margin-top 0em !important
+			}
+		}
+
+		.login-register-holder {
+			margin-right: 7em !important;
+		}
+	}
+}
+
+.btn-forgot-password, .btn-register {
+	cursor pointer
+}

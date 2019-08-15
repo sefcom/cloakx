@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Talkify Settings</title>
+    <link rel="icon" type="image/png" href="icon48.png" />
+    <meta charset="utf-8" />
+    <style>
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-weight: normal;
+            src: url(RobotoCondensed-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-weight: lighter;
+            src: url(RobotoCondensed-Light.ttf);
+        }
+        
+        @font-face {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-weight: bold;
+            src: url(RobotoCondensed-Bold.ttf);
+        }
+        
+        body {
+            background-image: url(imgBackground.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 1200px;
+            overflow: hidden;
+        }
+        
+        #container {
+            position: absolute;
+            width: 513px;
+            height: 273px;
+            background-color: white;
+            box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2);
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 10px;
+        }
+        
+        #titlebar {
+            width: 533px;
+            height: 39px;
+            background-color: #323a45;
+            margin: -10px;
+            margin-bottom: 7px;
+        }
+        
+        #titlebar_inner {
+            height: 29px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            top: 0;
+        }
+        
+        #titlebar_under {
+            background-color: #f37936;
+            height: 10px;
+            width: 100%;
+        }
+        
+        #title {
+            font-size: 14px;
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            color: white;
+            cursor: default;
+            font-weight: bold;
+            padding: 5px 5px 0 8px;
+        }
+        
+        #status {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-size: 14px;
+            color: lightgray;
+            float: left;
+            margin-top: 18px;
+        }
+        
+        .label {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-size: 14px;
+            color: #323a45;
+        }
+        
+        input {
+            font-family: 'Roboto Condensed';
+            font-stretch: condensed;
+            font-size: 14px;
+            margin-top: 2px;
+            padding-left: 5px;
+            width: 508px;
+            height: 24px;
+            border: none;
+            background-color: #eaedf2;
+            color: #323a45 !important;
+            margin-bottom: 8px !important;
+            float: left;
+            box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.025);
+        }
+        
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+        
+        .button {
+            float: right;
+            height: 24px;
+            margin: 0;
+            float: right;
+            line-height: 24px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        .button:hover {
+            cursor: pointer;
+        }
+        
+        #save {
+            background-color: #f37936;
+            width: 130px;
+        }
+        
+        #save:hover {
+            background-color: #e76f2d;
+        }
+        
+        #cancel {
+            margin-right: 8px;
+            background-color: #323a45;
+            width: 90px;
+            right: 149px;
+        }
+        
+        #cancel:hover {
+            background-color: #293039;
+        }
+        
+        div {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            margin: 2px;
+            margin-right: 8px;
+            padding: 0;
+            float: left;
+        }
+        
+        label {
+            font-family: 'Roboto Condensed';
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="titlebar">
+            <div id="titlebar_inner" onclick="Toggle()">
+                <div id="title" onclick="Toggle()">Settings</div>
+            </div>
+            <div id="titlebar_under"></div>
+        </div>
+        <div class="label">Username</div>
+        <input type="text" id="username" name="username" />
+        <div class="label">Room</div>
+        <input type="text" id="room" name="room" placeholder="Automatic" />
+        <div class="label">Profile picture (must be HTTPS)</div>
+        <input type="text" id="picture" name="picture" placeholder="Default" style="margin-bottom:8px !important;" />
+        <label style="top:205px;">
+            <input type="checkbox" id="autoopen" name="autoopen" />Open chat by default
+        </label>
+        <label style="top:227px;">
+            <input type="checkbox" id="sound" name="sound" checked />Enable notification sound
+        </label>
+        <div id="save" class="button">SAVE</div>
+        <div id="cancel" class="button">CANCEL</div>
+        <div id="status"></div>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

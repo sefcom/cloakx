@@ -1,0 +1,152 @@
+/* Note: Styles have been standardised and placed into the /css/uiframework.styl class */
+/*
+Please review the uiframework.styl class to learn the types of layouts and widgets that can be used
+*/
+
+#account-settings{
+    .btn-group{
+        margin-bottom: 1em !important;
+    }
+}
+
+.SEM-Account .tab-holder{
+	margin-bottom: 0;
+	border-top: none;
+}
+
+.SEM-Account .account-tab-holder{
+    position: relative;
+}
+
+.SEM-Account
+	#tab-preference
+		>.row
+			.form
+				/*border: 1px solid red;*/
+				height: 19em
+				&.auto-height
+					height: auto
+
+	//@media screen and (min-width: $media_width_tablet) {
+	//	.platform-labels {
+	//		padding-left 50% !important
+    //
+	//		.label {
+	//			white-space: nowrap !important
+	//			text-align left
+	//		}
+	//	}
+	//}
+
+.SEM-Account .setting-subtitle{
+    font-size: 1.75em;
+}
+
+.SEM-Account
+	.recipient-notification-panel,
+	.sender-notification
+		margin-top 2em
+
+.SEM-Account .error-saving {
+	margin-top: 1.5em;
+	margin-right: 0.5em;
+	color: rgb(221, 108, 108);
+	float: left;
+}
+
+.SEM-Account .error-msg.row .span.text {
+	color: rgb(221, 108, 108);
+}
+
+.SEM-Account
+	.notice-select-all-btn
+		line-height 22px
+		text-align right
+		padding 0 10px 0 24px
+		position relative
+		float: right
+
+		&:before
+			top 0
+			left 0
+			position absolute
+
+	#signatureHtml
+		#editor
+			height: 15em
+			max-height: 15em
+
+@media screen and (max-width:690px) {
+    .SEM-Account #tab-preference > .row .form{
+        height: inherit;
+    }
+    .SEM-Account .tab-holder{
+        margin-bottom: 0;
+        border-top: 1px solid #ccc;
+    }
+    /*.SEM-Account .error-saving {*/
+        /*margin-left: 1em;*/
+        /*margin-top: 0;*/
+    /*}*/
+    /*.SEM-Account .save-settings-btn {*/
+        /*margin-right: 1em !important;*/
+    /*}*/
+    .SEM-Account .btn-group .btn {
+        margin: 0 1em 1em;
+    }
+
+	#page-account{
+		right 0
+	}
+	 .SEM-Account{
+		 box-sizing border-box
+		 margin-top 0 !important
+
+		.setting-sublabel{
+			text-align left
+			padding 0 !important
+			margin-bottom 0.5em
+
+			.label{
+				position relative !important
+				//display inline
+				margin 0 !important
+				font-weight bold
+			}
+		}
+
+		.platform-labels{
+			//padding-left 60% !important
+			margin-bottom 0
+
+			.label{
+				position static !important
+				white-space: nowrap !important
+			}
+		}
+		.switches{
+			overflow auto !important
+			//height 1.5em
+			margin-top 0.5em
+			//padding-left 60% !important
+
+			.onoffswitch{
+				position relative !important
+				left auto
+				right auto
+				margin 0 auto
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+    .SEM-Account #tab-preference > .row .form{
+        height: inherit;
+    }
+}
+.SEM-Account .sender-notification-panel {
+	.setting-subtitle.sender-notification {
+		margin-bottom 34px
+	}
+}

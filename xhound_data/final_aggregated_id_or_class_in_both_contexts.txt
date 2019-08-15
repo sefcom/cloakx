@@ -1,0 +1,63 @@
+bhecennlklhbbeofdfaabhlkklhikfjl_0_1_1	query:.RM_key_button
+jgfgdgkipplhaiggoplpallikmheichc_1_0_11	added:.progress	added:.btn-default	added:#downloaded_media_files	added:.progress-striped	added:.active	added:.progress-bar	added:#my_progress_bar	added:#all_media_files	added:.btn	added:#progress_bar_donload_media
+akhfpmobdoieialmncolefkmgbpjbehh_1_1_6	query:#chrome_chatUp_View
+ibgjbjnjknkohmdoijjfcdhoomffoiae_1_0_0	query:#__taunusDetectorElement	query:#__taunusDetectorScript
+ibpfndfnfoppkngodblpdnjgimoccekg_3_3_1	query:#videoremote0001a	query:#videoremotegomb001
+jlhoacblbnkifbpdkepeodekkdkodlie_1_0_3	added:.vks
+dccmnjciogmmahaogjgkocongokmieog_0_5_1	added:.vks
+olfjeepflfbeaecgmlphadojomeidpif_0_4	query:#ns-pollution
+eodccemmopepiegcokmpfmbjponimpbd_1_0_6	added:.vks
+lmlnplkfbiihcpkghkkmfefjdaccmbcc_0_1_3	added:.vks
+bghjgajoiopjdomgbjbgbeendnpleglc_1_0_2_2	query:#context
+aedanoabbbceoffbdkfdeccfpijfaoja_1_1_5	query:#timeLeft
+njeebhjilmmcmiikhknfpidmgeohkadh_2_0_0_0	added:.show
+oohkefdofdhgajfidkajmeipejdffeem_2_0_4	query:.vkhelper_opt_audioSave
+olkcipmnccchnnikelenphfdeigajlcl_1_42	query:#jsDebugHideAllButton	query:#tvarCode	query:#jsCode	query:#jsDebugHideSourceButton	query:#bodyCode	query:#tv	query:#jsDebugShowSourceButton	query:#jsnline	query:#jsShowSourceButton	query:#scode
+igghcjipopchdolaihpdbidmddooojml_0_4	query:#buttomxxx
+dipegmpcgkdhknmnhjjfnfmhhpdkigeb_2_0_3	added:.vks
+oadohiloeinlhonemkjlnoiiibjgipeb_16_6226_217	added:#AdFox_plug__rand	added:.mgbox	query:#ad_creative_rand	query:.xx_blk	query:#cto_iframe__rand	added:#google_ads_iframe_rand	query:#adfox-direct_rand	query:.xx_blk_inj	added:#adfox-direct_rand	added:#AdFox_banner__rand	added:#begun_block_rand	query:.mgbox	added:#AdFox_iframe__rand	query:#_rand	query:#AdFox_plug__rand	query:#begun_block_rand	added:.xx_blk_inj	added:#_rand	added:#ad_creative_rand	added:#adfoxHtml5_iframe__rand	query:#AdFox_banner__rand	added:#cto_iframe__rand	query:#adfoxHtml5_iframe__rand	query:#AdFox_iframe__rand	query:#google_ads_iframe_rand	added:.xx_blk	added:.____s11f4gg3362j	added:.bn_
+heidbfcbfdcinibnlglfpbjdokofnkje_1_6_2	added:.vks
+iohkcmicmhmhaojemlkacpcjhcccgpdn_0_3	query:#whz	query:#buttomxxx
+nmeoibhnikioaihlkpfajfnjbhkbpchp_1_1_1	query:#ytht-requirejs
+panhbjhhhpldcicghpekhonnmfnpgibd_1_2	query:#rxeqqftgcrhlvjxs	query:#rxeqqftgcrhlvjx	query:.uvizkbiykatlnwkrmjrzy
+doocmbmlcnbbdohogchldhlikjpndpng_1_8	added:.block	added:.flip-along-vertical-line	query:.yts-replay-button	added:.yts-replay-button	added:.seek-duration	added:.ytp-button	added:.yts-replay-button-short	added:.yts-replay-button-medium	added:.centered
+ldfboinpfdahkgnljbkohgimhimmafip_1_0_4	query:#nativeCommands
+dkikgjnnnbeomgjfggolflkkjehfaecm_2_0	query:#wsdLu9j00ba-global
+annigjkddkgaijklpdjpeiachbcpegnn_1_1	query:#GESaruSearchBar
+ieckednlhijfcgddfelipbdddejkcapp_1_0	query:.heniek-quick-search_content	query:#gsc-iw-id1
+elflbehbhjfjgfkabalcojanmmdkhhek_2_0_3	added:.vks
+ibgkfepjabgnmpjojcnbcjfgeoklfdfk_3_4_205	query:#tenfold_iframe_inner
+pbadmelojclloofgofgflmjdkfdpfddo_1_0_2	added:.vks
+fhhdlnnepfjhlhilgmeepgkhjmhhhjkh_2_8_5	query:#chromesniffer_meta
+iejckekdjogeeilmllnabmgkbbmedeal_1_0_2	query:#performancePicker
+ckecdkhdccmhijackbigkeddkcnljknd_1_8_9	added:.vks
+knekbkhffeelkbilpcdpgbdpeandanfj_0_1_0_113	query:#_322_notification_new_message	query:#_322_notification_podsurfing_session_path_open	query:#_322_iframeBig	query:#_322_loginStateLabelCheckBox	query:#_322_notification_shared_page_open	query:#_322_pagepanel_surf	query:#_322_surfers	query:#_322_publicCommentField	query:#_322_recordingStatus	query:#_322_notification_new_message_close	query:#_322_notification_new_radar_user_close	added:._322_notRecording	query:#_322_participantPanel	query:#_322_chatInput	query:._322_beenMaster	query:#_322_userInfoCard	query:#_322_notification_podsurfing_session_path	query:#_322_chatPanelCloser	query:#_322_shareTwitter	query:#_322_closeSurfing	query:#_322_notification_podsurfing_session_closed	query:#_322_iframeBadge	query:#_322_newBeenPublicStateLabel	query:#_322_iframeTheBin	query:.hopscotch-bubble-arrow-container	query:._322_linkList	query:#_322_createSurfingSession	query:#_322_beenSubmitReportButton	query:#_322_notification_new_message2_open	query:#_322_notification_new_message_open	query:._322_blueButton	query:._322_messageList	query:#_322_beenSubmitUpdateExtension	query:.hopscotch-bubble	query:#_322_participantPanelCloser	query:#_322_currentUsername	query:#_322_loginTrigger	query:#_322_pauseSurfing	query:._322_closer	query:#_322_notification_podsurfing_session_closed_close	query:#_322_surfingPathPanel	query:#_322_userpanel_cookie_been	query:#_322_surfingPath	query:#_322_noteCancel2	query:#_322_beenMaster	query:#_322_currentPagePanel	query:#_322_loginPanel	query:#_322_notification_shared_page_close	query:#_322_pagepanel_report	query:._322_beenMaster_host	query:#_322_pagepanel_dropnote2	query:#_322_notification_podsurfing_session_open	query:#_322_newBeenPublicState	query:#_322_surfingCancel	query:#_322_userpanel_logout	query:._322_cancel	query:#_322_notification_podsurfing_session_path_refuse	query:#_322_chatAvatar	query:#_322_notelist	query:#_322_notification_podsurfing_session_close	query:#_322_composeNoteField	query:#_322_notification_podsurfing_session	query:#_322_notification_new_message2_close	query:#_322_noteSubmit	query:#_322_notification_new_radar_user	query:#_322_notification_new_message2	query:#_322_shareFacebook
+egfnnnfdmdpjaelfbndjfclonlfpfacf_0_3_2	query:#chromesniffer_meta
+dihlakmbcgnjejelioimfmlahhjagfpa_1_4	query:#bm246538fhb2ump8
+nenbejnompbjhakpoifncllfmenmggdf_2_13	query:#div_loudmango_popup
+onmlmogimoceeeegmnbjcclkiomkckpb_1_0	query:#container3
+cbjngbfjehiofmihfpodinolkcokdojp_1_0_0	query:.markupsShareActionBtn	query:.markupsCopyLink	query:#markupsSummaryBtn	query:.markupsViewLink	query:.markupsMiniBtn	query:#markupsLogoutBtn	query:.markupsShareItem	query:.markupsModeonCon	query:.markupsCloseBtn	query:#markupsMenuBtn	query:#markupsSharingBtn	query:#markupsModeBtn	query:#markupsAccountBtn
+aedmpdookgbneegaeajpoldpnpfbpmlb_1_31	query:#px_show	query:#px_data	query:#px_path
+bmhcbmnbenmcecpmpepghooflbehcack_3_3_5	query:.linerModeonContainer	query:.linerExportEvernote	added:#liner-modal-close-btn	query:.linerExportGoogleDrive	query:.linerShareTwitter	added:#liner-modal-progressbar	query:.linerViewAllHighlights	query:.linerExportOnenote	query:.linerExportMail	query:.linerLinkPart	query:.linerShareFacebook	added:#liner-modal-container	query:.linerShareLinkPart	query:.linerCloseBtn	query:.linerExportText	query:.linerHighlightIcon	added:#liner-modal-save-label	query:.linerExportWord	added:.linerNoSelect	added:#liner-modal-save-btn	added:.normalFont
+pgpkffaeaeimknjhekbodlehaejellln_0_91	query:#tojsButton_id
+biiammgklaefagjclmnlialkmaemifgo_2017_2_12_0	query:#eb1d49k1olnf	query:#www-widgetapi-script	added:#idn5lihbleg6
+hadcfiekcaagaenlojddigpocfpambep_2_0_5	added:.vks
+bmndhenalpjnldpihlofieooecbloldn_1_1_1	added:.vks
+dnghfhhnododkknhmihmamekfokimmml_1_0	query:#__bb_js_preffix_id
+imofnopodmphgihdnpjgnfinpfkilkge_3_4_195	query:#tenfold_iframe_inner
+hpogcmdfckfmekhfpbfhfgbhpobldohl_1_5	query:#stat_antiad_div
+oempcppeepempgfcchbphcegjlnoaafg_1_0_2	query:#giflerim_jquery
+mbdlohidfkalinabhlcgkpfolmmbnoec_2_1	added:.vkt-height-fix
+okbpfbebponpmlbjffjcagceiehnkekb_1_0_11	added:.tym-clipit-button-small-rollover-top
+ngpanhjkgblljpbpkapocengafmpheej_0_1	query:#whz	query:#buttomxxx
+adjbnnmnmbdmgohjopaebaaneclmihfm_1_3_7	added:.vks
+cfafloknjegbmpkhaaoacllnngplcppa_1_1_3	query:.core-asset
+lkjejgoogbgnhfdoglcghhmhakknigig_1_6_1	added:.vks
+dibjolekoofgnehcoecjjokehebncdhp_30_0	query:#injectionCode
+ojoeblnpmednmebhklpdghncobbjiooi_1_0_17	added:.firegram-exclude-element
+kikfnibgegiogngdffdibdhkhgjkfglj_1_0_4	added:.vks
+emdofimlgdflefgpcohmmffijijgoooc_1_0_1	query:.closeSpecialGifs
+nkmajmlfckcifcjnhlchdjhkbjcebafk_1_3_4	query:#talk_send	query:#talk_room	query:#talk_drag	query:#talk_autoopen
+dofdbcglfghanjdebnppcnhnagchcldm_2_0_0	query:#nxdnvs1874816935
+mglkfmhpnbdldobnofgfpaighmmlilim_1_0_7	query:#demographics_plugin_individual-pro	query:#demographics_plugin_tab_sep	query:#demographics_plugin_screen_name	query:#demographics_plugin_hashtag	query:#demographics_plugin_pro_tabs	query:#demographics_plugin_inferred_dp	query:#demographics_plugin_audience-pro	query:#demographics_plugin_tab_indiv	query:#demographics_plugin_getback	query:#demographics_plugin_tip	query:#demographics_plugin_aboutInferred	query:#demographics_plugin_inferred-dpinfo	query:#demographics_plugin_tab_audience
+bbjhfljjadeplkjkicakncilmmlhlokf_0_2	query:#rt-tooltip-styles

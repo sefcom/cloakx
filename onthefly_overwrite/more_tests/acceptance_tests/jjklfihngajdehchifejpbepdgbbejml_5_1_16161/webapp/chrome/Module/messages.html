@@ -1,0 +1,28 @@
+<div class="SEModule SEM-Message SE-Chrome-Plugin">
+    <div class="msg-loading">
+        {{DECRYPTING}}
+    </div>
+    <div class="msg-recalled">
+        <div class="recalled-icon icon-caution"></div>
+        <div class="recalled-message">
+            <h4 class='msg-recalled-title'>{{MESSAGE_RECALLED}}</h4>
+            <p class='msg-recalled-description'>{{MESSAGE_RECALLED_CONTENT}}</p>
+            <h4 class='msg-recalled-reasontitle'>{{MESSAGE_RECALLED_REASON}}</h4>
+            <p class='msg-recalled-content'></p>
+        </div>
+    </div>
+    <div class="msg-fyeo row">
+        <div class="fyeo-icon icon-lock col-xs-1"></div>
+        <div class="fyeo-message col-xs-11">
+            <h2> {{MESSAGE_FYEO_CONTENT}} </h2>
+            <h3>{{PLEASE_ENTER_YOUR}}<strong>{{SECURE_ACCOUNT_PASSWORD}}</strong>{{BELOW_TO_UNLOCK_MESSAGE}}</h3>
+            <div class="row">
+                <input type="password" id="fyeo-pass">
+                <div class="btn-fyeo-unlock actionbtn">{{UNLOCK}}</div>
+                <div class="fyeo-error" style="display: none;">{{PASSWORD_INCORRECT}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="msg-attachments"></div>
+    <div class="msg-body" id="msg-scroller"></div>
+</div>

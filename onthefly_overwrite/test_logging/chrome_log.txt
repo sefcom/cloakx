@@ -1,0 +1,1046 @@
+[1525460678.697][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [ "start-maximized" ],
+         "extensions": [ "Q3IyNAIAAAAmAQAAAAEAADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIfCOHYo5hE16SCAeqFdU1OLaBfgGlVofv3x2aMtQesMKEjoDnPG0JR3+RQagZ/DGcssNHXBBs4H9vxSETfbBHnNxAkU3RNd4uPh6RDpVZO0nL1oz3UYoW7AvecY0K0TJZ7Va..." ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1525460678.697][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1525460678.698][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1525460678.706][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.ANuGYB/extension_hoaghoddfoiocckakhkkfgmjhieinlbf,/tmp/.org.chromium.Chromium.ANuGYB/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12761 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.pzt6MN data:,
+[1525460678.706][DEBUG]: DevTools request: http://localhost:12761/json/version
+[1525460678.777][DEBUG]: DevTools request failed
+[1525460678.827][DEBUG]: DevTools request: http://localhost:12761/json/version
+[1525460678.827][DEBUG]: DevTools request failed
+[1525460678.878][DEBUG]: DevTools request: http://localhost:12761/json/version
+[1525460678.878][DEBUG]: DevTools request failed
+
+DevTools listening on ws://127.0.0.1:12761/devtools/browser/52dfe335-e329-4f86-8fbd-c02cd65f119b
+[1525460678.928][DEBUG]: DevTools request: http://localhost:12761/json/version
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[1525460679.020][DEBUG]: DevTools response: {
+   "Browser": "Chrome/64.0.3282.119",
+   "Protocol-Version": "1.2",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36",
+   "V8-Version": "6.4.388.40",
+   "WebKit-Version": "537.36 (@5e944b2d79bce5f96dc35a05a76b03d65a6e9a0a)",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/browser/52dfe335-e329-4f86-8fbd-c02cd65f119b"
+}
+
+[1525460679.022][DEBUG]: DevTools request: http://localhost:12761/json
+[1525460679.080][DEBUG]: DevTools response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "id": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "title": "TouchCat",
+   "type": "background_page",
+   "url": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "id": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)"
+} ]
+
+[1525460679.080][INFO]: Waiting for extension bg page load: chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html
+[1525460679.080][DEBUG]: DevTools request: http://localhost:12761/json
+[1525460679.111][DEBUG]: DevTools response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(310A823DFD575A48D1D52535943C472E)",
+   "id": "(310A823DFD575A48D1D52535943C472E)",
+   "title": "Chrome Automation Extension",
+   "type": "background_page",
+   "url": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(310A823DFD575A48D1D52535943C472E)"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "id": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "title": "TouchCat",
+   "type": "background_page",
+   "url": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "id": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)"
+} ]
+
+[1525460679.112][INFO]: resolved localhost to ["127.0.0.1"]
+[1525460679.132][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=1) {
+
+}
+[1525460679.132][DEBUG]: DEVTOOLS COMMAND Runtime.enable (id=2) {
+
+}
+[1525460679.132][DEBUG]: DEVTOOLS COMMAND Page.enable (id=3) {
+
+}
+[1525460679.132][DEBUG]: DEVTOOLS COMMAND Page.enable (id=4) {
+
+}
+[1525460679.156][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=1) {
+   "root": {
+      "backendNodeId": 1,
+      "baseURL": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 2,
+         "localName": "",
+         "nodeId": 2,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 1,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [  ],
+         "backendNodeId": 3,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 4,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 3
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 5,
+            "childNodeCount": 1,
+            "localName": "body",
+            "nodeId": 5,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 3
+         } ],
+         "frameId": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+         "localName": "html",
+         "nodeId": 3,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 1
+      } ],
+      "documentURL": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460679.156][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+         "isDefault": true
+      },
+      "id": 1,
+      "name": "",
+      "origin": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf"
+   }
+}
+[1525460679.156][DEBUG]: DEVTOOLS RESPONSE Runtime.enable (id=2) {
+
+}
+[1525460679.156][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=3) {
+
+}
+[1525460679.156][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=4) {
+
+}
+[1525460679.156][DEBUG]: DEVTOOLS COMMAND Page.enable (id=5) {
+
+}
+[1525460679.187][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 2,
+   "nodeId": 5
+}
+[1525460679.187][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 3,
+   "nodeId": 5
+}
+[1525460679.187][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 4,
+   "nodeId": 5
+}
+[1525460679.187][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 5,
+   "nodeId": 5
+}
+[1525460679.187][DEBUG]: DEVTOOLS EVENT Page.loadEventFired {
+   "timestamp": 4222443.327441
+}
+[1525460679.188][DEBUG]: DEVTOOLS EVENT Page.frameStoppedLoading {
+   "frameId": "(9E900E0E7B47A4221C821D2FE6A951B7)"
+}
+[1525460679.188][DEBUG]: DEVTOOLS EVENT Page.domContentEventFired {
+   "timestamp": 4222443.328184
+}
+[1525460679.188][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1525460679.188][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=6) {
+
+}
+[1525460679.188][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=5) {
+
+}
+[1525460679.189][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=6) {
+   "root": {
+      "backendNodeId": 1,
+      "baseURL": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 2,
+         "localName": "",
+         "nodeId": 7,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 6,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [  ],
+         "backendNodeId": 3,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 9,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 8
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 5,
+            "childNodeCount": 5,
+            "localName": "body",
+            "nodeId": 10,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 8
+         } ],
+         "frameId": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+         "localName": "html",
+         "nodeId": 8,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 6
+      } ],
+      "documentURL": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+      "localName": "",
+      "nodeId": 6,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460679.189][INFO]: Waiting for pending navigations...
+[1525460679.189][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=7) {
+   "expression": "1"
+}
+[1525460679.192][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=7) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1525460679.192][INFO]: Done waiting for pending navigations. Status: ok
+[1525460679.192][DEBUG]: DevTools request: http://localhost:12761/json
+[1525460679.192][DEBUG]: DevTools response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(310A823DFD575A48D1D52535943C472E)",
+   "id": "(310A823DFD575A48D1D52535943C472E)",
+   "title": "Chrome Automation Extension",
+   "type": "background_page",
+   "url": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(310A823DFD575A48D1D52535943C472E)"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "id": "(9E900E0E7B47A4221C821D2FE6A951B7)",
+   "title": "TouchCat",
+   "type": "background_page",
+   "url": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(9E900E0E7B47A4221C821D2FE6A951B7)"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "id": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:12761/devtools/page/(8336F0A5580FAB2D65C8ACB54EBE1779)"
+} ]
+
+[1525460679.193][INFO]: resolved localhost to ["127.0.0.1"]
+[1525460679.194][DEBUG]: DEVTOOLS COMMAND Log.enable (id=1) {
+
+}
+[1525460679.194][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=2) {
+
+}
+[1525460679.194][DEBUG]: DEVTOOLS COMMAND Runtime.enable (id=3) {
+
+}
+[1525460679.195][DEBUG]: DEVTOOLS COMMAND Page.enable (id=4) {
+
+}
+[1525460679.199][DEBUG]: DEVTOOLS COMMAND Page.enable (id=5) {
+
+}
+[1525460679.200][DEBUG]: DEVTOOLS RESPONSE Log.enable (id=1) {
+
+}
+[1525460679.200][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=2) {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "backendNodeId": 3,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 3,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 5,
+            "childNodeCount": 1,
+            "localName": "body",
+            "nodeId": 4,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         } ],
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "localName": "html",
+         "nodeId": 2,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 1
+      } ],
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460679.203][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "isDefault": true
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://"
+   }
+}
+[1525460679.204][DEBUG]: DEVTOOLS RESPONSE Runtime.enable (id=3) {
+
+}
+[1525460679.204][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=4) {
+
+}
+[1525460679.204][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=5) {
+
+}
+[1525460679.204][DEBUG]: DEVTOOLS COMMAND Page.enable (id=6) {
+
+}
+[1525460679.204][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=6) {
+
+}
+[1525460679.204][DEBUG]: DEVTOOLS COMMAND Runtime.enable (id=7) {
+
+}
+[1525460679.205][DEBUG]: DEVTOOLS RESPONSE Runtime.enable (id=7) {
+
+}
+[1525460679.205][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=8) {
+   "expression": "(function() { // Copyright (c) 2012 The Chromium Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum f...",
+   "returnByValue": true
+}
+[1525460679.214][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=8) {
+   "result": {
+      "type": "object",
+      "value": {
+         "status": 0,
+         "value": 1
+      }
+   }
+}
+[1525460679.215][INFO]: RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.pzt6MN"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "setWindowRect": true,
+   "~~~": "..."
+}
+[1525460679.219][INFO]: COMMAND SetTimeout {
+   "pageLoad": 20000,
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80"
+}
+[1525460679.222][INFO]: RESPONSE SetTimeout unknown error: 'ms' must be a double
+  (Session info: chrome=64.0.3282.119)
+[1525460679.223][INFO]: COMMAND SetTimeout {
+   "ms": 20000.0,
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80",
+   "type": "page load"
+}
+[1525460679.223][INFO]: RESPONSE SetTimeout
+[1525460679.225][INFO]: COMMAND SetScriptTimeout {
+   "ms": 20000.0,
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80"
+}
+[1525460679.225][INFO]: RESPONSE SetScriptTimeout
+[1525460679.227][INFO]: COMMAND SetImplicitWait {
+   "ms": 5000.0,
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80"
+}
+[1525460679.227][INFO]: RESPONSE SetImplicitWait
+[1525460679.228][INFO]: COMMAND SetWindowSize {
+   "height": 1200,
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80",
+   "width": 1920,
+   "windowHandle": "current"
+}
+[1525460679.228][INFO]: resolved localhost to ["127.0.0.1"]
+[1525460679.229][DEBUG]: DEVTOOLS COMMAND Browser.getWindowForTarget (id=1) {
+   "targetId": "(8336F0A5580FAB2D65C8ACB54EBE1779)"
+}
+[1525460679.235][DEBUG]: DEVTOOLS RESPONSE Browser.getWindowForTarget (id=1) {
+   "bounds": {
+      "height": 1056,
+      "left": 65,
+      "top": 24,
+      "width": 1855,
+      "windowState": "maximized"
+   },
+   "windowId": 1
+}
+[1525460679.235][DEBUG]: DEVTOOLS COMMAND Browser.setWindowBounds (id=2) {
+   "bounds": {
+      "windowState": "normal"
+   },
+   "windowId": 1
+}
+[1525460679.235][DEBUG]: DEVTOOLS RESPONSE Browser.setWindowBounds (id=2) {
+
+}
+[1525460679.335][DEBUG]: DEVTOOLS COMMAND Browser.getWindowBounds (id=3) {
+   "windowId": 1
+}
+[1525460679.336][DEBUG]: DEVTOOLS RESPONSE Browser.getWindowBounds (id=3) {
+   "bounds": {
+      "height": 1036,
+      "left": 75,
+      "top": 34,
+      "width": 912,
+      "windowState": "normal"
+   }
+}
+[1525460679.336][DEBUG]: DEVTOOLS COMMAND Browser.setWindowBounds (id=4) {
+   "bounds": {
+      "height": 1200,
+      "width": 1920
+   },
+   "windowId": 1
+}
+[1525460679.351][DEBUG]: DEVTOOLS RESPONSE Browser.setWindowBounds (id=4) {
+
+}
+[1525460679.451][INFO]: RESPONSE SetWindowSize
+[1525460768.012][INFO]: COMMAND GetLog {
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80",
+   "type": "browser"
+}
+[1525460768.012][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=9) {
+   "expression": "1",
+   "returnByValue": true
+}
+[1525460768.012][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460768.012][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460768.012][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460768.012][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460768.013][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=9) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1525460768.013][INFO]: RESPONSE GetLog [  ]
+[1525460834.622][INFO]: COMMAND GetLog {
+   "sessionId": "0cda15e8c503a0a5bb22590918622a80",
+   "type": "browser"
+}
+[1525460834.622][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=10) {
+   "expression": "1",
+   "returnByValue": true
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextsCleared {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.frameStartedLoading {
+   "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)"
+}
+[1525460834.622][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=11) {
+   "expression": "document.readyState"
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextsCleared {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.frameNavigated {
+   "frame": {
+      "id": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+      "loaderId": "(B5EE7C638CEA9D49E9189AF313B59F8B)",
+      "mimeType": "text/html",
+      "securityOrigin": "https://www.google.com",
+      "url": "https://www.google.com/search?q=wikipedia+space+timer&oq=wikipedia+space+timer&aqs=chrome..69i57.4301j0j4&sourceid=chrome&ie=UTF-8"
+   }
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "isDefault": true
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.google.com"
+   }
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=12) {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.domContentEventFired {
+   "timestamp": 4222567.071823
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=13) {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.loadEventFired {
+   "timestamp": 4222567.259301
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.frameStoppedLoading {
+   "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)"
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "isDefault": false
+      },
+      "id": 2,
+      "name": "TouchCat",
+      "origin": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf"
+   }
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.frameStartedLoading {
+   "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)"
+}
+[1525460834.622][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=14) {
+   "expression": "document.readyState"
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextDestroyed {
+   "executionContextId": 1
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextDestroyed {
+   "executionContextId": 2
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Runtime.executionContextsCleared {
+
+}
+[1525460834.622][DEBUG]: DEVTOOLS EVENT Page.frameNavigated {
+   "frame": {
+      "id": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+      "loaderId": "(7CF655249740517A20FEC2999BEE8B21)",
+      "mimeType": "text/html",
+      "securityOrigin": "https://en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Spacetime"
+   }
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "isDefault": true
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://en.wikipedia.org"
+   }
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=15) {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Runtime.consoleAPICalled {
+   "args": [ {
+      "type": "string",
+      "value": "JQMIGRATE: Migrate is installed with logging active, version 3.0.1"
+   } ],
+   "executionContextId": 3,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 629,
+         "functionName": "",
+         "lineNumber": 138,
+         "scriptId": "58",
+         "url": "https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki%7Cmediawiki.legacy.wikibits&only=scripts&skin=vector&version=0wi5w0o"
+      }, {
+         "columnNumber": 752,
+         "functionName": "",
+         "lineNumber": 138,
+         "scriptId": "58",
+         "url": "https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki%7Cmediawiki.legacy.wikibits&only=scripts&skin=vector&version=0wi5w0o"
+      }, {
+         "columnNumber": 228,
+         "functionName": "",
+         "lineNumber": 138,
+         "scriptId": "58",
+         "url": "https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki%7Cmediawiki.legacy.wikibits&only=scripts&skin=vector&version=0wi5w0o"
+      }, {
+         "columnNumber": 254,
+         "functionName": "",
+         "lineNumber": 138,
+         "scriptId": "58",
+         "url": "https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki%7Cmediawiki.legacy.wikibits&only=scripts&skin=vector&version=0wi5w0o"
+      } ]
+   },
+   "timestamp": 1525460804820.106,
+   "type": "log"
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.domContentEventFired {
+   "timestamp": 4222569.607858
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=16) {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "isDefault": false
+      },
+      "id": 4,
+      "name": "TouchCat",
+      "origin": "chrome-extension://hoaghoddfoiocckakhkkfgmjhieinlbf"
+   }
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.loadEventFired {
+   "timestamp": 4222569.973964
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.frameStoppedLoading {
+   "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)"
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460834.623][DEBUG]: DEVTOOLS EVENT Page.frameResized {
+
+}
+[1525460834.624][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=10) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1525460834.625][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=11) {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1525460834.625][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=12) {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 4,
+         "localName": "",
+         "nodeId": 2,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 1,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "class", "client-js ve-not-available", "lang", "en", "dir", "ltr" ],
+         "backendNodeId": 5,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 6,
+            "childNodeCount": 33,
+            "localName": "head",
+            "nodeId": 4,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 3
+         }, {
+            "attributes": [ "class", "mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Spacetime rootpage-Spacetime skin-vector action-view", "style", "" ],
+            "backendNodeId": 7,
+            "childNodeCount": 11,
+            "localName": "body",
+            "nodeId": 5,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 3
+         } ],
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "localName": "html",
+         "nodeId": 3,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 1
+      } ],
+      "documentURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460834.625][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=13) {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 4,
+         "localName": "",
+         "nodeId": 7,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 6,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "class", "client-js ve-not-available", "lang", "en", "dir", "ltr" ],
+         "backendNodeId": 5,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 6,
+            "childNodeCount": 33,
+            "localName": "head",
+            "nodeId": 9,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 8
+         }, {
+            "attributes": [ "class", "mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Spacetime rootpage-Spacetime skin-vector action-view", "style", "" ],
+            "backendNodeId": 7,
+            "childNodeCount": 11,
+            "localName": "body",
+            "nodeId": 10,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 8
+         } ],
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "localName": "html",
+         "nodeId": 8,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 6
+      } ],
+      "documentURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "localName": "",
+      "nodeId": 6,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460834.625][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=14) {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1525460834.626][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=15) {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 4,
+         "localName": "",
+         "nodeId": 12,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 11,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "class", "client-js ve-not-available", "lang", "en", "dir", "ltr" ],
+         "backendNodeId": 5,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 6,
+            "childNodeCount": 33,
+            "localName": "head",
+            "nodeId": 14,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 13
+         }, {
+            "attributes": [ "class", "mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Spacetime rootpage-Spacetime skin-vector action-view", "style", "" ],
+            "backendNodeId": 7,
+            "childNodeCount": 11,
+            "localName": "body",
+            "nodeId": 15,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 13
+         } ],
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "localName": "html",
+         "nodeId": 13,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 11
+      } ],
+      "documentURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "localName": "",
+      "nodeId": 11,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460834.626][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=16) {
+   "root": {
+      "backendNodeId": 2,
+      "baseURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "childNodeCount": 2,
+      "children": [ {
+         "backendNodeId": 4,
+         "localName": "",
+         "nodeId": 17,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "parentId": 16,
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "class", "client-js ve-not-available", "lang", "en", "dir", "ltr" ],
+         "backendNodeId": 5,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 6,
+            "childNodeCount": 33,
+            "localName": "head",
+            "nodeId": 19,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 18
+         }, {
+            "attributes": [ "class", "mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Spacetime rootpage-Spacetime skin-vector action-view", "style", "" ],
+            "backendNodeId": 7,
+            "childNodeCount": 11,
+            "localName": "body",
+            "nodeId": 20,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 18
+         } ],
+         "frameId": "(8336F0A5580FAB2D65C8ACB54EBE1779)",
+         "localName": "html",
+         "nodeId": 18,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 16
+      } ],
+      "documentURL": "https://en.wikipedia.org/wiki/Spacetime",
+      "localName": "",
+      "nodeId": 16,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1525460834.626][INFO]: RESPONSE GetLog [  ]

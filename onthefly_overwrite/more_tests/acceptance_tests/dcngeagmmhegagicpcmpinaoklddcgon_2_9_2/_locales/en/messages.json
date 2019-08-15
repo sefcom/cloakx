@@ -1,0 +1,203 @@
+{
+	"subject": {
+		"message": "Subject"
+	},
+	"issuer": {
+		"message": "Issuer"
+	},
+	"expiration": {
+		"message": "Expiration"
+	},
+	"showAdvancedSettings": {
+		"message": "Show advanced settings..."
+	},
+	"hideAdvancedSettings": {
+		"message": "Hide advanced settings"
+	},
+	"importPkcs12": {
+		"message": "Import PKCS #12"
+	},
+	"refresh": {
+		"message": "Refresh"
+	},
+	"loading": {
+		"message": "Loading..."
+	},
+	"configurePkcs11": {
+		"message": "Crypto devices (PKCS #11) ..."
+	},
+	"pkcs11Title": {
+		"message": "Cryptographic devices (PKCS #11)"
+	},
+	"pkcs11Subtitle": {
+		"message": "If you have certificates stored in a cryptographic device, mark one of the options below."
+	},
+	"pkcs11CustomTitle": {
+		"message": "Custom modules"
+	},
+	"pkcs11CustomSubtitle": {
+		"message": "If your cryptographic device is not listed above, enter the name of the SO file given by the manufacturer"
+	},
+	"pkcs11ModuleNamePlaceholder": {
+		"message": "Type SO filename (with extension)"
+	},
+	"pkcs11TypeModuleName": {
+		"message": "Please fill the module filename."
+	},
+	"pkcs11ModuleDescription_aetpkss1_dll": {
+		"message": "Smart cards managed by SafeSign"
+	},
+	"pkcs11ModuleDescription_libaetpkss_so_3": {
+		"message": "Smart cards managed by SafeSign"
+	},
+	"pkcs11ModuleDescription_libaetpkss_dylib": {
+		"message": "Smart cards managed by SafeSign"
+	},
+	"pkcs11ModuleDescription_eTPKCS11_dll": {
+		"message": "Tokens managed by SafeNet"
+	},
+	"pkcs11ModuleDescription_libeToken_so": {
+		"message": "Tokens managed by SafeNet"
+	},
+	"pkcs11ModuleDescription_libeToken_dylib": {
+		"message": "Tokens managed by SafeNet"
+	},
+	"add": {
+		"message": "Add"
+	},
+	"ok": {
+		"message": "OK"
+	},
+	"cancel": {
+		"message": "Cancel"
+	},
+	"close": {
+		"message": "Close"
+	},
+	"pleaseWait": {
+		"message": "Please wait..."
+	},
+	"personalCertificates": {
+		"message": "Personal Certificates"
+	},
+	"advancedSettings": {
+		"message": "Advanced Settings"
+	},
+	"verboseLogging": {
+		"message": "Verbose logging"
+	},
+	"userCancelled": {
+		"message": "The user cancelled the operation"
+	},
+	"trustedSites": {
+		"message": "Trusted Sites"
+	},
+	"site": {
+		"message": "Site"
+	},
+	"permissions": {
+		"message": "Permissions"
+	},
+	"settings": {
+		"message": "Settings"
+	},
+	"showTrustedSites": {
+		"message": "Trusted sites..."
+	},
+	"noTrustedSites": {
+		"message": "Here you'll be able to review and manage the websites that you authorized to perform digital signatures (for now there are none)."
+	},
+	"trustedSitesSubtitle": {
+		"message": "The following websites are authorized to perform digital signatures using the certificates below"
+	},
+	"issuedBy": {
+		"message": "issued by"
+	},
+	"remove": {
+		"message": "remove"
+	},
+	"notInstalledTitle": {
+		"message": "Web PKI is not fully installed"
+	},
+	"notInstalledMessage": {
+		"message": "In order to use this component, you must also install the Web PKI native component on your PC"
+	},
+	"outdatedTitle": {
+		"message": "Web PKI is not up-to-date"
+	},
+	"outdatedMessage": {
+		"message": "In order to use this component, you must update the Web PKI native component on your PC"
+	},
+	"install": {
+		"message": "Install"
+	},
+	"installDeb": {
+		"message": "Install .deb"
+	},
+	"installRpm": {
+		"message": "Install .rpm"
+	},
+	"update": {
+		"message": "Update"
+	},
+	"updateDeb": {
+		"message": "Update .deb"
+	},
+	"updateRpm": {
+		"message": "Update .rpm"
+	},
+	"errorOccurred": {
+		"message": "An error has occurred!"
+	},
+	"downloadingMessage": {
+		"message": "Downloading installer..."
+	},
+	"downloadedTitle": {
+		"message": "We're almost there"
+	},
+	"downloadedMessagePart1": {
+		"message": "Now "
+	},
+	"downloadedMessagePart2": {
+		"message": "run the downloaded file"
+	},
+	"downloadedMessagePart3": {
+		"message": " to update Web PKI on your PC"
+	},
+	"redownloadMessagePart1": {
+		"message": "If something went wrong, "
+	},
+	"redownloadMessagePart2": {
+		"message": " to download the installer again"
+	},
+	"clickHere": {
+		"message": "click here"
+	},
+	"redownloadMessageLinux": {
+		"message": "If something went wrong, choose a package to download again:"
+	},
+	"redownloadMessageLinuxDeb": {
+		"message": "Package .deb for Debian-based distributions (e.g. Ubuntu, Mint): "
+	},
+	"redownloadMessageLinuxRpm": {
+		"message":  "Package .rpm for RedHat- and Slackware-based distributions (e.g. Fedora, openSUSE): "
+	},
+	"confirmRemoveCertificateTitle": {
+		"message": "Remove certificate?"
+	},
+	"confirmRemoveCertificateMessagePart1": {
+		"message": "Are you sure you want to remove the certificate "
+	},
+	"confirmRemoveCertificateMessagePart2": {
+		"message": " ?"
+	},
+	"yesRemove": {
+		"message": "Yes, remove"
+	},
+	"welcomeTitle": {
+		"message": "Welcome to Web PKI"
+	},
+	"welcomeMessage": {
+		"message": "In order to start using Web PKI, you must import a PKCS #12 (PFX) certificate or enable the use of a cryptographic device."
+	}
+}

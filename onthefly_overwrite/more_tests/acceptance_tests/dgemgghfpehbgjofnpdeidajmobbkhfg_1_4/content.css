@@ -1,0 +1,36 @@
+.onthefly_SYLAvsNJxaK_css .fixfixed, .onthefly_SYLAvsNJxaK_css .fixfixed::before, .onthefly_SYLAvsNJxaK_css .fixfixed::after {
+    -webkit-transform: translatez(0);
+    transform: translatez(0)
+    }
+.onthefly_SYLAvsNJxaK_css.chrome-fixfixed-highlight .fixfixed {
+    border: 3px dotted orange !important
+    }
+.onthefly_SYLAvsNJxaK_css.onthefly_g7Lr2sczw0U_css .fixfixedbackground, .onthefly_SYLAvsNJxaK_css.onthefly_g7Lr2sczw0U_css .fixfixedbackground::before, .onthefly_SYLAvsNJxaK_css.onthefly_g7Lr2sczw0U_css .fixfixedbackground::after {
+    background-attachment: scroll !important
+    }
+/* fix w3c.org website */
+body.onthefly_SYLAvsNJxaK_css.onthefly_g7Lr2sczw0U_css {
+    background-attachment: inherit !important
+    }
+.onthefly_SYLAvsNJxaK_css.chrome-fixfixed-animation * {
+    -webkit-animation-duration: 0 !important
+    }
+.onthefly_SYLAvsNJxaK_css.chrome-fixfixed-transition * {
+    -webkit-transition-duration: 0 !important
+    }
+.onthefly_SYLAvsNJxaK_css.onthefly_LgnhFUaldwI_css .fixfixedscrollcover {
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: auto !important;
+    z-index: 99999;
+    width: 100%;
+    display: block;
+    position: fixed;
+    height: 100%;
+    transform: translatez(0);
+    /*
+    	background:blue;
+    	opacity:0.5;
+    	*/
+    }

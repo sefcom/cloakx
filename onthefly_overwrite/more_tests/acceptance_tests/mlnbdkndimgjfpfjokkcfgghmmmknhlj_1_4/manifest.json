@@ -1,0 +1,83 @@
+﻿{
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "match_about_blank": true,
+            "js": [
+                "onthefly_config.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "match_about_blank": true,
+            "js": [
+                "ontheflyDOM-hidex.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "scripts/config.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_start",
+            "css": [
+                "styles/main.css"
+            ],
+            "js": [
+                "bower_components/jquery/dist/jquery.min.js",
+                "scripts/contentscript.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "19": "images/19.png",
+            "48": "images/48.png"
+        },
+        "default_title": "kuku.io"
+    },
+    "name": "KUKU.io",
+    "short_name": "KUKU.io",
+    "icons": {
+        "128": "images/128.png",
+        "16": "images/16.png"
+    },
+    "web_accessible_resources": [],
+    "background": {
+        "page": "background.html",
+        "persistent": false
+    },
+    "version": "1.4",
+    "omnibox": {
+        "keyword": "kuku.io"
+    },
+    "manifest_version": 2,
+    "default_locale": "en",
+    "permissions": [
+        "tabs",
+        "history",
+        "management",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "description": "Share content in seconds with KUKU.io!"
+}

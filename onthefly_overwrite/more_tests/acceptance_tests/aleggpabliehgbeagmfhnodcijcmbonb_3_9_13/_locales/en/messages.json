@@ -1,0 +1,371 @@
+{
+   "actionHeader": {
+      "message": "Action"
+   },
+   "additionalText": {
+      "message": "\u003Cp>You have Dr.Web Link Checker installed in your browser. It checks all external links which you follow from the drwebLinkName website.\u003C/p>\u003Cp>Sometimes hackers use such links to lure you to a page with malicious content or to a phishing website. It may compromise your safety or security of your computer.\u003C/p>\u003Cp>If you follow an external link, do not specify the following information there:\u003C/p>\u003Cp>• personal data;\u003Cbr/>• logins and passwords to your accounts.\u003C/p>\u003Cp>Be especially cautious in following the links received in ads or from people you do not know.\u003C/p>\u003Cp>It is more secure to type a familiar website address in the address bar manually instead of clicking a link.\u003C/p>"
+   },
+   "ads": {
+      "message": "Ads:"
+   },
+   "adsExceptionDesc": {
+      "message": "Set up the rules to configure blocking ads on certain websites."
+   },
+   "adsExceptionHeader": {
+      "message": "Ad exclusions"
+   },
+   "adsSetup": {
+      "message": "Ads"
+   },
+   "adsSetupDescription": {
+      "message": "With Dr.Web Link Checker, you can block advertising banners when browsing webpages."
+   },
+   "allowAll": {
+      "message": "Allow all"
+   },
+   "allowAllDesc": {
+      "message": "Dr.Web Link Checker will not track and block any contents of webpages."
+   },
+   "allowHere": {
+      "message": "Allow for this website&nbsp;&nbsp;"
+   },
+   "allowOption": {
+      "message": "Allow&nbsp;&nbsp;"
+   },
+   "analyticsname": {
+      "message": "Web analytics: "
+   },
+   "antivirusTitle": {
+      "message": "Dr.Web Anti-Virus"
+   },
+   "autoCheckWebsites": {
+      "message": "Links in social networks"
+   },
+   "autoCheckWebsitesDesc": {
+      "message": "Dr.Web Link Checker can use Doctor Web servers to check links without installing antivirus software on your local computer."
+   },
+   "back": {
+      "message": "Back"
+   },
+   "blocked": {
+      "message": "blocked&nbsp;"
+   },
+   "checkLinkTitle": {
+      "message": "Check with Dr.Web"
+   },
+   "checkTitle": {
+      "message": "Check external links in the following social networks:"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "contentheader": {
+      "message": "Webpage contents"
+   },
+   "contextMenuItem": {
+      "message": "Check with Dr.Web"
+   },
+   "contextMenuSelectionSearch": {
+      "description": "Find a link in the selected text and inspect it with Dr.Web",
+      "message": "Check with Dr.Web"
+   },
+   "copyright": {
+      "message": "Doctor Web"
+   },
+   "currentVersion": {
+      "message": "Current version: "
+   },
+   "defaultAllow": {
+      "message": "Allow by default &nbsp;"
+   },
+   "defaultAllow2": {
+      "message": "Allow by default &nbsp;"
+   },
+   "defaultDeny": {
+      "message": "Block by default &nbsp;"
+   },
+   "defaultDeny2": {
+      "message": "Block by default &nbsp;"
+   },
+   "denyHere": {
+      "message": "Block for this website&nbsp;&nbsp;"
+   },
+   "denyOption": {
+      "message": "Block&nbsp;&nbsp;"
+   },
+   "description": {
+      "message": "A web browser extension that enables you to check weblinks on Doctor Web servers without installing antivirus software on your local computer."
+   },
+   "exception": {
+      "message": "Exclusions "
+   },
+   "extDescription": {
+      "message": "Dr.Web online anti-virus for checking links. Accessible from the context menu. Autoscans Facebook, VK.com, Google+ links."
+   },
+   "extName": {
+      "message": "Dr.Web Anti-Virus Link Checker"
+   },
+   "facebookLabel": {
+      "message": "Facebook"
+   },
+   "facebookSite": {
+      "message": "Facebook"
+   },
+   "features": {
+      "message": "\u003Cul>\u003Cli>checking links on any website via the shortcut menu,\u003C/li>\u003Cli>detecting and checking links in a text section,\u003C/li>\u003Cli>automatic checking of external links in social networks.\u003C/li>\u003C/ul>"
+   },
+   "finish": {
+      "message": "Done"
+   },
+   "finishSetup": {
+      "message": "Setup Complete"
+   },
+   "finishSetupDescription": {
+      "message": "You can change the Dr.Web Link Checker settings anytime — click the Dr.Web icon in the browser address bar and then click Settings."
+   },
+   "flashExceptionDesc": {
+      "message": "Set up the rules to configure blocking flash plug-ins on certain websites."
+   },
+   "flashExceptionHeader": {
+      "message": "Flash plug-ins exclusions"
+   },
+   "flashPlugins": {
+      "message": "Flash plug-ins:"
+   },
+   "googleLabel": {
+      "message": "Google+"
+   },
+   "googleSite": {
+      "message": "Google+"
+   },
+   "header": {
+      "message": "\u003Cp>\u003Cem>You are leaving the drwebLinkName website\u003C/em> via an external link \u003Cb id=\"drwebConfirmationLink\">drwebLinkDesc\u003C/b>\u003C/p>"
+   },
+   "infectionText": {
+      "message": "\u003Cp>\u003Cem>The requested page is infected.\u003C/em>\u003C/p>\u003Cp>\u003Cb class=\"drwebLink\">drwebLinkName\u003C/b>\u003C/p>\u003Cp>Threat: drwebLinkDesc.\u003C/p>\u003Cp>The link is blocked.\u003C/p>"
+   },
+   "internetTracker": {
+      "message": "Internet tracker"
+   },
+   "internetTrackerDesc": {
+      "message": "Internet tracker can block undesirable contents of webpages."
+   },
+   "lastUpdate": {
+      "message": "Last update: "
+   },
+   "leaveDefault": {
+      "message": "Done"
+   },
+   "leaveWebsite": {
+      "message": "Go"
+   },
+   "linksSetup": {
+      "message": "Checking links in social networks"
+   },
+   "linksSetupDescription": {
+      "message": "Dr.Web Link Checker inspects all the links you open on Facebook, VK.com and Google+. If it detects a threat, it prevents you from following the link."
+   },
+   "lng": {
+      "message": "en"
+   },
+   "mainText": {
+      "message": "\u003Cp>Be especially cautious in following the links received in ads or from people you do not know. Remember that third-party websites may contain misleading information and threaten your computer.\u003C/p>"
+   },
+   "manualBlocked": {
+      "message": "Manual blocking mode"
+   },
+   "manualBlockingCancel": {
+      "message": "Cancel"
+   },
+   "manualBlockingSave": {
+      "message": "Save"
+   },
+   "manualBlockingText": {
+      "message": "Select the elements you do not want to see on this page"
+   },
+   "maximum": {
+      "message": "High-level tracking"
+   },
+   "maximumDesc": {
+      "message": "In addition to advertising tools and web analytics modules, Dr.Web Link Checker will block social network plug-ins, such as Facebook, Twitter, VK.com, Google+, LinkedIn. Please note that if high-level tracking is activated, webpages may be displayed incorrectly and all social functions are unavailable."
+   },
+   "medium": {
+      "message": "Medium-level tracking (recommended)"
+   },
+   "mediumDesc": {
+      "message": "In addition to advertising tools, Dr.Web Link Checker will block web analytics modules, such as Google Analytics, Yandex.Metrica, etc. Websites owners may use these tools to track your activity on webpages."
+   },
+   "minimal": {
+      "message": "Low-level tracking"
+   },
+   "minimalDesc": {
+      "message": "Dr.Web Link Checker will block attempts to track your interests and to show contextual ads based on them."
+   },
+   "next": {
+      "message": "Next"
+   },
+   "noExtLinksInSelection": {
+      "message": "No external links found in the selected text."
+   },
+   "noLinksInSelection": {
+      "message": "No links found in the selected text."
+   },
+   "odnoklassnikiSite": {
+      "message": "Odnoklassniki"
+   },
+   "openSettings": {
+      "message": "Back"
+   },
+   "optionsPageTitle": {
+      "message": "Dr.Web Link Checker Options"
+   },
+   "optionsSaved": {
+      "message": "Options saved."
+   },
+   "otherSoftware": {
+      "message": "Other Dr.Web software"
+   },
+   "pageContent": {
+      "message": "Webpages contents"
+   },
+   "pageContentDesc": {
+      "message": "Dr.Web Link Checker can block ads and flash plug-ins on webpages."
+   },
+   "privacyPolicy": {
+      "message": "Privacy policy"
+   },
+   "quickSetup": {
+      "message": "Dr.Web Link Checker successfully installed"
+   },
+   "quickSetupDescription": {
+      "message": "Dr.Web Link Checker protects you against security threats by checking external links on social networks. It also enables you to block undesirable content and ads on webpages.\u003Cbr/>\u003Cbr/>You can continue browsing with the default settings or configure the extension."
+   },
+   "readyButton": {
+      "message": "OK"
+   },
+   "refreshBox": {
+      "message": "Refresh the page for the changes to take effect"
+   },
+   "refreshButton": {
+      "message": "Refresh now"
+   },
+   "refreshCancelButton": {
+      "message": "Refresh later"
+   },
+   "scanError": {
+      "message": "\u003Cp>\u003Cem>Could not check the website\u003C/em>\u003C/p>\u003Cp>The server that hosts the page you requested is probably not available.\u003C/p>"
+   },
+   "scanResult": {
+      "message": "Scan results"
+   },
+   "scanTimeout": {
+      "message": "\u003Cp>\u003Cem>Could not check the page\u003C/em>\u003C/p>\u003Cp>The antivirus server is probably overloaded. You can follow the link right now, endangering your computer security, or retry to follow the link later. The server will possibly be able to check this page soon.\u003C/p>"
+   },
+   "scanning": {
+      "message": "Scanning"
+   },
+   "setUp": {
+      "message": "Set up Dr.Web Link Checker"
+   },
+   "siteUnreliabilityMessage": {
+      "message": "\u003Cp>\u003Cem>Dr.Web strongly advises you against visiting this site.\u003C/em>\u003C/p>\u003Cp>\u003Cb class=\"drwebLink\">drwebLinkName\u003C/b>\u003C/p>"
+   },
+   "socialname": {
+      "message": "Social network plug-ins: "
+   },
+   "submitOptions": {
+      "message": "Save options"
+   },
+   "switchOff": {
+      "message": "Manual blocking mode"
+   },
+   "switchOn": {
+      "message": "Manual blocking mode"
+   },
+   "trackerSetup": {
+      "message": "Internet tracker "
+   },
+   "trackerSetupDescription": {
+      "message": "With Dr.Web Link Checker, you can block tracking your interests to show contextual ads based on them and web analytics tools which enable the websites owners to track your activity on webpages."
+   },
+   "trackname": {
+      "message": "Tracking: "
+   },
+   "twitterSite": {
+      "message": "Twitter"
+   },
+   "updateDataBase": {
+      "message": "Update database"
+   },
+   "updateDesc": {
+      "message": "You can manually start an update of the database with the list of advertising websites and other undesirable contents. If the update is available, it will be downloaded to your computer."
+   },
+   "updateHeader": {
+      "message": "Database updating"
+   },
+   "updating": {
+      "message": "Updating…"
+   },
+   "urlHeader": {
+      "message": "URL"
+   },
+   "vkontakteLabel": {
+      "message": "VK.com"
+   },
+   "vkontakteSite": {
+      "message": "VK.com"
+   },
+   "whyWarning": {
+      "message": "Why do I see this warning?"
+   },
+   "wiz_ads_step_off": {
+      "message": "Show ads on webpages"
+   },
+   "wiz_ads_step_on": {
+      "message": "Block ads"
+   },
+   "wiz_social_step_off": {
+      "message": "Do not check external links in social networks"
+   },
+   "wiz_social_step_on": {
+      "message": "Check links via Dr.Web Link Checker"
+   },
+   "wiz_tracker_step_off": {
+      "message": "Allow tracking your interests"
+   },
+   "wiz_tracker_step_on": {
+      "message": "Anonymous browsing"
+   },
+   
+   "block_mes_part1": {
+		"message": "Dr.Web prevents you from following the advertising link to ensure your privacy. If you still want to follow this link, click the"
+   },
+   "block_mes_part2": {
+		"message": " button. In this case, your browser will open the link in incognito mode. If you do not want to receive such warnings, change the lock level settings of Dr.Web Link Checker."
+   },
+   "block_open_incognito": {
+		"message": "“Open incognito”"
+   },
+   "block_open_incognito2": {"message": "“Open incognito”"},
+   "block_additional": {
+		"message": "Additionally"
+   },
+   "block_hide_additional": {
+		"message": "Hide details"
+   },
+    "block_title": {
+        "message": "Page blocked by Dr.Web Link Checker"   
+    },
+	"manualUnBlockingText": {
+		"message": "Select the elements you want to unblock"
+	},
+    "reportMissedAds": {
+        "message": "Report the advertisements that are not blocked on this site"   
+    },
+    "options": {
+        "message": "Options"   
+    },
+    "messageSend": {
+        "message": "Thank you! Your message has been sent"   
+    }
+}
