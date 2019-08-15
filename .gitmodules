@@ -1,0 +1,3 @@
+[submodule "tajs"]
+	path = tajs
+	url = git@github.com:sefcom/cloakx-tajs.git
