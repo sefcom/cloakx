@@ -1,1 +1,0 @@
-(function(){dji.logger.logLevel(dji.logger.levels.NONE);dji.logger.info('"'+chrome.runtime.getManifest().name+'" ('+chrome.runtime.id+")");document.onreadystatechange=function(){"complete"===document.readyState&&sru.backgroundManager.initialize()}})();
