@@ -1,8 +1,8 @@
-#CloakX
+##CloakX
 
 CloakX is a proof of concept extension cloaking system for chrome extensions. 
  
- <img src="overview.png" alt="overview image" width="60%">
+ <img src="overview.png" alt="overview image" width="100%">
  
  ## Research paper
  
