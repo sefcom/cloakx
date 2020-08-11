@@ -1,4 +1,4 @@
-##CloakX
+## CloakX
 
 CloakX is a proof of concept extension cloaking system for chrome extensions. 
  
