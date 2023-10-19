@@ -8,7 +8,7 @@ CloakX is a proof of concept extension cloaking system for chrome extensions.
  
  We describe CloakX and our evaluation of it in the paper 
  
- **Everyone is Different: Client-side Diversification for Defending Against Extension Fingerprinting** [[PDF]](https://trickel.com/ev1diff)
+ **Everyone is Different: Client-side Diversification for Defending Against Extension Fingerprinting** [[PDF]](https://www.usenix.org/conference/usenixsecurity19/presentation/trickel)
  
  Erik Trickel, Oleksii Starov, Alexandros Kapravelos, Nick Nikiforakis, and Adam Doupé
  
